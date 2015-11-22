@@ -47,7 +47,6 @@ abstract class Item extends Db{
 		if($this->check_duplicate($values) != ' '):
 			new Flashmsg('warning', $this->warning_msg);	
 		elseif($this->insert($this->table, $fields, $values)):
-			$this->save_file($params);
 			new Flashmsg('success', $this->success_msg);
 		else:
 			new Flashmsg('danger', $this->danger_msg);
@@ -81,8 +80,6 @@ abstract class Item extends Db{
 				endif;
 			endif;
 		endif;
-		
-		
 		
 		if($this->check_duplicate($values) != ' '):
 			new Flashmsg('warning', $this->warning_msg);	

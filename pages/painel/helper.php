@@ -190,14 +190,15 @@ function helper_params_personagem($params){
 	$serialize_params = array();
 	$_REQUEST = null;
 	foreach($params as $key => $value):
-		if($key == 'id' || $key == 'dono' || $key == 'nome' || $key == 'sistema' || $key == 'tipo' || $key == 'lv' || $key == 'raca' || $key == 'classe' || $key == 'action' || $key == 'img'):
+		if($key == 'id' || $key == 'dono' || $key == 'nome' || $key == 'sistema' || $key == 'tipo' || $key == 'lv' || $key == 'raca' || $key == 'classe' || $key == 'action' || $key == 'img' || $key == 'old_file'):
 			$_REQUEST[$key] = empty($value)?'':$value;
 		else:
-			$serialize_params[$key] = empty($value)?'':$value;
+			$serialize_params[$key] = empty($value)?'-':$value;
 		endif;
-		$serialize = serialize($serialize_params);
-		$_REQUEST['dados'] = $serialize;
 	endforeach;
+	
+	$serialize = serialize($serialize_params);
+	$_REQUEST['dados'] = $serialize;
 	
 	return $_REQUEST;
 }
@@ -208,7 +209,7 @@ function helper_show_personagens($personagem){
 	//regra do modificador = subtrai 10 e divide por 2
 	$pvs = $personagem['lv']*($unserialize_params['constituicao']-10)/2;
 	$attr = [
-		'<b>Dado de vida:</b>' 			=> "{$unserialize_params['dado_vida']}+$pvs ({$unserialize_params['pv']} pvs)",
+		'<b>Dado de vida:</b>' 			=> "{$personagem['lv']}{$unserialize_params['dado_vida']}+$pvs ({$unserialize_params['pv']} pvs)",
 		'<b>Iniciativa:</b>' 			=> "{$unserialize_params['iniciativa']}",
 		'<b>Deslocamento:</b>' 			=> "{$unserialize_params['deslocamento']}",
 		'<b>Classe de armadura:</b>' 	=> "{$unserialize_params['ca']}",
@@ -371,7 +372,7 @@ function helper_show_body_attr($object, $attr){
 	
 	foreach($attr as $key => $value):
 		!empty($object[0][$value])?$tag->br():'';
-		!empty($object[0][$value])?$tag->imprime("{$key} {$object[0][$value]}"):'';
+		!empty($object[0][$value]) ? $tag->imprime("{$key} {$object[0][$value]}") : '';
 	endforeach;	
 }
 

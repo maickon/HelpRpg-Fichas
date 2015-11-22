@@ -14,10 +14,6 @@ $tag->br();
 		if(isset($_REQUEST['action'])):
 			$form->_col(12);
 				$create_personagem = new Personagens(ROOTPATH.PERSONAGEMIMGPATH);
-				//echo '<pre>';
-					//$r = helper_params_personagem($_REQUEST);
-					//print_r($r);
-				//echo '</pre>';
 				$_REQUEST['img'] =  $_FILES['img'];
 				$create_personagem->create(helper_params_personagem($_REQUEST));
 			$form->col_();

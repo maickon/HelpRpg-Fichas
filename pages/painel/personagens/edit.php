@@ -23,16 +23,16 @@ $tag->br();
 	$form->_container();
 		
 		$old_file = $objeto[0]['img'];
-		$_REQUEST['old_file'] = $old_file;
 		
 		if(isset($_REQUEST['action'])):
 			$form->_col(12);
-				$create_personagem = new Personagens(ROOTPATH.PERSONAGEMIMGPATH);
-				
+				$create_personagem = new Personagens(ROOTPATH.PERSONAGEMIMGPATH);	
 				if(empty($_FILES['img']['name'])):
 					$_REQUEST['img'] = '';
+					$_REQUEST['old_file'] = $old_file;
 				else:
 					$_REQUEST['img'] = $_FILES['img'];
+					$_REQUEST['old_file'] = $old_file;
 				endif;
 				$create_personagem->update_data(helper_params_personagem($_REQUEST));
 			$form->col_();
