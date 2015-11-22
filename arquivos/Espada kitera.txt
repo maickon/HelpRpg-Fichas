@@ -1,0 +1,13 @@
+dono: Maickon
+nome: Espada kitera
+lv: 6
+dano: 4d12
+preco: 20.000 PO
+decisivo: 19-20x2
+distancia: 1,5m
+peso: 6Kg
+tipo: Armas Leves - Corpo a Corpo
+iniciativa: +6
+sistema: Dungeons and Dragons
+categoria: Arma Comum
+descricao: arma branca

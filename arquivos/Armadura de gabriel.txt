@@ -1,0 +1,21 @@
+id: 20
+dono: zordon
+nome: Armadura de gabriel
+custo: 90.000
+bonusNaCa: +10
+tipo: Armas Leves - Corpo a Corpo
+sistema: Dungeons and Dragons
+categoria: Armadura leve
+descricao: Armadura do arcanjo gabriel
+file_name: Armadura de Azura 3.txt
+id: 20
+dono: zordon
+editado_por: Editado por Maickon administrador em 20/11/2015 18:55:05
+nome: Armadura de gabriel
+custo: 90.000
+bonusNaCa: +10
+tipo: Armas Leves - Corpo a Corpo
+sistema: Dungeons and Dragons
+categoria: Armadura leve
+descricao: Armadura do arcanjo gabriel
+old_file: 1447020300.jpg

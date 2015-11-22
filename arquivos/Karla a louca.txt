@@ -1,0 +1,7 @@
+dono: Maickon
+dados: a:29:{s:5:"forca";s:2:"22";s:8:"destreza";s:2:"16";s:12:"constituicao";s:2:"20";s:12:"inteligencia";s:2:"11";s:9:"sabedoria";s:2:"10";s:7:"carisma";s:2:"12";s:9:"tendencia";s:6:"Neutro";s:5:"idade";s:2:"31";s:4:"peso";s:4:"81Kg";s:6:"altura";s:4:"1.83";s:2:"pv";s:3:"264";s:2:"ca";s:38:"23 (armadura+8, anel da proteção +5)";s:12:"deslocamento";s:3:"12m";s:7:"tamanho";s:6:"Médio";s:10:"iniciativa";s:2:"+7";s:3:"bba";s:2:"18";s:2:"xp";s:7:"186.900";s:9:"dado_vida";s:3:"d12";s:3:"for";s:3:"+20";s:4:"vont";s:1:"9";s:4:"refl";s:2:"14";s:6:"ataque";s:46:"Espada Larga Barbara +5 +35/+30/25 dano 2d6+18";s:8:"Talentos";s:136:"Ataque poderoso, fúria, desviar de objetos, redução de dano 5/-, foco em arma(espada larga), desviar de armadilhas, fúria aprimorada";s:8:"pericias";s:48:"saltar+20, intimidar+12, procurar+8, acrobacia+6";s:6:"magias";s:0:"";s:9:"descricao";s:49:"Karla é uma renegada da tribo da fúria perdida.";s:12:"equipamentos";s:191:"Espada larga +5 da fúria (concede + 3 fúrias em adicional por dia), botas da fúria(aumenta +2 no bônus e dano), Luvas da fúria(aumenta +4 no bônus e dano), cantil, anel da proteção +5";s:21:"habilidades_especiais";s:7:"nenhuma";s:6:"outros";s:0:"";}
+sistema: Dungeons and Dragons
+nome: Karla a louca
+lv: 18
+classe: Barbaro
+raca: Humano

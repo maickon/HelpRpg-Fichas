@@ -1,0 +1,70 @@
+dono: Maickon
+dados: a:29:{s:5:"forca";s:2:"12";s:8:"destreza";s:2:"14";s:12:"constituicao";s:2:"13";s:12:"inteligencia";s:2:"16";s:9:"sabedoria";s:2:"14";s:7:"carisma";s:2:"11";s:9:"tendencia";s:10:"Leal e Bom";s:5:"idade";s:2:"19";s:4:"peso";s:4:"78Kg";s:6:"altura";s:4:"1.72";s:2:"pv";s:2:"36";s:2:"ca";s:27:"17 (+5 armadura, +2 escudo)";s:12:"deslocamento";s:2:"9m";s:7:"tamanho";s:6:"Médio";s:10:"iniciativa";s:2:"+6";s:3:"bba";s:2:"+3";s:2:"xp";s:5:"3.000";s:9:"dado_vida";s:3:"d10";s:3:"for";s:2:"+3";s:4:"vont";s:2:"+1";s:4:"refl";s:2:"+3";s:6:"ataque";s:22:"Espada Longa +4, 1d8+3";s:8:"Talentos";s:76:"Foco em arma (espada longa), especialização em arma, iniciativa aprimorada";s:8:"pericias";s:20:"cavalgar+2, saltar+4";s:6:"magias";s:0:"";s:9:"descricao";s:22:"Uma longa história...";s:12:"equipamentos";s:39:"Corda, mochila, uma tocha, espada longa";s:21:"habilidades_especiais";s:7:"nenhuma";s:6:"outros";s:0:"";}
+sistema: Dungeons and Dragons
+nome: Malcon
+lv: 3
+classe: Guerreiro
+raca: Humano
+id: 5
+dados: a:1:{s:5:"dados";s:682:"a:30:{s:5:"forca";s:1:" ";s:8:"destreza";s:1:" ";s:12:"constituicao";s:1:" ";s:12:"inteligencia";s:1:" ";s:9:"sabedoria";s:1:" ";s:7:"carisma";s:1:" ";s:9:"tendencia";s:1:" ";s:5:"idade";s:1:" ";s:4:"peso";s:1:" ";s:6:"altura";s:1:" ";s:2:"pv";s:1:" ";s:2:"ca";s:1:" ";s:12:"deslocamento";s:1:" ";s:7:"tamanho";s:1:" ";s:10:"iniciativa";s:1:" ";s:3:"bba";s:1:" ";s:2:"xp";s:1:" ";s:9:"dado_vida";s:1:" ";s:3:"for";s:1:" ";s:4:"vont";s:1:" ";s:4:"refl";s:1:" ";s:6:"ataque";s:1:" ";s:8:"talentos";s:1:" ";s:8:"pericias";s:1:" ";s:6:"magias";s:1:" ";s:9:"descricao";s:1:" ";s:12:"equipamentos";s:1:" ";s:21:"habilidades_especiais";s:1:" ";s:6:"outros";s:1:" ";s:8:"old_file";s:1:" ";}";}
+dono: Maickon
+sistema: Dungeons and Dragons
+tipo: Personagem jogador
+nome: Malcon
+lv: 3
+classe: Guerreiro
+raca: Humano
+id: 5
+dados: a:1:{s:5:"dados";s:682:"a:30:{s:5:"forca";s:1:" ";s:8:"destreza";s:1:" ";s:12:"constituicao";s:1:" ";s:12:"inteligencia";s:1:" ";s:9:"sabedoria";s:1:" ";s:7:"carisma";s:1:" ";s:9:"tendencia";s:1:" ";s:5:"idade";s:1:" ";s:4:"peso";s:1:" ";s:6:"altura";s:1:" ";s:2:"pv";s:1:" ";s:2:"ca";s:1:" ";s:12:"deslocamento";s:1:" ";s:7:"tamanho";s:1:" ";s:10:"iniciativa";s:1:" ";s:3:"bba";s:1:" ";s:2:"xp";s:1:" ";s:9:"dado_vida";s:1:" ";s:3:"for";s:1:" ";s:4:"vont";s:1:" ";s:4:"refl";s:1:" ";s:6:"ataque";s:1:" ";s:8:"talentos";s:1:" ";s:8:"pericias";s:1:" ";s:6:"magias";s:1:" ";s:9:"descricao";s:1:" ";s:12:"equipamentos";s:1:" ";s:21:"habilidades_especiais";s:1:" ";s:6:"outros";s:1:" ";s:8:"old_file";s:1:" ";}";}
+dono: Maickon
+sistema: Dungeons and Dragons
+tipo: Personagem jogador
+nome: Malcon
+lv: 3
+classe: Guerreiro
+raca: Humano
+id: 5
+dados: a:1:{s:5:"dados";s:682:"a:30:{s:5:"forca";s:1:" ";s:8:"destreza";s:1:" ";s:12:"constituicao";s:1:" ";s:12:"inteligencia";s:1:" ";s:9:"sabedoria";s:1:" ";s:7:"carisma";s:1:" ";s:9:"tendencia";s:1:" ";s:5:"idade";s:1:" ";s:4:"peso";s:1:" ";s:6:"altura";s:1:" ";s:2:"pv";s:1:" ";s:2:"ca";s:1:" ";s:12:"deslocamento";s:1:" ";s:7:"tamanho";s:1:" ";s:10:"iniciativa";s:1:" ";s:3:"bba";s:1:" ";s:2:"xp";s:1:" ";s:9:"dado_vida";s:1:" ";s:3:"for";s:1:" ";s:4:"vont";s:1:" ";s:4:"refl";s:1:" ";s:6:"ataque";s:1:" ";s:8:"talentos";s:1:" ";s:8:"pericias";s:1:" ";s:6:"magias";s:1:" ";s:9:"descricao";s:1:" ";s:12:"equipamentos";s:1:" ";s:21:"habilidades_especiais";s:1:" ";s:6:"outros";s:1:" ";s:8:"old_file";s:1:" ";}";}
+dono: Maickon
+sistema: Dungeons and Dragons
+tipo: Personagem jogador
+nome: Malcon
+lv: 3
+classe: Guerreiro
+raca: Humano
+id: 5
+dados: a:1:{s:5:"dados";s:682:"a:30:{s:5:"forca";s:1:" ";s:8:"destreza";s:1:" ";s:12:"constituicao";s:1:" ";s:12:"inteligencia";s:1:" ";s:9:"sabedoria";s:1:" ";s:7:"carisma";s:1:" ";s:9:"tendencia";s:1:" ";s:5:"idade";s:1:" ";s:4:"peso";s:1:" ";s:6:"altura";s:1:" ";s:2:"pv";s:1:" ";s:2:"ca";s:1:" ";s:12:"deslocamento";s:1:" ";s:7:"tamanho";s:1:" ";s:10:"iniciativa";s:1:" ";s:3:"bba";s:1:" ";s:2:"xp";s:1:" ";s:9:"dado_vida";s:1:" ";s:3:"for";s:1:" ";s:4:"vont";s:1:" ";s:4:"refl";s:1:" ";s:6:"ataque";s:1:" ";s:8:"talentos";s:1:" ";s:8:"pericias";s:1:" ";s:6:"magias";s:1:" ";s:9:"descricao";s:1:" ";s:12:"equipamentos";s:1:" ";s:21:"habilidades_especiais";s:1:" ";s:6:"outros";s:1:" ";s:8:"old_file";s:1:" ";}";}
+dono: Maickon
+sistema: Dungeons and Dragons
+tipo: Personagem jogador
+nome: Malcon
+lv: 3
+classe: Guerreiro
+raca: Humano
+id: 5
+dados: a:30:{s:5:"forca";s:1:" ";s:8:"destreza";s:1:" ";s:12:"constituicao";s:1:" ";s:12:"inteligencia";s:1:" ";s:9:"sabedoria";s:1:" ";s:7:"carisma";s:1:" ";s:9:"tendencia";s:1:" ";s:5:"idade";s:1:" ";s:4:"peso";s:1:" ";s:6:"altura";s:1:" ";s:2:"pv";s:1:" ";s:2:"ca";s:1:" ";s:12:"deslocamento";s:1:" ";s:7:"tamanho";s:1:" ";s:10:"iniciativa";s:1:" ";s:3:"bba";s:1:" ";s:2:"xp";s:1:" ";s:9:"dado_vida";s:1:" ";s:3:"for";s:1:" ";s:4:"vont";s:1:" ";s:4:"refl";s:1:" ";s:6:"ataque";s:1:" ";s:8:"talentos";s:1:" ";s:8:"pericias";s:1:" ";s:6:"magias";s:1:" ";s:9:"descricao";s:1:" ";s:12:"equipamentos";s:1:" ";s:21:"habilidades_especiais";s:1:" ";s:6:"outros";s:1:" ";s:8:"old_file";s:1:" ";}
+dono: Maickon
+sistema: Dungeons and Dragons
+tipo: Personagem jogador
+nome: Malcon
+lv: 3
+classe: Guerreiro
+raca: Humano
+id: 5
+dados: a:30:{s:5:"forca";s:2:"20";s:8:"destreza";s:2:"14";s:12:"constituicao";s:2:"13";s:12:"inteligencia";s:2:"16";s:9:"sabedoria";s:2:"14";s:7:"carisma";s:2:"11";s:9:"tendencia";s:10:"Leal e Bom";s:5:"idade";s:2:"19";s:4:"peso";s:3:"6Kg";s:6:"altura";s:4:"1.72";s:2:"pv";s:2:"36";s:2:"ca";s:27:"17 (+5 armadura, +2 escudo)";s:12:"deslocamento";s:2:"9m";s:7:"tamanho";s:6:"Médio";s:10:"iniciativa";s:2:"+6";s:3:"bba";s:2:"+3";s:2:"xp";s:5:"3.000";s:9:"dado_vida";s:3:"d10";s:3:"for";s:2:"+3";s:4:"vont";s:2:"+1";s:4:"refl";s:2:"+3";s:6:"ataque";s:16:" ataque de teste";s:8:"talentos";s:1:" ";s:8:"pericias";s:1:" ";s:6:"magias";s:1:" ";s:9:"descricao";s:1:" ";s:12:"equipamentos";s:1:" ";s:21:"habilidades_especiais";s:1:" ";s:6:"outros";s:1:" ";s:8:"old_file";s:1:" ";}
+dono: Maickon
+sistema: Dungeons and Dragons
+tipo: Personagem jogador
+nome: Malcon
+lv: 3
+classe: Guerreiro
+raca: Humano
+id: 5
+dados: a:30:{s:5:"forca";s:2:"12";s:8:"destreza";s:2:"14";s:12:"constituicao";s:2:"13";s:12:"inteligencia";s:2:"16";s:9:"sabedoria";s:2:"14";s:7:"carisma";s:2:"11";s:9:"tendencia";s:10:"Leal e Bom";s:5:"idade";s:2:"19";s:4:"peso";s:3:"6Kg";s:6:"altura";s:4:"1.72";s:2:"pv";s:2:"36";s:2:"ca";s:27:"17 (+5 armadura, +2 escudo)";s:12:"deslocamento";s:2:"9m";s:7:"tamanho";s:6:"Médio";s:10:"iniciativa";s:2:"+6";s:3:"bba";s:2:"+3";s:2:"xp";s:5:"3.000";s:9:"dado_vida";s:3:"d10";s:3:"for";s:2:"+3";s:4:"vont";s:2:"+1";s:4:"refl";s:2:"+3";s:6:"ataque";s:1:" ";s:8:"talentos";s:1:" ";s:8:"pericias";s:1:" ";s:6:"magias";s:1:" ";s:9:"descricao";s:1:" ";s:12:"equipamentos";s:1:" ";s:21:"habilidades_especiais";s:1:" ";s:6:"outros";s:1:" ";s:8:"old_file";s:1:" ";}
+dono: Maickon
+sistema: Dungeons and Dragons
+tipo: Personagem jogador
+nome: Malcon
+lv: 3
+classe: Guerreiro
+raca: Humano

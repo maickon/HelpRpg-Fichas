@@ -1,0 +1,9 @@
+id: 2
+editado_por: Editado por Maickon administrador em 20/11/2015 22:05:58
+nome: Arauto do Dragão
+lv: 21
+preco: 130.000 PO
+raridade: Mágico
+sistema: Dungeons and Dragons
+descricao: Com este item você consegue controlar os dragões dourados
+old_file: 1448045761.jpg

@@ -1,0 +1,32 @@
+dono: Maickon
+nome: Ira de kaminari
+lv: 3
+classe: Barbaro Oriental
+sistema: Dungeons and Dragons
+pre_requisito: Força 14, origem oriental
+descricao: Você entra numa fúria monstruosa, ela aumenta sua força e constituição em +3 e +1 para cada 4 níveis;
+id: 2
+dono: Maickon
+nome: Ira de kaminari
+lv: 7
+classe: Barbaro Oriental
+sistema: Dungeons and Dragons
+pre_requisito: Força 14, origem oriental
+descricao: Você entra numa fúria monstruosa, ela aumenta sua força e constituição em +3 e +1 para cada 4 níveis. Se você tiver 10 níveis de bárbaro, ao invés de aumentar +3, passará a ser +6.
+id: 2
+dono: Maickon
+nome: Ira de kaminari
+lv: 5
+classe: Barbaro Oriental
+sistema: Dungeons and Dragons
+pre_requisito: Força 14, origem oriental
+descricao: Você entra numa fúria monstruosa, ela aumenta sua força e constituição em +3 e +1 para cada 4 níveis. Se você tiver 10 níveis de bárbaro, ao invés de aumentar +3, passará a ser +6.
+id: 2
+dono: zordon
+editado_por: Editado por Maickon administrador em 20/11/2015 18:57:17
+nome: Ira de kaminari
+lv: 5
+classe: Barbaro Oriental
+sistema: Dungeons and Dragons
+pre_requisito: Força 14, origem oriental
+descricao: Você entra numa fúria monstruosa, ela aumenta sua força e constituição em +3 e +1 para cada 4 níveis. Se você tiver 10 níveis de bárbaro, ao invés de aumentar +3, passará a ser +6.

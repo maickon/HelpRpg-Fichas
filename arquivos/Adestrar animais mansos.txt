@@ -1,0 +1,8 @@
+id: 3
+dono: Maickon
+nome: Adestrar animais mansos
+categoria: adestramento
+habilidade_chave: car
+classe_favorecida: ranger
+sistema: Dungeons and Dragons
+descricao: Você acalma os animais de pequeno porte que sejam mansos.

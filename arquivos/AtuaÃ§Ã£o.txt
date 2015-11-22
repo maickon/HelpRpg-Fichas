@@ -1,0 +1,260 @@
+id: 2
+dono: zordon - editado por Maickon
+nome: Atuação
+categoria: Teatral
+habilidade_chave: Car
+classe_favorecida: Bardo
+sistema: Dungeons and Dragons
+descricao: Você sabe atuar como um mestre.
+id: 2
+dono: zordon - editado por Maickon - editado por Maickon administrador.
+nome: Atuação
+categoria: Teatral
+habilidade_chave: Car
+classe_favorecida: Bardo
+sistema: Dungeons and Dragons
+descricao: Você sabe atuar como um mestre.
+id: 2
+dono: zordon - editado por Maickon - editado por Maickon administrador. - editado por Maickon administrador.
+nome: Atuação
+categoria: Teatral
+habilidade_chave: Car
+classe_favorecida: Bardo
+sistema: Dungeons and Dragons
+descricao: Você sabe atuar como um mestre supremo.
+id: 2
+dono: Maickon
+nome: Atuação
+categoria: Teatral
+habilidade_chave: Car
+classe_favorecida: Bardo
+sistema: Dungeons and Dragons
+descricao: Você sabe atuar como um mestre supremo.
+id: 2
+dono: zordon
+nome: Atuação
+categoria: Teatral
+habilidade_chave: Car
+classe_favorecida: Bardo
+sistema: Dungeons and Dragons
+descricao: Você sabe atuar como um mestre supremo.
+id: 2
+dono: zordon - editado por Maickon administrador.
+nome: Atuação
+categoria: Teatral
+habilidade_chave: Car
+classe_favorecida: Bardo
+sistema: Dungeons and Dragons
+descricao: Você sabe atuar como um mestre supremo.
+id: 2
+dono: zordon - editado por Maickon administrador. - editado por Maickon administrador.
+nome: Atuação
+categoria: Teatral
+habilidade_chave: Car
+classe_favorecida: Bardo
+sistema: Dungeons and Dragons
+descricao: Você sabe atuar como um mestre supremo.
+id: 2
+dono: zordon - editado por Maickon administrador. - editado por Maickon administrador. - editado por Maickon administrador.
+nome: Atuação
+categoria: Teatral
+habilidade_chave: Car
+classe_favorecida: Bardo
+sistema: Dungeons and Dragons
+descricao: Você sabe atuar como um mestre supremo.
+id: 2
+dono: zordon - editado por Maickon administrador. - editado por Maickon administrador. - editado por Maickon administrador. - editado por Maickon administrador.
+nome: Atuação
+categoria: Teatral
+habilidade_chave: Car
+classe_favorecida: Bardo
+sistema: Dungeons and Dragons
+descricao: Você sabe atuar como um mestre supremo.
+id: 2
+dono: zordon - editado por Maickon administrador. - editado por Maickon administrador. - editado por Maickon administrador. - editado por Maickon administrador. - editado por Maickon administrador.
+nome: Atuação
+categoria: Teatral
+habilidade_chave: Car
+classe_favorecida: Bardo
+sistema: Dungeons and Dragons
+descricao: Você sabe atuar como um mestre supremo.
+id: 2
+dono: .helper_check_update($objeto).
+nome: Atuação
+categoria: Teatral
+habilidade_chave: Car
+classe_favorecida: Bardo
+sistema: Dungeons and Dragons
+descricao: Você sabe atuar como um mestre supremo.
+id: 2
+dono: .helper_check_update($objeto). - editado por Maickon administrador.
+nome: Atuação
+categoria: Teatral
+habilidade_chave: Car
+classe_favorecida: Bardo
+sistema: Dungeons and Dragons
+descricao: Você sabe atuar como um mestre supremo.
+id: 2
+dono: zordon
+nome: Atuação
+categoria: Teatral
+habilidade_chave: Car
+classe_favorecida: Bardo
+sistema: Dungeons and Dragons
+descricao: Você sabe atuar como um mestre supremo.
+id: 2
+dono: zordon
+nome: Atuação
+categoria: Teatral
+habilidade_chave: Car
+classe_favorecida: Bardo
+sistema: Dungeons and Dragons
+descricao: Você sabe atuar como um mestre supremo.
+id: 2
+dono: maickon
+nome: Atuação
+categoria: Teatral
+habilidade_chave: Car
+classe_favorecida: Bardo
+sistema: Dungeons and Dragons
+descricao: Você sabe atuar como um mestre supremo.
+id: 2
+dono: maickon
+nome: Atuação
+categoria: Teatral
+habilidade_chave: Car
+classe_favorecida: Bardo
+sistema: Dungeons and Dragons
+descricao: Você sabe atuar como um mestre supremo.
+id: 2
+dono: maickon
+nome: Atuação
+categoria: Teatral
+habilidade_chave: Car
+classe_favorecida: Bardo
+sistema: Dungeons and Dragons
+descricao: Você sabe atuar como um mestre supremo.
+id: 2
+dono: maickon - editado por Maickon administrador.
+nome: Atuação
+categoria: Teatral
+habilidade_chave: Car
+classe_favorecida: Bardo
+sistema: Dungeons and Dragons
+descricao: Você sabe atuar como um mestre supremo.
+id: 2
+dono: maickon - editado por Maickon administrador. - editado por Maickon administrador.
+nome: Atuação
+categoria: Teatral
+habilidade_chave: Car
+classe_favorecida: Bardo
+sistema: Dungeons and Dragons
+descricao: Você sabe atuar como um mestre supremo.
+id: 2
+dono: maickon - editado por Maickon administrador. - editado por Maickon administrador.
+nome: Atuação
+categoria: Teatral
+habilidade_chave: Car
+classe_favorecida: Bardo
+sistema: Dungeons and Dragons
+descricao: Você sabe atuar como um mestre supremo.
+id: 2
+dono: maickon - editado por Maickon administrador. - editado por Maickon administrador.
+nome: Atuação
+categoria: Teatral
+habilidade_chave: Car
+classe_favorecida: Bardo
+sistema: Dungeons and Dragons
+descricao: Você sabe atuar como um mestre supremo.
+id: 2
+dono: maickon - editado por Maickon administrador. - editado por Maickon administrador.
+nome: Atuação
+categoria: Teatral
+habilidade_chave: Car
+classe_favorecida: Bardo
+sistema: Dungeons and Dragons
+descricao: Você sabe atuar como um mestre supremo.
+id: 2
+dono: maickon - editado por Maickon administrador. - editado por Maickon administrador. - editado por Maickon administrador.
+nome: Atuação
+categoria: Teatral
+habilidade_chave: Car
+classe_favorecida: Bardo
+sistema: Dungeons and Dragons
+descricao: Você sabe atuar como um mestre supremo.
+id: 2
+dono: zordon
+nome: Atuação
+categoria: Teatral
+habilidade_chave: Car
+classe_favorecida: Bardo
+sistema: Dungeons and Dragons
+descricao: Você sabe atuar como um mestre supremo.
+id: 2
+dono: zordon - editado por 
+nome: Atuação
+categoria: Teatral
+habilidade_chave: Car
+classe_favorecida: Bardo
+sistema: Dungeons and Dragons
+descricao: Você sabe atuar como um mestre supremo.
+id: 2
+dono: zordon - editado por  - editado por 
+nome: Atuação
+categoria: Teatral
+habilidade_chave: Car
+classe_favorecida: Bardo
+sistema: Dungeons and Dragons
+descricao: Você sabe atuar como um mestre supremo.
+id: 2
+dono: zordon - editado por  - editado por  - editado por Maickon administrador.
+nome: Atuação
+categoria: Teatral
+habilidade_chave: Car
+classe_favorecida: Bardo
+sistema: Dungeons and Dragons
+descricao: Você sabe atuar como um mestre supremo.
+id: 2
+dono: zordon - editado por  - editado por  - editado por Maickon administrador. - editado por Maickon administrador.
+nome: Atuação
+categoria: Teatral
+habilidade_chave: Car
+classe_favorecida: Bardo
+sistema: Dungeons and Dragons
+descricao: Você sabe atuar como um mestre supremo.
+id: 2
+dono: zordon
+editado_por: editado por Maickon administrador às 20/11/2015 18:43:23
+nome: Atuação
+categoria: Teatral
+habilidade_chave: Car
+classe_favorecida: Bardo
+sistema: Dungeons and Dragons
+descricao: Você sabe atuar como um mestre supremo.
+id: 2
+dono: zordon
+editado_por: editado por Maickon administrador às 20/11/2015 18:43:39
+nome: Atuação
+categoria: Teatral
+habilidade_chave: Car
+classe_favorecida: Bardo
+sistema: Dungeons and Dragons
+descricao: Você sabe atuar como um mestre supremo.
+id: 2
+dono: zordon
+editado_por: editado por Maickon administrador às 20/11/2015 18:43:49
+nome: Atuação
+categoria: Teatral
+habilidade_chave: Car
+classe_favorecida: Bardo
+sistema: Dungeons and Dragons
+descricao: Você sabe atuar como um mestre supremo.
+id: 2
+dono: zordon
+editado_por: Editado por Maickon administrador em 20/11/2015 18:44:23
+nome: Atuação
+categoria: Teatral
+habilidade_chave: Car
+classe_favorecida: Bardo
+sistema: Dungeons and Dragons
+descricao: Você sabe atuar como um mestre supremo.

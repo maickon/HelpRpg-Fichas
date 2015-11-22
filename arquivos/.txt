@@ -1,0 +1,20 @@
+dono: Maickon
+sistema: Dungeons and Dragons
+dono: Maickon
+dados: a:1:{s:5:"dados";s:648:"a:30:{s:5:"forca";s:0:"";s:8:"destreza";s:0:"";s:12:"constituicao";s:0:"";s:12:"inteligencia";s:0:"";s:9:"sabedoria";s:0:"";s:7:"carisma";s:0:"";s:4:"nome";s:0:"";s:9:"tendencia";s:0:"";s:5:"idade";s:0:"";s:4:"peso";s:0:"";s:6:"altura";s:0:"";s:2:"pv";s:0:"";s:2:"ca";s:0:"";s:12:"deslocamento";s:0:"";s:7:"tamanho";s:0:"";s:10:"iniciativa";s:0:"";s:3:"bba";s:0:"";s:2:"xp";s:0:"";s:9:"dado_vida";s:0:"";s:3:"for";s:0:"";s:4:"vont";s:0:"";s:4:"refl";s:0:"";s:6:"ataque";s:0:"";s:8:"Talentos";s:0:"";s:8:"pericias";s:0:"";s:6:"magias";s:0:"";s:9:"descricao";s:0:"";s:12:"equipamentos";s:0:"";s:21:"habilidades_especiais";s:0:"";s:6:"outros";s:0:"";}";}
+sistema: Dungeons and Dragons
+lv: 21
+classe: Barbaro
+raca: Humano
+dono: Maickon
+dados: a:30:{s:5:"forca";s:0:"";s:8:"destreza";s:0:"";s:12:"constituicao";s:0:"";s:12:"inteligencia";s:0:"";s:9:"sabedoria";s:0:"";s:7:"carisma";s:0:"";s:4:"nome";s:0:"";s:9:"tendencia";s:0:"";s:5:"idade";s:0:"";s:4:"peso";s:0:"";s:6:"altura";s:0:"";s:2:"pv";s:0:"";s:2:"ca";s:0:"";s:12:"deslocamento";s:0:"";s:7:"tamanho";s:0:"";s:10:"iniciativa";s:0:"";s:3:"bba";s:0:"";s:2:"xp";s:0:"";s:9:"dado_vida";s:0:"";s:3:"for";s:0:"";s:4:"vont";s:0:"";s:4:"refl";s:0:"";s:6:"ataque";s:0:"";s:8:"Talentos";s:0:"";s:8:"pericias";s:0:"";s:6:"magias";s:0:"";s:9:"descricao";s:0:"";s:12:"equipamentos";s:0:"";s:21:"habilidades_especiais";s:0:"";s:6:"outros";s:0:"";}
+sistema: Dungeons and Dragons
+lv: 21
+classe: Barbaro
+raca: Humano
+dono: Maickon
+dados: a:30:{s:5:"forca";s:2:"12";s:8:"destreza";s:2:"14";s:12:"constituicao";s:2:"13";s:12:"inteligencia";s:2:"16";s:9:"sabedoria";s:2:"14";s:7:"carisma";s:2:"11";s:4:"nome";s:6:"Malcon";s:9:"tendencia";s:10:"Leal e Bom";s:5:"idade";s:2:"19";s:4:"peso";s:4:"78Kg";s:6:"altura";s:4:"1.72";s:2:"pv";s:2:"36";s:2:"ca";s:27:"17 (+5 armadura, +2 escudo)";s:12:"deslocamento";s:2:"9m";s:7:"tamanho";s:6:"Médio";s:10:"iniciativa";s:2:"+6";s:3:"bba";s:2:"+3";s:2:"xp";s:5:"3.000";s:9:"dado_vida";s:3:"d10";s:3:"for";s:2:"+3";s:4:"vont";s:2:"+1";s:4:"refl";s:2:"+3";s:6:"ataque";s:22:"Espada Longa +4, 1d8+3";s:8:"Talentos";s:76:"Foco em arma (espada longa), especialização em arma, iniciativa aprimorada";s:8:"pericias";s:20:"cavalgar+2, saltar+4";s:6:"magias";s:0:"";s:9:"descricao";s:22:"Uma longa história...";s:12:"equipamentos";s:39:"Corda, mochila, uma tocha, espada longa";s:21:"habilidades_especiais";s:7:"nenhuma";s:6:"outros";s:0:"";}
+sistema: Dungeons and Dragons
+lv: 3
+classe: Guerreiro
+raca: Humano

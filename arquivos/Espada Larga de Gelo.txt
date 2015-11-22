@@ -1,0 +1,17 @@
+id: 72
+dono: amazo
+editado_por: Editado por Maickon administrador em 20/11/2015 18:50:54
+nome: Espada Larga de Gelo
+lv: 5
+dano: 2d4
+preco: 60.000 PO
+decisivo: 19-20x3
+peso: 17Kg
+tipo: Armas de Duas Mãos - Corpo a Corpo
+sistema: Dungeons and Dragons
+categoria: Arma Exótica
+descricao: Gelo é tão larga quanto a mão de um homem e tão alta como o jovem Robb Stark. Sua lâmina de aço valiriano é escura e esfumaçada, típica de um aço desse tipo.
+O nome "Gelo" é uma herança da Era dos Heróis e descende até a espada atual. Aproximadamente 100 anos antes do Desembarque de Aegon, a longa-espada de aço valiriano foi forjada e adquirida pelos Stark, que lhe deram o nome de Gelo por culpa dessa herança cultural e passou a ser a espada do Senhor de Winterfell. Lorde Eddard Stark usou essa espada em batalhas e para executar prisioneiros. Depois de sua prisão, Sor Ilyn Payne usou essa mesma espada para decapitá-lo. Sor Ilyn manteve a lâmina por pouco tempo, até que Tywin Lannister tomou-a e a reforjou em duas espadas longas: a Cumpridora de Promessas e o Lamento da Viúva.
+
+Esta incrível espada larga tem a capacidade mágica de causar +6d6 de dano de gelo em caso de um acerto decisivo.
+old_file: 1445227306.png

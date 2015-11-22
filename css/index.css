@@ -1,0 +1,107 @@
+#logo{
+	width: 230px;
+	float: left;
+}
+
+#linha{
+	border: 1px medium #AAAFFF;	
+}
+
+#img{
+	margin: 0 auto;
+	opacity: none;
+}
+
+.jumbotron{
+	margin-top: 25px;
+	background-image: url("../img/chars.png");
+}
+
+.panel-title{
+	text-align: center;
+	padding-top: 20px;
+}
+
+.center{
+	text-align: center;
+}
+
+.input-login{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.button-login{
+	width: 90% !important;
+	margin: 0 auto !important;
+	margin-bottom: 10px !important;
+}
+
+.panel-index{
+	padding: 25px;
+	text-align: center;
+}
+
+.titulo-index{
+	text-align: center;	
+}
+
+.btn-index{
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.icon-link{
+	color: #000;
+}
+
+.glyphicon{
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.align-right{
+	float: right;
+}
+
+.span_title{
+	font-size: 28px;
+	font-weight: bold;
+	color: blue;
+	margin-top: 10px;
+}
+
+.icon-link:hover{
+	color: #F00;
+}
+
+.size-img{
+	width: auto;
+}
+
+.center{
+	margin: 0 auto;
+}
+
+#example_filter{
+	float: right;
+}
+
+.pagination{
+	float: right;
+	margin-top: 0px !important;
+	padding-top: 0px !important;
+}
+#example_info{
+	left: 
+}
+
+.banner-center{
+	text-align: center;
+}
+
+.margin-zero{
+	margin: 0;
+	padding: 0px;
+}

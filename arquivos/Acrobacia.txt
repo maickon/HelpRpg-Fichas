@@ -1,0 +1,8 @@
+id: 1
+dono: Maickon
+nome: Acrobacia
+categoria: Esporte
+habilidade_chave: DES
+classe_favorecida: monge
+sistema: Dungeons and Dragons
+descricao: Você se move acrobaticamente em todos os lugares.

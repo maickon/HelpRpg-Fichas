@@ -1,0 +1,18 @@
+id: 3
+dados: a:30:{s:5:"forca";s:2:"12";s:8:"destreza";s:2:"14";s:12:"constituicao";s:2:"13";s:12:"inteligencia";s:2:"16";s:9:"sabedoria";s:2:"14";s:7:"carisma";s:2:"11";s:9:"tendencia";s:10:"Leal e Bom";s:5:"idade";s:2:"19";s:4:"peso";s:3:"6Kg";s:6:"altura";s:4:"1.72";s:2:"pv";s:2:"36";s:2:"ca";s:27:"17 (+5 armadura, +2 escudo)";s:12:"deslocamento";s:2:"9m";s:7:"tamanho";s:6:"Médio";s:10:"iniciativa";s:2:"+6";s:3:"bba";s:2:"+3";s:2:"xp";s:5:"3.000";s:9:"dado_vida";s:3:"d10";s:3:"for";s:2:"+3";s:4:"vont";s:2:"+1";s:4:"refl";s:2:"+3";s:6:"ataque";s:1:" ";s:8:"talentos";s:1:" ";s:8:"pericias";s:1:" ";s:6:"magias";s:1:" ";s:9:"descricao";s:1:" ";s:12:"equipamentos";s:1:" ";s:21:"habilidades_especiais";s:1:" ";s:6:"outros";s:0:"";s:8:"old_file";s:0:"";}
+dono: Maickon
+sistema: Dungeons and Dragons
+tipo: Personagem jogador
+nome: Valkyria
+lv: 21
+classe: Barbaro
+raca: Humano
+id: 3
+dados: a:30:{s:5:"forca";s:2:"12";s:8:"destreza";s:2:"14";s:12:"constituicao";s:2:"13";s:12:"inteligencia";s:2:"16";s:9:"sabedoria";s:2:"14";s:7:"carisma";s:2:"11";s:9:"tendencia";s:10:"Leal e Bom";s:5:"idade";s:2:"19";s:4:"peso";s:3:"6Kg";s:6:"altura";s:4:"1.72";s:2:"pv";s:2:"36";s:2:"ca";s:27:"17 (+5 armadura, +2 escudo)";s:12:"deslocamento";s:2:"9m";s:7:"tamanho";s:6:"Médio";s:10:"iniciativa";s:2:"+6";s:3:"bba";s:2:"+3";s:2:"xp";s:5:"3.000";s:9:"dado_vida";s:3:"d10";s:3:"for";s:2:"+3";s:4:"vont";s:2:"+1";s:4:"refl";s:2:"+3";s:6:"ataque";s:28:" Espada larga +3 +21/+16/+11";s:8:"talentos";s:36:" Iniciativa aprimorada, foco em arma";s:8:"pericias";s:45:" acrobacia+12, desenhar+5, adestrar animais+4";s:6:"magias";s:8:" nenhuma";s:9:"descricao";s:28:" Nasceu num lugar pequeno...";s:12:"equipamentos";s:26:" mochila, pedras preciosas";s:21:"habilidades_especiais";s:19:" Ataque da justiça";s:6:"outros";s:15:"Nada a declarar";s:8:"old_file";s:14:"1448164778.jpg";}
+dono: Maickon
+sistema: Dungeons and Dragons
+tipo: Personagem jogador
+nome: Valkyria
+lv: 21
+classe: Barbaro
+raca: Humano

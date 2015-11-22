@@ -1,0 +1,12 @@
+dono: Maickon
+nome: Abençoar Água
+lv: 1
+classe: Mago
+sistema: Dungeons and Dragons
+componente: Agua
+tempo_execucao: 1 Ação
+alcance: 20m+1m/nível
+area: 9m+1.5m/Lv
+alvo: 1 alvo dentro do alcance
+resistencia_magia: Sim
+descricao: Ataque de agua

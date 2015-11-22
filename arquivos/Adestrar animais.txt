@@ -1,0 +1,7 @@
+dono: Maickon
+nome: Adestrar animais
+categoria: adestramento
+habilidade_chave: car
+classe_favorecida: ranger
+sistema: Dungeons and Dragons
+descricao: Você acalma os animais.

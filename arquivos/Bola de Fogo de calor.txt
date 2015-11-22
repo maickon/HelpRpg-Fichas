@@ -1,0 +1,14 @@
+id: 1
+dono: Maickon
+nome: Bola de Fogo de calor
+lv: 3
+classe: Mago
+sistema: Dungeons and Dragons
+componente: cinzas qualquer
+tempo_execucao: 1 Ação
+alcance: 20m+1m/nível
+area: 9m+1.5m/Lv
+alvo: 1 alvo dentro do alcance
+teste_resistencia: Reflexos
+resistencia_magia: Sim
+descricao: Uma bola de fogo que causa 1d6 por nível, no máximo 5d6.

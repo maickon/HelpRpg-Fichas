@@ -1,0 +1,71 @@
+dono: Maickon
+nome: Armadura de Rhorvals
+lv: 14
+custo: 200 PO
+bonusNaCa: 4
+destrezaMaxima: 6
+falhaDeMagiaArcana: 0%
+deslocamentoMedio: 9
+peso: 6Kg
+tipo: Armadura mágica
+sistema: Dungeons and Dragons
+categoria: Armadura Média
+descricao: Armadura poderosa.
+id: 23
+dono: Maickon
+nome: Armadura de Rhorvals
+custo: 2000 PO
+bonusNaCa: 4
+destrezaMaxima: 6
+penalidadeNaPericia: -2
+falhaDeMagiaArcana: 0%
+deslocamentoMedio: 9
+peso: 6Kg
+tipo: Armadura mágica
+sistema: Dungeons and Dragons
+categoria: Armadura Média
+descricao: Armadura poderosa de ouro, ela pertence a Rhorvals
+old_file: 1447992447.jpg
+id: 23
+dono: Maickon
+nome: Armadura de Rhorvals
+custo: 2000 PO
+bonusNaCa: 4
+destrezaMaxima: 6
+penalidadeNaPericia: -2
+falhaDeMagiaArcana: 0%
+deslocamentoMedio: 9
+peso: 6Kg
+tipo: Armadura mágica
+sistema: Dungeons and Dragons
+categoria: Armadura Média
+descricao: Armadura poderosa de ouro, ela pertence a Rhorvals
+id: 23
+dono: Maickon
+nome: Armadura de Rhorvals
+custo: 2000 PO
+bonusNaCa: 4
+destrezaMaxima: 6
+penalidadeNaPericia: -2
+falhaDeMagiaArcana: 0%
+deslocamentoMedio: 9
+peso: 6Kg
+tipo: Armadura mágica
+sistema: Dungeons and Dragons
+categoria: Armadura Média
+descricao: Armadura poderosa de ouro, ela pertence a Rhorvals
+id: 23
+dono: Maickon
+nome: Armadura de Rhorvals
+custo: 2000 PO
+bonusNaCa: 4
+destrezaMaxima: 6
+penalidadeNaPericia: -2
+falhaDeMagiaArcana: 0%
+deslocamentoMedio: 9
+peso: 6Kg
+tipo: Armadura mágica
+sistema: Dungeons and Dragons
+categoria: Armadura Média
+descricao: Armadura poderosa de ouro, ela pertence a Rhorvals
+old_file: 1447992941.jpg

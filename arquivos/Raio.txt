@@ -1,0 +1,126 @@
+dono: Maickon
+nome: Raio
+lv: 8
+classe: Mago
+sistema: Dungeons and Dragons
+componente: nenhum
+tempo_execucao: 1 Ação
+area: 9m+1.5m/Lv
+alvo: 1 alvo dentro do alcance
+duracao: 1 ação
+descricao: Um ataque de raio
+id: 4
+dono: Maickon
+nome: Raio
+lv: 8
+classe: Mago
+sistema: Dungeons and Dragons
+componente: nenhum
+tempo_execucao: 1 Ação
+area: 9m+1.5m/Lv
+alvo: 1 alvo dentro do alcance
+duracao: 1 ação
+descricao: Um ataque de raio
+id: 4
+dono: Maickon
+nome: Raio
+lv: 8
+classe: Mago
+sistema: Dungeons and Dragons
+componente: nenhum
+tempo_execucao: 1 Ação
+area: 9m+1.5m/Lv
+alvo: 1 alvo dentro do alcance
+duracao: 1 ação
+descricao: Um ataque de raio
+id: 4
+dono: Maickon
+nome: Raio
+lv: 8
+classe: Mago
+sistema: Dungeons and Dragons
+componente: nenhum
+tempo_execucao: 1 Ação
+area: 9m+1.5m/Lv
+dano: 6d6
+alvo: 1 alvo dentro do alcance
+duracao: 1 ação
+descricao: Um ataque de raio
+id: 4
+dono: Maickon
+nome: Raio
+lv: 8
+classe: Mago
+sistema: Dungeons and Dragons
+componente: nenhum
+tempo_execucao: 1 Ação
+area: 9m+1.5m/Lv
+alvo: 1 alvo dentro do alcance
+duracao: 1 ação
+descricao: Um ataque de raio
+dono: Maickon
+nome: Raio
+lv: 1
+classe: Mago
+sistema: Dungeons and Dragons
+componente: cinzas qualquer
+tempo_execucao: 1 Ação
+alcance: 20m+1m/nível
+area: 9m+1.5m/Lv
+dano: 4d12
+alvo: 1 alvo dentro do alcance
+duracao: 1 ação
+teste_resistencia: Sim (Reflexos)
+resistencia_magia: Sim
+descricao: Um ataque de raio
+id: 6
+dono: Maickon
+nome: Raio
+lv: 1
+classe: Mago
+sistema: Dungeons and Dragons
+componente: cinzas qualquer
+tempo_execucao: 1 Ação
+alcance: 20m+1m/nível
+area: 9m+1.5m/Lv
+dano: 4d12
+alvo: 1 alvo dentro do alcance
+duracao: 1 ação
+teste_resistencia: Sim (Reflexos)
+resistencia_magia: Sim
+descricao: Um ataque de raio
+old_file: 1448037767.jpg
+id: 6
+dono: Maickon
+nome: Raio
+lv: 1
+classe: Mago
+sistema: Dungeons and Dragons
+componente: cinzas qualquer
+tempo_execucao: 1 Ação
+alcance: 20m+1m/nível
+area: 9m+1.5m/Lv
+dano: 4d12
+alvo: 1 alvo dentro do alcance
+duracao: 1 ação
+teste_resistencia: Sim (Reflexos)
+resistencia_magia: Sim
+descricao: Um ataque de raio
+old_file: 1448037767.jpg
+id: 6
+dono: Maickon
+nome: Raio
+lv: 1
+classe: Mago
+sistema: Dungeons and Dragons
+componente: cinzas qualquer
+tempo_execucao: 1 Ação
+alcance: 20m+1m/nível
+area: 9m+1.5m/Lv
+dano: 4d12
+alvo: 1 alvo dentro do alcance
+duracao: 1 ação
+teste_resistencia: Sim (Reflexos)
+resistencia_magia: Sim
+descricao: Um ataque de raio
+old_file: 1448037885.png
