@@ -1,0 +1,34 @@
+id: 20
+dono: Global
+nome: Armadura de teste 2
+lv: 11
+custo: 90.000 PO
+bonusNaCa: +5
+destrezaMaxima: 3
+penalidadeNaPericia: -2
+falhaDeMagiaArcana: 10%
+deslocamentoMedio: 9m
+deslocamentoPequeno: 6m
+peso: 10Kg
+tipo: Armadura mágica
+sistema: Dungeons and Dragons
+categoria: Arma Exótica
+descricao: Uma armadura mágica de teste atualizada.
+old_file: 1448298482.jpg
+id: 20
+dono: Global
+nome: Armadura de teste 2
+lv: 11
+custo: 90.000 PO
+bonusNaCa: +5
+destrezaMaxima: 3
+penalidadeNaPericia: -2
+falhaDeMagiaArcana: 10%
+deslocamentoMedio: 9m
+deslocamentoPequeno: 6m
+peso: 10Kg
+tipo: Armadura mágica
+sistema: Dungeons and Dragons
+categoria: Armadura Exótica
+descricao: Uma armadura mágica de teste atualizada.
+old_file: 1448300291.jpg

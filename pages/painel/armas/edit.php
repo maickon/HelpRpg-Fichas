@@ -65,82 +65,36 @@ $tag->br();
 				$form->input(['name' => 'dono', 'type' => 'hidden', 'value'=> $objeto[0]['dono']]);
 				helper_adm_label($objeto);
 				
-				$form->_col(4);
-					$form->label("Imagem");
-					$form->input(['name' => 'img', 'type' => 'file', 'class'=>'form-control', 'value'=> $objeto[0]['img']]);
-				$form->col_();
-					
-				$form->_col(4);
-					$form->label("Nome");
-					$form->input(['name' => 'nome', 'type' => 'text', 'class'=>'form-control', 'required'=>'true', 'value'=> $objeto[0]['nome']]);
-				$form->col_();
+				helper_form_input("Imagem", ['name' => 'img', 'type' => 'file', 'class'=>'form-control', 'value'=> $objeto[0]['img']]);
 
-				$form->_col(4);
-					$form->label("Level indicado");
-					$form->input(['name' => 'lv', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['lv']]);
-				$form->col_();
+				helper_form_input("Nome", ['name' => 'nome', 'type' => 'text', 'class'=>'form-control', 'required'=>'true', 'value'=> $objeto[0]['nome']]);
+
+				helper_form_input("Level indicado", ['name' => 'lv', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['lv']]);
+
+				helper_form_input("Dano", ['name' => 'dano', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['dano']]);
+
+				helper_form_input("Preço/Custo", ['name' => 'preco', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['preco']]);
+
+				helper_form_input("Decisivo", ['name' => 'decisivo', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['decisivo']]);
+
+				helper_form_input("Distância", ['name' => 'distancia', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['distancia']]);
+
+				helper_form_input("Peso", ['name' => 'peso', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['peso']]);
+
+				helper_form_select_options("Tipo", ['class'=>'form-control', 'name'=>'tipo'], ['value'=> $objeto[0]['tipo'], 'atq_distancia'=>'Armas de Ataque à Distância', 'leve'=>'Armas Leves - Corpo a Corpo', 'uma_mao'=>'Armas de Uma Mão - Corpo a Corpo', 'duas_maos'=>'Armas de Duas Mãos - Corpo a Corpo']);
+
+				helper_form_input("Iniciativa", ['name' => 'iniciativa', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['iniciativa']]);
+		
+				helper_form_input("Pente", ['name' => 'pente', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['pente']]);
+
+				helper_form_select_options("Sistema de Jogo", ['class'=>'form-control', 'name'=>'sistema'], ['value'=> $objeto[0]['sistema'],'ded'=>'Dungeons and Dragons', '3det'=>'3D&T', 'deamon'=>'Deamon']);
+
+				helper_form_select_options("Categoria", ['class'=>'form-control', 'name'=>'categoria'], ['value'=> $objeto[0]['categoria'], 'comum'=>'Arma Comum', 'exotica'=>'Arma Exótica', 'simples'=>'Arma Simples', 'tecnologica'=>'Arma Tecnológica']);
 				
-				$form->_col(4);
-					$form->label("Dano");
-					$form->input(['name' => 'dano', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['dano']]);
-				$form->col_();
+				helper_form_text_area("Descrição", ['name' => 'descricao', 'class'=>'form-control', 'rows'=>'5'], strip_tags($objeto[0]['descricao']));
+
+				helper_form_button_update_and_back(ROOTPATHURL.ARMASPATH);
 				
-				$form->_col(4);
-					$form->label("Preço/Custo");
-					$form->input(['name' => 'preco', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['preco']]);
-				$form->col_();
-				
-				$form->_col(4);
-					$form->label("Decisivo");
-					$form->input(['name' => 'decisivo', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['decisivo']]);
-				$form->col_();
-				
-				$form->_col(4);
-					$form->label("Distância");
-					$form->input(['name' => 'distancia', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['distancia']]);
-				$form->col_();
-				
-				$form->_col(4);
-					$form->label("Peso");
-					$form->input(['name' => 'peso', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['peso']]);
-				$form->col_();
-				
-				$form->_col(4);
-					$form->label("Tipo");
-					$form->select(['class'=>'form-control', 'name'=>'tipo'], ['value'=> $objeto[0]['tipo'], 'atq_distancia'=>'Armas de Ataque à Distância', 'leve'=>'Armas Leves - Corpo a Corpo', 'uma_mao'=>'Armas de Uma Mão - Corpo a Corpo', 'duas_maos'=>'Armas de Duas Mãos - Corpo a Corpo']);
-				$form->col_();
-				
-				$form->_col(4);
-					$form->label("Iniciativa");
-					$form->input(['name' => 'iniciativa', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['iniciativa']]);
-				$form->col_();
-				
-				$form->_col(4);
-					$form->label("Pente");
-					$form->input(['name' => 'pente', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['pente']]);
-				$form->col_();
-				
-				$form->_col(4);
-					$form->label("Sistema de Jogo");
-					$form->select(['class'=>'form-control', 'name'=>'sistema'], ['value'=> $objeto[0]['sistema'],'ded'=>'Dungeons and Dragons', '3det'=>'3D&T', 'deamon'=>'Deamon']);
-				$form->col_();
-				
-				$form->_col(4);
-					$form->label("Categoria");
-					$form->select(['class'=>'form-control', 'name'=>'categoria'], ['value'=> $objeto[0]['categoria'], 'comum'=>'Arma Comum', 'exotica'=>'Arma Exótica', 'simples'=>'Arma Simples', 'tecnologica'=>'Arma Tecnológica']);
-				$form->col_();
-				
-				$form->_col(12);
-					$form->label("Descrição");
-					$form->area(['name' => 'descricao', 'class'=>'form-control', 'rows'=>'5'], strip_tags($objeto[0]['descricao']));
-				$form->col_();
-				
-				$form->_col(4);
-					$form->br();
-					$form->link_button("Voltar", ROOTPATHURL.ARMASPATH);
-					echo "  ";
-					$form->input_submit(['class'=>'btn btn-default', 'type'=>'submit', 'name'=>'action', 'value'=>'Atualizar']);
-				$form->col_();
 			$form->form_();
 			
 		$form->_container();

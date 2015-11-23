@@ -1,5 +1,6 @@
 <?php
 require_once '../../../header.php';
+require_once '../helper.php';
 
 global $tag, $form, $s, $parametros;
 $s->restricted_access();
@@ -37,43 +38,21 @@ $tag->br();
 			
 				$current_user = $s->get_session('nome');
 				$form->input(['name' => 'dono', 'type' => 'hidden', 'value'=> $current_user]);
-					
-				$form->_col(4);
-					$form->label("Nome");
-					$form->input(['name' => 'nome', 'type' => 'text', 'class'=>'form-control', 'required'=>'true']);
-				$form->col_();
 				
-				$form->_col(4);
-					$form->label("Categoria");
-					$form->input(['name' => 'categoria', 'type' => 'text', 'class'=>'form-control']);
-				$form->col_();
-				
-				$form->_col(4);
-					$form->label("Habilidade chave");
-					$form->input(['name' => 'habilidade_chave', 'type' => 'text', 'class'=>'form-control']);
-				$form->col_();
-					
-				$form->_col(4);
-					$form->label("Classe");
-					$form->input(['name' => 'classe_favorecida', 'type' => 'text', 'class'=>'form-control', 'required'=>'true']);
-				$form->col_();
-				
-				$form->_col(4);
-					$form->label("Sistema de Jogo");
-					$form->select(['class'=>'form-control', 'name'=>'sistema'], ['ded'=>'Dungeons and Dragons', '3det'=>'3D&T', 'deamon'=>'Deamon']);
-				$form->col_();
-			
-				$form->_col(12);
-					$form->label("Descrição");
-					$form->area(['name' => 'descricao', 'class'=>'form-control', 'rows'=>'5']);
-				$form->col_();
-				
-				$form->_col(4);
-					$form->br();
-					$form->link_button("Voltar", ROOTPATHURL.PERICIASPATH);
-					echo "  ";
-					$form->input_submit(['class'=>'btn btn-default', 'type'=>'submit', 'name'=>'action', 'value'=>'Cadastrar']);
-				$form->col_();
+				helper_form_input("Nome", ['name' => 'nome', 'type' => 'text', 'class'=>'form-control', 'required'=>'true']);
+
+				helper_form_input("Categoria", ['name' => 'categoria', 'type' => 'text', 'class'=>'form-control']);
+
+				helper_form_input("Habilidade chave", ['name' => 'habilidade_chave', 'type' => 'text', 'class'=>'form-control']);
+
+				helper_form_input("Classe", ['name' => 'classe_favorecida', 'type' => 'text', 'class'=>'form-control', 'required'=>'true']);
+
+				helper_form_select_options_sistema();
+
+				helper_form_text_field_descricao();
+
+				helper_form_button_submit_and_back(ROOTPATHURL.PERICIASPATH);
+
 			$form->form_();
 			
 		$form->_container();

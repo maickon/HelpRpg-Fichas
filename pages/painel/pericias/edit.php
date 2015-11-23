@@ -56,42 +56,20 @@ $tag->br();
 				
 				helper_adm_label($objeto);
 				
-				$form->_col(4);
-					$form->label("Nome");
-					$form->input(['name' => 'nome', 'type' => 'text', 'class'=>'form-control', 'required'=>'true', 'value'=> $objeto[0]['nome']]);
-				$form->col_();
+				helper_form_input("Nome", ['name' => 'nome', 'type' => 'text', 'class'=>'form-control', 'required'=>'true', 'value'=> $objeto[0]['nome']]);
 
-				$form->_col(4);
-					$form->label("Categoria");
-					$form->input(['name' => 'categoria', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['categoria']]);
-				$form->col_();
+				helper_form_input("Categoria", ['name' => 'categoria', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['categoria']]);
+
+				helper_form_input("Habilidade chave", ['name' => 'habilidade_chave', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['habilidade_chave']]);
+
+				helper_form_input("Classe", ['name' => 'classe_favorecida', 'type' => 'text', 'class'=>'form-control', 'required'=>'true', 'value'=> $objeto[0]['classe_favorecida']]);
 				
-				$form->_col(4);
-					$form->label("Habilidade chave");
-					$form->input(['name' => 'habilidade_chave', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['habilidade_chave']]);
-				$form->col_();
+				helper_form_select_options("Sistema de Jogo", ['class'=>'form-control', 'name'=>'sistema'], ['value'=> $objeto[0]['sistema'],'ded'=>'Dungeons and Dragons', '3det'=>'3D&T', 'deamon'=>'Deamon']);
 				
-				$form->_col(4);
-					$form->label("Classe");
-					$form->input(['name' => 'classe_favorecida', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['classe_favorecida']]);
-				$form->col_();
-				
-				$form->_col(4);
-					$form->label("Sistema de Jogo");
-					$form->select(['class'=>'form-control', 'name'=>'sistema'], ['value'=> $objeto[0]['sistema'],'ded'=>'Dungeons and Dragons', '3det'=>'3D&T', 'deamon'=>'Deamon']);
-				$form->col_();
-				
-				$form->_col(12);
-					$form->label("Descrição");
-					$form->area(['name' => 'descricao', 'class'=>'form-control', 'rows'=>'5'], strip_tags($objeto[0]['descricao']));
-				$form->col_();
-				
-				$form->_col(4);
-					$form->br();
-					$form->link_button("Voltar", ROOTPATHURL.PERICIASPATH);
-					echo "  ";
-					$form->input_submit(['class'=>'btn btn-default', 'type'=>'submit', 'name'=>'action', 'value'=>'Atualizar']);
-				$form->col_();
+				helper_form_text_area("Descrição", ['name' => 'descricao', 'class'=>'form-control', 'rows'=>'5'], strip_tags($objeto[0]['descricao']));
+			
+				helper_form_button_update_and_back(ROOTPATHURL.PERICIASPATH);
+	
 			$form->form_();
 			
 		$form->_container();

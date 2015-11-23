@@ -63,57 +63,26 @@ $form->_row();
 				$form->col_();
 			endfor;
 			
-			$form->_col(3);
-				$form->label("Imagem");
-				$form->input(['name' => 'img', 'type' => 'file', 'class'=>'form-control']);
-			$form->col_();
-		
-			$form->_col(6);
-				$form->label("Ataque Total");
-				$form->area(['name' => 'ataque', 'class'=>'form-control', 'rows'=>'5']);
-			$form->col_();
-			
-			$form->_col(6);
-				$form->label("Talentos");
-				$form->area(['name' => 'talentos', 'class'=>'form-control', 'rows'=>'5']);
-			$form->col_();
-			
-			$form->_col(6);
-				$form->label("Perícias");
-				$form->area(['name' => 'pericias', 'class'=>'form-control', 'rows'=>'5']);
-			$form->col_();
-			
-			$form->_col(6);
-				$form->label("Magias");
-				$form->area(['name' => 'magias', 'class'=>'form-control', 'rows'=>'5']);
-			$form->col_();
-			
-			$form->_col(6);
-				$form->label("História");
-				$form->area(['name' => 'descricao', 'class'=>'form-control', 'rows'=>'5']);
-			$form->col_();
-			
-			$form->_col(6);
-				$form->label("Equipamentos");
-				$form->area(['name' => 'equipamentos', 'class'=>'form-control', 'rows'=>'5']);
-			$form->col_();
-				
-			$form->_col(6);
-				$form->label("Habilidades especiais");
-				$form->area(['name' => 'habilidades_especiais', 'class'=>'form-control', 'rows'=>'5']);
-			$form->col_();
-			
-			$form->_col(6);
-				$form->label("Outros");
-				$form->area(['name' => 'outros', 'class'=>'form-control', 'rows'=>'5']);
-			$form->col_();
-			
-			$form->_col(4);
-				$form->br();
-				$form->link_button("Voltar", ROOTPATHURL.TALENTOSPATH);
-				echo "  ";
-				$form->input_submit(['class'=>'btn btn-default', 'type'=>'submit', 'name'=>'action', 'value'=>'Cadastrar']);
-			$form->col_();
+			helper_form_input("Imagem", ['name' => 'img', 'type' => 'file', 'class'=>'form-control'], 3);
+
+			helper_form_text_area("Ataque Total", ['name' => 'ataque', 'class'=>'form-control', 'rows'=>'5'], '', 6);
+
+			helper_form_text_area("Talentos", ['name' => 'talentos', 'class'=>'form-control', 'rows'=>'5'], '', 6);
+
+			helper_form_text_area("Perícias", ['name' => 'pericias', 'class'=>'form-control', 'rows'=>'5'], '', 6);
+
+			helper_form_text_area("Magias", ['name' => 'magias', 'class'=>'form-control', 'rows'=>'5'], '', 6);
+
+			helper_form_text_area("História", ['name' => 'descricao', 'class'=>'form-control', 'rows'=>'5'], '', 6);
+
+			helper_form_text_area("Equipamentos", ['name' => 'equipamentos', 'class'=>'form-control', 'rows'=>'5'], '', 6);
+
+			helper_form_text_area("Habilidades especiais", ['name' => 'habilidades_especiais', 'class'=>'form-control', 'rows'=>'5'], '', 6);
+
+			helper_form_text_area("Outros", ['name' => 'outros', 'class'=>'form-control', 'rows'=>'5'], '', 6);
+
+			helper_form_button_submit_and_back(ROOTPATHURL.TALENTOSPATH);
+	
 		$form->form_();
 		
 	$form->_container();

@@ -6,3 +6,11 @@ habilidade_chave: DES
 classe_favorecida: monge
 sistema: Dungeons and Dragons
 descricao: Você se move acrobaticamente em todos os lugares.
+id: 3
+dono: Global
+nome: Acrobacia
+categoria: habilidade corporal
+habilidade_chave: destreza
+classe_favorecida: monge
+sistema: Dungeons and Dragons
+descricao: Você se move acrobaticamente atualizado.

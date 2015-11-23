@@ -63,82 +63,38 @@ $tag->br();
 				$form->input(['name' => 'dono', 'type' => 'hidden', 'value'=> $armadura[0]['dono']]);
 				helper_adm_label($armadura);
 				
-				$form->_col(4);
-					$form->label("Imagem");
-					$form->input(['name' => 'img', 'type' => 'file', 'class'=>'form-control', 'value'=> $armadura[0]['img']]);
-				$form->col_();
-					
-				$form->_col(4);
-					$form->label("Nome");
-					$form->input(['name' => 'nome', 'type' => 'text', 'class'=>'form-control', 'required'=>'true', 'value'=> $armadura[0]['nome']]);
-				$form->col_();
+				helper_form_input("Imagem", ['name' => 'img', 'type' => 'file', 'class'=>'form-control', 'value'=> $armadura[0]['img']]);
 				
-				$form->_col(4);
-					$form->label("Preço/Custo");
-					$form->input(['name' => 'custo', 'type' => 'text', 'class'=>'form-control', 'value'=> $armadura[0]['custo']]);
-				$form->col_();
+				helper_form_input("Nome", ['name' => 'nome', 'type' => 'text', 'class'=>'form-control', 'required'=>'true', 'value'=> $armadura[0]['nome']]);
 				
-				$form->_col(4);
-					$form->label("Bônus na CA/Defesa");
-					$form->input(['name' => 'bonusNaCa', 'type' => 'text', 'class'=>'form-control', 'value'=> $armadura[0]['bonusNaCa']]);
-				$form->col_();
+				helper_form_input("Lv", ['name' => 'lv', 'type' => 'text', 'class'=>'form-control', 'required'=>'true', 'value'=> $armadura[0]['lv']]);
+
+				helper_form_input("Preço/Custo", ['name' => 'custo', 'type' => 'text', 'class'=>'form-control', 'value'=> $armadura[0]['custo']]);			
+			
+				helper_form_input("Bônus na CA/Defesa", ['name' => 'bonusNaCa', 'type' => 'text', 'class'=>'form-control', 'value'=> $armadura[0]['bonusNaCa']]);
+
+				helper_form_input("Destreza máxima", ['name' => 'destrezaMaxima', 'type' => 'text', 'class'=>'form-control', 'value'=> $armadura[0]['destrezaMaxima']]);
+
+				helper_form_input("Penalidade em perícia", ['name' => 'penalidadeNaPericia', 'type' => 'text', 'class'=>'form-control', 'value'=> $armadura[0]['penalidadeNaPericia']]);
+
+				helper_form_input("Falha de magia arcana", ['name' => 'falhaDeMagiaArcana', 'type' => 'text', 'class'=>'form-control', 'value'=> $armadura[0]['falhaDeMagiaArcana']]);
+
+				helper_form_input("Deslocamento médio", ['name' => 'deslocamentoMedio', 'type' => 'text', 'class'=>'form-control', 'value'=> $armadura[0]['deslocamentoMedio']]);
+
+				helper_form_input("Deslocamento pequeno", ['name' => 'deslocamentoPequeno', 'type' => 'text', 'class'=>'form-control', 'value'=> $armadura[0]['deslocamentoPequeno']]);
+
+				helper_form_input("Peso", ['name' => 'peso', 'type' => 'text', 'class'=>'form-control', 'value'=> $armadura[0]['peso']]);
+
+				helper_form_select_options("Tipo", ['class'=>'form-control', 'name'=>'tipo'], ['value'=> $armadura[0]['tipo'], 'simples'=>'Armadura simples', 'magica'=>'Armadura mágica']);
+
+				helper_form_select_options("Sistema de Jogo", ['class'=>'form-control', 'name'=>'sistema'], ['value'=> $armadura[0]['sistema'],'ded'=>'Dungeons and Dragons', '3det'=>'3D&T', 'deamon'=>'Deamon']);
+
+				helper_form_select_options("Categoria", ['class'=>'form-control', 'name'=>'categoria'], ['value'=> $armadura[0]['categoria'], 'leve'=>'Armadura leve', 'media'=>'Armadura Média', 'pesada'=>'Armadura Pesada', 'exotica'=>'Armadura Exótica', 'tecnologica'=>'Armadura Tecnológica']);				
 				
-				$form->_col(4);
-					$form->label("Destreza máxima");
-					$form->input(['name' => 'destrezaMaxima', 'type' => 'text', 'class'=>'form-control', 'value'=> $armadura[0]['destrezaMaxima']]);
-				$form->col_();
+				helper_form_text_area("Descrição", ['name' => 'descricao', 'class'=>'form-control', 'rows'=>'5'], strip_tags($armadura[0]['descricao']) );
 				
-				$form->_col(4);
-					$form->label("Penalidade perícia");
-					$form->input(['name' => 'penalidadeNaPericia', 'type' => 'text', 'class'=>'form-control', 'value'=> $armadura[0]['penalidadeNaPericia']]);
-				$form->col_();
+				helper_form_button_update_and_back(ROOTPATHURL.ARMADURASPATH);
 				
-				$form->_col(4);
-					$form->label("Falha de magia arcana");
-					$form->input(['name' => 'falhaDeMagiaArcana', 'type' => 'text', 'class'=>'form-control', 'value'=> $armadura[0]['falhaDeMagiaArcana']]);
-				$form->col_();
-				
-				$form->_col(4);
-					$form->label("Deslocamento médio");
-					$form->input(['name' => 'deslocamentoMedio', 'type' => 'text', 'class'=>'form-control', 'value'=> $armadura[0]['deslocamentoMedio']]);
-				$form->col_();
-				
-				$form->_col(4);
-					$form->label("Deslocamento pequeno");
-					$form->input(['name' => 'deslocamentoPequeno', 'type' => 'text', 'class'=>'form-control', 'value'=> $armadura[0]['deslocamentoPequeno']]);
-				$form->col_();
-				
-				$form->_col(4);
-					$form->label("Peso");
-					$form->input(['name' => 'peso', 'type' => 'text', 'class'=>'form-control', 'value'=> $armadura[0]['peso']]);
-				$form->col_();
-				
-				$form->_col(4);
-					$form->label("Tipo");
-					$form->select(['class'=>'form-control', 'name'=>'tipo'], ['value'=> $armadura[0]['tipo'], 'simples'=>'Armadura simples', 'magica'=>'Armadura mágica']);
-				$form->col_();
-				
-				$form->_col(4);
-					$form->label("Sistema de Jogo");
-					$form->select(['class'=>'form-control', 'name'=>'sistema'], ['value'=> $armadura[0]['sistema'],'ded'=>'Dungeons and Dragons', '3det'=>'3D&T', 'deamon'=>'Deamon']);
-				$form->col_();
-				
-				$form->_col(4);
-					$form->label("Categoria");
-					$form->select(['class'=>'form-control', 'name'=>'categoria'], ['value'=> $armadura[0]['categoria'], 'comum'=>'Arma Comum', 'exotica'=>'Arma Exótica', 'simples'=>'Arma Simples', 'tecnologica'=>'Arma Tecnológica']);
-				$form->col_();
-				
-				$form->_col(12);
-					$form->label("Descrição");
-					$form->area(['name' => 'descricao', 'class'=>'form-control', 'rows'=>'5'], strip_tags($armadura[0]['descricao']));
-				$form->col_();
-				
-				$form->_col(4);
-					$form->br();
-					$form->link_button("Voltar", ROOTPATHURL.ARMADURASPATH);
-					echo "  ";
-					$form->input_submit(['class'=>'btn btn-default', 'type'=>'submit', 'name'=>'action', 'value'=>'Atualizar']);
-				$form->col_();
 			$form->form_();
 			
 		$form->_container();

@@ -255,8 +255,10 @@ function helper_show_armaduras($armadura){
 	global $tag;
 	$attr = [
 		'<b>Preço:</b>' 							=> 'preco', 
+		'<b>Categoria:</b>' 						=> 'categoria', 
+		'<b>Tipo de armadura:</b>' 					=> 'tipo', 
 		'<b>Bônus de defesa/CA:</b>' 				=> 'bonusNaCa', 
-		'<b>Comporta até:</b>' 						=> 'destrezaMaxima',
+		'<b>Comporta destreza até:</b>' 			=> 'destrezaMaxima',
 		'<b>Chance de falha de Magia Arcana:</b>'	=> 'falhaDeMagiaArcana', 
 		'<b>Deslocamento médio:</b>' 				=> 'deslocamentoMedio',
 		'<b>Deslocamento pequeno:</b>' 				=> 'deslocamentoPequeno', 
@@ -426,15 +428,15 @@ function helper_form_input($name, $parameters, $size = 4){
 	$form->col_();
 }
 
-function helper_form_select_options($name, $parameters, $options){
+function helper_form_select_options($name, $parameters, $options, $size = 4){
 	global $tag, $form;
-	$form->_col(4);
+	$form->_col($size);
 		$form->label($name);
 		$form->select($parameters, $options);
 	$form->col_();	
 }
 
-function helper_form_text_field($name, $parameters, $options, $size = 12){
+function helper_form_text_area($name, $parameters, $options = '', $size = 12){
 	global $tag, $form;
 	$form->_col($size);
 		$form->label($name);
@@ -453,18 +455,18 @@ function helper_form_text_field($name, $parameters, $options, $size = 12){
  * Formulários - especifico para o help rpg
  */
 
-function helper_form_select_options_arma_tipo($size = 4){
-	global $tag, $form;
-	$form->_col($size);
-		$form->label("Tipo");
-		$form->select(['class'=>'form-control', 'name'=>'categoria'], ['comum'=>'Arma Comum', 'exotica'=>'Arma Exótica', 'simples'=>'Arma Simples', 'tecnologica'=>'Arma Tecnológica']);
-	$form->col_();
-}
-
 function helper_form_select_options_categoria($size = 4){
 	global $tag, $form;
 	$form->_col($size);
 		$form->label("Categoria");
+		$form->select(['class'=>'form-control', 'name'=>'categoria'], ['comum'=>'Arma Comum', 'exotica'=>'Arma Exótica', 'simples'=>'Arma Simples', 'tecnologica'=>'Arma Tecnológica']);
+	$form->col_();
+}
+
+function helper_form_select_options_arma_tipo($size = 4){
+	global $tag, $form;
+	$form->_col($size);
+		$form->label("Tipo");
 		$form->select(['class'=>'form-control', 'name'=>'tipo'], ['atq_distancia'=>'Armas de Ataque à Distância', 'leve'=>'Armas Leves - Corpo a Corpo', 'uma_mao'=>'Armas de Uma Mão - Corpo a Corpo', 'duas_maos'=>'Armas de Duas Mãos - Corpo a Corpo']);
 	$form->col_();
 }

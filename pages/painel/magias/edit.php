@@ -64,87 +64,38 @@ $tag->br();
 				$form->input(['name' => 'dono', 'type' => 'hidden', 'value'=> $objeto[0]['dono']]);
 				helper_adm_label($objeto);
 				
-				$form->_col(4);
-					$form->label("Imagem");
-					$form->input(['name' => 'img', 'type' => 'file', 'class'=>'form-control']);
-				$form->col_();
-				
-				$form->_col(4);
-					$form->label("Nome");
-					$form->input(['name' => 'nome', 'type' => 'text', 'class'=>'form-control', 'required'=>'true', 'value'=> $objeto[0]['nome']]);
-				$form->col_();
+				helper_form_input("Imagem", ['name' => 'img', 'type' => 'file', 'class'=>'form-control']);
 
-				$form->_col(4);
-					$form->label("Level (Círculo)");
-					$form->input(['name' => 'lv', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['lv']]);
-				$form->col_();
+				helper_form_input("Nome", ['name' => 'nome', 'type' => 'text', 'class'=>'form-control', 'required'=>'true', 'value'=> $objeto[0]['nome']]);
+
+				helper_form_input("Lv (Círculo)", ['name' => 'circulo', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['circulo']]);
+
+				helper_form_input("classe", ['name' => 'classe', 'type' => 'text', 'class'=>'form-control', 'required'=>'true', 'value'=> $objeto[0]['classe']]);
+
+				helper_form_select_options("Sistema de Jogo",['class'=>'form-control', 'name'=>'sistema'], ['value'=> $objeto[0]['sistema'],'ded'=>'Dungeons and Dragons', '3det'=>'3D&T', 'deamon'=>'Deamon']);
+
+				helper_form_input("Componente", ['name' => 'componente', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['componente']]);
+
+				helper_form_input("Tempo de execução", ['name' => 'tempo_execucao', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['tempo_execucao']]);
+
+				helper_form_input("Alcance", ['name' => 'alcance', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['alcance']]);
+
+				helper_form_input("Área", ['name' => 'area', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['area']]);
+
+				helper_form_input("Dano", ['name' => 'dano', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['dano']]);
+
+				helper_form_input("Alvo", ['name' => 'alvo', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['alvo']]);
+
+				helper_form_input("Duração", ['name' => 'duracao', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['duracao']]);
+
+				helper_form_input("Teste de resistência", ['name' => 'teste_resistencia', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['teste_resistencia']]);
+
+				helper_form_input("Resistência a magia", ['name' => 'resistencia_magia', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['resistencia_magia']]);
+
+				helper_form_text_area("Descrição", ['name' => 'descricao', 'class'=>'form-control', 'rows'=>'5'], strip_tags($objeto[0]['descricao']));
+
+				helper_form_button_update_and_back(ROOTPATHURL.MAGIASPATH);
 				
-				$form->_col(4);
-					$form->label("Classe");
-					$form->input(['name' => 'classe', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['classe']]);
-				$form->col_();
-				
-				$form->_col(4);
-					$form->label("Sistema de Jogo");
-					$form->select(['class'=>'form-control', 'name'=>'sistema'], ['value'=> $objeto[0]['sistema'],'ded'=>'Dungeons and Dragons', '3det'=>'3D&T', 'deamon'=>'Deamon']);
-				$form->col_();
-				
-				$form->_col(4);
-					$form->label("Componente");
-					$form->input(['name' => 'componente', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['componente']]);
-				$form->col_();
-				
-				$form->_col(4);
-					$form->label("Tempo de execução");
-					$form->input(['name' => 'tempo_execucao', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['tempo_execucao']]);
-				$form->col_();
-				
-				$form->_col(4);
-					$form->label("Alcance");
-					$form->input(['name' => 'alcance', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['alcance']]);
-				$form->col_();
-				
-				$form->_col(4);
-					$form->label("Área");
-					$form->input(['name' => 'area', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['area']]);
-				$form->col_();
-				
-				$form->_col(4);
-					$form->label("Dano");
-					$form->input(['name' => 'dano', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['dano']]);
-				$form->col_();
-				
-				$form->_col(4);
-					$form->label("Alvo");
-					$form->input(['name' => 'alvo', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['alvo']]);
-				$form->col_();
-				
-				$form->_col(4);
-					$form->label("Duração");
-					$form->input(['name' => 'duracao', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['duracao']]);
-				$form->col_();
-				
-				$form->_col(4);
-					$form->label("Teste de resistência");
-					$form->input(['name' => 'teste_resistencia', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['teste_resistencia']]);
-				$form->col_();
-				
-				$form->_col(4);
-					$form->label("Resistência a magia");
-					$form->input(['name' => 'resistencia_magia', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['resistencia_magia']]);
-				$form->col_();
-				
-				$form->_col(12);
-					$form->label("Descrição");
-					$form->area(['name' => 'descricao', 'class'=>'form-control', 'rows'=>'5'], strip_tags($objeto[0]['descricao']));
-				$form->col_();
-				
-				$form->_col(4);
-					$form->br();
-					$form->link_button("Voltar", ROOTPATHURL.MAGIASPATH);
-					echo "  ";
-					$form->input_submit(['class'=>'btn btn-default', 'type'=>'submit', 'name'=>'action', 'value'=>'Atualizar']);
-				$form->col_();
 			$form->form_();
 			
 		$form->_container();

@@ -1,14 +1,14 @@
 <?php
 /**
- * @project PainelAdm
+ * @project Help rpg
  * @author Maickon Rangel
  * @date 02/07/2015
  * @contact maickon4developers@gmail.com
  * @version 1.0
- * @link https://github.com/painelAdm
+ * @link https://github.com/helprpg-fichas
  * 
  * require_once 'config.php';
- * Chama o arquivo de configura��o
+ * Chama o arquivo de configuracao
  **/
 
 function config(){
@@ -65,12 +65,12 @@ config();
 
 /**
  * function __autoload()
- * Chama um arquivo de classe de forma autom�tica
- * no momento em que um objeto � instanciado
+ * Chama um arquivo de classe de forma automatica
+ * no momento em que um objeto e instanciado
  * @class_name = nome do arquivo de classe. Este nome tem
  * que ser igual ao nome da classe.
  * CLASSPATH = Constante definida no arquivo config.php. Esta constante
- * cont�m o nome da pasta onde se encontram as classes.
+ * contem o nome da pasta onde se encontram as classes.
  */
 function __autoload($class_name){
 	//lista de diretorios dentro de class/
@@ -97,15 +97,15 @@ function __autoload($class_name){
 	//Caso out seja 0 significa que a classe nao foi encontrada na lista de diretorios 
 	//de $class_dir, dessa forma procuramos a classe um diretorio antes.
 	if($out == 0):
-		//se o arquivo n�o existe, provavelmene ele n�o est� sendo carregado da pasta raiz
-		//por isso ser� necess�rio voltar um diret�rio, por isso os ../
+		//se o arquivo nao existe, provavelmene ele nao esta sendo carregado da pasta raiz
+		//por isso sera necessario voltar um diretorio, por isso os ../
 		config();
-		//verifica se o arquivo existe voltando um diret�rio
+		//verifica se o arquivo existe voltando um diretorio
 		if(file_exists('../'.CLASSPATH.$class_name.'.class.php')):
 			//se existe carrega
 			require_once '../'.CLASSPATH.$class_name.'.class.php';
 		else:
-			//se n�o conseguir carregar, exibe uma mensagem de erro
+			//se nao conseguir carregar, exibe uma mensagem de erro
 			echo '<br />';
 			echo '<div class="alert alert-danger" role="alert">';
 				echo 'Arquivo de classe não encontrado, verifique se a pasta da classe fui incluida na variável <b>$class_dir</b> dentro do arquivo <b>init.php</b>';
