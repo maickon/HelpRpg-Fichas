@@ -25,20 +25,19 @@ $form->_row();
 		
 		$tag->p();
 			$tag->imprime("
-				Por enquanto esta versão que vocês estão acessando eu a tornei disponível para que possam 
-				estar acompanhando a evolução do site. Além disso vocês já têm uma prévia sobre o que está 
-				por vir. Eu não divulguei o link na página oficial do Facebook porque eu ainda não acho 
-				interessante sair divulgando algo que ainda não está pronto.");
+				O Help RPG Fichas é um sistema que permite que jogadores de RPG armazenem suas fichas de forma segura e online. 
+				O site ainda está em desenvolvimento, o até onde se tem feito já é possível logar e fazer alguns cadastros de teste 
+				para ver como o sistema funciona.");
 		$tag->p;
 		$tag->p();
 			$tag->imprime("
-				Portanto esta explicação só está aqui para caso alguém encontre este site por acaso. Para que você
-				não fique frustrado tentando acessar as funcionalidades que ainda não existem, já estou avisando de antemão.");
+				Aqueles que desejarem dar opiniões é só enviar um email para <b>helprpg.br@gmail.com</b>. Na medida do possível eu vou tentando adicionar que 
+				for de melhor para o site.");
 		$tag->p;
 
 		$tag->p();
 			$tag->imprime("
-				Os dados aqui presentes por enquanto são fictícios, assim como suas funcionalidades. Mas isso em breve mudará!<br />
+				Os dados aqui presentes por enquanto são fictícios, a base de dados oficial será cadastrada quando o sitema estiver 100%.<br />
 				Att,<br />
 				Maickon Rangel - Criador do Help Rpg");
 		$tag->p;

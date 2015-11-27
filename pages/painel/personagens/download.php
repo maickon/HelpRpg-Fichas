@@ -74,9 +74,14 @@ $pdf->Cell(190, 10, 'Ficha do Personagem', 1, 1,'C');
 $pdf->SetFont('Arial','',8);
 $pdf->ln();
 
-$pdf->Cell(10, 5, 'FOR', 1, 0,'C');
-$pdf->Cell(10, 5, $unserialize_personagem['forca'], 1, 0,'C');
-$pdf->Cell(10, 5, (($unserialize_personagem['forca']-10)/2), 1, 0,'C');
+$pdf->SetFont('Arial','B',14);
+$pdf->Cell(45, 5, $objeto[0]['nome'], 0, 0,'L');
+$pdf->SetFont('Arial','',10);
+$pdf->Cell(40, 5, '(ID: '.$objeto[0]['id'].' Criador '.$objeto[0]['dono'].')', 0, 1,'L');
+$pdf->SetFont('Arial','B',9);
+$pdf->Cell(40, 5, utf8_decode('Humano, de '.$objeto[0]['lv'].'° nível '), 0, 1,'L');
+$pdf->Cell(40, 5, utf8_decode('Humanóide ('.$unserialize_personagem['tamanho'].')'), 0, 0,'L');
+$pdf->Cell(40, 5, utf8_decode('Dado de vida ('.$unserialize_personagem['tamanho'].')'), 0, 0,'L');
 
 $pdf->Image(ROOTPATH.PERSONAGEMIMGPATH.$objeto[0]['img'],100,25,-152);
 $pdf->Output();
