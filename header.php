@@ -50,6 +50,9 @@ $tag->html('lang="pt-br"');
 		//<!-- index core CSS -->
 		$tag->link('href="'.ROOTPATHURL.CSSPATH.'index.css" rel="stylesheet"');
 		
+		$tag->script('src="'.ROOTPATHURL.JSPATH.'jquery.min.js"');
+		$tag->script;
+		
 		$tag->script('src="'.ROOTPATHURL.JSPATH.'datatables.min.js"');
 		$tag->script;
 

@@ -49,7 +49,7 @@ function helper_componentes_buttons_view($modulo, $id, $off = false){
 	endif;
 	
 	$form->_col(1);
-		$tag->a('href="'.ROOTPATHURL.$modulos_path[$modulo].'download.php?='.$_GET['id'].'" class="btn btn-success"');
+		$tag->a('href="'.ROOTPATHURL.$modulos_path[$modulo].'download.php?id='.$_GET['id'].'" class="btn btn-success"');
 			$tag->imprime(DOWNLOAD);
 		$tag->a;
 	$form->col_();
@@ -59,6 +59,25 @@ function helper_componentes_buttons_view($modulo, $id, $off = false){
 			$tag->imprime(BACK);
 		$tag->a;
 	$form->col_();
+}
+
+function helper_check_value($objeto, $key){
+	global $unserialize_personagem;
+	if($objeto == null):
+		return '';
+	elseif(array_key_exists($key, $objeto)):
+		return $objeto[$key];
+	else:
+		return $unserialize_personagem[$key];
+	endif;	
+}
+
+function helper_check_value_presence($value){
+	if(empty($value)):
+		return '';
+	else:
+		return $value;
+	endif;
 }
 
 function helper_check_permitions($dono){
@@ -152,7 +171,14 @@ function helper_modal_alert_confirm(){
 	//fim do display de alerte
 }
 
-function tabs($options){
+function helper_check_array_key($array, $position){
+	foreach($array as $key => $value):
+		if($value == $position)
+			return $key;
+	endforeach;
+}
+
+function helper_tabs($options){
 	global $form, $tag;
 	$form->_ul(['id' => 'myTabs','class' => 'nav nav-tabs', 'role' => 'tablist']);
 		$i = 0;
@@ -169,21 +195,34 @@ function tabs($options){
 	$form->ul_();
 }
 
-function panes($params){
+function helper_panes($params){
 	global $form, $tag;
-	$tag->div('class="tab-content"');
+	$tag->div('id="myTabContent" class="tab-content"');
 		foreach($params as $key => $value):
 			if($value['active'] == true):
-				$tag->div('role="tabpanel" class="tab-pane active" id="'.$value['id'].'"');
+				$tag->div('role="tabpanel" class="tab-pane fade" aria-labelledby="home-tab" id="'.$value['id'].'"');
 					require_once $value['require'];
 				$tag->div;
 			else:
-				$tag->div('role="tabpanel" class="tab-pane" id="'.$value['id'].'"');
+				$tag->div('role="tabpanel" class="tab-pane fade active in" aria-labelledby="profile-tab" id="'.$value['id'].'"');
 					require_once $value['require'];
 				$tag->div;
 			endif;
 		endforeach;
 	$tag->div;
+}
+
+function helper_form_pages($system){
+	switch($system):
+		case 'ded': require_once 'form/d20-ded.php';
+		break;
+		
+		case 'daemon': require_once 'form/daemon.php';
+		break;
+		
+		case '3det': require_once 'form/3det.php';
+		break;
+	endswitch;
 }
 
 function helper_params_personagem($params){
@@ -203,9 +242,25 @@ function helper_params_personagem($params){
 	return $_REQUEST;
 }
 
-function helper_show_personagens($personagem){
+function helper_show_personagens_ded($personagem){
 	global $tag;
 	$unserialize_params = unserialize($personagem['dados']);
+	
+	$habilidades = helper_habilidades_ded_rpg([
+												["For", helper_check_value_presence($unserialize_params['forca'])], 
+												["Des", $unserialize_params['destreza']],
+												["Con", $unserialize_params['constituicao']],
+												["Int", $unserialize_params['inteligencia']], 
+												["Sab", $unserialize_params['sabedoria']], 
+												["Car", $unserialize_params['carisma']]
+											  ]);
+	
+	$testes_resistencia = helper_testes_de_resistencia_ded_rpg([
+															  	["Fortitude ",$unserialize_params['for']], 
+																["Reflexos ", $unserialize_params['refl']], 
+																["Vontade ", $unserialize_params['vont']]
+															  ]);
+	
 	//regra do modificador = subtrai 10 e divide por 2
 	$pvs = $personagem['lv']*($unserialize_params['constituicao']-10)/2;
 	$attr = [
@@ -215,20 +270,59 @@ function helper_show_personagens($personagem){
 		'<b>Classe de armadura:</b>' 	=> "{$unserialize_params['ca']}",
 		'<b>Ataque Total:</b>' 			=> "{$unserialize_params['ataque']}",
 		'<b>Ataque especial:</b>' 		=> "{$unserialize_params['habilidades_especiais']}",
-		'<b>Testes de resistência:</b>' => "{$unserialize_params['for']}, Refl {$unserialize_params['refl']}, Vont {$unserialize_params['vont']}",
-		'<b>Habilidades:</b>' 			=> "For {$unserialize_params['forca']}, Des {$unserialize_params['destreza']}, Con {$unserialize_params['constituicao']}, Int {$unserialize_params['inteligencia']}, Sab {$unserialize_params['sabedoria']}, Car {$unserialize_params['carisma']}",
-		'<b>Perícias:</b>' 				=> "{$unserialize_params['pericias']}",
+		'<b>Testes de resistência:</b>' => "{$testes_resistencia}",
+		'<b>Habilidades:</b>' 			=> "{$habilidades}",
+		'<b>Perícias:</b>' 				=>  helper_check_value_presence($unserialize_params['pericias']),
 		'<b>Talentos:</b>' 				=> "{$unserialize_params['talentos']}",
 		'<b>Tendencia:</b>' 			=> "{$unserialize_params['tendencia']}",
 		'<b>Equipamentos:</b>' 			=> "{$unserialize_params['equipamentos']}",
 		'<b>Magias:</b>' 				=> "{$unserialize_params['magias']}",
 		'<b>Habilidades especiais:</b>' => "{$unserialize_params['habilidades_especiais']}",
 		'<b>Outras coisas:</b>' 		=> "{$unserialize_params['outros']}",
-		'<b>História:</b>' 				=> "{$unserialize_params['descricao']}"
+		'<b>História:</b>' 				=> "{$unserialize_params['descricao']}",
 			];
 
 	helper_show_header_attr_personagem($personagem);
 	helper_show_body_attr_personagens($attr);
+}
+
+function helper_show_personagens_fate($personagem){
+	global $tag;
+	$unserialize_params = unserialize($personagem['dados']);
+	
+	$atitudes = helper_atitudes_fate_rpg([
+				["Cuidadose",$unserialize_params['cuidadoso']],
+				["Inteligente",$unserialize_params['inteligente']],
+				["Chamativo",$unserialize_params['chamativo']],
+				["Forte",$unserialize_params['forte']],
+				["Rápido",$unserialize_params['rapido']],
+				["Sorrateiro",$unserialize_params['sorrateiro']]
+			]);
+	
+	$attr = [
+		//FATE RPG
+		'<b>Atitudes:</b>' 				=> "{$atitudes}",
+		'<b>Conceito chave:</b>' 		=> "{$unserialize_params['aspecto_chave']}",
+		'<b>Complicação:</b>' 			=> "{$unserialize_params['aspecto_complicacao']}",
+		'<b>Refresh:</b>' 				=> "{$unserialize_params['refresh']}",
+		'<b>Pontos de Fate atuais:</b>' => "{$unserialize_params['fate']}",
+		'<b>Stress 1:</b>' 				=> "{$unserialize_params['stress1']}",
+		'<b>Stress 2:</b>' 				=> "{$unserialize_params['stress2']}",
+		'<b>Stress 3:</b>' 				=> "{$unserialize_params['stress3']}",
+		'<b>Consequência leve:</b>' 	=> "{$unserialize_params['consequencia_leve']}",
+		'<b>Consequência moderada:</b>' => "{$unserialize_params['consequencia_moderada']}",
+		'<b>Consequência severa:</b>' 	=> "{$unserialize_params['consequencia_severa']}",
+	];
+}
+
+function helper_show_rpg_system($rpg_system, $character){
+	switch($rpg_system):
+		case 'Dungeons and Dragons 3.5': helper_show_personagens_ded($character);
+		break;
+	
+		case 'FATE': helper_show_personagens_fate($character);
+		break;
+	endswitch;	
 }
 
 function helper_sow_artefatos($artefato){
@@ -415,6 +509,72 @@ function helper_prev_next($object, $id, $modulo){
 	$form->col_();
 }
 
+function helper_name_of_form_fie($name){
+	global $rpg_sistemas_arquivo_nome;
+	return $rpg_sistemas_arquivo_nome[$name];
+}
+
+function helper_new_line_in_form(){
+	global $form;
+	$form->_col(12);
+	$form->col_();
+}
+
+//D&D
+function helper_testes_de_resistencia_ded_rpg($testes){
+	$escala = '';
+	$str = '';
+	if(empty($testes[0][1])):
+		return '';
+	else:
+		for($i=0; $i<count($testes); $i++):
+			if($i == (count($testes)-1)):
+				$str .= "{$testes[$i][0]} ".$testes[$i][1];
+			else:
+				$str .= "{$testes[$i][0]} ".$testes[$i][1]. ", ";
+			endif;
+		endfor;
+	endif;
+	return $str;
+}
+
+function helper_habilidades_ded_rpg($habilidades){
+	$escala = '';
+	$str = '';
+	if(empty($habilidades[0][1])):
+		return '';
+	else:
+		for($i=0; $i<count($habilidades); $i++):
+			$modificador = (($habilidades[$i][1])-10)/2;
+			if($i == (count($habilidades)-1)):
+				$str .= "{$habilidades[$i][0]} ".$habilidades[$i][1]. "({$modificador})";
+			else:
+				$str .= "{$habilidades[$i][0]} ".$habilidades[$i][1]. "({$modificador}), ";
+			endif;
+		endfor;
+	endif;
+	return $str;
+}
+
+//FATE RPG
+function helper_atitudes_fate_rpg($atitudes){
+	$escala = '';
+	$str = '';
+	for($i=0; $i<count($atitudes); $i++):
+		$escala = helper_escala_fate_rpg($atitudes[$i][1]);
+		if($i == (count($atitudes)-1)):
+			$str .= "{$atitudes[$i][0]}: ".$escala. "({$atitudes[$i][1]})";
+		else:
+			$str .= "{$atitudes[$i][0]}: ".helper_escala_fate_rpg($atitudes[$i][1]). "({$atitudes[$i][1]}), ";
+		endif;
+	endfor;
+	return $str;
+}
+
+function helper_escala_fate_rpg($escala){
+	$atitudes = ['-2'=>'Terrível', '-1'=>'Pobre', '0'=>'Medíocre', '1'=>'Médio', '2'=>'Razoável', '3'=>'Bom', '4'=>'Grande', '5'=>'Soberbo', '6'=>'Fantástico', '7'=>'Épico', '8'=>'Lendário'];
+	return $atitudes[$escala];
+}
 /*
  * Helper
  * Fomulários em geral
@@ -431,7 +591,10 @@ function helper_form_input($name, $parameters, $size = 4){
 function helper_form_select_options($name, $parameters, $options, $size = 4){
 	global $tag, $form;
 	$form->_col($size);
-		$form->label($name);
+		if(empty($name)):
+		else:
+			$form->label($name);
+		endif;
 		$form->select($parameters, $options);
 	$form->col_();	
 }

@@ -49,7 +49,7 @@ $tag->br();
 		$form->_container();
 			$form->_col(6);
 				$img = !empty($personagens[0]['img'])?$personagens[0]['img']:'';
-				helper_show_personagens($personagens[0]);
+				helper_show_rpg_system($personagens[0]['sistema'],$personagens[0]);
 			$form->col_();
 			
 			$form->_col(6);

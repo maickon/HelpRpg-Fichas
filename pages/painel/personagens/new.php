@@ -7,6 +7,18 @@ $s->restricted_access();
 
 $tag->body('role="document"');
 
+$tag->imprime('
+	<script type="text/javascript" charset="utf-8">
+		function get_info(sistema){
+			if(sistema){
+				consele.log(sistema);
+				chosed = sistema;
+				var url = "?sistema="+sistema;
+				request_http("GET", url, true);
+			}
+		}
+	</script>');
+
 new Components('menu', $parametros);
 $tag->br();
 $tag->br();
@@ -18,48 +30,48 @@ $tag->br();
 				$create_personagem->create(helper_params_personagem($_REQUEST));
 			$form->col_();
 		endif;
-		
-		$form->_col(11);
+		helper_new_line_in_form();
+		$form->_col(5);
 			$tag->span('class="span_title"');
-				$tag->imprime(PERSONAGEM);
+				$sistema = '';
+				isset($_GET['sistema']) ? $sistema = $rpg_sistemas[$_GET['sistema']] : $sistema = $rpg_sistemas['ded'];
+				$tag->imprime(PERSONAGEM. ' <smal id="sistema-title"> Sistema: '. $sistema.'</smal>');
 			$tag->span;
 		$form->col_();
-		$form->_col(1);
+		
+		$form->_col(5);
+			$tag->form("onSubmit=\"get_info(maickon); return false\"");
+				$form->_col(1);
+				$form->col_();
+				$form->_col(9);
+					helper_form_select_options("", ["name" => "sistema", "id" => "sistema", "class" => "selectpicker", "data-live-search" => "true"], $rpg_sistemas);
+				$form->col_();
+				$form->_col(2);
+					$form->input_submit(["value" => "Carregar", "type" => "submit", "class" => "btn btn-default"]);	
+				$form->col_();
+			$tag->form;
+		$form->col_();
+		
+		$form->_col(2);
+			$objeto = null;
 			$tag->a('href="'.ROOTPATHURL.PERSONAGEMPATH.'" class="btn btn-info"');
 				$tag->imprime(BACK);
 			$tag->a;
 		$form->col_();
+		
 		$tag->br();
 		$tag->hr();
-	
-	
-		$tag->imprime('
-				<script type="text/javascript" charset="utf-8">
-					$(\'#myTabs a\').click(function (e) {
-					  e.preventDefault()
-					  $(this).tab(\'show\')
-					})
-				
-				$(\'#myTabs a[href="#profile"]\').tab(\'show\') // Select tab by name
-				$(\'#myTabs a:first\').tab(\'show\') // Select first tab
-				$(\'#myTabs a:last\').tab(\'show\') // Select last tab
-				$(\'#myTabs li:eq(2) a\').tab(\'show\') // Select third tab (0-indexed)
-				</script>');
-		
-		tabs( [
-				['role' => 'D&d', 'href' => '#ded', 'aria-controls' => 'ded'],
-				['role' => 'Deamon', 'href' => '#deamon', 'aria-controls' => 'deamon'],
-				['role' => '3d&T', 'href' => '#3det', 'aria-controls' => '3det']
-			  ]
-			);
-		panes([
-				['id' => 'ded', 'active' => true, 'require' => 'form/d20-ded.php'],
-				['id' => 'deamon', 'active' => false, 'require' => 'form/daemon.php'],
-				['id' => '3det', 'active' => false, 'require' => 'form/3det.php']
-			 ]);
 		
 		$tag->br();
-		$tag->br();
-		$tag->br();
+		$form->_row();
+			$form->_container();
+				$form->_form(['method'=>'post', 'name'=>'new-user', 'enctype'=>'multipart/form-data', 'class'=>'form-group', 'data-toggle'=>'validator']);
+					$file  = helper_name_of_form_fie(isset($_GET['sistema'])?$_GET['sistema']:'ded');
+					require_once "form/{$file}";
+					helper_form_button_submit_and_back(ROOTPATHURL.TALENTOSPATH);
+				$form->form_();	
+			$form->_container();
+		$form->row_();
+					
 	$form->container_();
 require_once '../../../footer.php';
