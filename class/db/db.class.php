@@ -140,7 +140,7 @@ class Db{
                 foreach($values as $key => $value):
                     $s->bindValue($key + 1, $value);
                 endforeach;
-                
+   
                 $s->bindValue( count($values) + 1 , $whereValue);
                 if($s->execute()):
                 	return true;

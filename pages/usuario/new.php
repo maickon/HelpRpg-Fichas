@@ -1,6 +1,8 @@
 <?php
 
 require_once '../../header.php';
+require_once '../helper.php';
+
 
 new Components('menu', $parametros);
 $form = new Form();
@@ -17,37 +19,19 @@ endif;
 $form->_row();
 	$form->_container();		
 		$form->_form(['method'=>'post', 'name'=>'new-user', 'class'=>'form-group', 'data-toggle'=>'validator']);
-			$form->_col(4);
-				$form->label("Nome");
-				$form->input(['name' => 'nome', 'type' => 'text', 'class'=>'form-control', 'required'=>'true']);
-			$form->col_();
+		
+			helper_form_input("Nome", ['name' => 'nome', 'type' => 'text', 'class'=>'form-control', 'required'=>'true']);
+			
+			helper_form_input("Nick", ['name' => 'login', 'type' => 'text', 'class'=>'form-control', 'required'=>'true']);
 				
-			$form->_col(4);
-				$form->label("Login");
-				$form->input(['name' => 'login', 'type' => 'text', 'class'=>'form-control', 'required'=>'true']);
-			$form->col_();
+			helper_form_input("Email", ['name' => 'email', 'type' => 'email', 'id'=>'inputEmail', 'class'=>'form-control', 'data-error'=>'Este email não é válido!', 'required'=>'true']);
 			
-			$form->_col(4);
-				$form->label("Email");
-				$form->input(['name' => 'email', 'type' => 'email', 'id'=>'inputEmail', 'class'=>'form-control', 'data-error'=>'Este email n�o � v�lido!', 'required'=>'true']);
-			$form->col_();
+			helper_form_input("Senha", ['name' => 'senha', 'id'=>'senha', 'type' => 'password', 'class'=>'form-control', 'required'=>'true']);
 			
-			$form->_col(4);
-				$form->label("Senha");
-				$form->input(['name' => 'senha', 'id'=>'senha', 'type' => 'password', 'class'=>'form-control', 'required'=>'true']);
-			$form->col_();
+			helper_form_input("Confirmar Senha", ['name' => 'confirma', 'id'=>'senha_confirmar', 'type' => 'password', 'class'=>'form-control', 'required'=>'true']);
 			
-			$form->_col(4);
-				$form->label("Confirmar Senha");
-				$form->input(['name' => 'confirma', 'id'=>'senha_confirmar', 'type' => 'password', 'class'=>'form-control', 'required'=>'true']);
-			$form->col_();
-			
-			$form->_col(4);
-				$form->br();
-				$form->link_button("Voltar", ROOTPATHURL);
-				echo "  ";
-				$form->input_submit(['class'=>'btn btn-default', 'type'=>'submit', 'name'=>'action', 'value'=>'Cadastrar']);
-			$form->col_();
+			helper_form_button_submit_and_back(ROOTPATHURL);
+		
 		$form->form_();
 		
 	$form->_container();

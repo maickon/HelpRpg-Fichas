@@ -110,3 +110,12 @@
 	margin: 0;
 	padding: 0px;
 }
+
+.overflow{
+	overflow: auto;
+	height: 200px;
+}
+
+.link-title:link, .link-title:visited{
+	color: white;
+}

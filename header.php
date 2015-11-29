@@ -76,13 +76,13 @@ $tag->html('lang="pt-br"');
 		$parametros['nomes'] = array(
 									array('Personagem', 'Criar um personagem', 'Criar um monstro', 'Criar um BOSS'),
 							   		array(CADASTRAR, ARMAS, ARMADURAS, ARTEFATOS, TALENTOS, MAGIAS, PERICIAS),
-									array('Você','Estatísticas','Editar dados','Alterar senha','Cancelar conta')
+									array('Você','Estatísticas','Editar dados','Cancelar conta')
 									);
 		
 		$parametros['links']  = array(
 									array("#", ROOTPATHURL.PERSONAGEMPATH, ROOTPATHURL.MONSTROPATH, ROOTPATHURL.BOSSPATH),
 									array("#", ROOTPATHURL.ARMASPATH, ROOTPATHURL.ARMADURASPATH, ROOTPATHURL.ARTEFATOSPATH, ROOTPATHURL.TALENTOSPATH, ROOTPATHURL.MAGIASPATH,ROOTPATHURL.PERICIASPATH),
-									array("#", USERPATH, USEREDITPATH, USERPASSPATH, USERDELETEPATH)
+									array("#", USERPATH, USEREDITPATH, USERDELETEPATH)
 									);
 		
 		$parametros['programer']  = PROGRAMER;
@@ -102,7 +102,7 @@ $tag->html('lang="pt-br"');
 		// array('Idioma', utf8_encode('Português - BR'), 'English - En')
 		//array('#','?v=pt-br', '?v=en')
 		$parametros['nomes'] = array('Home','Cadastro','Sobre','Como Usar');
-		$parametros['links']  = array(BASE_PATH, USUARIOSNEW, ABOUTPATH, HOWTOUSE);
+		$parametros['links']  = array(BASE_PATH, USERNEWPATH, ABOUTPATH, HOWTOUSE);
 		$parametros['programer']  = PROGRAMER;
 		$parametros['copy']  = COPY;
 	endif;	

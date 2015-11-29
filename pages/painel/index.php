@@ -24,14 +24,27 @@ $form->_row();
 		$form->hr();
 		
 		$user = new Usuarios();
-		$numbr_user = $user->select('usuarios');
-			
-		$number = count($numbr_user);
+		$armadura 	= new Armaduras('');
+		$arma 		= new Armas('');
+		$artefato 	= new Artefatos('');
+		
+		$number_user 		= $user->select('usuarios');
+		$number_armaduras 	= $armadura->select('armaduras');
+		$number_armas 		= $arma->select('armas');
+		$number_artefatos 	= $artefato->select('artefatos');
+		
+		$qtd_user 		= count($number_user);
+		$qtd_armaduras 	= count($number_armaduras);
+		$qtd_armas 		= count($number_armas);
+		$qtd_artefatos 	= count($number_artefatos);
+		
+		$qtd_total_itens = ($qtd_armaduras+$qtd_armas+$qtd_artefatos);
+		
 		$img_title = [
-						['jogadores.jpg','Usuários Cadastrados'],
-						['monstros.jpg','Monstros cadastrados'],
-						['boss.jpg','Chefes de fase'],
-						['armas.jpg','Itens Cadastrados']
+						['jogadores.jpg','Usuários Cadastrados', $qtd_user],
+						['monstros.jpg','Monstros cadastrados', 0],
+						['boss.jpg','Chefes de fase', 0],
+						['armas.jpg','Itens Cadastrados', $qtd_total_itens]
 					];
 		
 		for($i=0; $i<count($img_title); $i++):
@@ -39,7 +52,7 @@ $form->_row();
 				$tag->div('class="panel panel-default panel-index"');
 					$tag->img('src="'.ROOTPATHURL.IMGPATH.$img_title[$i][0].'" alt="dados" class="img-circle img-responsive"');		
 					$tag->h3();
-						$tag->imprime("<i>{$number}</i>");
+						$tag->imprime("<i>{$img_title[$i][2]}</i>");
 						$tag->br();
 						$tag->small();
 							$tag->imprime($img_title[$i][1]);
