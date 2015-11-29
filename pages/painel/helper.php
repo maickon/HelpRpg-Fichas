@@ -313,6 +313,25 @@ function helper_show_personagens_fate($personagem){
 		'<b>Consequência moderada:</b>' => "{$unserialize_params['consequencia_moderada']}",
 		'<b>Consequência severa:</b>' 	=> "{$unserialize_params['consequencia_severa']}",
 	];
+	
+	helper_show_header_attr_personagem($personagem);
+	helper_show_body_attr_personagens($attr);
+}
+
+function helper_show_personagens_deamon($personagem){
+	
+}
+
+function helper_show_personagens_ded4_0($personagem){
+		
+}
+
+function helper_show_personagens_ded5_0(){
+	
+}
+
+function helper_show_personagens_savage_worlds(){
+	
 }
 
 function helper_show_rpg_system($rpg_system, $character){
@@ -321,6 +340,18 @@ function helper_show_rpg_system($rpg_system, $character){
 		break;
 	
 		case 'FATE': helper_show_personagens_fate($character);
+		break;
+		
+		case 'Deamon': helper_show_personagens_deamon($character);
+		break;
+		
+		case 'Dungeons and Dragons 4.0': helper_show_personagens_ded4_0($character);
+		break;
+		
+		case 'Dungeons and Dragons 5.0': helper_show_personagens_ded5_0($character);
+		break;
+		
+		case 'Savage Worlds': helper_show_personagens_savage_worlds($character);
 		break;
 	endswitch;	
 }
@@ -457,9 +488,16 @@ function helper_show_header_attr_personagem($object){
 		$tag->imprime("{$object['nome']} <span class=\"small\">(ID {$object['id']}, Criador: {$object['dono']})</span>");
 	$tag->h1;
 	$tag->b();
-		$tag->imprime("{$object['raca']}, de {$object['lv']}º Nível");
-		$tag->br();
-		$tag->imprime("Humanoide({$unserialize_params['tamanho']})");
+		$tag->imprime("Sistema de Rpg: {$object['sistema']}");
+		$raca = helper_check_value($unserialize_params, 'raca');
+		if($raca != ''):
+			$tag->imprime("{$raca}, de {$object['lv']}º Nível");
+			$tag->br();
+		endif;
+		
+		$tamanho = helper_check_value($unserialize_params, 'tamanho');
+		if($tamanho != '')
+			$tag->imprime("Humanoide({$tamanho})");
 	$tag->b;
 }
 

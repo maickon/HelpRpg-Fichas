@@ -22,7 +22,7 @@ $caracteristicas = [
 						['Nome','nome'],['Conceito chave','aspecto_chave'],['Complicação','aspecto_complicacao'],
 						['Refresh','refresh'],['Pontos de Fate atuais','fate'],['Stress 1','stress1'],
 						['Stress 2','stress2'],['Stress 3','stress3'],['Consequência leve','consequencia_leve'],
-						['Consequência moderada','consequencia_moderada'],['Consequência severa','consequencia_severa'],
+						['Consequência moderada','consequencia_moderada'],['Consequência severa','consequencia_severa']
 				   ];
 
 for($i=0; $i<=count($caracteristicas)-1; $i++):

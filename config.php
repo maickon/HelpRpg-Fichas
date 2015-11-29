@@ -17,11 +17,14 @@ define('DOWNLOADPATH','arquivos/');
 define('LOGINPATH', ROOTPATHURL."pages/login");
 
 //URL - Usuarios
-define('USUARIOSNEW',ROOTPATHURL."pages/usuario/new.php");
-define('USUARIOSEDIT',ROOTPATHURL."pages/usuario/edit.php");
-define('USUARIOSDELETE',ROOTPATHURL."pages/usuario/delete.php");
+define('USERPATH',ROOTPATHURL."pages/usuario/");
+define('USERNEWPATH',ROOTPATHURL."pages/usuario/new.php");
+define('USEREDITPATH',ROOTPATHURL."pages/usuario/edit.php");
+define('USERDELETEPATH',ROOTPATHURL."pages/usuario/delete.php");
+define('USEREVIEWPATH',ROOTPATHURL."pages/usuario/view.php");
+define('USERPASSPATH',ROOTPATHURL."pages/usuario/pass.php");
 
-// Retorna o dom�nio do servidor
+// Retorna o dominio do servidor
 define('SERVER_NAME',$_SERVER['SERVER_NAME'].SEPARETOR); //127.0.0.1
 
 // Retorna o path do arquivo onde est� sendo executado

@@ -1,0 +1,7 @@
+id: 13
+dono: Maickon
+sistema: FATE
+tipo: Personagem jogador
+nome: Vargos
+old_file: 1448753695.jpg
+dados: a:20:{s:9:"cuidadoso";s:1:"1";s:11:"inteligente";s:1:"3";s:9:"chamativo";s:1:"2";s:5:"forte";s:1:"1";s:6:"rapido";s:1:"2";s:10:"sorrateiro";s:1:"2";s:13:"aspecto_chave";s:20:"Caçador de tesouros";s:19:"aspecto_complicacao";s:25:"Só fala o que não deve.";s:7:"refresh";s:1:"2";s:4:"fate";s:1:"1";s:7:"stress1";s:1:"X";s:7:"stress2";s:1:"-";s:7:"stress3";s:1:"-";s:17:"consequencia_leve";s:18:"Torceu o calcanhar";s:21:"consequencia_moderada";s:1:"-";s:19:"consequencia_severa";s:1:"-";s:9:"descricao";s:49:"Vargos é um estudante de física do segundo ano.";s:7:"proezas";s:59:"Coragem, já enfrentou e derrotou dois assaltantes na rua. ";s:8:"aspectos";s:28:"Sabe dirigir caros de fuga, ";s:6:"outros";s:1:"-";}

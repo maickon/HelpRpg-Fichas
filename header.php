@@ -76,13 +76,13 @@ $tag->html('lang="pt-br"');
 		$parametros['nomes'] = array(
 									array('Personagem', 'Criar um personagem', 'Criar um monstro', 'Criar um BOSS'),
 							   		array(CADASTRAR, ARMAS, ARMADURAS, ARTEFATOS, TALENTOS, MAGIAS, PERICIAS),
-									array('Você','Alterar senha','Estatísticas','Cancelar conta')
+									array('Você','Estatísticas','Editar dados','Alterar senha','Cancelar conta')
 									);
 		
 		$parametros['links']  = array(
 									array("#", ROOTPATHURL.PERSONAGEMPATH, ROOTPATHURL.MONSTROPATH, ROOTPATHURL.BOSSPATH),
 									array("#", ROOTPATHURL.ARMASPATH, ROOTPATHURL.ARMADURASPATH, ROOTPATHURL.ARTEFATOSPATH, ROOTPATHURL.TALENTOSPATH, ROOTPATHURL.MAGIASPATH,ROOTPATHURL.PERICIASPATH),
-									array("#", "#", "#", "#")
+									array("#", USERPATH, USEREDITPATH, USERPASSPATH, USERDELETEPATH)
 									);
 		
 		$parametros['programer']  = PROGRAMER;
