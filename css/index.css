@@ -72,6 +72,11 @@
 	margin-top: 10px;
 }
 
+#sistema-title{
+	font-size: 14px;	
+}
+
+
 .icon-link:hover{
 	color: #F00;
 }

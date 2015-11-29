@@ -7,7 +7,7 @@
  * @date 09/10/2015
  * @contact maickon4developers@gmail.com
  * @version 1.0
- * @link https://github.com/maickon/HelpRpg
+ * @link https://github.com/maickon/HelpRpg-Fichas
  *
  * header.php
  * Arquivo responsável pela apresentação de header do site.
@@ -50,12 +50,20 @@ $tag->html('lang="pt-br"');
 		//<!-- index core CSS -->
 		$tag->link('href="'.ROOTPATHURL.CSSPATH.'index.css" rel="stylesheet"');
 		
+		//<!-- selec core CSS -->
+		$tag->link('href="'.ROOTPATHURL.CSSPATH.'bootstrap-select.css" rel="stylesheet"');
+		
 		$tag->script('src="'.ROOTPATHURL.JSPATH.'jquery.min.js"');
 		$tag->script;
 		
 		$tag->script('src="'.ROOTPATHURL.JSPATH.'datatables.min.js"');
 		$tag->script;
+		
+		$tag->script('src="'.ROOTPATHURL.JSPATH.'bootstrap-select.js"');
+		$tag->script;
 
+		$tag->script('src="'.ROOTPATHURL.JSPATH.'request.js"');
+		$tag->script;
 	$tag->head;
 	
 	//variaveis de menu

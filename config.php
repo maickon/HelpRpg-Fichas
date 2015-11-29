@@ -6,8 +6,8 @@ define('JSPATH', "js/");
 define('CSSPATH', "css/");
 define('IMGPATH', "img/");
 define('HOMEPATH', "pages/home");
-define('ROOTPATH',"C:/xampp/htdocs/HelpRpg-Fichas/"); 			
-define('ROOTPATHURL',"http://127.0.0.1/HelpRpg-Fichas/");		
+define('ROOTPATH',"C:/xampp/htdocs/HelpRpg/"); 			
+define('ROOTPATHURL',"http://127.0.0.1/HelpRpg/");		
 define('SEPARETOR',"/");
 define('ABOUTPATH', ROOTPATHURL."pages/sobre/");
 define('HOWTOUSE', 'pages/como-usar/');
@@ -59,12 +59,12 @@ define('LOGIN_VALIDATION_PATH', ROOTPATHURL.'pages/login/login.php');
 define('LOGOFF_PATH', 'pages/login/logoff.php');
 define('HOME_PATH', 'pages/home/');
 define('PAINEL_PATH', ROOTPATHURL.'pages/painel/');
-define('BASE_PATH', 'http://127.0.0.1/HelpRpg-Fichas/'); //http://helprpg.com.br
+define('BASE_PATH', 'http://127.0.0.1/HelpRpg/'); //http://helprpg.com.br
 
 //Usu�rio e senha do banco de dados
 define('DB_USER', "root");		
 define('DB_PASS', "");	  		
-define('DB_NAME', "help_rpg"); 	
+define('DB_NAME', "helprpg"); 	
 define('DB_HOST', "localhost");
 
 
@@ -95,8 +95,27 @@ define('CADASTRAR', "Cadastrar");
 define('AVENTURAS', "Aventuras");
 
 //lista de superusuarios do sistema
-global $permit;
+global $permit, $rpg_sistemas, $rpg_sistemas_arquivo_nome;
+
+//variaveis globas no sitema
 $permit  = ['root','Maickon'];
+$rpg_sistemas_arquivo_nome = [
+							'ded'=>'d20-ded.php',
+							'ded-4.0'=>'d20-ded-4.0.php',
+							'ded-5.0'=>'d20-ded-5.0.php',
+							'fate'=>'fate.php',
+							'savage_worlds'=>'savage_worlds.php',
+							'3det'=>'3det.php', 
+							'deamon'=>'daemon.php'];
+
+$rpg_sistemas = [
+				'ded'=>'Dungeons and Dragons 3.5',
+				'ded-4.0'=>'Dungeons and Dragons 4.0',
+				'ded-5.0'=>'Dungeons and Dragons 5.0',
+				'fate'=>'FATE',
+				'savage_worlds'=>'Savage Worlds',
+				'3det'=>'3D&T', 
+				'deamon'=>'Deamon'];
 
 require_once 'termos/3det.php';
 require_once 'termos/d20.php';
