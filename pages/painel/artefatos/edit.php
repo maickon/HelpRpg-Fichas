@@ -78,7 +78,7 @@ $tag->br();
 				
 				helper_form_select_options("Sistema de RPG", ['class'=>'form-control', 'name'=>'sistema'], ['value'=> $objeto[0]['sistema'],'ded'=>'Dungeons and Dragons', '3det'=>'3D&T', 'deamon'=>'Deamon']);
 				
-				helper_form_text_field("Descrição", ['name' => 'descricao', 'class'=>'form-control', 'rows'=>'5'], strip_tags($objeto[0]['descricao']));
+				helper_form_text_area("Descrição", ['name' => 'descricao', 'class'=>'form-control', 'rows'=>'5'], strip_tags($objeto[0]['descricao']));
 				
 				helper_form_button_update_and_back(ROOTPATHURL.ARTEFATOSPATH);
 			

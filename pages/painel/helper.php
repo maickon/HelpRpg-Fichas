@@ -322,8 +322,118 @@ function helper_show_personagens_deamon($personagem){
 	
 }
 
+function helper_show_personagens_3det($personagem){
+	global $tag;
+	$unserialize_params = unserialize($personagem['dados']);
+	
+	$atributos = helper_habilidades_3det_rpg([
+			['Força',$unserialize_params['forca']],['Habilidade',$unserialize_params['habilidade']],['Resistência',
+			$unserialize_params['resistencia']],['Armadura',$unserialize_params['armadura']],
+			['Poder de Fogo',$unserialize_params['pdf']], 
+			]);
+	
+	$attr = [
+	//3D&T RPG
+	'<b>Atributos:</b>' 	=> "{$atributos}",
+	'<b>Pvs:</b>' 			=> "{$unserialize_params['pvs']}",
+	'<b>Pms:</b>' 			=> "{$unserialize_params['pms']}",
+	'<b>Nome:</b>' 			=> "{$personagem['nome']}",
+	'<b>Nível:</b>' 		=> "{$personagem['lv']}",
+	'<b>Classe:</b>' 		=> "{$personagem['classe']}",
+	'<b>Raça:</b>' 			=> "{$personagem['raca']}",
+	'<b>Tendencia:</b>' 	=> "{$unserialize_params['tendencia']}",
+	'<b>Idade:</b>' 		=> "{$unserialize_params['idade']}",
+	'<b>Peso:</b>' 			=> "{$unserialize_params['peso']}",
+	'<b>Altura:</b>' 		=> "{$unserialize_params['altura']}",
+	'<b>Xp:</b>' 			=> "{$unserialize_params['experiencia']}",
+	'<b>Kits:</b>' 			=> "{$unserialize_params['kits']}",
+	'<b>Função:</b>' 		=> "{$unserialize_params['funcao']}",
+	'<b>Pts:</b>' 			=> "{$unserialize_params['pts']}",
+	'<b>Divindade:</b>' 	=> "{$unserialize_params['divindade']}",
+	'<b>Vantagem Única:</b>' => "{$unserialize_params['vantagem_unica']}",
+	'<b>Aparência:</b>' 	=> "{$unserialize_params['aparencia']}",
+	'<b>Iniciativa:</b>' 	=> "{$unserialize_params['iniciativa']}",
+	'<b>Movimento:</b>' 	=> "{$unserialize_params['movimento']}",
+	'<b>Carga:</b>' 		=> "{$unserialize_params['carga']}",
+
+	'<b>Combate:</b>' 		=> "{$unserialize_params['combate']}",
+	'<b>Vantagens:</b>' 	=> "{$unserialize_params['vantagens']}",
+	'<b>Desvantagens:</b>' 	=> "{$unserialize_params['desvantagens']}",
+	'<b>Poderes:</b>' 		=> "{$unserialize_params['poderes']}",
+	'<b>Perícias:</b>' 		=> "{$unserialize_params['pericias']}",
+	'<b>Equipamentos:</b>' 	=> "{$unserialize_params['equipamentos']}",
+	'<b>Dinheiro e riqueza:</b>' => "{$unserialize_params['dinheiro']}",
+	'<b>Magias:</b>' 		=> "{$unserialize_params['magias']}",
+	'<b>Outros:</b>' 		=> "{$unserialize_params['outros']}",
+	];
+	
+	helper_show_header_attr_personagem($personagem);
+	helper_show_body_attr_personagens($attr);
+}
+
 function helper_show_personagens_ded4_0($personagem){
-		
+	global $tag;
+	$unserialize_params = unserialize($personagem['dados']);
+	
+	$habilidades = helper_habilidades_ded_rpg([
+			["For", helper_check_value_presence($unserialize_params['forca'])],
+			["Des", $unserialize_params['destreza']],
+			["Con", $unserialize_params['constituicao']],
+			["Int", $unserialize_params['inteligencia']],
+			["Sab", $unserialize_params['sabedoria']],
+			["Car", $unserialize_params['carisma']]
+			]);
+	
+	$testes_resistencia = helper_testes_de_resistencia_ded_rpg([
+			["Fortitude ",$unserialize_params['fort']],
+			["Reflexos ", $unserialize_params['refl']],
+			["Vontade ", $unserialize_params['vont']]
+			]);
+	
+	//regra do modificador = subtrai 10 e divide por 2
+	$pvs = $personagem['lv']*($unserialize_params['constituicao']-10)/2;
+	$attr = [
+	//'<b>Dado de vida:</b>' 		=> "{$personagem['lv']}{$unserialize_params['dado_vida']}+$pvs ({$unserialize_params['pv']} pvs)",
+	'<b>Caminho exemplar:</b>' 		=> "{$unserialize_params['caminho_exemplar']}",
+	'<b>Destino épico:</b>' 		=> "{$unserialize_params['destino_epico']}",
+	'<b>Tendencia:</b>' 			=> "{$unserialize_params['tendencia']}",
+	'<b>Idade:</b>' 				=> "{$unserialize_params['idade']}",
+	'<b>Altura:</b>' 				=> "{$unserialize_params['altura']}",
+	'<b>Peso:</b>' 					=> "{$unserialize_params['peso']}",
+	'<b>Divindade:</b>' 			=> "{$unserialize_params['divindade']}",
+	'<b>Sexo:</b>' 					=> "{$unserialize_params['sexo']}",
+	'<b>Região de origem:</b>' 		=> "{$unserialize_params['regiao_origem']}",
+	'<b>Idiomas:</b>' 				=> "{$unserialize_params['idiomas']}",
+	'<b>Iniciativa:</b>' 			=> "{$unserialize_params['iniciativa']}",
+	'<b>Deslocamento:</b>' 			=> "{$unserialize_params['deslocamento']}",
+	'<b>Intuição passiva:</b>' 		=> "{$unserialize_params['intuicao_passiva']}",
+	'<b>Percepção passiv:</b>' 		=> "{$unserialize_params['percepcao_passiva']}",
+	'<b>Pontos de :</b>' 			=> "{$unserialize_params['pv']}",
+	'<b>Sangrando:</b>' 			=> "{$unserialize_params['sangrando']}",
+	'<b>Pulso de cura:</b>' 		=> "{$unserialize_params['cura']}",
+	'<b>Pulsos:</b>' 				=> "{$unserialize_params['dia']}",
+	'<b>Pontos de ação:</b>' 		=> "{$unserialize_params['pts_acao']}",
+	'<b>Classe de armadura:</b>' 	=> "{$unserialize_params['ca']}",
+	'<b>Testes de resistência:</b>' => "{$testes_resistencia}",
+	'<b>Bônus de ataque:</b>' 		=> "{$unserialize_params['ataque']}",
+	'<b>Bônus de dano:</b>' 		=> "{$unserialize_params['dano']}",
+	'<b>Pontos de experiência:</b>' => "{$unserialize_params['xp']}",
+	'<b>Habilidades:</b>' 			=> "{$habilidades}",
+	'<b>Perícias:</b>' 				=>  helper_check_value_presence($unserialize_params['pericias']),
+	'<b>Ataques básicos:</b>' 		=> "{$unserialize_params['ataque']}",
+	'<b>Aspectos raciais:</b>' 		=> "{$unserialize_params['aspectos_raciais']}",
+	'<b>Talentos:</b>' 				=> "{$unserialize_params['talentos']}",
+	'<b>Características de classe/trilha/destino:</b>' 		=> "{$unserialize_params['caracteristicas']}",
+	'<b>Perícias:</b>' 					=> "{$unserialize_params['pericias']}",
+	'<b>Poderes:</b>' 					=> "{$unserialize_params['poderes']}",
+	'<b>Itens e equipamentos:</b>' 		=> "{$unserialize_params['equipamentos']}",
+	'<b>Habilidades especiais:</b>' 	=> "{$unserialize_params['habilidades_especiais']}",
+	'<b>Costumes e aparência:</b>' 		=> "{$unserialize_params['costumes']}",
+	'<b>Traços e personalidades:</b>' 	=> "{$unserialize_params['tracos']}",
+	];
+	
+	helper_show_header_attr_personagem($personagem);
+	helper_show_body_attr_personagens($attr);
 }
 
 function helper_show_personagens_ded5_0(){
@@ -343,6 +453,9 @@ function helper_show_rpg_system($rpg_system, $character){
 		break;
 		
 		case 'Deamon': helper_show_personagens_deamon($character);
+		break;
+		
+		case '3D&T': helper_show_personagens_3det($character);
 		break;
 		
 		case 'Dungeons and Dragons 4.0': helper_show_personagens_ded4_0($character);
@@ -489,13 +602,13 @@ function helper_show_header_attr_personagem($object){
 	$tag->h1;
 	$tag->b();
 		$tag->imprime("Sistema de Rpg: {$object['sistema']}");
-		$raca = helper_check_value($unserialize_params, 'raca');
+		$raca = helper_check_value($object, 'raca');
 		if($raca != ''):
 			$tag->imprime("{$raca}, de {$object['lv']}º Nível");
-			$tag->br();
+			//$tag->br();
 		endif;
 		
-		$tamanho = helper_check_value($unserialize_params, 'tamanho');
+		$tamanho = helper_check_value($object, 'tamanho');
 		if($tamanho != '')
 			$tag->imprime("Humanoide({$tamanho})");
 	$tag->b;
@@ -556,6 +669,24 @@ function helper_new_line_in_form(){
 	global $form;
 	$form->_col(12);
 	$form->col_();
+}
+
+//3D&T
+function helper_habilidades_3det_rpg($habilidades){
+	$escala = '';
+	$str = '';
+	if(empty($habilidades[0][1])):
+		return '';
+	else:
+		for($i=0; $i<count($habilidades); $i++):
+			if($i == (count($habilidades)-1)):
+				$str .= "{$habilidades[$i][0]} ".$habilidades[$i][1];
+			else:
+				$str .= "{$habilidades[$i][0]} ".$habilidades[$i][1]. ", ";
+			endif;
+		endfor;
+	endif;
+	return $str;
 }
 
 //D&D
