@@ -10,7 +10,8 @@ $modulos_path = [
 'habilidades'	=> HABILIDADESPATH,
 'historias'		=> HISTORIASPATH,
 'pericias'		=> PERICIASPATH,
-'personagens'	=> PERSONAGEMPATH
+'personagens'	=> PERSONAGEMPATH,
+'usuarios'		=> USERPATH
 ];
 
 function helper_componentes_buttons($modulo, $id, $off = false){
@@ -96,6 +97,22 @@ function helper_check_permitions($dono){
 	elseif($s->get_session('nome') == $dono):
 		$super = 1;
 	endif;
+	return $super;
+}
+
+function helper_check_admin(){
+	global $permit, $s;
+	$super = null;
+	//verificando permiçoes
+	foreach($permit as $p):
+		if($s->get_session('nome') == $p):
+			$super = 1;
+			return $super;
+		else:
+			$super = 0;
+		endif;
+	endforeach;
+	
 	return $super;
 }
 
@@ -804,10 +821,10 @@ function helper_form_select_options_arma_tipo($size = 4){
 }
 
 function helper_form_select_options_sistema($size = 4){
-	global $tag, $form;
+	global $tag, $form, $rpg_sistemas;
 	$form->_col($size);
 		$form->label("Sistema de jogo");
-		$form->select(['class'=>'form-control', 'name'=>'sistema'], ['ded'=>'Dungeons and Dragons', '3det'=>'3D&T', 'deamon'=>'Deamon']);
+		$form->select(['class'=>'form-control selectpicker', "data-live-search" => "true", 'name'=>'sistema'], $rpg_sistemas);
 	$form->col_();
 }
 

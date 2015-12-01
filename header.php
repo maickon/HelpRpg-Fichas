@@ -73,16 +73,26 @@ $tag->html('lang="pt-br"');
 		$tag->br();
 		$tag->br();
 		
+		load_helper();
+		if(helper_check_admin() != 0):
+			$options_menu_root_label = array('Você','Usuários','Estatísticas','Editar dados','Cancelar conta');
+			$options_menu_root_links = array("#", USERSLISTPATH, USERPATH, USEREDITPATH, USERDELETEPATH);
+		else:
+			$options_menu_root_label = array('Você','Estatísticas','Editar dados','Cancelar conta');
+			$options_menu_root_links = array("#", USERPATH, USEREDITPATH, USERDELETEPATH);
+		endif;
+		
+		
 		$parametros['nomes'] = array(
 									array('Personagem', 'Criar um personagem', 'Criar um monstro', 'Criar um BOSS'),
 							   		array(CADASTRAR, ARMAS, ARMADURAS, ARTEFATOS, TALENTOS, MAGIAS, PERICIAS),
-									array('Você','Estatísticas','Editar dados','Cancelar conta')
+									$options_menu_root_label
 									);
 		
 		$parametros['links']  = array(
 									array("#", ROOTPATHURL.PERSONAGEMPATH, ROOTPATHURL.MONSTROPATH, ROOTPATHURL.BOSSPATH),
 									array("#", ROOTPATHURL.ARMASPATH, ROOTPATHURL.ARMADURASPATH, ROOTPATHURL.ARTEFATOSPATH, ROOTPATHURL.TALENTOSPATH, ROOTPATHURL.MAGIASPATH,ROOTPATHURL.PERICIASPATH),
-									array("#", USERPATH, USEREDITPATH, USERDELETEPATH)
+									$options_menu_root_links
 									);
 		
 		$parametros['programer']  = PROGRAMER;

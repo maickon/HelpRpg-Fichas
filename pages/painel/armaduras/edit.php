@@ -86,8 +86,8 @@ $tag->br();
 				helper_form_input("Peso", ['name' => 'peso', 'type' => 'text', 'class'=>'form-control', 'value'=> $armadura[0]['peso']]);
 
 				helper_form_select_options("Tipo", ['class'=>'form-control', 'name'=>'tipo'], ['value'=> $armadura[0]['tipo'], 'simples'=>'Armadura simples', 'magica'=>'Armadura mágica']);
-
-				helper_form_select_options("Sistema de Jogo", ['class'=>'form-control', 'name'=>'sistema'], ['value'=> $armadura[0]['sistema'],'ded'=>'Dungeons and Dragons', '3det'=>'3D&T', 'deamon'=>'Deamon']);
+				
+				helper_form_select_options("Sistema de Jogo", ["name" => "sistema", "id" => "sistema", "class" => "selectpicker form-control", "data-live-search" => "true"], array_merge(array('value'=> $armadura[0]['sistema']), $rpg_sistemas));
 
 				helper_form_select_options("Categoria", ['class'=>'form-control', 'name'=>'categoria'], ['value'=> $armadura[0]['categoria'], 'leve'=>'Armadura leve', 'media'=>'Armadura Média', 'pesada'=>'Armadura Pesada', 'exotica'=>'Armadura Exótica', 'tecnologica'=>'Armadura Tecnológica']);				
 				
