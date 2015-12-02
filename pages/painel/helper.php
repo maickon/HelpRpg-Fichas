@@ -73,6 +73,22 @@ function helper_check_value($objeto, $key){
 	endif;	
 }
 
+function helper_check_admin(){
+	global $permit, $s;
+	$super = null;
+	//verificando permiçoes
+	foreach($permit as $p):
+		if($s->get_session('nome') == $p):
+			$super = 1;
+			return $super;
+		else:
+			$super = 0;
+		endif;
+	endforeach;
+	
+	return $super;
+}
+
 function helper_check_value_presence($value){
 	if(empty($value)):
 		return '';
@@ -97,22 +113,6 @@ function helper_check_permitions($dono){
 	elseif($s->get_session('nome') == $dono):
 		$super = 1;
 	endif;
-	return $super;
-}
-
-function helper_check_admin(){
-	global $permit, $s;
-	$super = null;
-	//verificando permiçoes
-	foreach($permit as $p):
-		if($s->get_session('nome') == $p):
-			$super = 1;
-			return $super;
-		else:
-			$super = 0;
-		endif;
-	endforeach;
-	
 	return $super;
 }
 
@@ -453,8 +453,82 @@ function helper_show_personagens_ded4_0($personagem){
 	helper_show_body_attr_personagens($attr);
 }
 
-function helper_show_personagens_ded5_0(){
+function helper_show_personagens_ded5_0($personagem){
+	global $tag;
+	$unserialize_params = unserialize($personagem['dados']);
 	
+	$habilidades = helper_habilidades_ded_rpg([
+			["For", helper_check_value_presence($unserialize_params['forca'])],
+			["Des", $unserialize_params['destreza']],
+			["Con", $unserialize_params['constituicao']],
+			["Int", $unserialize_params['inteligencia']],
+			["Sab", $unserialize_params['sabedoria']],
+			["Car", $unserialize_params['carisma']]
+			]);
+	
+	//regra do modificador = subtrai 10 e divide por 2
+	$pvs = $personagem['lv']*($unserialize_params['constituicao']-10)/2;
+	$attr = [
+	//'<b>Dado de vida:</b>' 		=> "{$personagem['lv']}{$unserialize_params['dado_vida']}+$pvs ({$unserialize_params['pv']} pvs)",
+	'<b>Classe:</b>'		 		=> "{$personagem['classe']}",
+	'<b>Raça:</b>'			 		=> "{$personagem['raca']}",
+	'<b>Pontos de experiência:</b>' => "{$unserialize_params['xp']}",
+	
+	'<b>Força - Jogada de proteção:</b>' 	=> "{$unserialize_params['forca_protecao']}",
+	'<b>Força - Atletismo:</b>' 			=> "{$unserialize_params['forca_atletismo']}",
+	
+	'<b>Destreza - Jogada de proteção:</b>' => "{$unserialize_params['destreza_protecao']}",
+	'<b>Destreza - Acrobáticos:</b>' 		=> "{$unserialize_params['destreza_acrobaticos']}",
+	'<b>Destreza - Furtividade:</b>' 		=> "{$unserialize_params['destreza_furtividade']}",
+	'<b>Destreza - Punga:</b>' 				=> "{$unserialize_params['destreza_punga']}",
+	
+	'<b>Constituição - Jogada de proteção:</b>' => "{$unserialize_params['constituicao_protecao']}",
+
+	'<b>Inteligência - Jogada de proteção:</b>' => "{$unserialize_params['inteligencia_protecao']}",
+	'<b>Inteligência - Arcana:</b>' 			=> "{$unserialize_params['inteligencia_arcana']}",
+	'<b>Inteligência - História:</b>' 			=> "{$unserialize_params['inteligencia_historia']}",
+	'<b>Inteligência - Investigação:</b>' 		=> "{$unserialize_params['inteligencia_investigacao']}",
+	'<b>Inteligência - Natureza:</b>' 			=> "{$unserialize_params['inteligencia_natureza']}",
+	'<b>Inteligência - Religião:</b>' 			=> "{$unserialize_params['inteligencia_religiao']}",
+	
+	'<b>Sabedoria - Jogada de proteção:</b>' 	=> "{$unserialize_params['sabedoria_protecao']}",
+	'<b>Sabedoria - Adestrar animais:</b>' 		=> "{$unserialize_params['sabedoria_adestrar_animais']}",
+	'<b>Sabedoria - Intuição:</b>' 				=> "{$unserialize_params['sabedoria_intuicao']}",
+	'<b>Sabedoria - Medicina:</b>' 				=> "{$unserialize_params['sabedoria_medicina']}",
+	'<b>Sabedoria - Percepção:</b>' 			=> "{$unserialize_params['sabedoria_percepcao']}",
+	'<b>Sabedoria - Sobrevivência:</b>' 		=> "{$unserialize_params['sabedoria_sobrevivencia']}",
+	
+	'<b>Carisma - Jogada de proteção:</b>' 		=> "{$unserialize_params['sabedoria_protecao']}",
+	'<b>Carisma - Atuação:</b>' 				=> "{$unserialize_params['carisma_atuacao']}",
+	'<b>Carisma - Enganação:</b>' 				=> "{$unserialize_params['carisma_enganacao']}",
+	'<b>Carisma - Intimidação:</b>' 			=> "{$unserialize_params['carisma_intimidacao']}",
+	'<b>Carisma - Persuasão:</b>' 				=> "{$unserialize_params['carisma_persuasao']}",
+
+	'<b>Sabedoria passiva (Percepção):</b>' 	=> "{$unserialize_params['sabedoria_percepcao']}",
+	
+	'<b>Altura:</b>' 					=> "{$unserialize_params['altura']}",
+	'<b>Peso:</b>' 						=> "{$unserialize_params['peso']}",
+	'<b>Divindade:</b>' 				=> "{$unserialize_params['divindade']}",
+	'<b>Idade:</b>' 					=> "{$unserialize_params['idade']}",
+	'<b>Sexo:</b>' 						=> "{$unserialize_params['sexo']}",
+	
+	'<b>Inspiração:</b>' 				=> "{$unserialize_params['inspiração']}",
+	'<b>Pvs atuais:</b>' 				=> "{$unserialize_params['pvs_atuais']}",
+	'<b>Dado de vida:</b>' 				=> "{$unserialize_params['dado_vida']}",
+	'<b>Iniciativa:</b>' 				=> "{$unserialize_params['iniciativa']}",
+	'<b>Velocidade:</b>' 				=> "{$unserialize_params['velocidade']}",
+	'<b>Visão:</b>' 					=> "{$unserialize_params['visao']}",
+	
+	'<b>Ataques:</b>' 							=> "{$unserialize_params['ataques']}",
+	'<b>Equipamentos:</b>' 						=> "{$unserialize_params['equipamentos']}",
+	'<b>Características de classe e Raça:</b>' 	=> "{$unserialize_params['caracteristicas']}",
+	'<b>Proficiências e Idiomas:</b>' 			=> "{$unserialize_params['proficiencias']}",
+	'<b>História:</b>' 							=> "{$unserialize_params['historia']}",
+	'<b>Outros:</b>' 							=> "{$unserialize_params['outros']}",
+	];
+	
+	helper_show_header_attr_personagem($personagem);
+	helper_show_body_attr_personagens($attr);
 }
 
 function helper_show_personagens_savage_worlds(){
@@ -644,8 +718,11 @@ function helper_show_body_attr_personagens($attr){
 	global $tag;
 
 	foreach($attr as $key => $value):
-		!empty($value)?$tag->br():'';
-		!empty($value)?$tag->imprime("{$key} {$value}"):'';
+		if($value == '' || $value == '-'):
+		else:
+			!empty($value)?$tag->br():'';
+			!empty($value)?$tag->imprime("{$key} {$value}"):'';
+		endif;
 	endforeach;
 }
 

@@ -10,3 +10,9 @@ sistema: FATE
 tipo: Personagem jogador
 nome: Reth
 dados: a:20:{s:9:"cuidadoso";s:1:"2";s:11:"inteligente";s:1:"1";s:9:"chamativo";s:1:"2";s:5:"forte";s:1:"3";s:6:"rapido";s:1:"2";s:10:"sorrateiro";s:1:"1";s:13:"aspecto_chave";s:34:"Invocador  solar do deserto andral";s:19:"aspecto_complicacao";s:33:"Assassios do aço me querem morto";s:7:"refresh";s:1:"3";s:4:"fate";s:1:"5";s:7:"stress1";s:1:"2";s:7:"stress2";s:1:"1";s:7:"stress3";s:1:"1";s:17:"consequencia_leve";s:1:"2";s:21:"consequencia_moderada";s:1:"4";s:19:"consequencia_severa";s:1:"6";s:9:"descricao";s:42:"Ele e uma criança de 14 anos e simples...";s:7:"proezas";s:25:"Postura do sol desafiador";s:8:"aspectos";s:1:"-";s:6:"outros";s:1:"-";}
+id: 14
+dono: Maickon
+sistema: FATE
+tipo: Personagem jogador
+nome: Reth
+dados: a:20:{s:9:"cuidadoso";s:1:"2";s:11:"inteligente";s:1:"1";s:9:"chamativo";s:1:"4";s:5:"forte";s:1:"3";s:6:"rapido";s:1:"2";s:10:"sorrateiro";s:1:"1";s:13:"aspecto_chave";s:34:"Invocador  solar do deserto andral";s:19:"aspecto_complicacao";s:33:"Assassios do aço me querem morto";s:7:"refresh";s:1:"3";s:4:"fate";s:1:"-";s:7:"stress1";s:1:"-";s:7:"stress2";s:1:"-";s:7:"stress3";s:1:"-";s:17:"consequencia_leve";s:1:"2";s:21:"consequencia_moderada";s:1:"4";s:19:"consequencia_severa";s:1:"6";s:9:"descricao";s:42:"Ele e uma criança de 14 anos e simples...";s:7:"proezas";s:25:"Postura do sol desafiador";s:8:"aspectos";s:1:"-";s:6:"outros";s:1:"-";}

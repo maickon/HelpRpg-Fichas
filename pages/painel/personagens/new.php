@@ -30,7 +30,7 @@ $tag->br();
 				$create_personagem->create(helper_params_personagem($_REQUEST));
 			$form->col_();
 		endif;
-		helper_new_line_in_form();
+		
 		$form->_col(5);
 			$tag->span('class="span_title"');
 				$sistema = '';
@@ -58,6 +58,8 @@ $tag->br();
 				$tag->imprime(BACK);
 			$tag->a;
 		$form->col_();
+		
+		helper_new_line_in_form();
 		
 		$tag->br();
 		$tag->hr();

@@ -38,9 +38,6 @@ function config(){
 	*/
 }
 
-function load_helper(){
-	require_once 'pages/helper.php';
-}
 /*
  * lib e uma pasta onde fica bibliotecas de terceiros 
  * a funcao lib faz o require de todos as  bibliotecas 

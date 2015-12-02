@@ -1,0 +1,10 @@
+id: 17
+dono: Maickon
+sistema: Dungeons and Dragons 4.0
+tipo: Personagem jogador
+nome: Lerdemorn
+raca: Humano
+classe: Mago
+lv: 6
+old_file: 1449013709.jpg
+dados: a:43:{s:5:"forca";s:2:"12";s:8:"destreza";s:2:"14";s:12:"constituicao";s:2:"13";s:12:"inteligencia";s:2:"16";s:9:"sabedoria";s:2:"14";s:7:"carisma";s:2:"11";s:16:"caminho_exemplar";s:5:"Honra";s:13:"destino_epico";s:1:"-";s:9:"tendencia";s:10:"Leal e Bom";s:5:"idade";s:2:"19";s:6:"altura";s:4:"1.68";s:4:"peso";s:3:"6Kg";s:9:"divindade";s:8:"Opalinia";s:4:"sexo";s:9:"Masculino";s:13:"regiao_origem";s:1:"-";s:7:"idiomas";s:28:"Portugês, Ingles e Espanhol";s:10:"iniciativa";s:2:"+6";s:12:"deslocamento";s:2:"9m";s:16:"intuicao_passiva";s:2:"10";s:17:"percepcao_passiva";s:2:"12";s:2:"pv";s:2:"36";s:9:"sangrando";s:2:"20";s:4:"cura";s:2:"30";s:3:"dia";s:2:"10";s:8:"pts_acao";s:2:"12";s:2:"ca";s:27:"17 (+5 armadura, +2 escudo)";s:4:"fort";s:2:"20";s:4:"refl";s:2:"+3";s:4:"vont";s:2:"+1";s:6:"ataque";s:12:"Ataque total";s:4:"dano";s:4:"4d12";s:2:"xp";s:1:"-";s:16:"aspectos_raciais";s:17:"aspecto de humano";s:15:"caracteristicas";s:13:"classe basica";s:8:"talentos";s:9:"talentos ";s:8:"pericias";s:24:"conhecimentos de pericia";s:7:"poderes";s:18:"poderes de combate";s:12:"equipamentos";s:16:"arma e armaduras";s:21:"habilidades_especiais";s:21:"habilidades especiais";s:8:"costumes";s:15:"aparencia alta ";s:6:"tracos";s:1:"-";s:12:"antecedentes";s:1:"-";s:6:"outros";s:1:"-";}

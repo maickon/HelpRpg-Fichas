@@ -73,7 +73,7 @@ $tag->html('lang="pt-br"');
 		$tag->br();
 		$tag->br();
 		
-		load_helper();
+		require_once 'pages/painel/helper.php';
 		if(helper_check_admin() != 0):
 			$options_menu_root_label = array('Você','Usuários','Estatísticas','Editar dados','Cancelar conta');
 			$options_menu_root_links = array("#", USERSLISTPATH, USERPATH, USEREDITPATH, USERDELETEPATH);
