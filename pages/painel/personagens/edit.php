@@ -63,7 +63,7 @@ $tag->br();
 	$form->_row();
 		$form->_container();
 			$form->_form(['method'=>'post', 'name'=>'new-user', 'enctype'=>'multipart/form-data', 'class'=>'form-group', 'data-toggle'=>'validator']);
-				$array_key = helper_check_array_key($rpg_sistemas, $objeto[0]['sistema']);
+					$array_key = helper_check_array_key($rpg_sistemas, $objeto[0]['sistema']);
 				require_once "form/{$rpg_sistemas_arquivo_nome[$array_key]}";
 				helper_form_button_update_and_back(ROOTPATHURL.PERSONAGEMPATH);
 			$form->form_();

@@ -336,7 +336,67 @@ function helper_show_personagens_fate($personagem){
 }
 
 function helper_show_personagens_deamon($personagem){
+	global $tag, $form;
+	$unserialize_params = unserialize($personagem['dados']);
 	
+	$atributos = helper_atitudes_deamon_rpg([
+			["CON",$unserialize_params['constituicao']],
+			["FR",$unserialize_params['forca']],
+			["DEX",$unserialize_params['destreza']],
+			["AGI",$unserialize_params['agilidade']],
+			["INT",$unserialize_params['inteligencia']],
+			["PER",$unserialize_params['percepcao']],
+			["CAR",$unserialize_params['carisma']],
+			["WILL",$unserialize_params['will']],
+			]);
+	
+	$attr = [
+	//DAEMON RPG
+	'<b>Atributos:</b>' 					=> "{$atributos}",
+	'<b>IP (Índice de proteção):</b>' 		=> "{$unserialize_params['ip']}",
+	'<b>PV (Pontos de vida):</b>' 			=> "{$unserialize_params['pv']}",
+	'<b>PH (Pontos heróicos):</b>' 			=> "{$unserialize_params['ph']}",
+	'<b>PM (Pontos de magia):</b>' 			=> "{$unserialize_params['pm']}",
+	'<b>PF (Pontos de fé):</b>' 			=> "{$unserialize_params['pf']}",
+	'<b>Perícias com armas:</b>' 			=> "{$unserialize_params['pericias_com_armas']}",
+	'<b>Aprimoramentos:</b>' 				=> "{$unserialize_params['aprimoramentos']}",
+	'<b>Perícias:</b>' 						=> "{$unserialize_params['pericias']}",
+	'<b>Poderes:</b>' 						=> "{$unserialize_params['poderes']}",
+	'<b>Magias:</b>' 						=> "{$unserialize_params['magias']}",
+	'<b>Outros:</b>' 						=> "{$unserialize_params['outros']}"
+	];
+	
+	$tag->h1('class="margin-zero"');
+		$tag->imprime("{$personagem['nome']} <span class=\"small\">(ID {$personagem['id']}, Criador: {$personagem['dono']})</span>");
+	$tag->h1;
+	$tag->b();
+		$tag->imprime("Sistema de Rpg: {$personagem['sistema']}");
+		$raca = helper_check_value($personagem, 'raca');
+		if($raca != ''):
+			$tag->imprime("{$raca}, de {$personagem['lv']}º Nível");
+			//$tag->br();
+		endif;
+	$tag->b;
+	
+	$tag->br();
+	$tag->imprime("<b>Nascido no dia</b> {$unserialize_params['data_nascimento']},");
+	$tag->imprime("<b>Local</b>: {$unserialize_params['local_nascimento']},");
+	$tag->imprime("<b>Sexo</b>: {$unserialize_params['sexo']}");
+	$tag->br();
+	$tag->imprime("<b>Altura</b>: {$unserialize_params['altura']}");
+	$tag->br();
+	$tag->imprime("<b>Peso</b>: {$unserialize_params['peso']}");
+	$tag->br();
+	$tag->imprime("<b>Sexo</b>: {$unserialize_params['sexo']}");
+	$tag->br();
+	$tag->imprime("<b>Classe Social/Profissão</b>: {$unserialize_params['profissao']}");
+	$tag->br();
+	$tag->imprime("<b>Idade aparente</b>: {$unserialize_params['idade_aparente']} <b>Idade real</b>: {$unserialize_params['idade_real']}");
+	$tag->br();
+	$tag->imprime("<b>Idiomas</b>: {$unserialize_params['idiomas']} <b>Religião</b>: {$unserialize_params['religiao']}");
+	$tag->br();
+	
+	helper_show_body_attr_personagens($attr);
 }
 
 function helper_show_personagens_3det($personagem){
@@ -745,9 +805,9 @@ function helper_prev_next($object, $id, $modulo){
 		$tag->a('href="'.ROOTPATHURL.$modulos_path[$modulo].'view.php?id='.$id_prev.'" class="btn btn-primary"');
 			$tag->imprime('<<< Anterior');
 		$tag->a;
-
+		
 		$id_next = array_key_exists($current_position+1, $ids) ? $ids[$current_position+1] : $current_position;
-		if($id_next == count($ids)) $id_next = 1;
+		if($id_next == $ids[count($ids)-1]) $id_next = $ids[0];
 		$tag->a('href="'.ROOTPATHURL.$modulos_path[$modulo].'view.php?id='.$id_next.'" class="btn btn-primary"');
 			$tag->imprime('Próximo >>>');
 		$tag->a;
@@ -831,6 +891,25 @@ function helper_atitudes_fate_rpg($atitudes){
 			$str .= "{$atitudes[$i][0]}: ".helper_escala_fate_rpg($atitudes[$i][1]). "({$atitudes[$i][1]}), ";
 		endif;
 	endfor;
+	return $str;
+}
+
+//Deamon RPG
+function helper_atitudes_deamon_rpg($habilidades){
+	$escala = '';
+	$str = '';
+	if(empty($habilidades[0][1])):
+		return '';
+	else:
+		for($i=0; $i<count($habilidades); $i++):
+			$modificador = (($habilidades[$i][1])*4);
+			if($i == (count($habilidades)-1)):
+				$str .= "{$habilidades[$i][0]} ".$habilidades[$i][1]. " ({$modificador}%)";
+			else:
+				$str .= "{$habilidades[$i][0]} ".$habilidades[$i][1]. " ({$modificador}%), ";
+			endif;
+		endfor;
+	endif;
 	return $str;
 }
 

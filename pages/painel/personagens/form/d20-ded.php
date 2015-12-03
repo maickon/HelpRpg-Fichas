@@ -2,7 +2,7 @@
 global $s;
 $current_user = $s->get_session('nome');
 $form->input(['name' => 'dono', 'type' => 'hidden', 'value'=> $current_user]);
-$form->input(['name' => 'sistema', 'type' => 'hidden', 'value'=> 'Dungeons and Dragons']);
+$form->input(['name' => 'sistema', 'type' => 'hidden', 'value'=> 'Dungeons and Dragons 3.5']);
 $form->input(['name' => 'tipo', 'type' => 'hidden', 'value'=> 'Personagem jogador']);
 
 $atributos = [

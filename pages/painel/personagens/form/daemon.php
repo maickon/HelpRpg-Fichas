@@ -37,7 +37,7 @@ for($i=0; $i<=count($caracteristicas)-1; $i++):
 		else:
 			$required = 'false';
 		endif;
-		$form->input(['name' => $caracteristicas[$i][1], 'type' => 'text', 'class'=>'form-control', 'value'=> helper_check_value($objeto[0], $caracteristicas[$i][1])]);
+		$form->input(['name' => $caracteristicas[$i][1], 'type' => 'text', 'class'=>'form-control', 'required'=>'true', 'value'=> helper_check_value($objeto[0], $caracteristicas[$i][1])]);
 	$form->col_();
 endfor;
 
