@@ -119,3 +119,29 @@
 .link-title:link, .link-title:visited{
 	color: white;
 }
+
+.header_ded_4-0{
+	background-color: #CC6600;
+	color: white;
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+	border-top: 2px solid #000;
+}
+
+.body1_ded_4-0{
+	background-color: #E6E8FA;
+	color: black;
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+}
+
+.body2_ded_4-0{
+	background-color: #D9D9F3;
+	color: black;
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+}
+
+.border-button{
+	border-bottom: 2px solid #000;
+}

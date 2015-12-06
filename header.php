@@ -111,8 +111,8 @@ $tag->html('lang="pt-br"');
 		$tag->div;
 		// array('Idioma', utf8_encode('Português - BR'), 'English - En')
 		//array('#','?v=pt-br', '?v=en')
-		$parametros['nomes'] = array('Home','Cadastro','Sobre','Como Usar');
-		$parametros['links']  = array(BASE_PATH, USERNEWPATH, ABOUTPATH, HOWTOUSE);
+		$parametros['nomes'] = array('Home','Cadastro','Sobre','Gerador de NPCs','Gerador de Monstros','Como Usar');
+		$parametros['links']  = array(BASE_PATH, USERNEWPATH, ABOUTPATH, NPCGENERATEPATH, MONSTERGENERATEPATH, HOWTOUSE);
 		$parametros['programer']  = PROGRAMER;
 		$parametros['copy']  = COPY;
 	endif;	

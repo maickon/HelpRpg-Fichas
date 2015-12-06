@@ -53,6 +53,10 @@ class Form{
 		echo '<br />';
 	}
 	
+	function bold($string){
+		return "<b>{$string}</b>";
+	}
+	
 	function h1($text, $parameters = null){
 		$tag = '<h1';
 		if($parameters):

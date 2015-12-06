@@ -12,6 +12,8 @@ define('SEPARETOR',"/");
 define('ABOUTPATH', ROOTPATHURL."pages/sobre/");
 define('HOWTOUSE', 'pages/como-usar/');
 define('DOWNLOADPATH','arquivos/');
+define('NPCGENERATEPATH','http://helprpg.com.br/old/index.php?p=fichas');
+define('MONSTERGENERATEPATH','http://helprpg.com.br/old/index.php?p=monstros');
 
 //url login
 define('LOGINPATH', ROOTPATHURL."pages/login");
@@ -124,4 +126,5 @@ $rpg_sistemas = [
 require_once 'termos/3det.php';
 require_once 'termos/d20.php';
 require_once 'termos/deamon.php';
+require_once 'termos/d20-ded-4.0.php';
 

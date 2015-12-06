@@ -25,9 +25,9 @@ $tag->br();
 	$form->_container();
 		if(isset($_REQUEST['action'])):
 			$form->_col(12);
-				$create_personagem = new Personagens(ROOTPATH.PERSONAGEMIMGPATH);
+				$create_monstro = new Personagens(ROOTPATH.MONSTROIMGPATH);
 				$_REQUEST['img'] =  $_FILES['img'];
-				$create_personagem->create(helper_params_personagem($_REQUEST));
+				$create_monstro->create(helper_params_personagem($_REQUEST));
 			$form->col_();
 		endif;
 		
@@ -35,7 +35,7 @@ $tag->br();
 			$tag->span('class="span_title"');
 				$sistema = '';
 				isset($_GET['sistema']) ? $sistema = $rpg_sistemas[$_GET['sistema']] : $sistema = $rpg_sistemas['ded'];
-				$tag->imprime(PERSONAGEM. ' <smal id="sistema-title"> Sistema: '. $sistema.'</smal>');
+				$tag->imprime(MONSTRO. ' <smal id="sistema-title"> Sistema: '. $sistema.'</smal>');
 			$tag->span;
 		$form->col_();
 		
@@ -54,7 +54,7 @@ $tag->br();
 		
 		$form->_col(2);
 			$objeto = null;
-			$tag->a('href="'.ROOTPATHURL.PERSONAGEMPATH.'" class="btn btn-info"');
+			$tag->a('href="'.ROOTPATHURL.MONSTROPATH.'" class="btn btn-info"');
 				$tag->imprime(BACK);
 			$tag->a;
 		$form->col_();
@@ -70,7 +70,7 @@ $tag->br();
 				$form->_form(['method'=>'post', 'name'=>'new-user', 'enctype'=>'multipart/form-data', 'class'=>'form-group', 'data-toggle'=>'validator']);
 					$file  = helper_name_of_form_fie(isset($_GET['sistema'])?$_GET['sistema']:'ded');
 					require_once "form/{$file}";
-					helper_form_button_submit_and_back(ROOTPATHURL.PERSONAGEMPATH);
+					helper_form_button_submit_and_back(ROOTPATHURL.MONSTROPATH);
 				$form->form_();	
 			$form->_container();
 		$form->row_();
