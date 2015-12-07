@@ -45,7 +45,7 @@ define('BOSSIMGPATH', "img/boss/");
 define('HABILIDADES', "Habilidades");
 define('HABILIDADESPATH', "pages/painel/habilidades");
 
-define('HISTORIAS', utf8_encode("Histórias"));
+define('HISTORIAS', "Histórias");
 define('HISTORIASPATH', "pages/painel/historias");
 
 define('FORCA', "Força");
@@ -59,6 +59,9 @@ define('SISTEMA_DE_RPG', "Sistema de RPG");
 define('CRIADOR', "Criador");
 define('CODIGO', "Char ID#");
 
+define('OLHOS', "Olhos");
+define('PELE', "Pele");
+define('CABELO', "Cabelo");
 define('RACA', "Raça");
 define('DADO_VIDA', "Dado de Vida");
 define('INICIATIVA', "Iniciativa");

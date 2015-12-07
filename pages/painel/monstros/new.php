@@ -22,6 +22,7 @@ $tag->imprime('
 new Components('menu', $parametros);
 $tag->br();
 $tag->br();
+		
 	$form->_container();
 		if(isset($_REQUEST['action'])):
 			$form->_col(12);

@@ -127,4 +127,4 @@ require_once 'termos/3det.php';
 require_once 'termos/d20.php';
 require_once 'termos/deamon.php';
 require_once 'termos/d20-ded-4.0.php';
-
+require_once 'termos/d20-ded-5.0.php';

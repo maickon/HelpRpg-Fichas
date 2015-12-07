@@ -142,6 +142,50 @@
 	border-right: 2px solid #000;
 }
 
+.header_ded_5-0{
+	background-color: #B22222;
+	color: white;
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+	border-top: 2px solid #000;
+}
+
+.body1_ded_5-0{
+	background-color: #FA8072;
+	color: black;
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+}
+
+.body2_ded_5-0{
+	background-color: #FFA07A;
+	color: black;
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+}
+
+.header_3det{
+	background-color: #3232CD;
+	color: white;
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+	border-top: 2px solid #000;
+}
+
+.body1_3det{
+	background-color: #F5DEB3;
+	color: black;
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+}
+
+.body2_3det{
+	background-color: #D1EEEE;
+	color: black;
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+}
+
 .border-button{
 	border-bottom: 2px solid #000;
 }

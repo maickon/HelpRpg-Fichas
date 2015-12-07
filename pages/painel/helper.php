@@ -493,37 +493,95 @@ function helper_show_personagens_3det($personagem){
 	global $tag, $form;
 	$unserialize_params = unserialize($personagem['dados']);
 	
-	helper_show_header_attr_personagem($personagem);
-	$tag->br();
-	$tag->imprime($form->bold(PTS).$unserialize_params['pts']);
-	$tag->br();
-	$tag->imprime($form->bold(F).$unserialize_params['forca']);
-	$tag->imprime($form->bold(H).$unserialize_params['habilidade']);
-	$tag->imprime($form->bold(R).$unserialize_params['resistencia']);
-	$tag->imprime($form->bold(A).$unserialize_params['armadura']);
-	$tag->imprime($form->bold(PDF).$unserialize_params['pdf']);
-	$tag->br();
-	$tag->imprime($form->bold(PVS).': '.$unserialize_params['pvs']);
-	$tag->br();
-	$tag->imprime($form->bold(PDM).': '.$unserialize_params['pms']);
-	$tag->br();
-	$tag->imprime($form->bold(PDE).': '.$unserialize_params['experiencia']);
-	$tag->br();
-	$tag->imprime($form->bold(VANTAGENS).': '.$unserialize_params['vantagens']);
-	$tag->br();
-	$tag->imprime($form->bold(DESVANTAGENS).': '.$unserialize_params['desvantagens']);
-	$tag->br();
-	$tag->imprime($form->bold(TIPO_DANO).': '.$unserialize_params['tipo_dano']);
-	$tag->br();
-	$tag->imprime($form->bold(MAGIAS_CONHECIDAS).': '.$unserialize_params['magias']);
-	$tag->br();
-	$tag->imprime($form->bold(PODERES).': '.$unserialize_params['poderes']);
-	$tag->br();
-	$tag->imprime($form->bold(DINHEIRO_ITENS).': '.$unserialize_params['dinheiro']);
-	$tag->br();
-	$tag->imprime($form->bold(HISTORIAS),'');
-	$tag->imprime(': '.$unserialize_params['historia']);
-	$tag->br();
+	$tag->div('class="col-md-12 header_3det"');
+		$form->_row();
+			$form->_col(6);
+				$tag->imprime($form->bold($personagem['nome']));
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(CODIGO).$form->bold($personagem['id']));
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(SISTEMA_DE_RPG).' '.$form->bold($personagem['sistema']));
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(CRIADOR).' '.$form->bold($personagem['dono']));
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold($personagem['raca']));
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold($personagem['classe']).' de '.$form->bold($personagem['lv'].'º Nível'));
+			$form->col_();
+		$form->row_();
+	$tag->div;
+	
+	$tag->div('class="col-md-12 body1_3det"');
+		$form->_row();
+			$form->_col(6);
+				$tag->imprime($form->bold(PTS).' '.$form->bold($unserialize_params['pts']));
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime(
+							$form->bold(F).$unserialize_params['forca'].' '.
+							$form->bold(H).$unserialize_params['habilidade'].' '.
+							$form->bold(R).$unserialize_params['resistencia'].' '.
+							$form->bold(A).$unserialize_params['armadura'].' '.
+							$form->bold(PDF).$unserialize_params['pdf']
+							);
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(PVS).' '.$form->bold($unserialize_params['pvs']));
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(PDM).' '.$form->bold($unserialize_params['pms']));
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(PDE).' '.$form->bold($unserialize_params['experiencia']));
+			$form->col_();
+		$form->row_();
+	$tag->div;
+	
+	$tag->div('class="col-md-12 body2_3det"');
+		$form->_row();
+			$form->_col(12);
+				$tag->imprime($form->bold(VANTAGENS).'<br>'.$unserialize_params['vantagens']);
+			$form->col_();
+			$form->_col(12);
+				$tag->imprime($form->bold(DESVANTAGENS).'<br>'.$unserialize_params['desvantagens']);
+			$form->col_();
+		$form->row_();
+	$tag->div;
+	
+	$tag->div('class="col-md-12 body1_3det"');
+		$form->_row();
+			$form->_col(12);
+				$tag->imprime($form->bold(TIPO_DANO).'<br>'.$unserialize_params['tipo_dano']);
+			$form->col_();
+		$form->row_();
+	$tag->div;
+	
+	$tag->div('class="col-md-12 body2_3det"');
+		$form->_row();
+			$form->_col(12);
+				$tag->imprime($form->bold(MAGIAS_CONHECIDAS).'<br>'.$unserialize_params['magias']);
+			$form->col_();
+			$form->_col(12);
+				$tag->imprime($form->bold(PODERES).'<br>'.$unserialize_params['poderes']);
+			$form->col_();
+		$form->row_();
+	$tag->div;
+	
+	$tag->div('class="col-md-12 body1_3det border-button"');
+		$form->_row();
+			$form->_col(12);
+				$tag->imprime($form->bold(DINHEIRO_ITENS).'<br>'.$unserialize_params['dinheiro']);
+			$form->col_();
+			$form->_col(12);
+				$tag->imprime($form->bold(HISTORIAS).'<br>'.$unserialize_params['historia']);
+			$form->col_();
+		$form->row_();
+	$tag->div;
 }
 
 function helper_show_personagens_ded4_0($personagem){
@@ -748,81 +806,229 @@ function helper_show_personagens_ded4_0($personagem){
 }
 
 function helper_show_personagens_ded5_0($personagem){
-	global $tag;
+	global $tag, $form;
 	$unserialize_params = unserialize($personagem['dados']);
 	
-	$habilidades = helper_habilidades_ded_rpg([
-			["For", helper_check_value_presence($unserialize_params['forca'])],
-			["Des", $unserialize_params['destreza']],
-			["Con", $unserialize_params['constituicao']],
-			["Int", $unserialize_params['inteligencia']],
-			["Sab", $unserialize_params['sabedoria']],
-			["Car", $unserialize_params['carisma']]
-			]);
+	$tag->div('class="col-md-12 header_ded_5-0"');
+		$form->_row();
+			$form->_col(6);
+				$tag->imprime($form->bold($personagem['nome']));
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(CODIGO).$personagem['id']);
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold($personagem['sistema']));
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(CRIADOR.' ('.$personagem['dono'].')'));				
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold($personagem['raca'].' '.$personagem['classe']));	
+				$tag->br();
+				$tag->imprime('Humanóide('.$unserialize_params['tamanho'].')');
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold('Personagem de Nível '.$personagem['lv']));
+				$tag->br();
+				$tag->imprime(XP.' '.$unserialize_params['xp']);
+			$form->col_();
+		$form->row_();
+	$tag->div;	
 	
-	//regra do modificador = subtrai 10 e divide por 2
-	$pvs = $personagem['lv']*($unserialize_params['constituicao']-10)/2;
-	$attr = [
-	//'<b>Dado de vida:</b>' 		=> "{$personagem['lv']}{$unserialize_params['dado_vida']}+$pvs ({$unserialize_params['pv']} pvs)",
-	'<b>Classe:</b>'		 		=> "{$personagem['classe']}",
-	'<b>Raça:</b>'			 		=> "{$personagem['raca']}",
-	'<b>Pontos de experiência:</b>' => "{$unserialize_params['xp']}",
-	
-	'<b>Força - Jogada de proteção:</b>' 	=> "{$unserialize_params['forca_protecao']}",
-	'<b>Força - Atletismo:</b>' 			=> "{$unserialize_params['forca_atletismo']}",
-	
-	'<b>Destreza - Jogada de proteção:</b>' => "{$unserialize_params['destreza_protecao']}",
-	'<b>Destreza - Acrobáticos:</b>' 		=> "{$unserialize_params['destreza_acrobaticos']}",
-	'<b>Destreza - Furtividade:</b>' 		=> "{$unserialize_params['destreza_furtividade']}",
-	'<b>Destreza - Punga:</b>' 				=> "{$unserialize_params['destreza_punga']}",
-	
-	'<b>Constituição - Jogada de proteção:</b>' => "{$unserialize_params['constituicao_protecao']}",
+	$tag->div('class="col-md-12 body1_ded_5-0"');
+		$form->_row();
+			$form->_col(6);
+				$tag->imprime($form->bold(CLASSE_DE_ARMADURA).' '.$unserialize_params['ca']);
+			$form->col_();
+			
+			$form->_col(6);
+				$tag->imprime($form->bold(PVS).' '.$unserialize_params['pvs_atuais'].'('.$personagem['lv'].$unserialize_params['dado_vida'].'+'.($personagem['lv']*mod($unserialize_params['constituicao']).')'));	
+			$form->col_();
 
-	'<b>Inteligência - Jogada de proteção:</b>' => "{$unserialize_params['inteligencia_protecao']}",
-	'<b>Inteligência - Arcana:</b>' 			=> "{$unserialize_params['inteligencia_arcana']}",
-	'<b>Inteligência - História:</b>' 			=> "{$unserialize_params['inteligencia_historia']}",
-	'<b>Inteligência - Investigação:</b>' 		=> "{$unserialize_params['inteligencia_investigacao']}",
-	'<b>Inteligência - Natureza:</b>' 			=> "{$unserialize_params['inteligencia_natureza']}",
-	'<b>Inteligência - Religião:</b>' 			=> "{$unserialize_params['inteligencia_religiao']}",
+			$form->_col(6);
+				$tag->imprime($form->bold(INICIATIVA).' '.$unserialize_params['iniciativa']);
+			$form->col_();
+			
+			$form->_col(6);
+				$tag->imprime($form->bold(DESL).' '.$unserialize_params['deslocamento']);
+			$form->col_();
+			
+			$form->_col(6);
+				$tag->imprime($form->bold(TENDENCIA).' '.$unserialize_params['tendencia']);
+			$form->col_();
+				
+			$form->_col(6);
+				$tag->imprime($form->bold(ANTECEDENTE).' '.$unserialize_params['antecedente']);
+			$form->col_();
+		$form->row_();
+	$tag->div;	
 	
-	'<b>Sabedoria - Jogada de proteção:</b>' 	=> "{$unserialize_params['sabedoria_protecao']}",
-	'<b>Sabedoria - Adestrar animais:</b>' 		=> "{$unserialize_params['sabedoria_adestrar_animais']}",
-	'<b>Sabedoria - Intuição:</b>' 				=> "{$unserialize_params['sabedoria_intuicao']}",
-	'<b>Sabedoria - Medicina:</b>' 				=> "{$unserialize_params['sabedoria_medicina']}",
-	'<b>Sabedoria - Percepção:</b>' 			=> "{$unserialize_params['sabedoria_percepcao']}",
-	'<b>Sabedoria - Sobrevivência:</b>' 		=> "{$unserialize_params['sabedoria_sobrevivencia']}",
-	
-	'<b>Carisma - Jogada de proteção:</b>' 		=> "{$unserialize_params['sabedoria_protecao']}",
-	'<b>Carisma - Atuação:</b>' 				=> "{$unserialize_params['carisma_atuacao']}",
-	'<b>Carisma - Enganação:</b>' 				=> "{$unserialize_params['carisma_enganacao']}",
-	'<b>Carisma - Intimidação:</b>' 			=> "{$unserialize_params['carisma_intimidacao']}",
-	'<b>Carisma - Persuasão:</b>' 				=> "{$unserialize_params['carisma_persuasao']}",
+	$tag->div('class="col-md-12 body2_ded_5-0"');
+		$form->_row();
+			$form->_col(4);
+				$tag->imprime($form->bold(IDADE).' '.$unserialize_params['idade']);
+			$form->col_();
+			
+			$form->_col(4);
+				$tag->imprime($form->bold(ALTURA).' '.$unserialize_params['altura']);
+			$form->col_();
+			
+			$form->_col(4);
+				$tag->imprime($form->bold(PESO).' '.$unserialize_params['peso']);
+			$form->col_();
+			
+			$form->_col(4);
+				$tag->imprime($form->bold(OLHOS).' '.$unserialize_params['olhos']);
+			$form->col_();
+			
+			$form->_col(4);
+				$tag->imprime($form->bold(PELE).' '.$unserialize_params['pele']);
+			$form->col_();
+			
+			$form->_col(4);
+				$tag->imprime($form->bold(CABELO).' '.$unserialize_params['cabelo']);
+			$form->col_();
+		
+			$form->_col(2);
+				$tag->imprime($form->bold(FOR_5_0));
+			$form->col_();
+			
+			$form->_col(2);
+				$tag->imprime($form->bold(DES_5_0));	
+			$form->col_();
 
-	'<b>Sabedoria passiva (Percepção):</b>' 	=> "{$unserialize_params['sabedoria_percepcao']}",
+			$form->_col(2);
+				$tag->imprime($form->bold(CON_5_0));
+			$form->col_();
+			
+			$form->_col(2);
+				$tag->imprime($form->bold(INT_5_0));	
+			$form->col_();
+			
+			$form->_col(2);
+				$tag->imprime($form->bold(SAB_5_0));
+			$form->col_();
+			
+			$form->_col(2);
+				$tag->imprime($form->bold(CAR_5_0));	
+			$form->col_();
+			
+			$form->_col(2);
+				$tag->imprime($form->bold($unserialize_params['forca']).' ('.mod($unserialize_params['forca']).')');
+			$form->col_();
+			
+			$form->_col(2);
+				$tag->imprime($form->bold($unserialize_params['destreza']).' ('.mod($unserialize_params['destreza']).')');	
+			$form->col_();
+
+			$form->_col(2);
+				$tag->imprime($form->bold($unserialize_params['constituicao']).' ('.mod($unserialize_params['constituicao']).')');
+			$form->col_();
+			
+			$form->_col(2);
+				$tag->imprime($form->bold($unserialize_params['inteligencia']).' ('.mod($unserialize_params['inteligencia']).')');	
+			$form->col_();
+			
+			$form->_col(2);
+				$tag->imprime($form->bold($unserialize_params['sabedoria']).' ('.mod($unserialize_params['sabedoria']).')');
+			$form->col_();
+			
+			$form->_col(2);
+				$tag->imprime($form->bold($unserialize_params['carisma']).' ('.mod($unserialize_params['carisma']).')');	
+			$form->col_();
+		$form->row_();
+	$tag->div;	
 	
-	'<b>Altura:</b>' 					=> "{$unserialize_params['altura']}",
-	'<b>Peso:</b>' 						=> "{$unserialize_params['peso']}",
-	'<b>Divindade:</b>' 				=> "{$unserialize_params['divindade']}",
-	'<b>Idade:</b>' 					=> "{$unserialize_params['idade']}",
-	'<b>Sexo:</b>' 						=> "{$unserialize_params['sexo']}",
+	$tag->div('class="col-md-12 body1_ded_5-0"');
+		$form->_row();
+			$form->_col(6);
+				$tag->imprime($form->bold(INSPIRACAO).' '.$unserialize_params['inspiração']);
+			$form->col_();
+			
+			$form->_col(6);
+				$tag->imprime($form->bold(BONUS_DE_PROFICIENCIA).' '.$unserialize_params['proficiencias']);
+			$form->col_();
+			
+			$form->_col(12);
+				$tag->imprime($form->bold(TESTES_RESISTENCIA).' '. 
+							$form->bold(RESISTENCIA_FOR_5_0).' '.$unserialize_params['resistencia_forca'].' '.
+							$form->bold(RESISTENCIA_DES_5_0).' '.$unserialize_params['resistencia_destreza'].' '.
+							$form->bold(RESISTENCIA_CON_5_0).' '.$unserialize_params['resistencia_constituicao'].' '.
+							$form->bold(RESISTENCIA_INT_5_0).' '.$unserialize_params['resistencia_inteligencia'].' '.
+							$form->bold(RESISTENCIA_SAB_5_0).' '.$unserialize_params['resistencia_sabedoria'].' '.
+							$form->bold(RESISTENCIA_CAR_5_0).' '.$unserialize_params['resistencia_carisma']);
+			$form->col_();
+			
+			$form->_col(12);
+				$tag->imprime($form->bold(PERICIAS).'<br>'.$unserialize_params['pericias']);	
+			$form->col_();
+
+			$form->_col(12);
+				$tag->imprime($form->bold(SABEDORIA_PERCEPCAO_PASSIVA).' '.$unserialize_params['sabedoria_percepcao']);
+			$form->col_();
+		$form->row_();
+	$tag->div;
 	
-	'<b>Inspiração:</b>' 				=> "{$unserialize_params['inspiração']}",
-	'<b>Pvs atuais:</b>' 				=> "{$unserialize_params['pvs_atuais']}",
-	'<b>Dado de vida:</b>' 				=> "{$unserialize_params['dado_vida']}",
-	'<b>Iniciativa:</b>' 				=> "{$unserialize_params['iniciativa']}",
-	'<b>Velocidade:</b>' 				=> "{$unserialize_params['velocidade']}",
-	'<b>Visão:</b>' 					=> "{$unserialize_params['visao']}",
+	$tag->div('class="col-md-12 body1_ded_5-0"');
+		$form->_row();				
+			$form->_col(12);
+				$tag->imprime($form->bold(TRACOS_DE_PERSONALIDADE).'<br>'.$unserialize_params['tracos_de_personalidade']);
+			$form->col_();
+		
+			$form->_col(12);
+				$tag->imprime($form->bold(IDEAIS).'<br>'.$unserialize_params['ideais']);
+			$form->col_();
+			
+			$form->_col(12);
+				$tag->imprime($form->bold(VINCULOS).'<br>'.$unserialize_params['vinculos']);
+			$form->col_();
+			
+			$form->_col(12);
+				$tag->imprime($form->bold(DEFEITOS).'<br>'.$unserialize_params['defeitos']);
+			$form->col_();
+		$form->row_();
+	$tag->div;
 	
-	'<b>Ataques:</b>' 							=> "{$unserialize_params['ataques']}",
-	'<b>Equipamentos:</b>' 						=> "{$unserialize_params['equipamentos']}",
-	'<b>Características de classe e Raça:</b>' 	=> "{$unserialize_params['caracteristicas']}",
-	'<b>Proficiências e Idiomas:</b>' 			=> "{$unserialize_params['proficiencias']}",
-	'<b>História:</b>' 							=> "{$unserialize_params['historia']}",
-	'<b>Outros:</b>' 							=> "{$unserialize_params['outros']}",
-	];
+	$tag->div('class="col-md-12 body2_ded_5-0"');
+		$form->_row();				
+			$form->_col(12);
+				$tag->imprime($form->bold(ATAQUES_E_CONJURACAO).'<br>'.$unserialize_params['ataques_e_conjuracao']);
+			$form->col_();
+			
+			$form->_col(12);
+				$tag->imprime($form->bold(EQUIPAMENTOS).'<br>'.$unserialize_params['equipamentos']);
+			$form->col_();
+			
+			$form->_col(12);
+				$tag->imprime($form->bold(OUTRAS_PROFICIENCIAS_E_IDIOMAS).'<br>'.$unserialize_params['proficiencias_e_idiomas']);
+			$form->col_();
+			
+			$form->_col(12);
+				$tag->imprime($form->bold(CARACTERISTICAS_E_TRACOS).'<br>'.$unserialize_params['caracteristicas_tracos']);
+			$form->col_();
+		$form->row_();
+	$tag->div;
 	
-	helper_show_header_attr_personagem($personagem);
-	helper_show_body_attr_personagens($attr);
+	$tag->div('class="col-md-12 body1_ded_5-0"');
+		$form->_row();				
+			$form->_col(4);
+				$tag->imprime($form->bold(HABILIDADES_DE_CONJURACAO).' '.$unserialize_params['habilidade_de_conjuracao']);	
+			$form->col_();
+
+			$form->_col(4);
+				$tag->imprime($form->bold(CD_DE_RESISTENCIA_DE_MAGIA).' '.$unserialize_params['cd_de_resistencia_de_magia']);
+			$form->col_();
+			
+			$form->_col(4);
+				$tag->imprime($form->bold(BONUS_DE_ATAQUE_DE_MAGIA).' '.$unserialize_params['bonus_de_ataque_de_magia']);
+			$form->col_();
+			
+			$form->_col(12);
+				$tag->imprime($form->bold(MAGIAS).'<br>'.$unserialize_params['magias']);
+			$form->col_();
+		$form->row_();
+	$tag->div;
 }
 
 function helper_show_personagens_savage_worlds(){
