@@ -164,6 +164,28 @@
 	border-right: 2px solid #000;
 }
 
+.header_ded_3-5{
+	background-color: #B22222;
+	color: white;
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+	border-top: 2px solid #000;
+}
+
+.body1_ded_3-5{
+	background-color: #EEE5DE;
+	color: black;
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+}
+
+.body2_ded_3-5{
+	background-color: #FFF5EE;
+	color: black;
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+}
+
 .header_3det{
 	background-color: #3232CD;
 	color: white;
@@ -173,19 +195,84 @@
 }
 
 .body1_3det{
-	background-color: #F5DEB3;
+	background-color: #FFFAFA;
 	color: black;
 	border-left: 2px solid #000;
 	border-right: 2px solid #000;
 }
 
 .body2_3det{
-	background-color: #D1EEEE;
+	background-color: #F5F5F5;
 	color: black;
 	border-left: 2px solid #000;
 	border-right: 2px solid #000;
 }
 
+.header_deamon{
+	background-color: #8B1A1A;
+	color: white;
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+	border-top: 2px solid #000;
+}
+
+.body1_deamon{
+	background-color: #FFFAF0;
+	color: black;
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+}
+
+.body2_deamon{
+	background-color: #FAEBD7;
+	color: black;
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+}
+
+.header_fate{
+	background-color: #B22222;
+	color: white;
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+	border-top: 2px solid #000;
+}
+
+.body1_fate{
+	background-color: #FFF8DC;
+	color: black;
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+}
+
+.body2_fate{
+	background-color: #FFFFF0;
+	color: black;
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+}
+
+.header_monstros{
+	background-color: #36648B;
+	color: white;
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+	border-top: 2px solid #000;
+}
+
+.body1_monstros{
+	background-color: #FFF5EE;
+	color: black;
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+}
+
+.body2_monstros{
+	background-color: #FFF8DC;
+	color: black;
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+}
 .border-button{
 	border-bottom: 2px solid #000;
 }

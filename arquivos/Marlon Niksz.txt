@@ -8,3 +8,14 @@ raca: Humano
 old_file: 1448751872.jpg
 dados: a:30:{s:12:"constituicao";s:2:"20";s:5:"forca";s:2:"22";s:8:"destreza";s:2:"16";s:9:"agilidade";s:2:"15";s:12:"inteligencia";s:2:"16";s:9:"percepcao";s:2:"14";s:7:"carisma";s:2:"10";s:4:"will";s:1:"9";s:2:"pv";s:2:"23";s:2:"ip";s:1:"4";s:2:"ph";s:1:"5";s:2:"pm";s:1:"-";s:2:"pf";s:1:"-";s:15:"data_nascimento";s:21:"27 de janeiro de 1992";s:16:"local_nascimento";s:8:"Brasilia";s:4:"sexo";s:9:"Masculino";s:6:"altura";s:4:"1,77";s:4:"peso";s:4:"74Kg";s:9:"profissao";s:32:"Alta/Engenheiro e Agente secreto";s:14:"idade_aparente";s:2:"28";s:10:"idade_real";s:2:"23";s:8:"armadura";s:12:"Sem armadura";s:7:"idiomas";s:28:"Portugês, Ingles e Espanhol";s:8:"religiao";s:7:"Budista";s:18:"pericias_com_armas";s:34:"Pistola: ataque +23% Defesa +19%
 ";s:14:"aprimoramentos";s:35:"Sorte exagerada, Contatos e aliados";s:8:"pericias";s:69:"Conhecimento engenharia 36%, corrida +20%, Inglês +40%, Espanho +40%";s:7:"poderes";s:1:"-";s:6:"magias";s:1:"-";s:6:"outros";s:1:"-";}
+id: 12
+dono: Maickon
+sistema: Deamon
+tipo: Personagem jogador
+lv: 7
+nome: Marlon Niksz
+classe: Espião
+raca: Humano
+old_file: 1448752309.jpg
+dados: a:31:{s:12:"constituicao";s:2:"20";s:5:"forca";s:2:"22";s:8:"destreza";s:2:"16";s:9:"agilidade";s:2:"15";s:12:"inteligencia";s:2:"16";s:9:"percepcao";s:2:"14";s:7:"carisma";s:2:"10";s:4:"will";s:1:"9";s:2:"pv";s:2:"23";s:2:"ip";s:1:"4";s:2:"ph";s:1:"5";s:2:"pm";s:1:"-";s:2:"pf";s:1:"-";s:2:"xp";s:2:"69";s:15:"data_nascimento";s:21:"27 de janeiro de 1992";s:16:"local_nascimento";s:8:"Brasilia";s:4:"sexo";s:9:"Masculino";s:6:"altura";s:4:"1,77";s:4:"peso";s:4:"74Kg";s:9:"profissao";s:27:"Engenheiro e Agente secreto";s:14:"idade_aparente";s:2:"28";s:10:"idade_real";s:2:"23";s:8:"armadura";s:12:"Sem armadura";s:7:"idiomas";s:28:"Portugês, Ingles e Espanhol";s:8:"religiao";s:7:"Budista";s:18:"pericias_com_armas";s:34:"Pistola: ataque +23% Defesa +19%
+";s:14:"aprimoramentos";s:35:"Sorte exagerada, Contatos e aliados";s:8:"pericias";s:69:"Conhecimento engenharia 36%, corrida +20%, Inglês +40%, Espanho +40%";s:7:"poderes";s:1:"-";s:6:"magias";s:1:"-";s:6:"outros";s:1:"-";}

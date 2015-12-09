@@ -15,3 +15,7 @@ define("DINHEIRO_ITENS","Dinheiro e Itens");
 define("VANTAGENS","Vantagens");
 define("DESVANTAGENS","Desvantagens");
 define("PODERES","Poderes");
+define("HABILIDADE","Habilidade");
+define("RESISTENCIA","Resistência");
+define("ARMADURA","Armadura");
+

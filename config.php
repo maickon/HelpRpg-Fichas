@@ -30,27 +30,27 @@ define('USERPASSPATH',ROOTPATHURL."pages/usuario/pass.php");
 // Retorna o dominio do servidor
 define('SERVER_NAME',$_SERVER['SERVER_NAME'].SEPARETOR); //127.0.0.1
 
-// Retorna o path do arquivo onde est� sendo executado
+// Retorna o path do arquivo onde esta sendo executado
 define('PHP_SELF',$_SERVER['PHP_SELF']); //PainelAdm/index.php
 
-// Retorna o path do pasta onde est� sendo executado
+// Retorna o path do pasta onde esta sendo executado
 define('DOCUMENT_ROOT',$_SERVER['DOCUMENT_ROOT']); //C:/xampp/htdocs
 
-// Retorna o path do arquivo onde est� sendo executado o script
+// Retorna o path do arquivo onde esta sendo executado o script
 define('SCRIPT_FILENAME',$_SERVER['SCRIPT_FILENAME']); //C:/xampp/htdocs/PainelAdm/index.php
 
-// Retorna o path e nome do arquivo que est� executando
+// Retorna o path e nome do arquivo que esta executando
 define('SCRIPT_NAME',$_SERVER['SCRIPT_NAME']); ///PainelAdm/index.php
 	
 $path = $_SERVER['SCRIPT_FILENAME'];
 $path_parts = pathinfo($path);
-// retorna o path absoluto do diret�rio no servidor
+// retorna o path absoluto do diretorio no servidor
 define('DIRNAME',$path_parts['dirname']."/"); //C:/xampp/htdocs/helpRpg
 
 // retorna o nome do arquivo com extensão
 define('BASENAME',$path_parts['basename']); //index.php
 
-// retorna a extens�o do arquivo
+// retorna a extensao do arquivo
 define('EXTENSION',$path_parts['extension']); //php
 
 // retorna o nome do arquivo sem extensão
@@ -128,3 +128,4 @@ require_once 'termos/d20.php';
 require_once 'termos/deamon.php';
 require_once 'termos/d20-ded-4.0.php';
 require_once 'termos/d20-ded-5.0.php';
+require_once 'termos/fate.php';

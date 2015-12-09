@@ -1,0 +1,9 @@
+id: 16
+dono: Maickon
+sistema: FATE
+tipo: Personagem jogador
+lv: -
+nome: Arcatron [Arcanjo Macatrônico]
+raca: Android
+classe: Soldado defensor do paraíso macatrônico
+dados: a:17:{s:9:"cuidadoso";s:1:"2";s:11:"inteligente";s:1:"4";s:9:"chamativo";s:1:"5";s:5:"forte";s:1:"6";s:6:"rapido";s:1:"3";s:10:"sorrateiro";s:1:"1";s:7:"refresh";s:1:"5";s:4:"fate";s:1:"6";s:9:"aparencia";s:115:"Arcatron é um mega android de 3,45. Pesa mais de 5Ton, tem asas brilhantes revertidas de um metal super flexével.";s:13:"aspecto_chave";s:33:"Defender o paraíso mecatrônico.";s:19:"aspecto_complicacao";s:62:"Inimigos prediletos Satadron(Uma raça de androides demônio).";s:8:"aspectos";s:69:"Senso de dever ao paraíso macatrônico e seguidor da lei de mecatron";s:9:"descricao";s:246:"Arcatron é um dos 900 soldados que defendem o paraíso mecatrônico contras as forças do mal governadas por Abadron. Android lider supremos dos demotrons (uma espécie de demônios android). Ultimamente esta guerra está sendo travada na terra.";s:6:"stress";s:1:"-";s:13:"consequencias";s:131:"Arcanjos mecatrônicos correm grande risco de emboscadas quando não estão em sua terra natal. A sua atenção deve ser redobrada.";s:7:"proezas";s:171:"Honra Metraton (Condecorado como um dos 10 melhores soldados do paraíso macatrônico), Aniquilador (Reconhecimento de ser um dos soldados mais temíveis pelos demotrons).";s:6:"outros";s:344:"Arcanjo Macatrônico e Demotrons sõa uma raça biotrônica nativas de mundos distantes da terra, são galáxias que habitam milhares de planetas habitados por estar raça alienígena de origem mecânica nanotecnológica. Recentemente algumas naves Demotron e Mecatron caíram na terra e isso está gerando uma guerra interna entre esta raça. ";}

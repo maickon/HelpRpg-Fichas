@@ -26,7 +26,7 @@ $tag->br();
 	$form->row_();
 			
 	$objeto = new Personagens(ROOTPATHURL.PERSONAGEMIMGPATH);
-	$personagens = $objeto->select($objeto->getTable());
+	$personagens = $objeto->select($objeto->getTable(), null, [['tipo', '=', 'Personagem jogador']]);
 
 	$tag->imprime('
 			<script type="text/javascript" charset="utf-8">

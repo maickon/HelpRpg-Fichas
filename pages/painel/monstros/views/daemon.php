@@ -10,7 +10,7 @@ $atributos = [
 				['Agilidade','agilidade'],['Inteligência','inteligencia'],
 				['Percepção','percepcao'],['Carisma','carisma'],['Força de Vontade','will'],
 				['Pontos de vida','pv'],['Índice de proteção','ip'],['Pontos Heróicos','ph'],['Pontos de magia','pm'],
-				['Pontos de fé','pf'],['Nível','lv'],['Experiência','xp']
+				['Pontos de fé','pf'],['Nível','lv']
 			];
 for($i=0; $i<=count($atributos)-1; $i++):
 	$col = 2;
@@ -24,9 +24,9 @@ helper_new_line_in_form();
 
 $caracteristicas = [
 						['Nome','nome'],['Data de nascimento', 'data_nascimento'],['Local de nascimento', 'local_nascimento'],
-						['Sexo','sexo'],['Altura','altura'],['Peso','peso'],['Classe/Profissão','profissao'],
+						['Sexo','sexo'],['Altura','altura'],['Peso','peso'],['Classe Social/Profissão','profissao'],
 						['Idade aparente','idade_aparente'],['Idade real','idade_real'],['Armadura','armadura'],
-						['Idiomas','idiomas'],['Religião','religiao'],['Classe/Ocupação','classe'],['Raça','raca']
+						['Idiomas','idiomas'],['Religião','religiao'],['Classe','classe'],['Raça','raca']
 				   ];
 
 for($i=0; $i<=count($caracteristicas)-1; $i++):

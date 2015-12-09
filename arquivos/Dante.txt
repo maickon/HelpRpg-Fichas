@@ -27,3 +27,26 @@ classe: Samurai
 raca: Humano
 old_file: 1448200010.jpg
 dados: a:29:{s:5:"forca";s:2:"12";s:8:"destreza";s:2:"14";s:12:"constituicao";s:2:"13";s:12:"inteligencia";s:2:"16";s:9:"sabedoria";s:2:"14";s:7:"carisma";s:2:"11";s:9:"tendencia";s:10:"Leal e Bom";s:5:"idade";s:2:"19";s:4:"peso";s:3:"6Kg";s:6:"altura";s:4:"1.72";s:2:"pv";s:2:"36";s:2:"ca";s:27:"17 (+5 armadura, +2 escudo)";s:12:"deslocamento";s:2:"9m";s:7:"tamanho";s:6:"Médio";s:10:"iniciativa";s:2:"+6";s:3:"bba";s:2:"+3";s:2:"xp";s:5:"3.000";s:9:"dado_vida";s:3:"d10";s:3:"for";s:2:"+3";s:4:"vont";s:2:"+1";s:4:"refl";s:2:"+3";s:6:"ataque";s:13:" Ataque total";s:8:"talentos";s:14:"meus talentos ";s:8:"pericias";s:13:"sem pericias ";s:6:"magias";s:14:"minhas magias ";s:9:"descricao";s:16:"minhas historia ";s:12:"equipamentos";s:20:"Muitos equipamentos ";s:21:"habilidades_especiais";s:23:"Habilidades de combate ";s:6:"outros";s:9:"Outros...";}
+id: 7
+dono: Maickon
+sistema: Dungeons and Dragons 3.5
+tipo: Personagem jogador
+nome: Dante
+lv: 5
+classe: Samurai
+raca: Humano
+dados: a:29:{s:5:"forca";s:2:"12";s:8:"destreza";s:2:"14";s:12:"constituicao";s:2:"13";s:12:"inteligencia";s:2:"16";s:9:"sabedoria";s:2:"14";s:7:"carisma";s:2:"11";s:9:"tendencia";s:10:"Leal e Bom";s:5:"idade";s:2:"19";s:4:"peso";s:3:"6Kg";s:6:"altura";s:4:"1.72";s:2:"pv";s:2:"36";s:2:"ca";s:27:"17 (+5 armadura, +2 escudo)";s:12:"deslocamento";s:2:"9m";s:7:"tamanho";s:6:"Médio";s:10:"iniciativa";s:2:"+6";s:3:"bba";s:2:"+3";s:2:"xp";s:5:"3.000";s:9:"dado_vida";s:3:"d10";s:3:"for";s:2:"+3";s:4:"vont";s:2:"+1";s:4:"refl";s:2:"+3";s:6:"ataque";s:58:"Arma Foice curta Dano 1d6 Tipo Armas Leves - Corpo a Corpo";s:8:"talentos";s:200:"1° inimigo predileto, rastrear, empatia com a natureza
+Estilo de Combate
+Tolerância
+Companheiro animal
+2° inimigo predileto
+Estilo de Combate Aprimorado
+Caminho da floresta
+Rastreador Eficaz";s:8:"pericias";s:268:"Concentração (Con) 12 = 11+1
+Adestrar animas (Car) 11 = 11+0
+Cavalgar (Des) 12 = 11+1
+Sobrevivência (Sab) 13 = 11+2
+Conhecimento (geografia) (Int) 14 = 11+3
+Conhecimento (masmorras) (Int) 14 = 11+3
+Conhecimento (natureza) (Int) 14 = 11+3
+Cura (Sab) 13 = 11+2";s:6:"magias";s:1:"-";s:9:"descricao";s:345:"Dante nasceu no reino situado ao oeste, despois das montanhas farpadas. Criado pela avó, ele(a) aprendeu muitas coisas que eram necessárias para a sua sobrevivência. Quando se tornou adulto(a) decidiu segui caminho afora. Agora deseja encontrar um grupo para convence a desbravar uma masmorra muito perigosa para encontrar um tesouro perdido.";s:12:"equipamentos";s:494:"Espada longa (1d8, dec. 19-20/ x 2,1 kg, uma mão, cortante) Espada curta, mão inábil (1d6, dec. 19-20/ x 2,1 kg, leve, perfurante) Observação: Quando atacar com as duas espadas, o ranger sofre -4 de penalidade com a espada longa e 8 de penalidade com a espada curta. Caso tenha um bônus de Força, adicione somente metade do valor ao dano da espada curta, que está na mão inábil, mas adicione o bônus total ao dano da espada longa. Arco longo (1d8, dec.x 3, 30 m, 1,5 kg, perfurante).";s:21:"habilidades_especiais";s:23:"Habilidades de combate ";s:6:"outros";s:1:"-";}

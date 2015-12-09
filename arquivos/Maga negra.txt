@@ -6,3 +6,23 @@ nome: Maga negra
 lv: 8
 classe: Mago
 raca: Humano
+id: 8
+dono: Maickon
+sistema: Dungeons and Dragons 3.5
+tipo: Personagem jogador
+nome: Maga negra
+lv: 8
+classe: Maga
+raca: Humano
+old_file: 1448169250.jpg
+dados: a:29:{s:5:"forca";s:2:"14";s:8:"destreza";s:2:"11";s:12:"constituicao";s:2:"17";s:12:"inteligencia";s:2:"15";s:9:"sabedoria";s:2:"15";s:7:"carisma";s:2:"16";s:9:"tendencia";s:10:"Leal e Bom";s:5:"idade";s:2:"19";s:4:"peso";s:4:"61Kg";s:6:"altura";s:4:"1.68";s:2:"pv";s:2:"36";s:2:"ca";s:27:"17 (+5 armadura, +2 escudo)";s:12:"deslocamento";s:2:"9m";s:7:"tamanho";s:6:"Médio";s:10:"iniciativa";s:2:"+6";s:3:"bba";s:2:"+3";s:2:"xp";s:6:"10.931";s:9:"dado_vida";s:3:"d10";s:3:"for";s:2:"+1";s:4:"vont";s:2:"+6";s:4:"refl";s:2:"+4";s:6:"ataque";s:58:"Arma Dardo 
+Dano 1d4 
+Tipo Armas de Ataque à Distância";s:8:"talentos";s:57:"Invocar familiar, escrever pergaminho,
+Talento Adicional";s:8:"pericias";s:162:"Concentração (Con) 8 = 8+0,
+Conhecimento (arcano) (Int) 10 = 8+2,
+Decifrar Escrita (Int) 10 = 8+2,
+Identificar Magia (Int) 10 = 8+2,
+Ofícios (Int) 10 = 8+2";s:6:"magias";s:37:"Magias de primeiro e segundo circulo.";s:9:"descricao";s:316:"Nascida na cidade capital do grande reino. Criado pela avó, ele(a) aprendeu muitas coisas que eram necessárias para a sua sobrevivência. Quando se tornou adulto(a) decidiu segui caminho afora. Agora deseja encontrar um grupo para convence a desbravar uma masmorra muito perigosa para encontrar um tesouro perdido.";s:12:"equipamentos";s:457:"Alguma arma corpo-a-corpo ou a distância ou armadura mágica +1.
+Armas Bordão (1d6/1d6, dec.x 2, 2 kg, duas mãos, concussão). Besta Leve (1d8, dec. 19-20/ x 2, 24 m, 2 kg, perfurante).
+<br>
+Equipamentos Mochila com cantil, um dia de rações de viagem, saco de dormir, saco, pederneira e isqueiro. Dez velas, porta-mapas, três páginas de pergaminho, tinta, caneta tinteiro. Bolsa de componentes de magia, grimório. Caixa com 10 virotes para besta.";s:21:"habilidades_especiais";s:1:"-";s:6:"outros";s:1:"-";}
