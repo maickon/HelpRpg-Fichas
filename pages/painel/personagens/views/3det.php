@@ -3,6 +3,9 @@ function helper_show_personagens_3det($personagem){
 	global $tag, $form;
 	$unserialize_params = unserialize($personagem['dados']);
 	
+	$data_array = [TIPO_DANO=>'', HISTORIA=>''];
+	$unserialize_params = array_merge($unserialize_params, array_diff_key($data_array, $unserialize_params));
+	
 	$tag->div('class="col-md-12 header_3det"');
 		$form->_row();
 			$form->_col(6);

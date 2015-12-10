@@ -5,6 +5,9 @@ $form->input(['name' => 'dono', 'type' => 'hidden', 'value'=> $current_user]);
 $form->input(['name' => 'sistema', 'type' => 'hidden', 'value'=> 'Dungeons and Dragons 3.5']);
 $form->input(['name' => 'tipo', 'type' => 'hidden', 'value'=> 'Monstro']);
 
+//$data_array = ['grow'=>'900'];
+//$unserialize_monstro = array_merge($unserialize_monstro, array_diff_key($data_array, $unserialize_monstro));
+
 $atributos = [
 				[FORCA,'forca'],[DES,'destreza'],[CON,'constituicao'],
 				[INTELIGENCIA,'inteligencia'],[SAB,'sabedoria'],[CAR,'carisma']

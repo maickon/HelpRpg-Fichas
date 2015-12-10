@@ -5,6 +5,28 @@ $form->input(['name' => 'dono', 'type' => 'hidden', 'value'=> $current_user]);
 $form->input(['name' => 'sistema', 'type' => 'hidden', 'value'=> 'Dungeons and Dragons 4.0']);
 $form->input(['name' => 'tipo', 'type' => 'hidden', 'value'=> 'Personagem jogador']);
 
+
+// $data_array = array(
+// 	TAMANHO=>' ', DESL=>'', TENDENCIA=>'', ANTECEDENTE=>'',
+// 	OLHOS=>'', PELE=>'', CABELO=>'', RESISTENCIA_FOR_5_0=>'',
+// 	RESISTENCIA_DES_5_0=>'', RESISTENCIA_CON_5_0=>'',
+// 	RESISTENCIA_INT_5_0=>'',
+// 	RESISTENCIA_SAB_5_0=>'',
+// 	RESISTENCIA_CAR_5_0=>'', PERICIAS=>'',TRACOS_DE_PERSONALIDADE=>'',
+// 	IDEAIS=>'',
+// 	VINCULOS=>'',
+// 	DEFEITOS=>'',
+// 	ATAQUES_E_CONJURACAO=>'',
+// 	PROFICIENCIAS_E_IDIOMAS=>'',
+// 	CARACTERISTICAS_E_TRACOS=>'',
+// 	HABILIDADES_DE_CONJURACAO=>'',
+// 	CD_DE_RESISTENCIA_DE_MAGIA=>'',
+// 	BONUS_DE_ATAQUE_DE_MAGIA=>'',
+// 	MAGIAS=>''
+// 		);
+
+// $unserialize_personagem = array_merge($unserialize_personagem, array_diff_key($data_array, $unserialize_personagem));
+
 $atributos = [
 				['Força','forca'],['Destreza','destreza'],['Constituição','constituicao'],
 				['Inteligência','inteligencia'],['Sabedoria','sabedoria'],['Carisma','carisma']

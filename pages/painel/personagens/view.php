@@ -22,7 +22,7 @@ $tag->br();
 			$tag->span;
 		$form->col_();
 		
-		helper_prev_next($objeto, $_GET['id'], 'personagens');
+		helper_prev_next($objeto, $_GET['id'], 'personagens','Personagem jogador');
 		
 		//verificando permiçoes
 		foreach($permit as $p):

@@ -23,6 +23,7 @@ define("TRACOS_DE_PERSONALIDADE","Traços de Personalidade");
 define("IDEAIS","Ideais");
 define("VINCULOS","Vínculos");
 define("DEFEITOS","Defeitos");
+define("PROFICIENCIAS_E_IDIOMAS","Proficiências e Idiomas");
 define("ATAQUES_E_CONJURACAO","Ataques e Conjuração");
 define("OUTRAS_PROFICIENCIAS_E_IDIOMAS","Outras Proficiências e Idiomas");
 define("EQUIPAMENTOS","Equipamentos");

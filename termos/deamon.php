@@ -19,5 +19,4 @@ define("LOCAL_DE_NASCIMENTO","Local de Nascimento");
 define("PROFISSAO","Classe/Profissão");
 define("IDADE_APARENTE","Idade Aparente");
 define("IDADE_REAL","Idade Real");
-define("IDIOMAS","Idiomas");
 define("RELIGIAO","Religião");

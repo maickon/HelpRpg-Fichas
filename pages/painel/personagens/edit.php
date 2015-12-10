@@ -2,7 +2,7 @@
 require_once '../../../header.php';
 require_once '../helper.php';
 
-global $tag, $form, $s, $parametros;
+global $tag, $form, $s, $parametros, $unserialize_personagem;
 
 $s->restricted_access();
 

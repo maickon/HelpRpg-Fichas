@@ -6,6 +6,10 @@ $form->input(['name' => 'sistema', 'type' => 'hidden', 'value'=> 'FATE']);
 $form->input(['name' => 'tipo', 'type' => 'hidden', 'value'=> 'Personagem jogador']);
 $form->input(['name' => 'lv', 'type' => 'hidden', 'value'=> '-']);
 
+$data_array = ['aparencia'=>'', 'pulso_cura'=>'', 'pulsos'=>'', 'ataque_basico'=>'', 'stress'=>'', 'consequencias'=>''];
+$unserialize_personagem = array_merge($unserialize_personagem, array_diff_key($data_array, $unserialize_personagem));
+
+
 $atributos = [
 				[CUIDADOSO,'cuidadoso'],[INTELIGENTE,'inteligente'],[CHAMATIVO,'chamativo'],
 				[FORTE,'forte'],[RAPIDO,'rapido'], [SORRATEIRO,'sorrateiro']

@@ -3,6 +3,9 @@ function helper_show_personagens_ded4_0($personagem){
 	global $tag, $form;
 	$unserialize_params = unserialize($personagem['dados']);
 	
+	$data_array = [TAMANHO=>'tamanho', PULSO_DE_CURA=>'pulso_cura', PULSOS=>'pulsos', ATAQUE_BASICO=>'ataque_basico'];
+	$unserialize_params = array_merge($unserialize_params, array_diff_key($data_array, $unserialize_params));
+	
 	$tag->div('class="col-md-12 header_ded_4-0"');
 		$form->_row();
 			$form->_col(6);
@@ -43,7 +46,7 @@ function helper_show_personagens_ded4_0($personagem){
 	$tag->div('class="col-md-12 body1_ded_4-0"');
 		$form->_row();
 			$form->_col(12);
-				$tag->imprime($form->bold(PONTOS_VODA).' '.$unserialize_params['pv']);
+				$tag->imprime($form->bold(PONTOS_VIDA).' '.$unserialize_params['pv']);
 			$form->col_();
 		$form->row_();
 	$tag->div;	

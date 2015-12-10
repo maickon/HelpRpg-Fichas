@@ -3,6 +3,28 @@ function helper_show_personagens_ded5_0($personagem){
 	global $tag, $form;
 	$unserialize_params = unserialize($personagem['dados']);
 	
+	$data_array = [
+	TAMANHO=>' ', DESL=>'', TENDENCIA=>'', ANTECEDENTE=>'',
+	OLHOS=>'', PELE=>'', CABELO=>'', RESISTENCIA_FOR_5_0=>'',
+	RESISTENCIA_DES_5_0=>'', RESISTENCIA_CON_5_0=>'',
+	RESISTENCIA_INT_5_0=>'',
+	RESISTENCIA_SAB_5_0=>'',
+	RESISTENCIA_CAR_5_0=>'', PERICIAS=>'',TRACOS_DE_PERSONALIDADE=>'',
+	IDEAIS=>'',
+	VINCULOS=>'',
+	DEFEITOS=>'',
+	ATAQUES_E_CONJURACAO=>'',
+	PROFICIENCIAS_E_IDIOMAS=>'',
+	CARACTERISTICAS_E_TRACOS=>'',
+	HABILIDADES_DE_CONJURACAO=>'',
+	CD_DE_RESISTENCIA_DE_MAGIA=>'',
+	BONUS_DE_ATAQUE_DE_MAGIA=>'',
+	MAGIAS=>''
+			];
+	
+	$unserialize_params = array_merge($unserialize_params, array_diff_key($data_array, $unserialize_params));
+	
+	
 	$tag->div('class="col-md-12 header_ded_5-0"');
 		$form->_row();
 			$form->_col(6);

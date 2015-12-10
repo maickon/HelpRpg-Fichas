@@ -63,14 +63,22 @@ function helper_componentes_buttons_view($modulo, $id, $off = false){
 	$form->col_();
 }
 
-function helper_check_value($objeto, $key){
-	$unserialize_personagem = unserialize($objeto['dados']);
+function helper_check_value($objeto, $key, $unserialize = null){
+	global $unserialize_monstro, $unserialize_personagem;
+	$unserialize = null;
+	if($objeto['tipo'] == 'Monstro'):
+		$unserialize = $unserialize_monstro;
+	else:
+		$unserialize = $unserialize_personagem;
+	endif;
+	
+
 	if($objeto == null):
 		return '';
 	elseif(array_key_exists($key, $objeto)):
 		return $objeto[$key];
 	else:
-		return $unserialize_personagem[$key];
+		return $unserialize[$key];
 	endif;	
 }
 
@@ -462,10 +470,14 @@ function helper_show_body_attr_personagens($attr){
 	endforeach;
 }
 
-function helper_prev_next($object, $id, $modulo){
+function helper_prev_next($object, $id, $modulo, $tipo = null){
 	global $tag, $form, $modulos_path;
 	$ids = [];
-	$get_ids = $object->select($object->getTable());
+	if($tipo != null):
+		$get_ids = $object->select($object->getTable(),null,[ ['tipo','=', $tipo] ]);
+	else:
+		$get_ids = $object->select($object->getTable());
+	endif;
 	$current_position = 0;
 	
 	foreach($get_ids as $key => $value):

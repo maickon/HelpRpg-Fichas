@@ -53,6 +53,6 @@ helper_form_text_area("Dinheiro e Itens", ['name' => 'dinheiro', 'class'=>'form-
 
 helper_form_text_area("Magias", ['name' => 'magias', 'class'=>'form-control', 'required'=>'true', 'rows'=>'5'], helper_check_value($objeto[0], 'magias'), 6);
 
-helper_form_text_area("História", ['name' => 'historia', 'class'=>'form-control', 'required'=>'true', 'rows'=>'5'], helper_check_value($objeto[0], 'historia'), 6);
+helper_form_text_area("História", ['name' => 'historia', 'class'=>'form-control', 'required'=>'true', 'rows'=>'5'], helper_check_value($objeto[0], 'historia'), 12);
 	
 		

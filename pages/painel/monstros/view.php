@@ -22,7 +22,7 @@ $tag->br();
 			$tag->span;
 		$form->col_();
 		
-		helper_prev_next($objeto, $_GET['id'], 'monstros');
+		helper_prev_next($objeto, $_GET['id'], 'monstros', 'Monstro');
 		
 		//verificando permiçoes
 		foreach($permit as $p):
@@ -35,7 +35,7 @@ $tag->br();
 			helper_componentes_buttons_view('monstros', $monstros[0]['id']);
 		elseif($s->get_session('nome') != $monstros[0]['dono']):
 			//em cada linha onde o usuario atual for diferente do dono da arma, vai neutralizar as opçoes de editar e excluir 
-			helper_componentes_buttons_view('monstros', $personagens[0]['id'], $off = true);
+			helper_componentes_buttons_view('monstros', $monstros[0]['id'], $off = true);
 		elseif($s->get_session('nome') == $monstros[0]['dono']):
 			//se o usuario logado for dono de alguma arma criada ele tera acesso total ao recurso
 			helper_componentes_buttons_view('monstros', $monstros[0]['id']);
