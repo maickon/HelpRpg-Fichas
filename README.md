@@ -7,8 +7,11 @@ seus personagens, aventuras e etc, permitindo assim uma nova rede de troca de in
 
 Atualizações
 ==============
-27/11/2015 - Adicioando página de donwload de fichas em PDF
-
+27/11/2015 - Adicioando página de donwload de fichas em PDF.
+28/11/2015 - Configurando o modulo de ususario.
+01/12/2015 - Adicionando formulario e visualizacao para o sistema de RPG D&D 5.0.
+07/12/2015 - Criado pagina para monstros e atualizando as paginas de personagem.
+10/12/2015 - Mudancas na pagina principal, exibicao de itens, magias, talentos e pericias.
 
 
 

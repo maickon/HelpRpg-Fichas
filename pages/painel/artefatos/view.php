@@ -15,6 +15,9 @@ $tag->br();
 	$artefatos = $objeto->select($objeto->getTable(),null,[ ['id','=', $_GET['id']] ]);
 	if(empty($artefatos[0]['id']))
 		header('Location: '.ROOTPATHURL.ARTEFATOSPATH);
+	
+	helper_adsense();
+	
 	$form->_container();
 		$form->_col(2);
 			$tag->p('class="span_title"');

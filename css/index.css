@@ -14,16 +14,60 @@
 
 .jumbotron{
 	margin-top: 25px;
+	margin-bottom: 0px;
 	background-image: url("../img/chars.png");
 }
 
+.search_box{
+	margin-top: 50px;
+	margin-top: 150px;
+	margin-bottom:100px;
+	width: 100%;
+}
+
+.search-button{
+	width: 200px;	
+}
+
+.rodape-search-page{
+	width: 100%;
+	height: auto;
+	margin-top: 100px;
+	padding-bottom: 4px;
+	border-bottom: 1px solid #D3D3D3;
+}
+
+a.footer-search-fonte:link{
+	color: #696969;
+	text-decoration: none;
+}
+
+a.footer-search-fonte:hover{
+	color: #000000;
+}
+
+.menu-item{
+	width: auto;
+	margin-left: 20px;
+	text-align: center;
+}
 .panel-title{
 	text-align: center;
 	padding-top: 20px;
 }
+.logo{
+	margin: 0 auto;
+	width: 300px;
+}
 
 .center{
 	text-align: center;
+}
+
+.copy{
+	text-align: center;
+	color: #696969;
+	margin-top: 20px;
 }
 
 .input-login{
@@ -100,10 +144,6 @@
 }
 #example_info{
 	left: 
-}
-
-.banner-center{
-	text-align: center;
 }
 
 .margin-zero{
@@ -273,6 +313,54 @@
 	border-left: 2px solid #000;
 	border-right: 2px solid #000;
 }
+
+.header_itens{
+	background-color: #8470FF;
+	color: white;
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+	border-top: 2px solid #000;
+}
+
+.body1_itens{
+	background-color: #FAEBD7;
+	color: black;
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+}
+
+.body2_itens{
+	background-color: #FDF5E6;
+	color: black;
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+}
 .border-button{
 	border-bottom: 2px solid #000;
+}
+
+#box-result, #search-result{
+	display: none;
+}
+
+.propaganda{
+	width: 720px;
+	height: 70px;
+	background-color: black;
+}
+
+.classe_personagem{
+	width: 100%;
+	height: auto;
+	background-color: #FAF0E6; 
+}
+
+.banner-center{
+	margin-top: 10px;
+	text-align: center;
+}
+
+.adsense{
+	width: 80%;
+	margin: 0 auto;
 }

@@ -326,113 +326,360 @@ function helper_show_rpg_system($rpg_system, $character){
 }
 
 function helper_sow_artefatos($artefato){
-	global $tag;
+	global $tag, $form;
 	
-	$tag->h1('class="margin-zero"');
-		$tag->imprime("{$artefato['nome']} <br><span class=\"small\">(ID {$artefato['id']}, Criador: {$artefato['dono']})</span>");
-	$tag->h1;
-	$tag->b();
-		$tag->imprime("Raridade ({$artefato['raridade']})");
-	$tag->br();
-	$tag->b;
-	$tag->imprime("<b>Nível indicado para uso:</b>{$artefato['lv']}");
-	$tag->br();
-	$tag->imprime("<b>Preço:</b>{$artefato['preco']}");
-	$tag->br();
-	$tag->imprime("<b>Sistema de RPG:</b>{$artefato['sistema']}");
-	$tag->br();
-	$tag->imprime("<b>Descrição:</b>{$artefato['descricao']}");
-	$tag->br();
+	$tag->div('class="col-md-12 header_itens"');
+		$form->_row();
+			$form->_col(6);
+				$tag->imprime($form->bold(ARMADURA_NOME).' '.$form->bold($artefato['nome']));
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(CODIGO).$form->bold($artefato['id']));
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(CRIADOR).' '.$form->bold($artefato['dono']));
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(INDICADA_AO_NIVEL).' '.$form->bold($artefato['lv']));
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime(SISTEMA_DE_RPG.' '.$artefato['sistema']);
+			$form->col_();
+			if($artefato['editado_por']):
+				$form->_col(6);
+					$tag->imprime($artefato['editado_por']);
+				$form->col_();
+			endif;
+		$form->row_();
+	$tag->div;
+	
+	$tag->div('class="col-md-12 body1_itens"');
+		$form->_row();
+			$form->_col(6);
+				$tag->imprime($form->bold(PRECO).': '.$artefato['raridade']);
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(CATEGORIA_ARMADURA).': '.$artefato['preco']);
+			$form->col_();
+		$form->row_();
+	$tag->div;
+	
+	$tag->div('class="col-md-12 body2_itens border-button"');
+		$form->_row();
+			$form->_col(6);
+				$tag->imprime($form->bold(DESCRICAO).': '.$artefato['descricao']);
+			$form->col_();
+		$form->row_();
+	$tag->div;
 }
 
 function helper_show_armaduras($armadura){
-	global $tag;
-	$attr = [
-		'<b>Preço:</b>' 							=> 'preco', 
-		'<b>Categoria:</b>' 						=> 'categoria', 
-		'<b>Tipo de armadura:</b>' 					=> 'tipo', 
-		'<b>Bônus de defesa/CA:</b>' 				=> 'bonusNaCa', 
-		'<b>Comporta destreza até:</b>' 			=> 'destrezaMaxima',
-		'<b>Chance de falha de Magia Arcana:</b>'	=> 'falhaDeMagiaArcana', 
-		'<b>Deslocamento médio:</b>' 				=> 'deslocamentoMedio',
-		'<b>Deslocamento pequeno:</b>' 				=> 'deslocamentoPequeno', 
-		'<b>Esta armadura pesa:</b>' 				=> 'peso', 
-		'<b>Descrição:</b>' 						=> 'descricao'
-			];
-	helper_show_header_attr($armadura);
-	helper_show_body_attr($armadura, $attr);
+	global $tag, $form;
+	$armadura = $armadura[0];
 	
-	$tag->br();
+	$tag->div('class="col-md-12 header_itens"');
+		$form->_row();
+			$form->_col(6);
+				$tag->imprime($form->bold(ARMADURA_NOME).' '.$form->bold($armadura['nome']));
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(CODIGO).$form->bold($armadura['id']));
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(CRIADOR).' '.$form->bold($armadura['dono']));
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(INDICADA_AO_NIVEL).' '.$form->bold($armadura['lv']));
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime(SISTEMA_DE_RPG.' '.$armadura['sistema']);
+			$form->col_();
+			if($armadura['editado_por']):
+				$form->_col(6);
+					$tag->imprime($armadura['editado_por']);
+				$form->col_();
+			endif;
+		$form->row_();
+	$tag->div;
+	
+	$tag->div('class="col-md-12 body1_itens"');
+		$form->_row();
+			$form->_col(6);
+				$tag->imprime($form->bold(PRECO).': '.$armadura['custo']);
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(CATEGORIA_ARMADURA).': '.$armadura['categoria']);
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(TIPO_DE_ARMADURA).': '.$armadura['tipo']);
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(BONUS_DE_DEFESA).': '.$armadura['bonusNaCa']);
+			$form->col_();
+		$form->row_();
+	$tag->div;
+	
+	$tag->div('class="col-md-12 body2_itens"');
+		$form->_row();
+			$form->_col(6);
+				$tag->imprime($form->bold(COMPORTA_DESTREZA).': '.$armadura['destrezaMaxima']);
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(CHANCE_DE_FALHA_MAGIA).': '.$armadura['falhaDeMagiaArcana']);
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(DESLOCAMENTO_MEDIO).': '.$armadura['deslocamentoMedio']);
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(PESO_ARMADURA).': '.$armadura['peso']);
+			$form->col_();
+		$form->row_();
+	$tag->div;
+	
+	$tag->div('class="col-md-12 body2_itens border-button"');
+		$form->_row();
+			$form->_col(12);
+				$tag->imprime($form->bold(DESCRICAO_ARMADURA).'<br>'.$armadura['descricao']);
+			$form->col_();
+		$form->row_();
+	$tag->div;
 }
 
 function helper_show_armas($armas){
-	global $tag;
-	$attr = [
-	'<b>Editado por:</b>' 			=> 'editado_por',
-	'<b>Dano:</b>' 					=> 'dano',
-	'<b>Preço:</b>' 				=> 'preco',
-	'<b>Margem de decisivo:</b>' 	=> 'decisivo',
-	'<b>Distância:</b>'			 	=> 'distancia',
-	'<b>Peso:</b>' 					=> 'peso',
-	'<b>Tipo:</b>' 					=> 'tipo',
-	'<b>Categoria:</b>' 			=> 'categoria',
-	'<b>Descrição:</b>'			 	=> 'descricao'
-			];
-	helper_show_header_attr($armas);
-	helper_show_body_attr($armas, $attr);
-
-	$tag->br();
+	global $tag, $form;
+	$armas = $armas[0];
+	
+	$tag->div('class="col-md-12 header_itens"');
+		$form->_row();
+			$form->_col(6);
+				$tag->imprime($form->bold(ARMADURA_NOME).' '.$form->bold($armas['nome']));
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(CODIGO).$form->bold($armas['id']));
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(CRIADOR).' '.$form->bold($armas['dono']));
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(INDICADA_AO_NIVEL).' '.$form->bold($armas['lv']));
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime(SISTEMA_DE_RPG.' '.$armas['sistema']);
+			$form->col_();
+		$form->row_();
+	$tag->div;
+	
+	$tag->div('class="col-md-12 body1_itens"');
+		$form->_row();
+			$form->_col(6);
+				$tag->imprime($form->bold(DANO).': '.$armas['dano']);
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(PRECO_ARMA).': '.$armas['preco']);
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(DECISIVO).': '.$armas['decisivo']);
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(DISTANCIA).': '.$armas['distancia']);
+			$form->col_();
+		$form->row_();
+	$tag->div;
+	
+	$tag->div('class="col-md-12 body2_itens"');
+		$form->_row();
+			$form->_col(6);
+				$tag->imprime($form->bold(PESO).': '.$armas['peso']);
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(TIPO_ARMA).': '.$armas['tipo']);
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(CATEGORIA_ARMADURA).': '.$armas['categoria']);
+			$form->col_();
+		$form->row_();
+	$tag->div;
+	
+	$tag->div('class="col-md-12 body2_itens border-button"');
+		$form->_row();
+			$form->_col(12);
+				$tag->imprime($form->bold(DESCRICAO).'<br>'.$armas['descricao']);
+			$form->col_();
+		$form->row_();
+	$tag->div;
 }
 
 function helper_show_talentos($talentos){
-	global $tag;
-	$attr = [
-		'<b>Editado por:</b>' 		=> 'editado_por', 
-		'<b>Classe:</b>' 			=> 'classe', 
-		'<b>Pré requisito:</b>' 	=> 'pre_requisito',
-		'<b>Descrição:</b>' 		=> 'descricao'
-			];
-	helper_show_header_attr($talentos);
-	helper_show_body_attr($talentos, $attr);
+	global $tag, $form;
+	$talentos = $talentos[0];
 	
-	$tag->br();
+	$tag->div('class="col-md-12 header_itens"');
+		$form->_row();
+			$form->_col(6);
+				$tag->imprime($form->bold(ARMADURA_NOME).' '.$form->bold($talentos['nome']));
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(CODIGO).$form->bold($talentos['id']));
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(CRIADOR).' '.$form->bold($talentos['dono']));
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(INDICADA_AO_NIVEL).' '.$form->bold($talentos['lv']));
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime(SISTEMA_DE_RPG.' '.$talentos['sistema']);
+			$form->col_();
+		$form->row_();
+	$tag->div;
+
+	$tag->div('class="col-md-12 body1_itens"');
+		$form->_row();
+			$form->_col(6);
+				$tag->imprime($form->bold(TALENTO_CLASSE).': '.$talentos['classe']);
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(PRE_REQUISITO).': '.$talentos['pre_requisito']);
+			$form->col_();
+		$form->row_();
+	$tag->div;
+	
+	$tag->div('class="col-md-12 body2_itens border-button"');
+		$form->_row();
+			$form->_col(12);
+				$tag->imprime($form->bold(DESCRICAO).'<br>'.$talentos['descricao']);
+			$form->col_();
+		$form->row_();
+	$tag->div;
 }
 
 function helper_show_pericias($pericias){
-	global $tag;
+	global $tag, $form;
+	$pericias = $pericias[0];
+	
+	$tag->div('class="col-md-12 header_itens"');
+		$form->_row();
+			$form->_col(6);
+				$tag->imprime($form->bold(PERICIA).' '.$form->bold($pericias['nome']));
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(CODIGO).$form->bold($pericias['id']));
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(CRIADOR).' '.$form->bold($pericias['dono']));
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime(SISTEMA_DE_RPG.' '.$pericias['sistema']);
+			$form->col_();
+		$form->row_();
+	$tag->div;
+	
 	$attr = [
 	'<b>Categoria:</b>' 			=> 'categoria',
 	'<b>Habilidade chave:</b>' 		=> 'habilidade_chave ',
 	'<b>Classes favorecidas:</b>' 	=> 'classe_favorecida',
 	'<b>Descrição:</b>' 			=> 'descricao'
 			];
-	helper_show_header_attr($pericias);
-	helper_show_body_attr($pericias, $attr);
+	
+	$tag->div('class="col-md-12 body1_itens"');
+		$form->_row();
+			$form->_col(6);
+				$tag->imprime($form->bold(CATEGORIA_PERICIA).': '.$pericias['categoria']);
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(HABILIDADE_CHAVE).': '.$pericias['habilidade_chave']);
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(CLASSE_FAVORECIDA).': '.$pericias['classe_favorecida']);
+			$form->col_();
+		$form->row_();
+	$tag->div;
+	
+	$tag->div('class="col-md-12 body2_itens border-button"');
+		$form->_row();
+			$form->_col(6);
+				$tag->imprime($form->bold(DESCRICAO).'<br>'.$pericias['descricao']);
+			$form->col_();
+		$form->row_();
+	$tag->div;
 
 	$tag->br();
 }
 
 function helper_show_magias($magias){
-	global $tag;
-	$attr = [
-	'<b>Nível:</b>' 				=> 'circulo',
-	'<b>Editado por:</b>' 			=> 'editado_por',
-	'<b>Classe:</b>' 				=> 'classe',
-	'<b>Componente:</b>' 			=> 'componente',
-	'<b>Tempo de execução:</b>' 	=> 'tempo_execucao',
-	'<b>Alcance:</b>' 				=> 'alcance',
-	'<b>Área:</b>' 					=> 'area',
-	'<b>Dano:</b>' 					=> 'dano',
-	'<b>Alvo:</b>' 					=> 'alvo',
-	'<b>Duração:</b>' 				=> 'duracao',
-	'<b>Teste de resistência:</b>' 	=> 'teste_resistencia',
-	'<b>Resistência a magia:</b>' 	=> 'resistencia_magia',
-	'<b>Descrição:</b>' 			=> 'descricao'
-			];
-	helper_show_header_attr($magias);
-	helper_show_body_attr($magias, $attr);
-
-	$tag->br();
+	global $tag,$form;
+	$magias = $magias[0];
+	
+	$tag->div('class="col-md-12 header_itens"');
+		$form->_row();
+			$form->_col(6);
+				$tag->imprime($form->bold(MAGIA_NOME).' '.$form->bold($magias['nome']));
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(CODIGO).$form->bold($magias['id']));
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(CRIADOR).' '.$form->bold($magias['dono']));
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(INDICADA_AO_NIVEL).' '.$form->bold($magias['lv']));
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime(SISTEMA_DE_RPG.' '.$magias['sistema']);
+			$form->col_();
+		$form->row_();
+	$tag->div;
+	
+	$tag->div('class="col-md-12 body1_itens"');
+		$form->_row();
+			$form->_col(6);
+				$tag->imprime($form->bold(CIRCULO).': '.$magias['circulo']);
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(CLASSE).': '.$magias['classe']);
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(COMPONENTE).': '.$magias['componente']);
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(TEMPO_EXECUCAO).': '.$magias['tempo_execucao']);
+			$form->col_();
+		$form->row_();
+	$tag->div;
+	
+	$tag->div('class="col-md-12 body2_itens"');
+		$form->_row();
+			$form->_col(6);
+				$tag->imprime($form->bold(ALCANCE).': '.$magias['alcance']);
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(AREA).': '.$magias['area']);
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(DANO).': '.$magias['dano']);
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(ALVO).': '.$magias['alvo']);
+			$form->col_();
+		$form->row_();
+	$tag->div;
+	
+	$tag->div('class="col-md-12 body1_itens border-button"');
+		$form->_row();
+			$form->_col(6);
+				$tag->imprime($form->bold(DURACAO).': '.$magias['duracao']);
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(TESTES_RESISTENCIA).': '.$magias['teste_resistencia']);
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(RESISTENCIA_MAGIA).': '.$magias['resistencia_magia']);
+			$form->col_();
+			$form->_col(12);
+				$tag->imprime($form->bold(DESCRICAO).'<br>'.$magias['descricao']);
+			$form->col_();
+		$form->row_();
+	$tag->div;
 }
 
 function helper_show_header_attr($object){
@@ -500,6 +747,50 @@ function helper_prev_next($object, $id, $modulo, $tipo = null){
 			$tag->imprime('Próximo >>>');
 		$tag->a;
 	$form->col_();
+}
+
+function helper_adsense(){
+	global $tag, $s;
+	$tag->div('class="adsense"');
+		if(!$s->exist('nome')):
+			$baners = [
+					'<div class="banner-center">
+						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+						<!-- anuncio_3 -->
+						<ins class="adsbygoogle"
+						     style="display:inline-block;width:728px;height:90px"
+						     data-ad-client="ca-pub-3010334569259161"
+						     data-ad-slot="2027312537"></ins>
+						<script>
+						(adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
+					</div>',
+					'<div class="banner-center">
+						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+						<!-- anuncio_2 -->
+						<ins class="adsbygoogle"
+						     style="display:inline-block;width:728px;height:90px"
+						     data-ad-client="ca-pub-3010334569259161"
+						     data-ad-slot="9550579333"></ins>
+						<script>
+						(adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
+					</div>',
+					'<div class="banner-center">
+						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+						<!-- anuncio_1 -->
+						<ins class="adsbygoogle"
+						     style="display:inline-block;width:728px;height:90px"
+						     data-ad-client="ca-pub-3010334569259161"
+						     data-ad-slot="8073846133"></ins>
+						<script>
+						(adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
+					</div>'
+					];
+			$tag->imprime($baners[rand(0, count($baners)-1)]);
+		endif;
+	$tag->div;	
 }
 
 function helper_name_of_form_fie($name){
