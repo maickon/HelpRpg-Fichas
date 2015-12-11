@@ -15,6 +15,9 @@ $tag->br();
 	$personagens = $objeto->select($objeto->getTable(),null,[ ['id','=', $_GET['id']] ]);
 	if(empty($personagens[0]['id']))
 		header('Location: '.ROOTPATHURL.PERSONAGEMPATH);
+	
+	helper_adsense();
+	
 	$form->_container();
 		$form->_col(2);
 			$tag->span('class="span_title"');

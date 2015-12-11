@@ -15,6 +15,9 @@ $tag->br();
 	$arma = $objeto->select($objeto->getTable(),null,[ ['id','=', $_GET['id']] ]);
 	if(empty($arma[0]['id']))
 		header('Location: '.ROOTPATHURL.ARMASPATH);
+	
+	helper_adsense();
+	
 	$form->_container();
 		$form->_col(2);
 			$tag->span('class="span_title"');

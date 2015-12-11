@@ -14,6 +14,7 @@ define('HOWTOUSE', 'pages/como-usar/');
 define('DOWNLOADPATH','arquivos/');
 define('NPCGENERATEPATH','http://helprpg.com.br/old/index.php?p=fichas');
 define('MONSTERGENERATEPATH','http://helprpg.com.br/old/index.php?p=monstros');
+define('ROLLDICE','http://helprpg.com.br/roll-dice');
 
 //url login
 define('LOGINPATH', ROOTPATHURL."pages/login");
@@ -82,7 +83,7 @@ define('U4007', 'Dados deletado com sucesso!');
 define('U4008', 'Alteração feita com sucesso!');
 
 
-//Nome/T�tulo do site/projeto
+//Nome/Titulo do site/projeto
 define('PROJECTTITLE', "Help RPG Fichas");
 define('PROGRAMER', 'Desenvolvido por <a href="http://www.mrcurriculo.orgfree.com/" target="blank">Maickon Rangel</a> todos os direitos reservados');
 define('COPY', "&copy 2013-2015");
@@ -129,3 +130,6 @@ require_once 'termos/deamon.php';
 require_once 'termos/d20-ded-4.0.php';
 require_once 'termos/d20-ded-5.0.php';
 require_once 'termos/fate.php';
+require_once 'termos/itens.php';
+require_once 'termos/magias.php';
+require_once 'termos/pericias.php';

@@ -146,8 +146,8 @@ function helper_ficha_view_monstro($personagem){
 			$form->_col(6);
 				$tag->imprime($form->bold(PROGRESSAO).': '.$unserialize_params['progressao']);
 			$form->col_();
-			$form->_col(6);
-				$tag->imprime($form->bold(AJUSTE).': '.$unserialize_params['ajuste']);
+			$form->_col(12);
+				$tag->imprime($form->bold(DESCRICAO).'<br>'.$unserialize_params['descricao']);
 			$form->col_();
 		$form->row_();
 	$tag->div;
@@ -164,7 +164,7 @@ function helper_ficha_view_monstro($personagem){
 				$tag->imprime($form->bold(TESOURO).'<br>'.$unserialize_params['tesouro']);
 			$form->col_();
 			$form->_col(12);
-				$tag->imprime($form->bold(AJUSTE).'<br>'.$unserialize_params['ajuste']);
+				$tag->imprime($form->bold(COMBATE).'<br>'.$unserialize_params['combate']);
 			$form->col_();
 		$form->row_();
 	$tag->div;

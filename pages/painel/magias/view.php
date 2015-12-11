@@ -15,6 +15,9 @@ $tag->br();
 	$magias = $objeto->select($objeto->getTable(),null,[ ['id','=', $_GET['id']] ]);
 	if(empty($magias[0]['id']))
 		header('Location: '.ROOTPATHURL.MAGIASPATH);
+	
+	helper_adsense();
+	
 	$form->_container();
 		$form->_col(2);
 			$tag->span('class="span_title"');

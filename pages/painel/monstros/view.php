@@ -15,6 +15,9 @@ $tag->br();
 	$monstros = $objeto->select($objeto->getTable(),null,[ ['id','=', $_GET['id']] ]);
 	if(empty($monstros[0]['id']))
 		header('Location: '.ROOTPATHURL.MONSTROPATH);
+	
+	helper_adsense();
+	
 	$form->_container();
 		$form->_col(2);
 			$tag->span('class="span_title"');

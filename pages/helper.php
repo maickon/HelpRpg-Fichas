@@ -66,3 +66,19 @@ function helper_current_data(){
 	
 	return $semana["$data"] . ", {$dia} de " . $mes_extenso["$mes"] . " de {$ano}";
 }
+
+function helper_footer_bar_page_search($links, $menus){
+	global $tag;
+	$tag->div('class="footer" align="center"');
+		$tag->div('class="row"');
+		
+			for($m=0; $m<count($menus); $m++):
+				$tag->span('class="menu-item"');
+					$tag->a('href="index.php'.$links[$m].'" class="footer-search-fonte"');
+						$tag->imprime($menus[$m]);
+					$tag->a;
+				$tag->span;
+			endfor;
+		$tag->div;
+	$tag->div;
+}
