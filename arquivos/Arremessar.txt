@@ -1,0 +1,13 @@
+id: 4
+dono: Maickon
+nome: Arremessar
+categoria: Agilidade 
+habilidade_chave: Agilidade
+classe_favorecida: Geral
+sistema: Savage Worlds
+descricao: Arrombar é a habilidade de passar por travas
+mecânicas e eletrônicas. Arrombar também é
+usado para desarmar as iscas e gatilhos de armadilhas,
+a menos que uma perícia mais relevante
+pareça mais apropriada para uma armadilha em
+particular.

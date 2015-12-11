@@ -64,7 +64,7 @@ $tag->br();
 
 				helper_form_input("Classe", ['name' => 'classe_favorecida', 'type' => 'text', 'class'=>'form-control', 'required'=>'true', 'value'=> $objeto[0]['classe_favorecida']]);
 				
-				helper_form_select_options("Sistema de Jogo", ['class'=>'form-control', 'name'=>'sistema'], ['value'=> $objeto[0]['sistema'],'ded'=>'Dungeons and Dragons', '3det'=>'3D&T', 'deamon'=>'Deamon']);
+				helper_form_select_options("Sistema de Jogo", ['class'=>'form-control selectpicker', 'data-live-search'=>'true', 'name'=>'sistema'], array_merge(array('value'=> $objeto[0]['sistema']), $rpg_sistemas));
 				
 				helper_form_text_area("Descrição", ['name' => 'descricao', 'class'=>'form-control', 'rows'=>'5'], strip_tags($objeto[0]['descricao']));
 			

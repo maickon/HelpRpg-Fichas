@@ -574,13 +574,6 @@ function helper_show_pericias($pericias){
 		$form->row_();
 	$tag->div;
 	
-	$attr = [
-	'<b>Categoria:</b>' 			=> 'categoria',
-	'<b>Habilidade chave:</b>' 		=> 'habilidade_chave ',
-	'<b>Classes favorecidas:</b>' 	=> 'classe_favorecida',
-	'<b>Descrição:</b>' 			=> 'descricao'
-			];
-	
 	$tag->div('class="col-md-12 body1_itens"');
 		$form->_row();
 			$form->_col(6);
@@ -597,7 +590,7 @@ function helper_show_pericias($pericias){
 	
 	$tag->div('class="col-md-12 body2_itens border-button"');
 		$form->_row();
-			$form->_col(6);
+			$form->_col(12);
 				$tag->imprime($form->bold(DESCRICAO).'<br>'.$pericias['descricao']);
 			$form->col_();
 		$form->row_();
