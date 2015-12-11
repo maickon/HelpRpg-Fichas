@@ -48,12 +48,12 @@ helper_form_input("Imagem", ['name' => 'img', 'type' => 'file', 'class'=>'form-c
 
 helper_form_text_area("Perícias com armas", ['name' => 'pericias_com_armas', 'class'=>'form-control', 'rows'=>'5'], helper_check_value($objeto[0], 'pericias_com_armas'), 6);
 
-helper_form_text_area("Aprimoramentos", ['name' => 'aprimoramentos', 'class'=>'form-control', 'rows'=>'5'], helper_check_value($objeto[0], 'aprimoramentos'), 6);
+helper_form_text_area("Equipamentos", ['name' => 'equipamentos', 'class'=>'form-control', 'rows'=>'5'], helper_check_value($objeto[0], 'equipamentos'), 6);
 
 helper_form_text_area("Perícias", ['name' => 'pericias', 'class'=>'form-control', 'rows'=>'5'], helper_check_value($objeto[0], 'pericias'), 6);
 
-helper_form_text_area("Poderes", ['name' => 'poderes', 'class'=>'form-control', 'rows'=>'5'], helper_check_value($objeto[0], 'poderes'), 6);
+helper_form_text_area("Complicações", ['name' => 'complicacoes', 'class'=>'form-control', 'rows'=>'5'], helper_check_value($objeto[0], 'complicacoes'), 6);
 
-helper_form_text_area("Magias", ['name' => 'magias', 'class'=>'form-control', 'rows'=>'5'], helper_check_value($objeto[0], 'magias'), 6);
+helper_form_text_area("Vantagens", ['name' => 'vantagens', 'class'=>'form-control', 'rows'=>'5'], helper_check_value($objeto[0], 'vantagens'), 6);
 
 helper_form_text_area("Outros", ['name' => 'outros', 'class'=>'form-control', 'rows'=>'5'], helper_check_value($objeto[0], 'outros'), 6);
