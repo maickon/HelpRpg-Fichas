@@ -339,12 +339,8 @@ a.footer-search-fonte:hover{
 	border-bottom: 2px solid #000;
 }
 
-#box-result, #search-result{
-	display: none;
-}
-
 .propaganda{
-	width: 720px;
+	width: 600px;
 	height: 70px;
 	background-color: black;
 }
@@ -363,4 +359,11 @@ a.footer-search-fonte:hover{
 .adsense{
 	width: 80%;
 	margin: 0 auto;
+}
+
+.search-title{
+	width: 100px;
+	color: #8470FF;
+	font-size: 16px;
+	font-weight: bold;
 }

@@ -41,7 +41,7 @@ function helper_show_personagens_ded($personagem){
 			$form->_col(12);
 				$tag->imprime($form->bold(CLASSE_DE_ARMADURA).': '.$unserialize_params['ca']);				
 			$form->col_();
-			$form->_col(6);
+			$form->_col(12);
 				$tag->imprime($form->bold(ATAQUE_TOTAL).': '.$unserialize_params['ataque']);	
 			$form->col_();
 		$form->row_();

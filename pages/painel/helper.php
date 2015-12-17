@@ -786,7 +786,7 @@ function helper_adsense(){
 	$tag->div;	
 }
 
-function helper_name_of_form_fie($name){
+function helper_name_of_form_file($name){
 	global $rpg_sistemas_arquivo_nome;
 	return $rpg_sistemas_arquivo_nome[$name];
 }
