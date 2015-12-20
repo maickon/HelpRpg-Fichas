@@ -1,7 +1,13 @@
 <?php
-define("ASTUCIA","Astúcia");
-define("AGILIDADE","Agilidade");
-define("ESPIRITO","Espírito");
 define("FORCA","Força");
-define("VIGOR","Vigor");
+define("AGILIDADE","Agilidade");
+define("ASTUCIA","Astúcia");
 define("PERICIAS","Perícias");
+define("ESPIRITO","Espírito");
+define("VIGOR","Vigor");
+define("COMPLICACOES","Complicações");
+define("ATAQUES","Ataques");
+define("DANO","Dano");
+define("VANTAGENS","Vantagens");
+define("AVANCOS","Avanços");
+define("EQUIPAMENTOS","Equipamentos");
