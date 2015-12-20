@@ -1,8 +1,8 @@
-<?php
+	<?php
 require_once '../../../header.php';
 require_once '../helper.php';
 
-global $tag, $form, $s, $parametros;
+global $tag, $form, $s, $parametros, $rpg_sistemas_labels;
 $s->restricted_access();
 
 $tag->body('role="document"');
@@ -11,7 +11,7 @@ $tag->imprime('
 	<script type="text/javascript" charset="utf-8">
 		function get_info(sistema){
 			if(sistema){
-				consele.log(sistema);
+				//consele.log(sistema);
 				chosed = sistema;
 				var url = "?sistema="+sistema;
 				request_http("GET", url, true);
@@ -34,7 +34,7 @@ $tag->br();
 		$form->_col(5);
 			$tag->span('class="span_title"');
 				$sistema = '';
-				isset($_GET['sistema']) ? $sistema = $rpg_sistemas[$_GET['sistema']] : $sistema = $rpg_sistemas['ded'];
+				isset($_GET['sistema']) ? $sistema = $rpg_sistemas_labels[$_GET['sistema']] : $sistema = 'Dungeons and Dragons 3.5';
 				$tag->imprime(PERSONAGEM. ' <smal id="sistema-title"> Sistema: '. $sistema.'</smal>');
 			$tag->span;
 		$form->col_();
@@ -68,7 +68,8 @@ $tag->br();
 		$form->_row();
 			$form->_container();
 				$form->_form(['method'=>'post', 'name'=>'new-user', 'enctype'=>'multipart/form-data', 'class'=>'form-group', 'data-toggle'=>'validator']);
-					$file  = helper_name_of_form_fie(isset($_GET['sistema'])?$_GET['sistema']:'ded');
+					$file  = helper_name_of_form_file(isset($_GET['sistema'])?$_GET['sistema']:'Dungeons and Dragons 3.5');
+					
 					require_once "form/{$file}";
 					helper_form_button_submit_and_back(ROOTPATHURL.PERSONAGEMPATH);
 				$form->form_();	

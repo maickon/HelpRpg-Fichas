@@ -60,7 +60,7 @@ function helper_show_personagens_fate($personagem){
 			$form->_col(6);
 				$tag->imprime($form->bold(PONTOS_FATE_ATUAIS).' '.$unserialize_params['fate']);
 			$form->col_();
-			$form->_col(6);
+			$form->_col(12);
 				$tag->imprime($form->bold(APARENCIA).'<br>'.$unserialize_params['aparencia']);
 			$form->col_();
 		$form->row_();

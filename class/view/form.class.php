@@ -262,7 +262,7 @@ class Form{
 		$input .= '>';
 		
 		foreach($options as $key => $o)
-			$input .= "<option value=\"{$key}\"> {$o} </option>";
+			$input .= "<option value=\"{$o}\"> {$o} </option>";
 		
 		$input .= "</select>";
 		echo $input;

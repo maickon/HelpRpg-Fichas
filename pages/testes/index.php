@@ -49,8 +49,6 @@ $tag->html('lang="pt-br"');
 		$tag->script('src="'.ROOTPATHURL.JSPATH.'bibliotecaAjax.js"');
 		$tag->script;
 
-		$tag->script('src="'.ROOTPATHURL.JSPATH.'teste.js"');
-		$tag->script;
 	$tag->head;
 $tag->body();
 	
@@ -64,7 +62,7 @@ $tag->body();
 					$tag->div('class="logo"');
 						$tag->img('src="'.ROOTPATHURL.IMGPATH.'logo.png" class="logo"');
 					$tag->div;
-					$form->input(['type'=>'text', 'id'=>'search' ,'class'=>'form-control input-lg', 'aria-describedby'=>'basic-addon1','placeholder'=>'Digite sua busca. Ex: Espada Larga']);	
+					$form->input(['type'=>'text', 'id'=>'search' ,'class'=>'form-control input-lg', 'aria-describedby'=>'basic-addon1','placeholder'=>'Busque: classe, raça, nome, dono da ficha, ficha tipo, sistema de rpg ou Lv']);	
 				$form->col_();	
 			$form->row_();
 		$form->container_();
@@ -73,9 +71,9 @@ $tag->body();
 	$tag->div('class="container" id="box-result"');
 		$form->_row();
 			$form->_col(6);
-				$tag->form('action="javascript:void%200" onSubmit="buscar_classe_form_search(this.search.value); return false" ');
+				$tag->form('action="javascript:void%200" onchange="buscar_classe(this.search_result.value); return false" ');
 					$form->h2("Nova busca...");
-					$form->input(['type'=>'text', 'id'=>'search' ,'class'=>'form-control input-lg', 'aria-describedby'=>'basic-addon1','placeholder'=>'Digite sua busca. Ex: Espada Larga']);
+					$form->input(['type'=>'text', 'id'=>'search_result' ,'class'=>'form-control input-lg', 'aria-describedby'=>'basic-addon1','placeholder'=>'Digite sua busca. Ex: Espada Larga']);
 				$tag->form;
 			$form->col_();
 			
@@ -85,15 +83,16 @@ $tag->body();
 				
 				$tag->div;
 			$form->col_();
-			
-			$form->_col(12);
-				$form->h3("Resultado...");
-			$form->col_();
 
-			$form->_col(12);
+			$form->_col(6);
 				$tag->span('id="classe_personagem"');
 				$tag->span;
 			$form->col_();
+			
+			$tag->div('id="image"');
+				
+			$tag->div;
+			
 		$form->row_();
 	$tag->div;
 	
@@ -107,4 +106,7 @@ $tag->body();
 			$tag->imprime("2013-2015");
 		$tag->div;
 	$tag->div;
+	
+	$tag->script('src="'.ROOTPATHURL.JSPATH.'home.js"');
+	$tag->script;
 $tag->body;
