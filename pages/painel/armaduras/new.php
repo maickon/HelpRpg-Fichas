@@ -5,6 +5,9 @@ require_once '../helper.php';
 global $tag, $form, $s, $parametros;
 $s->restricted_access();
 
+$tag->script('src="js/index.js"');
+$tag->script;
+
 $tag->body('role="document"');
 
 new Components('menu', $parametros);
@@ -40,41 +43,17 @@ $tag->br();
 				$current_user = $s->get_session('nome');
 				$form->input(['name' => 'dono', 'type' => 'hidden', 'value'=> $current_user]);
 				
-				helper_form_input("Imagem", ['name' => 'img', 'type' => 'file', 'class'=>'form-control']);
+				helper_form_input("Imagem", ['name' => 'img', 'id' => 'img', 'type' => 'file', 'class'=>'form-control']);
 				
-				helper_form_input("Nome", ['name' => 'nome', 'type' => 'text', 'class'=>'form-control', 'required'=>'true']);
-				
-				helper_form_input("Lv", ['name' => 'lv', 'type' => 'text', 'class'=>'form-control', 'required'=>'true']);
-
-				helper_form_input("Preço/Custo", ['name' => 'custo', 'type' => 'text', 'class'=>'form-control']);			
-			
-				helper_form_input("Bônus na CA/Defesa", ['name' => 'bonusNaCa', 'type' => 'text', 'class'=>'form-control']);
-
-				helper_form_input("Destreza máxima", ['name' => 'destrezaMaxima', 'type' => 'text', 'class'=>'form-control']);
-
-				helper_form_input("Penalidade em perícia", ['name' => 'penalidadeNaPericia', 'type' => 'text', 'class'=>'form-control']);
-
-				helper_form_input("Falha de magia arcana", ['name' => 'falhaDeMagiaArcana', 'type' => 'text', 'class'=>'form-control']);
-
-				helper_form_input("Deslocamento médio", ['name' => 'deslocamentoMedio', 'type' => 'text', 'class'=>'form-control']);
-
-				helper_form_input("Deslocamento pequeno", ['name' => 'deslocamentoPequeno', 'type' => 'text', 'class'=>'form-control']);
-
-				helper_form_input("Peso", ['name' => 'peso', 'type' => 'text', 'class'=>'form-control']);
-
-				helper_form_select_options("Tipo", ['class'=>'form-control', 'name'=>'tipo'], ['simples'=>'Armadura simples', 'magica'=>'Armadura mágica']);
-
 				helper_form_select_options_sistema();
-
-				helper_form_select_options("Categoria", ['class'=>'form-control', 'name'=>'categoria'], ['leve'=>'Armadura leve', 'media'=>'Armadura Média', 'pesada'=>'Armadura Pesada', 'exotica'=>'Armadura Exótica', 'tecnologica'=>'Armadura Tecnológica']);				
 				
-				helper_form_text_field_descricao();
-			
+				require 'form/form.php';
+				
 				helper_form_button_submit_and_back(ROOTPATHURL.ARMADURASPATH);
 				
 			$form->form_();
 			
 		$form->_container();
 	$form->row_();
-
+	
 require_once '../../../footer.php';

@@ -366,7 +366,7 @@ function helper_sow_artefatos($artefato){
 	
 	$tag->div('class="col-md-12 body2_itens border-button"');
 		$form->_row();
-			$form->_col(6);
+			$form->_col(12);
 				$tag->imprime($form->bold(DESCRICAO).': '.$artefato['descricao']);
 			$form->col_();
 		$form->row_();
@@ -488,11 +488,11 @@ function helper_show_armas($armas){
 	
 	$tag->div('class="col-md-12 body2_itens"');
 		$form->_row();
-			$form->_col(6);
-				$tag->imprime($form->bold(PESO).': '.$armas['peso']);
+			$form->_col(12);
+				$tag->imprime($form->bold(TIPO_ARMA).': '.$armas['tipo']);
 			$form->col_();
 			$form->_col(6);
-				$tag->imprime($form->bold(TIPO_ARMA).': '.$armas['tipo']);
+				$tag->imprime($form->bold(PESO).': '.$armas['peso']);
 			$form->col_();
 			$form->_col(6);
 				$tag->imprime($form->bold(CATEGORIA_ARMADURA).': '.$armas['categoria']);
@@ -659,14 +659,14 @@ function helper_show_magias($magias){
 	
 	$tag->div('class="col-md-12 body1_itens border-button"');
 		$form->_row();
-			$form->_col(6);
-				$tag->imprime($form->bold(DURACAO).': '.$magias['duracao']);
-			$form->col_();
-			$form->_col(6);
+			$form->_col(12);
 				$tag->imprime($form->bold(TESTES_RESISTENCIA).': '.$magias['teste_resistencia']);
 			$form->col_();
 			$form->_col(6);
 				$tag->imprime($form->bold(RESISTENCIA_MAGIA).': '.$magias['resistencia_magia']);
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(DURACAO).': '.$magias['duracao']);
 			$form->col_();
 			$form->_col(12);
 				$tag->imprime($form->bold(DESCRICAO).'<br>'.$magias['descricao']);
@@ -882,7 +882,7 @@ function helper_escala_fate_rpg($escala){
 function helper_form_input($name, $parameters, $size = 4){
 	global $tag, $form;
 	$form->_col($size);
-		$form->label($name);
+		$form->label($name, ['id' => 'label_'.$parameters['name']]);
 		$form->input($parameters);
 	$form->col_();
 }
@@ -937,7 +937,7 @@ function helper_form_select_options_sistema($size = 4){
 	global $tag, $form, $rpg_sistemas;
 	$form->_col($size);
 		$form->label("Sistema de jogo");
-		$form->select(['class'=>'form-control selectpicker', "data-live-search" => "true", 'name'=>'sistema'], $rpg_sistemas);
+		$form->select(['class'=>'form-control selectpicker', 'id'=>'sistema_de_jogo', 'onchange'=>'select_form(this.value);', "data-live-search" => "true", 'name'=>'sistema'], $rpg_sistemas);
 	$form->col_();
 }
 
