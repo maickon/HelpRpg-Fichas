@@ -10,13 +10,24 @@ define('ROOTPATH',"C:/xampp/htdocs/HelpRpg/");
 define('ROOTPATHURL',"http://127.0.0.1/HelpRpg/");		
 define('SEPARETOR',"/");
 define('ABOUTPATH', ROOTPATHURL."pages/sobre/");
-define('HOWTOUSE', 'pages/como-usar/');
+define('HOWTOUSE', ROOTPATHURL.'pages/como-usar/');
 define('DOWNLOADPATH','arquivos/');
 define('NPCGENERATEPATH','http://helprpg.com.br/old/index.php?p=fichas');
 define('MONSTERGENERATEPATH','http://helprpg.com.br/old/index.php?p=monstros');
 define('ROLLDICE','http://helprpg.com.br/roll-dice');
 define('DUNGEONPATH','http://helprpg.com.br/pages/masmorras/');
 define('MAPWORDPATH','http://helprpg.com.br/pages/mapa_mundi_fantasia/');
+define('YOUTUBE','https://www.youtube.com/channel/UCVx62ydCm9D9JubvsEQXwlA');
+define('FACEBOOK','https://www.facebook.com/Help-RPG-539011612872186/?ref=hl');
+define('HELPRPGBLOG','https://helprpg.wordpress.com/');
+define('TAVERNADOELFO','http://tavernadoelfo.com.br/');
+define('BIBLIOTECAELFICA','http://www.bibliotecaelfica.com/');
+define('DOWNLOADPATHMASMORRAS',ROOTPATHURL."pages/downloads/masmorras/");
+define('DOWNLOADPATHMAPASMUNDI',ROOTPATHURL."pages/downloads/mapas-mundi/");
+define('DOWNLOADPATHFICHAS',ROOTPATHURL."pages/downloads/fichas/");
+define('DOWNLOADPATHITENS',ROOTPATHURL."pages/downloads/itens/");
+define('DOWNLOADPATHMAGIAS',ROOTPATHURL."pages/downloads/magias/");
+
 
 //url login
 define('LOGINPATH', ROOTPATHURL."pages/login");
