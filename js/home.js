@@ -2,6 +2,9 @@ document.getElementById('box-result').style.display = 'none';
 document.getElementById("search").focus();
 document.getElementById("search_result").focus();
 
+var ROOTURL = 'http://127.0.0.1/HelpRpg/';
+var IMGPATH = 'img/';
+
 function buscar_classe(classe){
 	if(classe){
 		var url = "http://127.0.0.1/HelpRpg/pages/testes/search.php?search="+classe;
@@ -11,7 +14,7 @@ function buscar_classe(classe){
 
 function show_image(img_path){
 	var img = document.createElement('img');
-	img.setAttribute('src',img_path);
+	img.setAttribute('src', ROOTURL+IMGPATH+img_path);
 	var div_img = document.getElementById('image');
 	div_img.appendChild(img);
 }
