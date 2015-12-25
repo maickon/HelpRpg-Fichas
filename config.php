@@ -15,6 +15,8 @@ define('DOWNLOADPATH','arquivos/');
 define('NPCGENERATEPATH','http://helprpg.com.br/old/index.php?p=fichas');
 define('MONSTERGENERATEPATH','http://helprpg.com.br/old/index.php?p=monstros');
 define('ROLLDICE','http://helprpg.com.br/roll-dice');
+define('DUNGEONPATH','http://helprpg.com.br/pages/masmorras/');
+define('MAPWORDPATH','http://helprpg.com.br/pages/mapa_mundi_fantasia/');
 
 //url login
 define('LOGINPATH', ROOTPATHURL."pages/login");
@@ -125,6 +127,7 @@ $rpg_sistemas_labels 	= 	[
 							];
 
 $rpg_sistemas = [
+				''=>'',
 				'ded'=>'Dungeons and Dragons 3.5',
 				'ded-4.0'=>'Dungeons and Dragons 4.0',
 				'ded-5.0'=>'Dungeons and Dragons 5.0',
