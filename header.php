@@ -61,9 +61,6 @@ $tag->html('lang="pt-br"');
 		
 		$tag->script('src="'.ROOTPATHURL.JSPATH.'bootstrap-select.js"');
 		$tag->script;
-
-		$tag->script('src="'.ROOTPATHURL.JSPATH.'request.js"');
-		$tag->script;
 	$tag->head;
 	
 	//variaveis de menu
@@ -86,12 +83,14 @@ $tag->html('lang="pt-br"');
 		$parametros['nomes'] = array(
 									array('Personagem', 'Criar um personagem', 'Criar um monstro', 'Criar um BOSS'),
 							   		array(CADASTRAR, ARMAS, ARMADURAS, ARTEFATOS, TALENTOS, MAGIAS, PERICIAS),
+									array('Utilitários', 'Rolar Daos', 'Gerador de mundos', 'Gerador de Masmorras', 'Gerador de NPC', 'Gerador de Monstros'),
 									$options_menu_root_label
 									);
 		
 		$parametros['links']  = array(
 									array("#", ROOTPATHURL.PERSONAGEMPATH, ROOTPATHURL.MONSTROPATH, ROOTPATHURL.BOSSPATH),
 									array("#", ROOTPATHURL.ARMASPATH, ROOTPATHURL.ARMADURASPATH, ROOTPATHURL.ARTEFATOSPATH, ROOTPATHURL.TALENTOSPATH, ROOTPATHURL.MAGIASPATH,ROOTPATHURL.PERICIASPATH),
+									array("#", ROLLDICE, MAPWORDPATH, DUNGEONPATH, NPCGENERATEPATH, MONSTERGENERATEPATH),
 									$options_menu_root_links
 									);
 		
@@ -107,8 +106,11 @@ $tag->html('lang="pt-br"');
 		
 		// array('Idioma', utf8_encode('Português - BR'), 'English - En')
 		//array('#','?v=pt-br', '?v=en')
-		$parametros['nomes'] = array('Home','Cadastro','Sobre','Rola dados','Gerador de NPCs','Gerador de Monstros','Como Usar');
-		$parametros['links']  = array(BASE_PATH, USERNEWPATH, ABOUTPATH, ROLLDICE, NPCGENERATEPATH, MONSTERGENERATEPATH, HOWTOUSE);
+		$utilitarios_label = array('Utilitários', 'Rolar Daos', 'Gerador de mundos', 'Gerador de Masmorras', 'Gerador de NPC', 'Gerador de Monstros');
+		$utilitarios_link = array("#", ROLLDICE, MAPWORDPATH, DUNGEONPATH, NPCGENERATEPATH, MONSTERGENERATEPATH);
+		
+		$parametros['nomes'] = array('Home','Cadastro','Sobre',$utilitarios_label,'Como Usar');
+		$parametros['links']  = array(BASE_PATH, USERNEWPATH, ABOUTPATH, $utilitarios_link, HOWTOUSE);
 		$parametros['programer']  = PROGRAMER;
 		$parametros['copy']  = COPY;
 	endif;	
