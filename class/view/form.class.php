@@ -16,7 +16,7 @@ class Form{
 			foreach($parameters as $key => $p):
 				 $tag .= " {$key}=\"{$p}\" ";
 			endforeach;
-			$tag .= '>'.$name.'</labrl>';
+			$tag .= '>'.$name.'</label>';
 		else:
 			$tag .= '>'.$name.'</label>';
 		endif;
