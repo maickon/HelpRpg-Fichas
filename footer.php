@@ -34,5 +34,7 @@
 	$tag->script('src="'.ROOTPATHURL.JSPATH.'validator.js"');
 	$tag->script;
 		
+	$tag->script('src="'.ROOTPATHURL.JSPATH.'bibliotecaAjax.js"');
+	$tag->script;
 	$tag->body;
 $tag->html;
