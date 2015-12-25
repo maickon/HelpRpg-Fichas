@@ -46,6 +46,11 @@ a.footer-search-fonte:hover{
 	color: #000000;
 }
 
+.footer{
+	text-align: center;
+	width: 100%;
+}
+
 .menu-item{
 	width: auto;
 	margin-left: 20px;
@@ -352,8 +357,16 @@ a.footer-search-fonte:hover{
 }
 
 .banner-center{
+	margin: 0 auto;
 	margin-top: 10px;
-	text-align: center;
+	width: 728px;
+	height: 90px;
+	max-width: 100% !important;
+}
+
+#map{
+	max-width: 100%;
+	padding: 5px;
 }
 
 .adsense{
