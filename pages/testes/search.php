@@ -23,16 +23,20 @@ $personagens = $personagem->select('personagens', null, [
 										], "OR");
 
 if(isset($personagens) && is_array($personagens)):
+	 $image = '';
 	 for($i=0; $i<count($personagens); $i++):
 	 	if($personagens[$i]['tipo'] == 'Personagem jogador'):
 			$path = PERSONAGEMPATH;
+	 		$image = PERSONAGEMPATH.$personagens[$i]['img'];
 		elseif($personagens[$i]['tipo'] == 'Monstro'):
 			$path = MONSTROPATH;
+			$image = MONSTROPATH.$personagens[$i]['img'];
 		else:
 			$path = 'undefined';
+			$image = $personagens[$i]['img'];
 		endif;
 		$tag->span('class="search-title"');
-			$tag->a('href="'.ROOTPATHURL.$path.'view.php?id='.$personagens[$i]['id'].'" target="blank" onmouseover="show_image('.$personagens[$i]['img'].');"');
+			$tag->a('href="'.ROOTPATHURL.$path.'view.php?id='.$personagens[$i]['id'].'" target="blank"');
 				$tag->imprime($personagens[$i]['nome']);
 			$tag->a;
 		$tag->span;

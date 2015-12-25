@@ -82,6 +82,7 @@ $tag->body();
 				$tag->div('class="propaganda"');
 				
 				$tag->div;
+				$tag->br();
 			$form->col_();
 
 			$form->_col(6);
