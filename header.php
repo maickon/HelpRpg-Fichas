@@ -109,8 +109,11 @@ $tag->html('lang="pt-br"');
 		$utilitarios_label = array('Utilitários', 'Rolar Daos', 'Gerador de mundos', 'Gerador de Masmorras', 'Gerador de NPC', 'Gerador de Monstros');
 		$utilitarios_link = array("#", ROLLDICE, MAPWORDPATH, DUNGEONPATH, NPCGENERATEPATH, MONSTERGENERATEPATH);
 		
-		$parametros['nomes'] = array('Home','Cadastro','Sobre',$utilitarios_label,'Como Usar');
-		$parametros['links']  = array(BASE_PATH, USERNEWPATH, ABOUTPATH, $utilitarios_link, HOWTOUSE);
+		$downloads_label = array("Downloads", "Taverna do Elfo", "Biblioteca Elfica", "Mapas Masmorras", "Mapas Mundi", "Fichas", "Itens", "Magias");
+		$downloads_link = array("Downloads", TAVERNADOELFO, BIBLIOTECAELFICA, DOWNLOADPATHMASMORRAS, DOWNLOADPATHMAPASMUNDI, DOWNLOADPATHFICHAS, DOWNLOADPATHITENS, DOWNLOADPATHMAGIAS);
+		
+		$parametros['nomes'] = array('Home','Cadastro','Sobre',$utilitarios_label,$downloads_label,'Facebook','YouTube','Help RPG Blog','Como Usar');
+		$parametros['links']  = array(BASE_PATH, USERNEWPATH, ABOUTPATH, $utilitarios_link,$downloads_link, FACEBOOK, YOUTUBE, HELPRPGBLOG, HOWTOUSE);
 		$parametros['programer']  = PROGRAMER;
 		$parametros['copy']  = COPY;
 	endif;	
