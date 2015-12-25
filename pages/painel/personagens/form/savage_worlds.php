@@ -6,14 +6,14 @@ $form->input(['name' => 'sistema', 'type' => 'hidden', 'value'=> 'Savage Worlds'
 $form->input(['name' => 'tipo', 'type' => 'hidden', 'value'=> 'Personagem jogador']);
 
 $atributos = [
-				['Força','forca'],
-				['Atirar','atirar'],['Arremessar','arremessar'],
-				['Cavalgar','cavalgar'],['Digirir','digirir'],['Furtividade','furtividade'],
-				['Lutar','lutar'],['Nadar','nadar'],['Navegar','navegar'],['Pilotar','pilotar'],
+				['Força','forca'], ['Escalar','escalar'], ['Agilidade','agilidade'],
+				['Atirar','atirar'],['Arremessar','arremessar'], ['Cavalgar','cavalgar'],
+				['Digirir','digirir'],['Furtividade','furtividade'], ['Lutar','lutar'],
+				['Nadar','nadar'],['Navegar','navegar'],['Pilotar','pilotar'],['Astúcia','astucia'], 
 				['Arrombar','arrombar'],['Conhecimento','conhecimento'], ['Trab. Pedra','trabpedra'],
 				['Concertar','concertar'], ['Curar','curar'], ['Investigação','investigacao'],
 				['Manha','manha'], ['Perceber','perceber'], ['Provocar','provocar'], ['Rastrear','rastrear'],
-				['Sobrevivência','sobrevivencia'], ['Intimidar','intimidar'], ['Persuação','persuacao'], ['Vigor','vigor']  
+				['Sobrevivência','sobrevivencia'], ['Espírito','espirito'], ['Intimidar','intimidar'], ['Persuação','persuacao'], ['Vigor','vigor']  
 			];
 for($i=0; $i<=count($atributos)-1; $i++):
 	$col = 2;
