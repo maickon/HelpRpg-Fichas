@@ -269,7 +269,7 @@ class Form{
 	}
 	
 	function area($parameters, $content=""){
-		$input = '<textarea ';
+		$input = '<textarea class="ckeditor" ';
 		foreach($parameters as $key => $p):
 			$input .= " {$key}=\"{$p}\" ";
 		endforeach;

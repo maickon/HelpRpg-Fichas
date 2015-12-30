@@ -1,5 +1,5 @@
 <?php
-class Artefatos extends Item{
+class Artefatos extends Db_persistence{
 	private $attr;
 	
 	function __construct($path, $warning_msg = 'Já existe uma artefato com este nome!'){

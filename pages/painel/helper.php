@@ -12,7 +12,8 @@ $modulos_path = [
 'personagens'	=> PERSONAGEMPATH,
 'boss'			=> BOSSPATH,
 'monstros'		=> MONSTROPATH,
-'usuarios'		=> USERPATH
+'usuarios'		=> USERPATH,
+'aventuras'		=> AVENTURASPATH
 ];
 
 function helper_componentes_buttons($modulo, $id, $off = false){

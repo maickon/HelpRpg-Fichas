@@ -1,5 +1,5 @@
 <?php
-class Pericias extends Item{
+class Pericias extends Db_persistence{
 	private $attr;
 	
 	function __construct($path, $warning_msg = 'Já existe uma perícia com este nome!'){

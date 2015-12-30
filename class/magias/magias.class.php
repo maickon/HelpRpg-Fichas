@@ -1,5 +1,5 @@
 <?php
-class Magias extends Item{
+class Magias extends Db_persistence{
 	private $attr;
 	
 	function __construct($path, $warning_msg = 'Já existe uma magia com este nome!'){

@@ -1,5 +1,6 @@
 <?php
-class Usuarios extends Db{
+//o usuario extende diretamente de Db
+class Usuarios extends db{
 	private $atributos;
 	private $table;
 	

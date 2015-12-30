@@ -1,5 +1,5 @@
 <?php
-class Armas extends Item{
+class Armas extends Db_persistence{
 	private $attr;
 	
 	function __construct($path, $warning_msg = 'Já existe uma arma com este nome!'){

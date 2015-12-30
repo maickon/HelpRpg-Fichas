@@ -176,7 +176,7 @@ var gen_data = {
             "Marceline",
             "Shiva, o Destruidor",
             "O Goblin Rei",
-            "Ulfang the Negro",
+            "Ulfang o Negro",
             "Zeiram o Lich"
         ],
 

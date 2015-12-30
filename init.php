@@ -76,7 +76,7 @@ function __autoload($class_name){
 	//lista de diretorios dentro de class/
 	$class_dir = [
 	"arquivo/","db/","rotas/","sessao/","view/","usuario/","armas/","upload/", 
-	"armaduras/", "item/", "talentos/", "magias/", "pericias/", "personagens/",
+	"armaduras/", "db_persistence/", "talentos/", "magias/", "pericias/", "personagens/",
 	"artefatos/"];
 	$out = 0;
 	foreach($class_dir as $file_name):

@@ -61,6 +61,22 @@ $tag->html('lang="pt-br"');
 		
 		$tag->script('src="'.ROOTPATHURL.JSPATH.'bootstrap-select.js"');
 		$tag->script;
+
+		$tag->script('src="'.CKEDITORPATH.'ckeditor.js"');
+		$tag->script;
+
+		$tag->script('src="'.CKEDITORPATH.'/adapters/jquery.js"');
+		$tag->script;
+
+		$tag->script('src="'.CKEDITORPATH.'config.js"');
+		$tag->script;
+
+		$tag->script('src="'.CKEDITORPATH.'styles.js"');
+		$tag->script;
+
+		$tag->script('src="'.CKEDITORPATH.'build-config.js"');
+		$tag->script;
+
 	$tag->head;
 	
 	//variaveis de menu
@@ -106,14 +122,20 @@ $tag->html('lang="pt-br"');
 		
 		// array('Idioma', utf8_encode('Português - BR'), 'English - En')
 		//array('#','?v=pt-br', '?v=en')
-		$utilitarios_label = array('Utilitários', 'Rolar Daos', 'Gerador de mundos', 'Gerador de Masmorras', 'Gerador de NPC', 'Gerador de Monstros');
-		$utilitarios_link = array("#", ROLLDICE, MAPWORDPATH, DUNGEONPATH, NPCGENERATEPATH, MONSTERGENERATEPATH);
+		$utilitarios_label 		= array(UTILITARIOS, ROLAR_DADOS, GERADOR_DE_MUNDOS, GERADOR_DE_MASMORRAS, GERADOR_DE_NPCS, GERADOR_DE_MONSTROS);
+		$utilitarios_link 		= array("#", ROLLDICE, MAPWORDPATH, DUNGEONPATH, NPCGENERATEPATH, MONSTERGENERATEPATH);
 		
-		$downloads_label = array("Downloads", "Taverna do Elfo", "Biblioteca Elfica", "Mapas Masmorras", "Mapas Mundi", "Fichas", "Itens", "Magias");
-		$downloads_link = array("Downloads", TAVERNADOELFO, BIBLIOTECAELFICA, DOWNLOADPATHMASMORRAS, DOWNLOADPATHMAPASMUNDI, DOWNLOADPATHFICHAS, DOWNLOADPATHITENS, DOWNLOADPATHMAGIAS);
-		
-		$parametros['nomes'] = array('Home','Cadastro','Sobre',$utilitarios_label,$downloads_label,'Facebook','YouTube','Help RPG Blog','Como Usar');
-		$parametros['links']  = array(BASE_PATH, USERNEWPATH, ABOUTPATH, $utilitarios_link,$downloads_link, FACEBOOK, YOUTUBE, HELPRPGBLOG, HOWTOUSE);
+		$campanhas_label 		= array(CAMPANHAS, AVENTURAS);
+		$campanhas_link 		= array("#", AVENTURASPATH);
+
+		$downloads_label 		= array(DOWNLOADS, "Taverna do Elfo", "Biblioteca Elfica", "Mapas Masmorras", "Mapas Mundi", "Fichas", "Itens", "Magias");
+		$downloads_link 		= array("Downloads", TAVERNADOELFO, BIBLIOTECAELFICA, DOWNLOADPATHMASMORRAS, DOWNLOADPATHMAPASMUNDI, DOWNLOADPATHFICHAS, DOWNLOADPATHITENS, DOWNLOADPATHMAGIAS);
+
+		$midias_sociais_label 	= array(MEDIAS_SOCIAIS, FACEBOOK, YOUTUBE, WORDPRESS_BLOG);
+		$midias_sociais_link 	= array("#", FACEBOOK_URL, YOUTUBE_URL, WORDPRESS_BLOG_URL);
+
+		$parametros['nomes'] = array('Home','Cadastro','Sobre',$utilitarios_label, $campanhas_label, $downloads_label,'Facebook','YouTube','Help RPG Blog','Como Usar');
+		$parametros['links']  = array(BASE_PATH, USERNEWPATH, ABOUTPATH, $utilitarios_link, $campanhas_link, $downloads_link, HOWTOUSE);
 		$parametros['programer']  = PROGRAMER;
 		$parametros['copy']  = COPY;
 	endif;	

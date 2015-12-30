@@ -1,5 +1,5 @@
 <?php
-class Talentos extends Item{
+class Talentos extends Db_persistence{
 	private $attr;
 	
 	function __construct($path, $warning_msg = 'Já existe um talento com este nome!'){

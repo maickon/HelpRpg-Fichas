@@ -1,5 +1,5 @@
 <?php
-abstract class Item extends Db{
+abstract class Db_persistence extends Db{
 	protected $table;
 	protected $path;
 	protected $warning_msg;
