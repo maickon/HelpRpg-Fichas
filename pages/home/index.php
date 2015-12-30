@@ -8,7 +8,7 @@ $tag = new Tags();
 
 $form->_row();
 	$form->_container();
-		$user = new Usuarios();
+		$user 		= new Usuarios();
 		$armadura 	= new Armaduras('');
 		$arma 		= new Armas('');
 		$artefato 	= new Artefatos('');
@@ -50,9 +50,9 @@ $form->_row();
 		
 		//Lista fictiia de categorias
 		$categorias = [
-						['Fichas Jogador', $qtd_jogador, ROOTPATHURL.PERSONAGEMPATH.'view.php?id='.$number_jogador[0]['id']],
-						['Fichas Npc', $qtd_npc, ROOTPATHURL.PERSONAGEMPATH.'view.php?id=1'],
-						['Fichas Monstros', $qtd_monstros, ROOTPATHURL.MONSTROPATH.'view.php?id='.$number_monstros[0]['id']],
+						['Fichas de Personagem', $qtd_jogador, ROOTPATHURL.PERSONAGEMPATH.'view.php?id='.$number_jogador[0]['id']],
+						['Fichas de Npc', $qtd_npc, ROOTPATHURL.PERSONAGEMPATH.'view.php?id=1'],
+						['Fichas de Monstros', $qtd_monstros, ROOTPATHURL.MONSTROPATH.'view.php?id='.$number_monstros[0]['id']],
 						['Armas', $qtd_armas, ROOTPATHURL.ARMASPATH.'view.php?id='.$number_armas[0]['id']],
 						['Armaduras', $qtd_armaduras, ROOTPATHURL.ARMADURASPATH.'view.php?id='.$number_armaduras[0]['id']],
 						['Artefatos', $qtd_artefatos, ROOTPATHURL.ARTEFATOSPATH.'view.php?id='.$number_artefatos[0]['id']],
