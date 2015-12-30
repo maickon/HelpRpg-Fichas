@@ -17,7 +17,7 @@
 	 */
 
 	$parametros_footer['nomes'] = array('Home','Cadastro','Sobre');
-	$parametros_footer['links']  = array(BASE_PATH, USERNEWPATH, ABOUTPATH);
+	$parametros_footer['links']  = array(ROOTPATHURL, USERNEWPATH, ABOUTPATH);
 	$parametros_footer['programer']  = PROGRAMER;
 	$parametros_footer['copy']  = COPY;
 	global $tag;
