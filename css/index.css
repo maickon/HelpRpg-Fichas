@@ -49,6 +49,8 @@ a.footer-search-fonte:hover{
 .footer{
 	text-align: center;
 	width: 100%;
+	color: #FFFFFF;
+	background-color: #000;
 }
 
 .menu-item{
