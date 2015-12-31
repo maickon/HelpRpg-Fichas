@@ -4,22 +4,12 @@ require_once 'rotas/rotas-servidor.php';
 require_once 'rotas/rotas-url.php';
 require_once 'db/db-config.php';
 
-
-
 //msgs para usuarios
 define('U4004', 'Usuário não encontrado!');
 define('U4005', 'Cadastro realizado com sucesso!');
 define('U4006', 'Email ou login já está em uso.');
 define('U4007', 'Dados deletado com sucesso!');
 define('U4008', 'Alteração feita com sucesso!');
-
-
-//Nome/Titulo do site/projeto
-define('PROJECTTITLE', "Help RPG Fichas");
-define('PROGRAMER', 'Desenvolvido por <a href="http://www.mrcurriculo.orgfree.com/" target="blank">Maickon Rangel</a> todos os direitos reservados');
-define('COPY', "&copy 2013-2015");
-
-
 
 //lista de superusuarios do sistema
 global $permit, $rpg_sistemas, $rpg_sistemas_arquivo_nome, $rpg_sistemas_labels;
@@ -71,7 +61,7 @@ switch($linguagem):
 		require_once 'termos/pt-br.php';
 	break;
 
-	case 'us':
+	case 'en':
 		require_once 'termos/en.php';
 	break;
 endswitch;
