@@ -2,7 +2,7 @@
 class Artefatos extends Db_persistence{
 	private $attr;
 	
-	function __construct($path, $warning_msg = 'Já existe uma artefato com este nome!'){
+	function __construct($path = "", $warning_msg = 'Já existe uma artefato com este nome!'){
 		parent::__construct(strtolower(get_class($this)), $path, $warning_msg);
 	}
 	
