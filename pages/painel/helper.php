@@ -950,6 +950,14 @@ function helper_form_text_field_descricao($size = 12){
 	$form->col_();
 }
 
+function helper_form_text_field_aventura($size = 12){
+	global $tag, $form;
+	$form->_col($size);
+		$form->label("História da aventura");
+		$form->area(['name' => 'aventura', 'class'=>'form-control', 'rows'=>'5']);
+	$form->col_();
+}
+
 function helper_form_button_submit_and_back($path, $size = 4){
 	global $tag, $form;
 	$form->_col($size);
