@@ -12,7 +12,7 @@
  * Instancia um tipo de componente para adicionar ao site
  * o componente pode ser um menu ou um rodap�
  * 
- * Este arquivo possui tr�s classes:
+ * Este arquivo possui tres classes:
  * A classe components que define qual componente instanciar.
  * A classe menu bar que cria um menu baseado no framework twitter bootstrap
  * A classe footer bar que define um rodap� para o site
@@ -24,7 +24,7 @@ class Components{
 	 * 
 	 * @param componente $component
 	 * o parametro vai definir qual tipo de componente ser� instanciado.
-	 * ele pode ser footer = redap� ou menu para criar a barra de menu do site
+	 * ele pode ser footer = redape ou menu para criar a barra de menu do site
 	 */
 	function __construct($component, $parametros = null){
 		global $tag;
@@ -145,13 +145,13 @@ class MenuBar{
 							
 							$this->tag->li();
 								$this->tag->a('href="'.ROOTPATHURL.LOGOFF_PATH.'"');
-									$this->tag->imprime("Sair");
+									$this->tag->imprime(SAIR);
 								$this->tag->a;
 							$this->tag->li;
 						else:
 							$this->tag->li();
 								$this->tag->a('href="'.LOGIN_PATH.'"');
-									$this->tag->imprime("Logar");
+									$this->tag->imprime(LOGAR);
 								$this->tag->a;
 							$this->tag->li;
 						endif;			
@@ -200,9 +200,9 @@ class FooterBar{
 	}
 
 	/*
-		M�todo footer_bar()
-		Respons�vel por montar uma barra de 
-		rpdap� atrav�s de um array de labels menus e links.
+		Metodo footer_bar()
+		Responsavel por montar uma barra de 
+		rpdape atrav�s de um array de labels menus e links.
 	*/
 
 	public function footer_bar(){
