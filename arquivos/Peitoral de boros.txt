@@ -1,0 +1,13 @@
+id: 3
+dono: root
+editado_por: Editado por Maickon administrador em 31/12/2015 04:03:36
+nome: Peitoral de boros
+lv: 3
+preco: 20.000 PO
+raridade: Mágico
+sistema: Dungeons and Dragons
+descricao: <h2 style="font-style:italic;">Peitoral de boros</h2>
+
+<p>Peitoral&nbsp;<strong><em>poderoso </em></strong>que lhe permite falar com os animais.</p>
+
+old_file: 1448053853.jpg
