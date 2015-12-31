@@ -25,8 +25,8 @@ $tag->br();
 		$form->container_();
 	$form->row_();
 			
-	$objeto = new Artefatos(ROOTPATHURL.AVENTURASPATH);
-	$artefatos = $objeto->select($objeto->getTable());
+	$objeto = new Aventuras(ROOTPATHURL.AVENTURASPATH);
+	$aventuras = $objeto->select($objeto->getTable());
 
 	$tag->imprime('
 			<script type="text/javascript" charset="utf-8">
@@ -43,7 +43,7 @@ $tag->br();
 			$tag->span;
 		$form->col_();
 		$form->_col(1);
-			$tag->a('href="'.ROOTPATHURL.AVENTURASPATH.'new.php" class="btn btn-primary"');
+			$tag->a('href="'.AVENTURASPATH.'new.php" class="btn btn-primary"');
 				$tag->imprime(NOVO);
 			$tag->a;
 		$form->col_();
@@ -55,6 +55,7 @@ $tag->br();
 				$tag->tr();
 					$form->th(TITULO);
 					$form->th(MESTRE);
+					$form->th(LEVEL_INDICADO);
 					$form->th(TIPO);
 					$form->th(CRIADO_EM);
 					$form->th(SISTEMA);
@@ -67,10 +68,11 @@ $tag->br();
 			$tag->thead;
 
 			$tag->tbody();
-				foreach($artefatos as $a):
+				foreach($aventuras as $a):
 					$tag->tr();
 						$form->td($a['titulo']);
 						$form->td($a['mestre']);
+						$form->td($a['level_indicado']);
 						$form->td($a['tipo']);
 						$form->td($a['data_criacao']);
 						$form->td($a['sistema']);
