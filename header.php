@@ -88,23 +88,25 @@ $tag->html('lang="pt-br"');
 		
 		require_once 'pages/painel/helper.php';
 		if(helper_check_admin() != 0):
-			$options_menu_root_label = array('Você','Usuários','Estatísticas','Editar dados','Cancelar conta');
+			$options_menu_root_label = array(VOCE, USUARIOS, ESTATISTICAS, EDITAR_DADOS, CANCELAR_CONTA);
 			$options_menu_root_links = array("#", USERSLISTPATH, USERPATH, USEREDITPATH, USERDELETEPATH);
 		else:
-			$options_menu_root_label = array('Você','Estatísticas','Editar dados','Cancelar conta');
+			$options_menu_root_label = array(VOCE, ESTATISTICAS, EDITAR_DADOS, CANCELAR_CONTA);
 			$options_menu_root_links = array("#", USERPATH, USEREDITPATH, USERDELETEPATH);
 		endif;
 		
 		
 		$parametros['nomes'] = array(
-									array('Personagem', 'Criar um personagem', 'Criar um monstro', 'Criar um BOSS'),
-							   		array(CADASTRAR, ARMAS, ARMADURAS, ARTEFATOS, TALENTOS, MAGIAS, PERICIAS),
-									array('Utilitários', 'Rolar Daos', 'Gerador de mundos', 'Gerador de Masmorras', 'Gerador de NPC', 'Gerador de Monstros'),
+									array(PERSONAGEM_MENU, CRIAR_PERSONAGEM, CRIAR_MONSTRO, CRIAR_BOSS),
+									array(CAMPANHAS, AVENTURAS),
+							   		array(CADASTRAR, ARMAS, ARMADURAS, ARTEFATOS, TALENTOS, MAGIAS_MENU, PERICIAS),
+									array(UTILITARIOS, ROLAR_DADOS, GERADOR_DE_MUNDOS, GERADOR_DE_MASMORRAS, GERADOR_DE_NPCS, GERADOR_DE_MONSTROS),
 									$options_menu_root_label
 									);
 		
 		$parametros['links']  = array(
 									array("#", ROOTPATHURL.PERSONAGEMPATH, ROOTPATHURL.MONSTROPATH, ROOTPATHURL.BOSSPATH),
+									array("#", AVENTURASPATH),
 									array("#", ROOTPATHURL.ARMASPATH, ROOTPATHURL.ARMADURASPATH, ROOTPATHURL.ARTEFATOSPATH, ROOTPATHURL.TALENTOSPATH, ROOTPATHURL.MAGIASPATH,ROOTPATHURL.PERICIASPATH),
 									array("#", ROLLDICE, MAPWORDPATH, DUNGEONPATH, NPCGENERATEPATH, MONSTERGENERATEPATH),
 									$options_menu_root_links
@@ -128,13 +130,13 @@ $tag->html('lang="pt-br"');
 		$campanhas_label 		= array(CAMPANHAS, AVENTURAS);
 		$campanhas_link 		= array("#", AVENTURASPATH);
 
-		$downloads_label 		= array(DOWNLOADS, "Taverna do Elfo", "Biblioteca Elfica", "Mapas Masmorras", "Mapas Mundi", "Fichas", "Itens", "Magias");
-		$downloads_link 		= array("Downloads", TAVERNADOELFO, BIBLIOTECAELFICA, DOWNLOADPATHMASMORRAS, DOWNLOADPATHMAPASMUNDI, DOWNLOADPATHFICHAS, DOWNLOADPATHITENS, DOWNLOADPATHMAGIAS);
+		$downloads_label 		= array(DOWNLOADS, TAVERNA_DO_ELFO, BIBLIOTECA_ELFICA, MASMORRAS, MAPAS, FICHAS, ITENS, MAGIAS);
+		$downloads_link 		= array("#", TAVERNA_DO_ELFO_URL, BIBLIOTECA_ELFICA_URL, DOWNLOADPATHMASMORRAS, DOWNLOADPATHMAPASMUNDI, DOWNLOADPATHFICHAS, DOWNLOADPATHITENS, DOWNLOADPATHMAGIAS);
 
 		$midias_sociais_label 	= array(MEDIAS_SOCIAIS, FACEBOOK, YOUTUBE, WORDPRESS_BLOG);
 		$midias_sociais_link 	= array("#", FACEBOOK_URL, YOUTUBE_URL, WORDPRESS_BLOG_URL);
 
-		$parametros['nomes'] = array('Home','Cadastro','Sobre',$utilitarios_label, $campanhas_label, $downloads_label,'Facebook','YouTube','Help RPG Blog','Como Usar');
+		$parametros['nomes'] = array(HOME, CADASTRO, SOBRE, $utilitarios_label, $campanhas_label, $downloads_label, COMO_USAR);
 		$parametros['links']  = array(BASE_PATH, USERNEWPATH, ABOUTPATH, $utilitarios_link, $campanhas_link, $downloads_link, HOWTOUSE);
 		$parametros['programer']  = PROGRAMER;
 		$parametros['copy']  = COPY;
