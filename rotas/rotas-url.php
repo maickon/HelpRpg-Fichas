@@ -1,8 +1,8 @@
 <?php
 
 //Definindo constantes para os caminhos base
-define('ROOTPATH',"C:/xampp/htdocs/HelpRpg-Fichas/"); 			
-define('ROOTPATHURL',"http://127.0.0.1/HelpRpg-Fichas/");
+define('ROOTPATH',"C:/xampp/htdocs/HelpRpg/"); 			
+define('ROOTPATHURL',"http://127.0.0.1/HelpRpg/");
 
 define('CLASSPATH', "class/");
 define('JSPATH', "js/");
@@ -10,7 +10,7 @@ define('CSSPATH', "css/");
 define('IMGPATH', "img/");
 define('HOMEPATH', "pages/home");		
 
-define('AVENTURASPATH', ROOTPATHURL."aventuras/");
+define('AVENTURASPATH', ROOTPATHURL."pages/painel/aventuras/");
 define('LIBPATH', ROOTPATHURL."lib/");
 define('CKEDITORPATH', ROOTPATHURL."lib/ckeditor/");
 define('ABOUTPATH', ROOTPATHURL."pages/sobre/");
@@ -31,8 +31,8 @@ define('DOWNLOADPATHMAGIAS',ROOTPATHURL."pages/downloads/magias/");
 define('YOUTUBE_URL','https://www.youtube.com/channel/UCVx62ydCm9D9JubvsEQXwlA');
 define('FACEBOOK_URL','https://www.facebook.com/Help-RPG-539011612872186/?ref=hl');
 define('WORDPRESS_BLOG_URL','https://helprpg.wordpress.com/');
-define('TAVERNADOELFO','http://tavernadoelfo.com.br/');
-define('BIBLIOTECAELFICA','http://www.bibliotecaelfica.com/');
+define('TAVERNA_DO_ELFO_URL','http://tavernadoelfo.com.br/');
+define('BIBLIOTECA_ELFICA_URL','http://www.bibliotecaelfica.com/');
 
 //url login
 define('LOGINPATH', ROOTPATHURL."pages/login");
