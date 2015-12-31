@@ -13,19 +13,18 @@ $tag->br();
 	$form->_container();
 		if(isset($_REQUEST['action'])):
 			$form->_col(12);
-				$create_artefato = new Artefatos(ROOTPATH.ARTEFATOSIMGPATH);
-				$_REQUEST['img'] =  $_FILES['img'];
-				$create_artefato->create($_REQUEST);
+				$create_aventura = new Aventuras();
+				$create_aventura->create($_REQUEST);
 			$form->col_();
 		endif;
 		
 		$form->_col(11);
 			$tag->span('class="span_title"');
-				$tag->imprime(ARTEFATOS);
+				$tag->imprime(AVENTURAS);
 			$tag->span;
 		$form->col_();
 		$form->_col(1);
-			$tag->a('href="'.ROOTPATHURL.ARTEFATOSPATH.'" class="btn btn-info"');
+			$tag->a('href="'.AVENTURASPATH.'" class="btn btn-info"');
 				$tag->imprime(BACK);
 			$tag->a;
 		$form->col_();
@@ -39,20 +38,18 @@ $tag->br();
 			
 				$current_user = $s->get_session('nome');
 				$form->input(['name' => 'dono', 'type' => 'hidden', 'value'=> $current_user]);
-
-				helper_form_input("Imagem", ['name' => 'img', 'type' => 'file', 'class'=>'form-control']);
 	
-				helper_form_input("Nome", ['name' => 'nome', 'type' => 'text', 'class'=>'form-control', 'required'=>'true']);
+				helper_form_input("Título", ['name' => 'titulo', 'type' => 'text', 'class'=>'form-control', 'required'=>'true'], 8);
 				
-				helper_form_input("Level indicado", ['name' => 'lv', 'type' => 'text', 'class'=>'form-control']);
+				helper_form_input("Nível indicado para a aventura", ['name' => 'level_indicado', 'type' => 'text', 'class'=>'form-control', 'required'=>'true'], 4);
 				
-				helper_form_input("Preço/Custo", ['name' => 'preco', 'type' => 'text', 'class'=>'form-control']);
+				helper_form_input("Mestre da aventura", ['name' => 'mestre', 'type' => 'text', 'class'=>'form-control']);
 				
-				helper_form_select_options("Raridade", ['class'=>'form-control', 'name'=>'raridade'], ['comum'=>'Comum', 'magico'=>'Mágico', 'raro'=>'Raro', 'lendario'=>'Lendário', 'unico' => 'Único']);
+				helper_form_select_options("Tipo de aventura", ['class'=>'form-control', 'name'=>'tipo'], ['curta'=>'Curta', 'longa'=>'Longa', 'campanha'=>'Campanha', 'epico'=>'Campanha épica']);
 				
 				helper_form_select_options_sistema();
 				
-				helper_form_text_field_descricao();
+				helper_form_text_field_aventura();
 				
 				helper_form_button_submit_and_back(ROOTPATHURL.ARMASPATH);
 			$form->form_();
