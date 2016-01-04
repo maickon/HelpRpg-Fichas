@@ -24,7 +24,7 @@ $tag->br();
 			$tag->span;
 		$form->col_();
 		$form->_col(1);
-			$tag->a('href="'.AVENTURASPATH.'" class="btn btn-info"');
+			$tag->a('href="'.ROOTPATHURL.AVENTURASPATH.'" class="btn btn-info"');
 				$tag->imprime(BACK);
 			$tag->a;
 		$form->col_();
@@ -39,22 +39,22 @@ $tag->br();
 				$current_user = $s->get_session('nome');
 				$form->input(['name' => 'dono', 'type' => 'hidden', 'value'=> $current_user]);
 	
-				helper_form_input("Título", ['name' => 'titulo', 'type' => 'text', 'class'=>'form-control', 'required'=>'true'], 8);
+				helper_form_input(TITULO, ['name' => 'titulo', 'type' => 'text', 'class'=>'form-control', 'required'=>'true'], 8);
 				
-				helper_form_input("Nível indicado para a aventura", ['name' => 'level_indicado', 'type' => 'text', 'class'=>'form-control', 'required'=>'true'], 4);
+				helper_form_input(NIVEL_INDICADO_AVENTURA, ['name' => 'level_indicado', 'type' => 'text', 'class'=>'form-control', 'required'=>'true'], 4);
 				
-				helper_form_input("Mestre da aventura", ['name' => 'mestre', 'type' => 'text', 'class'=>'form-control']);
+				helper_form_input(MESTRE_DA_AVENTURA, ['name' => 'mestre', 'required'=>'true', 'type' => 'text', 'class'=>'form-control']);
 				
-				helper_form_select_options("Tipo de aventura", ['class'=>'form-control', 'name'=>'tipo'], ['curta'=>'Curta', 'longa'=>'Longa', 'campanha'=>'Campanha', 'epico'=>'Campanha épica']);
+				helper_form_select_options(TIPO_DE_AVENTURA, ['class'=>'form-control', 'required'=>'true', 'name'=>'tipo'], ['curta'=>'Curta', 'longa'=>'Longa', 'campanha'=>'Campanha', 'epico'=>'Campanha épica']);
 				
 				helper_form_select_options_sistema();
 				
 				helper_form_text_field_aventura();
 				
-				helper_form_button_submit_and_back(ROOTPATHURL.ARMASPATH);
+				helper_form_button_submit_and_back(ROOTPATHURL.AVENTURASPATH);
 			$form->form_();
 			
 		$form->_container();
 	$form->row_();
-
+$tag->div;
 require_once '../../../footer.php';
