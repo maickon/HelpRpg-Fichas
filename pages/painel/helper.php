@@ -13,7 +13,10 @@ $modulos_path = [
 'boss'			=> BOSSPATH,
 'monstros'		=> MONSTROPATH,
 'usuarios'		=> USERPATH,
-'aventuras'		=> AVENTURASPATH
+'aventuras'		=> AVENTURASPATH,
+'cenarios'		=> CENARIOSPATH,
+'contos'		=> CONTOSPATH,
+'historias'		=> HISTORIASPATH
 ];
 
 function helper_componentes_buttons($modulo, $id, $off = false){
@@ -921,7 +924,7 @@ function helper_form_text_area($name, $parameters, $options = '', $size = 12){
 function helper_form_select_options_categoria($size = 4){
 	global $tag, $form;
 	$form->_col($size);
-		$form->label("Categoria");
+		$form->label(CATEGORIA_ARMADURA);
 		$form->select(['class'=>'form-control', 'name'=>'categoria'], ['comum'=>'Arma Comum', 'exotica'=>'Arma Exótica', 'simples'=>'Arma Simples', 'tecnologica'=>'Arma Tecnológica']);
 	$form->col_();
 }
@@ -929,7 +932,7 @@ function helper_form_select_options_categoria($size = 4){
 function helper_form_select_options_arma_tipo($size = 4){
 	global $tag, $form;
 	$form->_col($size);
-		$form->label("Tipo");
+		$form->label(TIPO);
 		$form->select(['class'=>'form-control', 'name'=>'tipo'], ['atq_distancia'=>'Armas de Ataque à Distância', 'leve'=>'Armas Leves - Corpo a Corpo', 'uma_mao'=>'Armas de Uma Mão - Corpo a Corpo', 'duas_maos'=>'Armas de Duas Mãos - Corpo a Corpo']);
 	$form->col_();
 }
@@ -937,7 +940,7 @@ function helper_form_select_options_arma_tipo($size = 4){
 function helper_form_select_options_sistema($size = 4){
 	global $tag, $form, $rpg_sistemas;
 	$form->_col($size);
-		$form->label("Sistema de jogo");
+		$form->label(SISTEMA_DE_JOGO);
 		$form->select(['class'=>'form-control selectpicker', 'id'=>'sistema_de_jogo', 'onchange'=>'select_form(this.value);', "data-live-search" => "true", 'name'=>'sistema'], $rpg_sistemas);
 	$form->col_();
 }
@@ -945,7 +948,7 @@ function helper_form_select_options_sistema($size = 4){
 function helper_form_text_field_descricao($size = 12){
 	global $tag, $form;
 	$form->_col($size);
-		$form->label("Descrição");
+		$form->label(DESCRICAO);
 		$form->area(['name' => 'descricao', 'class'=>'form-control', 'rows'=>'5']);
 	$form->col_();
 }
@@ -953,8 +956,32 @@ function helper_form_text_field_descricao($size = 12){
 function helper_form_text_field_aventura($size = 12){
 	global $tag, $form;
 	$form->_col($size);
-		$form->label("História da aventura");
-		$form->area(['name' => 'aventura', 'class'=>'form-control', 'rows'=>'5']);
+		$form->label(HISTORIA_DA_AVENTURA);
+		$form->area(['name' => 'aventura', 'class'=>'form-control', 'required'=>'true', 'rows'=>'5']);
+	$form->col_();
+}
+
+function helper_form_text_field_cenario($size = 12){
+	global $tag, $form;
+	$form->_col($size);
+	$form->label(CENARIO);
+	$form->area(['name' => 'descricao_cenario', 'class'=>'form-control', 'required'=>'true', 'rows'=>'5']);
+	$form->col_();
+}
+
+function helper_form_text_field_historia($size = 12){
+	global $tag, $form;
+	$form->_col($size);
+	$form->label(HISTORIA);
+	$form->area(['name' => 'descricao_historia', 'class'=>'form-control', 'required'=>'true', 'rows'=>'5']);
+	$form->col_();
+}
+
+function helper_form_text_field_conto($size = 12){
+	global $tag, $form;
+	$form->_col($size);
+	$form->label(CONTO);
+	$form->area(['name' => 'descricao_conto', 'class'=>'form-control', 'required'=>'true', 'rows'=>'5']);
 	$form->col_();
 }
 
@@ -962,7 +989,7 @@ function helper_form_button_submit_and_back($path, $size = 4){
 	global $tag, $form;
 	$form->_col($size);
 		$form->br();
-		$form->link_button("Voltar", $path);
+		$form->link_button(BACK, $path);
 		echo "  ";
 		$form->input_submit(['class'=>'btn btn-default', 'type'=>'submit', 'name'=>'action', 'value'=>'Cadastrar']);
 	$form->col_();
@@ -972,7 +999,7 @@ function helper_form_button_update_and_back($path, $size = 4){
 	global $tag, $form;
 	$form->_col(4);
 		$form->br();
-		$form->link_button("Voltar", $path);
+		$form->link_button(BACK, $path);
 		echo "  ";
 		$form->input_submit(['class'=>'btn btn-default', 'type'=>'submit', 'name'=>'action', 'value'=>'Atualizar']);
 	$form->col_();
