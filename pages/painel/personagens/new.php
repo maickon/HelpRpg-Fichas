@@ -77,4 +77,5 @@ $tag->br();
 		$form->row_();
 					
 	$form->container_();
+	$tag->div;
 require_once '../../../footer.php';
