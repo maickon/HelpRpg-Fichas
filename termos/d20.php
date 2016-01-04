@@ -46,7 +46,7 @@ define('HABILIDADES', "Habilidades");
 define('HABILIDADESPATH', "pages/painel/habilidades");
 
 define('HISTORIAS', "Histórias");
-define('HISTORIASPATH', "pages/painel/historias");
+//define('HISTORIASPATH', "pages/painel/historias");
 
 define('FORCA', "Força");
 define('CON', "Constituição");
