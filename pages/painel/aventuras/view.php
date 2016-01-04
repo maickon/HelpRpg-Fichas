@@ -11,22 +11,22 @@ new Components('menu', $parametros);
 $tag->br();
 $tag->br();
 	
-	$objeto = new Artefatos(ROOTPATH.ARTEFATOSIMGPATH);
-	$artefatos = $objeto->select($objeto->getTable(),null,[ ['id','=', $_GET['id']] ]);
-	if(empty($artefatos[0]['id']))
-		header('Location: '.ROOTPATHURL.ARTEFATOSPATH);
+	$objeto = new Aventuras();
+	$aventura = $objeto->select($objeto->getTable(),null,[ ['id','=', $_GET['id']] ]);
+	if(empty($aventura[0]['id']))
+		header('Location: '.ROOTPATHURL.AVENTURASPATH);
 	
 	helper_adsense();
 	
 	$form->_container();
 		$form->_col(2);
 			$tag->p('class="span_title"');
-				$tag->imprime(ARTEFATOS);
+				$tag->imprime(AVENTURAS);
 			$tag->p;
 		$form->col_();
 		
 		//botoes de anterior e proximo
-		helper_prev_next($objeto, $_GET['id'], 'artefatos');
+		helper_prev_next($objeto, $_GET['id'], 'aventuras');
 		
 		//verificando permiçoes
 		foreach($permit as $p):
@@ -36,13 +36,13 @@ $tag->br();
 		endforeach;
 		
 		if($super):
-			helper_componentes_buttons_view('artefatos', $artefatos[0]['id']);
-		elseif($s->get_session('nome') != $artefatos[0]['dono']):
+			helper_componentes_buttons_view('aventuras', $aventura[0]['id']);
+		elseif($s->get_session('nome') != $aventura[0]['dono']):
 			//em cada linha onde o usuario atual for diferente do dono da arma, vai neutralizar as opçoes de editar e excluir 
-			helper_componentes_buttons_view('artefatos', $artefatos[0]['id'], $off = true);
-		elseif($s->get_session('nome') == $artefatos[0]['dono']):
+			helper_componentes_buttons_view('aventuras', $aventura[0]['id'], $off = true);
+		elseif($s->get_session('nome') == $aventura[0]['dono']):
 			//se o usuario logado for dono de alguma arma criada ele tera acesso total ao recurso
-			helper_componentes_buttons_view('artefatos', $artefatos[0]['id']);
+			helper_componentes_buttons_view('aventuras', $aventura[0]['id']);
 		endif;
 		
 		$tag->br();
@@ -51,21 +51,18 @@ $tag->br();
 		helper_modal_alert_confirm();
 		
 		$form->_container();
-			$form->_col(6);
-				$img = $artefatos[0]['img'];
-				helper_sow_artefatos($artefatos[0]);
-			$form->col_();
-			
-			$form->_col(6);
-				$tag->div('class="center"');
-					if($img != null):
-						$tag->img('src="'.ROOTPATHURL.ARTEFATOSIMGPATH.$img.'" class="img-responsive img-thumbnail size-img"');
-					else:
-						$tag->img('src="'.ROOTPATHURL.IMGPATH.'noimage.png" class="img-responsive img-thumbnail size-img"');
-					endif;
-				$tag->div;
-			$form->col_();
-				
+			$form->_col(12);
+				$form->h1($aventura[0]['titulo']);
+				$tag->imprime(AVENTURA_INDICADA_NIVEL." {$aventura[0]['level_indicado']}, mestre {$aventura[0]['mestre']}");
+				$tag->br();
+				$tag->imprime(CRIADO_NO_DIA);
+				echo date('d/m/Y', strtotime($aventura[0]['data_criacao'])).' às '.date(' H:i:s', strtotime($aventura[0]['data_criacao']));
+				$tag->imprime(SISTEMA_DE_RPG." {$aventura[0]['sistema']}, ".CADASTRADO_POR);
+				$tag->imprime($aventura[0]['dono']);
+				$tag->br();
+				$tag->br();
+				$tag->imprime($aventura[0]['aventura']);
+			$form->col_();	
 		$form->container_();
 	$form->div_();
 	
