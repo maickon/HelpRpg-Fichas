@@ -15,11 +15,11 @@ $tag->br();
 		$form->_container();
 			if(isset($_GET['status']) && $_GET['status'] == 'deleted'):
 				$tag->div('class="alert alert-success"');
-					$tag->imprime('Registro deletado com sucesso.');
+					$tag->imprime(SUCESSO_MSG);
 				$tag->div;
 			elseif(isset($_GET['status']) && $_GET['status'] == 'error'):
 				$tag->div('class="alert alert-danger"');
-					$tag->imprime('Um erro ocoreu, contate o administrador.');
+					$tag->imprime(PERIGO_MSG);
 				$tag->div;
 			endif;
 		$form->container_();
@@ -43,7 +43,7 @@ $tag->br();
 			$tag->span;
 		$form->col_();
 		$form->_col(1);
-			$tag->a('href="'.AVENTURASPATH.'new.php" class="btn btn-primary"');
+			$tag->a('href="'.ROOTPATHURL.AVENTURASPATH.'new.php" class="btn btn-primary"');
 				$tag->imprime(NOVO);
 			$tag->a;
 		$form->col_();
@@ -74,7 +74,7 @@ $tag->br();
 						$form->td($a['mestre']);
 						$form->td($a['level_indicado']);
 						$form->td($a['tipo']);
-						$form->td($a['data_criacao']);
+						$form->td(date('d/m/Y', strtotime($a['data_criacao'])).' às '.date(' H:i:s', strtotime($a['data_criacao'])));
 						$form->td($a['sistema']);
 						$form->td($a['dono']);
 						
