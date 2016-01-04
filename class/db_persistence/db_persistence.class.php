@@ -84,7 +84,7 @@ abstract class Db_persistence extends Db{
 		if($this->check_duplicate($values) != ' '):
 			new Flashmsg('warning', $this->warning_msg);	
 		elseif($this->update($this->table, $fields, $values, 'id', $params['id'])):
-			$this->save_file($params);
+			//$this->save_file($params);
 			new Flashmsg('success', $this->success_msg);
 		else:
 			new Flashmsg('danger', $this->danger_msg);
