@@ -55,13 +55,20 @@ require_once 'termos/magias.php';
 require_once 'termos/pericias.php';
 require_once 'db/db-config.php';
 
-$linguagem = 'pt-br';
-switch($linguagem):
-	case 'pt-br':
+$ip = $_SERVER['REMOTE_ADDR'];
+$pais = unserialize(file_get_contents('http://www.geoplugin.net/php.gp?ip='.$ip));
+if(isset($pais['geoplugin_countryName']) && $pais['geoplugin_countryName'] == 'United States'):
+	$carregar_traducao = $pais['geoplugin_countryName'];
+else:
+	$carregar_traducao = 'Brazil';
+endif;
+
+switch('Brazil'):
+	case 'Brazil':
 		require_once 'termos/pt-br.php';
 	break;
 
-	case 'en':
+	case 'United States':
 		require_once 'termos/en.php';
 	break;
 endswitch;
