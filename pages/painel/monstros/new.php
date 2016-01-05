@@ -35,8 +35,11 @@ $tag->br();
 		$form->_col(5);
 			$tag->span('class="span_title"');
 				$sistema = '';
+				if(empty($_GET['sistema']) || (helper_check_sistema_rpg_option($_GET['sistema']) == 0))
+					$_GET['sistema'] = 'Dungeons and Dragons 3.5';
+				
 				isset($_GET['sistema']) ? $sistema = $rpg_sistemas_labels[$_GET['sistema']] : $sistema = 'Dungeons and Dragons 3.5';
-				$tag->imprime(MONSTRO. ' <smal id="sistema-title"> Sistema: '. $sistema.'</smal>');
+				$tag->imprime(MONSTRO. ' <smal id="sistema-title"> '.SISTEMA.' '. $sistema.'</smal>');
 			$tag->span;
 		$form->col_();
 		
@@ -77,4 +80,6 @@ $tag->br();
 		$form->row_();
 					
 	$form->container_();
+	$tag->div;
+$tag->div;
 require_once '../../../footer.php';
