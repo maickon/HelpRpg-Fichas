@@ -61,7 +61,7 @@ $tag->br();
 				
 				helper_form_input(DESCRICAO_BREVE, ['name' => 'descricao_breve', 'type' => 'text', 'class'=>'form-control', 'required'=>'true', 'value'=> $objeto[0]['descricao_breve']], 12);
 			
-				helper_form_text_area(HISTORIA, ['name' => 'descricao_cenario', 'class'=>'form-control', 'rows'=>'5'], ($objeto[0]['descricao_cenario']));
+				helper_form_text_area(HISTORIA, ['name' => 'descricao_historia', 'class'=>'form-control', 'rows'=>'5'], ($objeto[0]['descricao_historia']));
 			
 				helper_form_button_update_and_back(ROOTPATHURL.HISTORIASPATH);
 			$form->form_();
