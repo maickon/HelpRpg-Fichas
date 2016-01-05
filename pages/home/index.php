@@ -16,6 +16,11 @@ $form->_row();
 		$talento 	= new Talentos('');
 		$magia 		= new Magias('');
 		$pericia 	= new Pericias('');
+		$aventuras 	= new Aventuras();
+		$historias 	= new Historias();
+		$contos 	= new Contos();
+		$cronicas 	= new Cronicas();
+		$cenarios 	= new Cenarios();
 		
 		$number_user 		= $user->select('usuarios');
 		$number_armaduras 	= $armadura->select('armaduras');
@@ -27,6 +32,11 @@ $form->_row();
 		$number_jogador		= $personagem->select('personagens', null, [["tipo","=","Personagem jogador"]]);
 		$number_npc			= $personagem->select('personagens', null, [["tipo","=","Personagem npc"]]);
 		$number_artefatos 	= $artefato->select('artefatos');
+		$number_aventuras 	= $aventuras->select('aventuras');
+		$number_historias 	= $historias->select('historias');
+		$number_contos 		= $contos->select('contos');
+		$number_cronicas 	= $cronicas->select('cronicas');
+		$number_cenarios 	= $cenarios->select('cenarios');
 		
 		$qtd_user 		= count($number_user);
 		$qtd_armaduras 	= count($number_armaduras);
@@ -38,6 +48,11 @@ $form->_row();
 		$qtd_jogador 	= count($number_jogador);
 		$qtd_monstros 	= count($number_monstros);
 		$qtd_npc 		= count($number_npc);
+		$qtd_aventuras 	= count($number_aventuras);
+		$qtd_historias 	= count($number_historias);
+		$qtd_contos 	= count($number_contos);
+		$qtd_cronicas 	= count($number_cronicas);
+		$qtd_cenarios 	= count($number_cenarios);
 		
 		$qtd_total_itens = ($qtd_armaduras+$qtd_armas+$qtd_artefatos);
 		
@@ -53,14 +68,19 @@ $form->_row();
 						['Fichas de Personagem', $qtd_jogador, ROOTPATHURL.PERSONAGEMPATH.'view.php?id='.$number_jogador[0]['id']],
 						['Fichas de Npc', $qtd_npc, ROOTPATHURL.PERSONAGEMPATH.'view.php?id=1'],
 						['Fichas de Monstros', $qtd_monstros, ROOTPATHURL.MONSTROPATH.'view.php?id='.$number_monstros[0]['id']],
-						['Armas', $qtd_armas, ROOTPATHURL.ARMASPATH.'view.php?id='.$number_armas[0]['id']],
-						['Armaduras', $qtd_armaduras, ROOTPATHURL.ARMADURASPATH.'view.php?id='.$number_armaduras[0]['id']],
-						['Artefatos', $qtd_artefatos, ROOTPATHURL.ARTEFATOSPATH.'view.php?id='.$number_artefatos[0]['id']],
-						['Talentos', $qtd_talentos, ROOTPATHURL.TALENTOSPATH.'view.php?id='.$number_talentos[0]['id']],
-						['Magias', $qtd_magias, ROOTPATHURL.MAGIASPATH.'view.php?id='.$number_magias[0]['id']],
-						['Perícias', $qtd_pericias, ROOTPATHURL.PERICIASPATH.'view.php?id='.$number_pericias[0]['id']],
+						[ARMAS, $qtd_armas, ROOTPATHURL.ARMASPATH.'view.php?id='.$number_armas[0]['id']],
+						[ARMADURAS, $qtd_armaduras, ROOTPATHURL.ARMADURASPATH.'view.php?id='.$number_armaduras[0]['id']],
+						[ARTEFATOS, $qtd_artefatos, ROOTPATHURL.ARTEFATOSPATH.'view.php?id='.$number_artefatos[0]['id']],
+						[TALENTOS, $qtd_talentos, ROOTPATHURL.TALENTOSPATH.'view.php?id='.$number_talentos[0]['id']],
+						[MAGIAS, $qtd_magias, ROOTPATHURL.MAGIASPATH.'view.php?id='.$number_magias[0]['id']],
+						[PERICIAS, $qtd_pericias, ROOTPATHURL.PERICIASPATH.'view.php?id='.$number_pericias[0]['id']],
 						['Ficha Aleatória', "100+", ROOTPATHURL.NPCGENERATEPATH],
-						['Monstro Aleatório', "100+", ROOTPATHURL.MONSTERGENERATEPATH]
+						['Monstro Aleatório', "100+", ROOTPATHURL.MONSTERGENERATEPATH],
+						[AVENTURAS, $qtd_aventuras, ROOTPATHURL.AVENTURASPATH.'view.php?id='.$number_aventuras[0]['id']],
+						[HISTORIAS, $qtd_historias, ROOTPATHURL.HISTORIASPATH.'view.php?id='.$number_historias[0]['id']],
+						[CONTOS, $qtd_contos, ROOTPATHURL.CONTOSPATH.'view.php?id='.$number_contos[0]['id']],
+						[CRONICAS, $qtd_cronicas, ROOTPATHURL.CRONICASPATH.'view.php?id='.$number_cronicas[0]['id']],
+						[CENARIOS, $qtd_cenarios, ROOTPATHURL.CENARIOSPATH.'view.php?id='.$number_cenarios[0]['id']]
 					];
 		$tag->imprime('
 			<div class="banner-center">
