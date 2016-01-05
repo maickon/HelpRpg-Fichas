@@ -35,7 +35,6 @@ $rpg_sistemas_labels 	= 	[
 							];
 
 $rpg_sistemas = [
-				''=>'',
 				'ded'=>'Dungeons and Dragons 3.5',
 				'ded-4.0'=>'Dungeons and Dragons 4.0',
 				'ded-5.0'=>'Dungeons and Dragons 5.0',
