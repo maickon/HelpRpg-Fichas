@@ -42,6 +42,8 @@ define('AVENTURAS', "Aventuras");
 define('CENARIOS', "Cenários");
 define('CENARIO', "Cenário");
 define('CONTOS', "Contos");
+define('CRONICAS', "Crônicas");
+define('CRONICAS_DESCRICAO', "Crônica completa");
 define('CONTO', "Conto");
 define('HISTORIAS_PAGINA', "Histórias");
 define('EDITADO_POR', "Editado por");
