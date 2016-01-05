@@ -14,6 +14,7 @@ define('AVENTURASPATH', "pages/painel/aventuras/");
 define('CENARIOSPATH', "pages/painel/cenarios/");
 define('CONTOSPATH', "pages/painel/contos/");
 define('HISTORIASPATH', "pages/painel/historias/");
+define('CRONICASPATH', "pages/painel/cronicas/");
 define('LIBPATH', ROOTPATHURL."lib/");
 define('CKEDITORPATH', ROOTPATHURL."lib/ckeditor/");
 define('ABOUTPATH', ROOTPATHURL."pages/sobre/");
