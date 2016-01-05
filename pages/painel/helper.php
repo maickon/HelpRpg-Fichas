@@ -16,7 +16,8 @@ $modulos_path = [
 'aventuras'		=> AVENTURASPATH,
 'cenarios'		=> CENARIOSPATH,
 'contos'		=> CONTOSPATH,
-'historias'		=> HISTORIASPATH
+'historias'		=> HISTORIASPATH,
+'cronicas'		=> CRONICASPATH
 ];
 
 function helper_componentes_buttons($modulo, $id, $off = false){
@@ -84,6 +85,16 @@ function helper_check_value($objeto, $key, $unserialize = null){
 	else:
 		return $unserialize[$key];
 	endif;	
+}
+
+function helper_check_sistema_rpg_option($sistema){
+	global $rpg_sistemas_labels;
+	$busca_ok = 0;
+	foreach($rpg_sistemas_labels as $key => $value):
+		if($sistema == $key)
+			$busca_ok = 1;
+	endforeach;
+	return $busca_ok;
 }
 
 function helper_check_admin(){
@@ -974,6 +985,14 @@ function helper_form_text_field_historia($size = 12){
 	$form->_col($size);
 	$form->label(HISTORIA);
 	$form->area(['name' => 'descricao_historia', 'class'=>'form-control', 'required'=>'true', 'rows'=>'5']);
+	$form->col_();
+}
+
+function helper_form_text_field_cronicas($size = 12){
+	global $tag, $form;
+	$form->_col($size);
+	$form->label(CRONICAS_DESCRICAO);
+	$form->area(['name' => 'descricao_cronica', 'class'=>'form-control', 'required'=>'true', 'rows'=>'5']);
 	$form->col_();
 }
 
