@@ -3,9 +3,6 @@ function helper_ficha_view_monstro($personagem){
 	global $tag, $form;
 	$unserialize_params = unserialize($personagem['dados']);
 	
-	//$data_array = array('nome'=>'', 'id'=>'');
-	//$unserialize_params = array_merge($unserialize_params, array_diff_key($data_array, $unserialize_params));
-	
 	$tag->div('class="col-md-12 header_monstros"');
 		$form->_row();
 			$form->_col(6);
@@ -169,3 +166,5 @@ function helper_ficha_view_monstro($personagem){
 		$form->row_();
 	$tag->div;
 }
+
+helper_ficha_view_monstro($monstros[0]);

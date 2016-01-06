@@ -52,7 +52,7 @@ $tag->br();
 		$form->_container();
 			$form->_col(6);
 				$img = !empty($monstros[0]['img'])?$monstros[0]['img']:'';
-				helper_ficha_view_monstro($monstros[0]);
+				require_once 'views/'.$rpg_sistemas_arquivo_nome[$monstros[0]['sistema']];
 			$form->col_();
 			
 			$form->_col(6);
