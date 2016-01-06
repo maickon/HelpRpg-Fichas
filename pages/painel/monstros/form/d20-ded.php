@@ -5,71 +5,39 @@ $form->input(['name' => 'dono', 'type' => 'hidden', 'value'=> $current_user]);
 $form->input(['name' => 'sistema', 'type' => 'hidden', 'value'=> 'Dungeons and Dragons 3.5']);
 $form->input(['name' => 'tipo', 'type' => 'hidden', 'value'=> 'Monstro']);
 
-//$data_array = ['grow'=>'900'];
-//$unserialize_monstro = array_merge($unserialize_monstro, array_diff_key($data_array, $unserialize_monstro));
-
 $atributos = [
-				[FORCA,'forca'],[DES,'destreza'],[CON,'constituicao'],
-				[INTELIGENCIA,'inteligencia'],[SAB,'sabedoria'],[CAR,'carisma']
+				['Força','forca',2],['Destreza','destreza',2],['Constituição','constituicao',2],
+				['Inteligência','inteligencia',2],['Sabedoria','sabedoria',2],['Carisma','carisma',2],
+				['Nome','nome',3], ['Tipo','tipo',4], ['Dados de Vida','dv',2], ['Iniciativa','iniciativa',1],
+				['Deslocamento','deslocamento',2], ['Classe Armadura','ca',3], 
+				['Ataque Base/Agarrar','ataque_base_agarrar',3],
+				['Espaço/Alcance','espaco_alcance',3],
+				['Tesouro','tesouro',3],
+				['Ataque Especial','ataque_especial',4],
+				['Ataque','ataque',8], 
+				['Ataque Total','ataque_total',12], ['Qualidades Especiais','qualidades_especiais',12], 
+				['Fortitude','fort',3],['Reflexos','refle',3],['Vontade','vontade',3],
+				['Ambiente','ambiente',4],
+				['Organização', 'organizacao',4],
+				['Nível de Desafio','nd',2],
+				['Tendência','tendencia',12],
+				['Progressão','progressao',3]
+				
 			];
-/*
- * a variavel $objeto e um array e $atributos[$i][1] e o indice
- * verificamos dentro de helper_check_value() se o array $objeto
- * contem um indice conforme passado por parametro. Caso nao tenha
- * este indice subentendemos que se trata do indice dados com uma 
- * string serializada. Apos isso damos um unserialize e retornamos
- * uma nova lista com os arquivos serializado.
- */
-for($i=0; $i<=count($atributos)-1; $i++):
-	$form->_col(2);
-		$form->label($atributos[$i][0]);
-		$form->input(['name' => $atributos[$i][1], 'type' => 'text', 'class'=>'form-control', 'required'=>'true', 'value'=> helper_check_value($objeto[0], $atributos[$i][1])]);
-	$form->col_();
-endfor;
 
-$caracteristicas = [
-						[NOME,'nome'],
-						[RACA,'raca'],
-						[TAMANHO,'tamanho'],
-						[DADO_VIDA,'dv'],
-						[PONTOS_DE_VIDA,'pv'],
-						[INICIATIVA,'iniciativa'],
-						[DESL,'deslocamento'],
-						[CA,'ca'],
-						[ATAQUE_AGARRA,'ataq_agarrar'],
-						[ATAQUE,'ataque'],
-						[ATAQUE_TOTAL,'ataque_total'],
-						[ESPACO_ALCANCE,'espaco_alcance'],
-						[ATAQUES_ESPECIAIS,'ataques_especiais'],
-						[QUALIDADES_ESPECIAIS,'qualidades_especiais'],
-						[TESTES_RESISTENCIA,'testes_resistencia'],
-						[AMBIENTE,'ambiente'],
-						[ORGANIZACAO,'organizacao'],
-						[NIVEL,'lv'],
-						[TENDENCIA,'tendencia'],
-						[PROGRESSAO,'progressao'],
-						[AJUSTE,'ajuste'],
-				   ];
-for($i=0; $i<=count($caracteristicas)-1; $i++):
-	$form->_col(3);
-		$form->label($caracteristicas[$i][0]);
-		if(!isset($caracteristicas[$i][2])):
-			$required = 'false';
-		else:
-			$required = 'false';
-		endif;
-		$form->input(['name' => $caracteristicas[$i][1], 'type' => 'text', 'class'=>'form-control', 'required'=>'true', 'value'=> helper_check_value($objeto[0], $caracteristicas[$i][1])]);
+for($i=0; $i<=count($atributos)-1; $i++):
+	$form->_col($atributos[$i][2]);
+		$form->label($atributos[$i][0]);
+		$form->input(['name' => $atributos[$i][1], 'type' => 'text', 'class'=>'form-control', 'required' => 'true' , 'value'=> helper_check_value($objeto[0], $atributos[$i][1])]);
 	$form->col_();
 endfor;
 
 helper_form_input(IMAGEM, ['name' => 'img', 'type' => 'file', 'class'=>'form-control'], 9);
 
-helper_form_text_area(TALENTOS, ['name' => 'talentos', 'class'=>'form-control', 'required'=>'true', 'rows'=>'5'], helper_check_value($objeto[0], 'talentos'), 6);
-
-helper_form_text_area(PERICIAS, ['name' => 'pericias', 'class'=>'form-control', 'required'=>'true', 'rows'=>'5'], helper_check_value($objeto[0], 'pericias'), 6);
-
 helper_form_text_area(DESCRICAO, ['name' => 'descricao', 'class'=>'form-control', 'required'=>'true', 'rows'=>'5'], helper_check_value($objeto[0], 'descricao'), 6);
 
 helper_form_text_area(COMBATE, ['name' => 'combate', 'class'=>'form-control', 'required'=>'true', 'rows'=>'5'], helper_check_value($objeto[0], 'combate'), 6);
 
-helper_form_text_area(TESOURO, ['name' => 'tesouro', 'class'=>'form-control', 'required'=>'true', 'rows'=>'5'], helper_check_value($objeto[0], 'tesouro'), 12);
+helper_form_text_area(PERICIAS, ['name' => 'pericias', 'class'=>'form-control', 'required'=>'true', 'rows'=>'5'], helper_check_value($objeto[0], 'pericias'), 6);
+
+helper_form_text_area(TALENTOS, ['name' => 'talentos', 'class'=>'form-control', 'required'=>'true', 'rows'=>'5'], helper_check_value($objeto[0], 'talentos'), 6);

@@ -3,7 +3,7 @@ global $s;
 $current_user = $s->get_session('nome');
 $form->input(['name' => 'dono', 'type' => 'hidden', 'value'=> $current_user]);
 $form->input(['name' => 'sistema', 'type' => 'hidden', 'value'=> 'Deamon']);
-$form->input(['name' => 'tipo', 'type' => 'hidden', 'value'=> 'Personagem jogador']);
+$form->input(['name' => 'tipo', 'type' => 'hidden', 'value'=> 'Monstro']);
 
 $atributos = [
 				['Constituição','constituicao'],['Força','forca'],['Destreza','destreza'],
