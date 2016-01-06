@@ -68,6 +68,14 @@ function helper_componentes_buttons_view($modulo, $id, $off = false){
 	$form->col_();
 }
 
+function helper_check_params($chave, $array){
+	if(isset($array[$chave])):
+		return $array[$chave];
+	else:
+		return '-';
+	endif;
+}
+
 function helper_check_value($objeto, $key, $unserialize = null){
 	global $unserialize_monstro, $unserialize_personagem;
 	$unserialize = null;
@@ -893,6 +901,13 @@ function helper_escala_fate_rpg($escala){
  * Helper
  * Fomulários em geral
  */
+
+function helper_form_text($name, $size = 4){
+	global $tag, $form;
+	$form->_col($size);
+		$form->h1($name);
+	$form->col_();
+}
 
 function helper_form_input($name, $parameters, $size = 4){
 	global $tag, $form;
