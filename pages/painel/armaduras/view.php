@@ -66,5 +66,5 @@ $tag->br();
 				
 		$form->container_();
 	$form->div_();
-	
+	$tag->div;
 require_once '../../../footer.php';
