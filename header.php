@@ -115,6 +115,7 @@ $tag->html('lang="pt-br"');
 		$parametros['programer']  = PROGRAMER;
 		$parametros['copy']  = COPY;
 	else:
+		require_once 'pages/helper.php';
 		$tag->div('class="jumbotron"');
 	    	$tag->div('class="container"');
 	        	$tag->img('src="'.ROOTPATHURL.IMGPATH.'logo.png" id="logo"');
