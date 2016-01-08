@@ -17,7 +17,10 @@ function helper_show_monstro_fate($personagem){
 				$tag->imprime($form->bold(CRIADOR).' '.$form->bold($personagem['dono']));
 			$form->col_();
 			$form->_col(6);
-				$tag->imprime($form->bold(REFRESH).' '.$form->bold($unserialize_params['refresh']));
+				$tag->imprime($form->bold(CLASSE).': '.$form->bold($personagem['classe']));
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(RACA).': '.$form->bold($personagem['raca']));
 			$form->col_();
 		$form->row_();
 	$tag->div;
@@ -25,22 +28,46 @@ function helper_show_monstro_fate($personagem){
 	$tag->div('class="col-md-12 body1_fate"');
 		$form->_row();
 			$form->_col(4);
-				$tag->imprime($form->bold(CUIDADOSO).'<br>'.$unserialize_params['cuidadoso'].'('.helper_escala_fate_rpg($unserialize_params['cuidadoso']).')');
+				$tag->imprime($form->bold(CUIDADOSO).'<br>'.helper_bug_do_traco($unserialize_params['cuidadoso']).'('.helper_escala_fate_rpg($unserialize_params['cuidadoso']).')');
 			$form->col_();
 			$form->_col(4);
-				$tag->imprime($form->bold(INTELIGENTE).'<br>'.$unserialize_params['inteligente'].'('.helper_escala_fate_rpg($unserialize_params['inteligente']).')');
+				$tag->imprime($form->bold(INTELIGENTE).'<br>'.helper_bug_do_traco($unserialize_params['inteligente']).'('.helper_escala_fate_rpg($unserialize_params['inteligente']).')');
 			$form->col_();
 			$form->_col(4);
-				$tag->imprime($form->bold(CHAMATIVO).'<br>'.$unserialize_params['chamativo'].'('.helper_escala_fate_rpg($unserialize_params['chamativo']).')');
+				$tag->imprime($form->bold(CHAMATIVO).'<br>'.helper_bug_do_traco($unserialize_params['chamativo']).'('.helper_escala_fate_rpg($unserialize_params['chamativo']).')');
 			$form->col_();
 			$form->_col(4);
-				$tag->imprime($form->bold(FORTE).'<br>'.$unserialize_params['forte'].'('.helper_escala_fate_rpg($unserialize_params['forte']).')');
+				$tag->imprime($form->bold(FORTE).'<br>'.helper_bug_do_traco($unserialize_params['forte']).'('.helper_escala_fate_rpg($unserialize_params['forte']).')');
 			$form->col_();
 			$form->_col(4);
-				$tag->imprime($form->bold(RAPIDO).'<br>'.$unserialize_params['rapido'].'('.helper_escala_fate_rpg($unserialize_params['rapido']).')');
+				$tag->imprime($form->bold(RAPIDO).'<br>'.helper_bug_do_traco($unserialize_params['rapido']).'('.helper_escala_fate_rpg($unserialize_params['rapido']).')');
 			$form->col_();
 			$form->_col(4);
-				$tag->imprime($form->bold(SORRATEIRO).'<br>'.$unserialize_params['sorrateiro'].'('.helper_escala_fate_rpg($unserialize_params['sorrateiro']).')');
+				$tag->imprime($form->bold(SORRATEIRO).'<br>'.helper_bug_do_traco($unserialize_params['sorrateiro']).'('.helper_escala_fate_rpg($unserialize_params['sorrateiro']).')');
+			$form->col_();
+		$form->row_();
+	$tag->div;
+	
+	$tag->div('class="col-md-12 body2_fate"');
+		$form->_row();
+			$form->_col(6);
+				$form->h1(STRESS);
+			$form->col_();
+			$tag->br();
+			$form->_col(2);
+				helper_check_checkbox('stress1', $unserialize_params);
+			$form->col_();
+			
+			$form->_col(2);
+				helper_check_checkbox('stress2', $unserialize_params);
+			$form->col_();
+			
+			$form->_col(2);
+				helper_check_checkbox('stress3', $unserialize_params);
+			$form->col_();
+			
+			$form->_col(12);
+				$tag->imprime($form->bold(NIVEL).' '.helper_check_params('lv', $personagem));
 			$form->col_();
 		$form->row_();
 	$tag->div;
@@ -53,6 +80,11 @@ function helper_show_monstro_fate($personagem){
 			$form->_col(12);
 				$tag->imprime($form->bold(COMPLICACAO).'<br>'.$unserialize_params['complicacao']);
 			$form->col_();
+		$form->row_();
+	$tag->div;
+			
+	$tag->div('class="col-md-12 body1_fate"');
+		$form->_row();
 			$form->_col(12);
 				$tag->imprime($form->bold(OUTROS_ASPECTOS).'<br>'.$unserialize_params['outros_aspectos']);
 			$form->col_();
@@ -62,7 +94,7 @@ function helper_show_monstro_fate($personagem){
 		$form->row_();
 	$tag->div;
 	
-	$tag->div('class="col-md-12 body1_fate border-button"');
+	$tag->div('class="col-md-12 body2_fate border-button"');
 		$form->_row();
 			$form->_col(12);
 				$tag->imprime($form->bold(DESCRICAO).'<br>'.$unserialize_params['descricao']);
@@ -71,6 +103,14 @@ function helper_show_monstro_fate($personagem){
 			$form->col_();
 		$form->row_();
 	$tag->div;
+}
+
+function helper_bug_do_traco($valor){
+	if($valor == '-'):
+		return '0';
+	else:
+		return $valor;
+	endif;
 }
 
 helper_show_monstro_fate($monstros[0]);
