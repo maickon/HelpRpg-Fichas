@@ -90,6 +90,17 @@ class Form{
 		echo $tag;
 	}
 	
+	function h4($text, $parameters = null){
+		$tag = '<h4';
+		if($parameters):
+			foreach($parameters as $key => $p):
+				$tag .= " {$key}=\"{$p}\" ";
+			endforeach;
+		endif;
+		$tag .= '>'.$text.'</h4>';
+		echo $tag;
+	}
+	
 	function hr($parameters = null){
 		$tag = '<hr';
 		if($parameters):
