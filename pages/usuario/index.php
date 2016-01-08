@@ -11,48 +11,12 @@ $tag->br();
 
 $form->_row();
 	$form->_container();		
-		$user = new Usuarios();
-		$nome = $s->get_session('nome');
-		$current_user = $user->select('usuarios', null, [['nome','=', $nome ? $nome : ' ']]);
-
-		$personagem_jogador = new Personagens('');
-		$current_personagem_jogador = $personagem_jogador->select('personagens', null, [['dono','=', $nome ? $nome : ' '], ['tipo','=', 'Personagem jogador'] ]);
-		$qtd_personagem_jogador = count($current_personagem_jogador);
 		
-		$personagem_boss = new Personagens('');
-		$current_personagem_boss = $personagem_boss->select('personagens', null, [['dono','=', $nome ? $nome : ' '], ['tipo','=', 'Boss'] ]);
-		$qtd_personagem_boss = count($current_personagem_boss);
-		
-		$personagem_monstro = new Personagens('');
-		$current_personagem_monstro = $personagem_monstro->select('personagens', null, [['dono','=', $nome ? $nome : ' '], ['tipo','=', 'Monstro'] ]);
-		$qtd_personagem_monstro = count($current_personagem_monstro);
-		
-		$armas = new Armas('');
-		$current_armas = $user->select('armas', null, [['dono','=', $nome ? $nome : ' ']]);
-		$qtd_armas = count($current_armas);
-		
-		$armaduras = new Armaduras('');
-		$current_armaduras = $user->select('armaduras', null, [['dono','=', $nome ? $nome : ' ']]);
-		$qtd_armaduras = count($current_armaduras);
-		
-		$artefatos = new Artefatos('');
-		$current_artefatos = $user->select('artefatos', null, [['dono','=', $nome ? $nome : ' ']]);
-		$qtd_artefatos = count($current_artefatos);
-		
-		$magias = new Magias('');
-		$current_magias = $user->select('magias', null, [['dono','=', $nome ? $nome : ' ']]);
-		$qtd_magias = count($current_magias);
-		
-		$paricias = new Pericias('');
-		$current_pericias = $user->select('pericias', null, [['dono','=', $nome ? $nome : ' ']]);
-		$qtd_pericias = count($current_pericias);
-		
-		$talentos = new Talentos('');
-		$current_talentos = $user->select('talentos', null, [['dono','=', $nome ? $nome : ' ']]);
-		$qtd_talentos = count($current_talentos);
-		
+		require_once 'data.php';	
+	
 		$registro_total = ($qtd_armas+$qtd_armaduras+$qtd_artefatos+$qtd_magias+$qtd_pericias+$qtd_talentos+
-						   $qtd_personagem_jogador+$qtd_personagem_boss+$qtd_personagem_monstro);
+						   $qtd_personagem_jogador+$qtd_personagem_boss+$qtd_personagem_monstro+$qtd_aventuras+
+						   $qtd_contos+$qtd_cronicas+$qtd_historias);
 		
 		$data_user = [
 						["Ficha pessoais", "personagens",$current_personagem_jogador, ROOTPATHURL.PERSONAGEMPATH],
@@ -63,7 +27,11 @@ $form->_row();
 						["Seus artefatos", "artefatos", $current_artefatos, ROOTPATHURL.ARTEFATOSPATH],
 						["Seus magias", "magias", $current_magias, ROOTPATHURL.MAGIASPATH],
 						["Seus perícias", "pericias", $current_pericias, ROOTPATHURL.ARTEFATOSPATH],
-						["Seus talentos", "talentos", $current_talentos, ROOTPATHURL.TALENTOSPATH]
+						["Seus talentos", "talentos", $current_talentos, ROOTPATHURL.TALENTOSPATH],
+						["Suas aventuras", "aventuras", $current_aventuras, ROOTPATHURL.AVENTURASPATH],
+						["Seus contos", "contos", $current_contos, ROOTPATHURL.CONTOSPATH],
+						["Sas crônicas", "cronicas", $current_contos, ROOTPATHURL.CRONICASPATH],
+						["Suas histórias", "historias", $current_contos, ROOTPATHURL.HISTORIASPATH]
 					];
 		
 		$form->_col(12);
@@ -81,5 +49,5 @@ $form->_row();
 		$form->col_();
 	$form->_container();
 $form->row_();
-
+$tag->div;
 require_once '../../footer.php';

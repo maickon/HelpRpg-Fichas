@@ -17,7 +17,9 @@ if(isset($_REQUEST['action'])):
 endif;
 
 $form->_row();
-	$form->_container();		
+	$form->_container();
+		helper_adsense_01();
+				
 		$form->_form(['method'=>'post', 'name'=>'new-user', 'class'=>'form-group', 'data-toggle'=>'validator']);
 		
 			helper_form_input("Nome", ['name' => 'nome', 'type' => 'text', 'class'=>'form-control', 'required'=>'true']);
@@ -36,5 +38,5 @@ $form->_row();
 		
 	$form->_container();
 $form->row_();
-
+$tag->div;
 require_once '../../footer.php';
