@@ -22,8 +22,12 @@ function helper_panel_data_user($title, $name, $object, $path){
 				$tag->br();
 		
 				foreach($object as $key => $value):
+					$nome = (isset($value['nome'])) ? $value['nome'] : $value['titulo'];
+					$sistema = (isset($value['sistema'])) ? $value['sistema'] : false;
 					$tag->a('href="'.$path.'view.php?id='.$value['id'].'" target="blank"');
-						$tag->imprime($value['nome'].' - '.$value['sistema']);
+						$tag->imprime($nome.' - ');
+						if($sistema)
+							$tag->imprime($sistema);
 					$tag->a;
 					$tag->br();
 				endforeach;
@@ -81,17 +85,4 @@ function helper_footer_bar_page_search($links, $menus){
 			endfor;
 		$tag->div;
 	$tag->div;
-}
-
-/*
- * helper_check_id
- * O array ja vem na posicao 0
- * Por isso sua posicao foi emcapsulada
- */
-function helper_check_id($chave, $array){
-	if(isset($array[0][$chave])):
-		return $array[0][$chave];
-	else:
-		return 0;
-	endif;
 }
