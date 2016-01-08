@@ -82,3 +82,16 @@ function helper_footer_bar_page_search($links, $menus){
 		$tag->div;
 	$tag->div;
 }
+
+/*
+ * helper_check_id
+ * O array ja vem na posicao 0
+ * Por isso sua posicao foi emcapsulada
+ */
+function helper_check_id($chave, $array){
+	if(isset($array[0][$chave])):
+		return $array[0][$chave];
+	else:
+		return 0;
+	endif;
+}
