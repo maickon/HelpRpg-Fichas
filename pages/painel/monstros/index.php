@@ -15,11 +15,11 @@ $tag->br();
 		$form->_container();
 			if(isset($_GET['status']) && $_GET['status'] == 'deleted'):
 				$tag->div('class="alert alert-success"');
-					$tag->imprime('Registro deletado com sucesso.');
+					$tag->imprime(SUCESSO_MSG);
 				$tag->div;
 			elseif(isset($_GET['status']) && $_GET['status'] == 'error'):
 				$tag->div('class="alert alert-danger"');
-					$tag->imprime('Um erro ocoreu, contate o administrador.');
+					$tag->imprime(PERIGO_MSG);
 				$tag->div;
 			endif;
 		$form->container_();
