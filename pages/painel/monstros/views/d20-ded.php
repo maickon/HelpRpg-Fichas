@@ -6,7 +6,7 @@ function helper_ficha_view_monstro($personagem){
 	$tag->div('class="col-md-12 header_monstros"');
 		$form->_row();
 			$form->_col(6);
-				$tag->imprime($form->bold($personagem['nome']));
+				$tag->imprime($form->bold($personagem['nome'].' '.$personagem['classe']));
 			$form->col_();
 			$form->_col(6);
 				$tag->imprime($form->bold(CODIGO).$form->bold($personagem['id']));
@@ -21,7 +21,7 @@ function helper_ficha_view_monstro($personagem){
 				$tag->imprime($personagem['sistema']);
 			$form->col_();
 			$form->_col(6);
-				$tag->imprime($personagem['raca'].'('.$unserialize_params['tamanho'].')');
+				$tag->imprime($personagem['raca'].' '.$unserialize_params['tipo_monstro']);
 			$form->col_();
 		$form->row_();
 	$tag->div;
@@ -34,19 +34,24 @@ function helper_ficha_view_monstro($personagem){
 			$form->_col(6);
 				$tag->imprime($form->bold(INICIATIVA).': '.$unserialize_params['iniciativa']);
 			$form->col_();
-			$form->_col(12);
-				$tag->imprime($form->bold(DESL).': '.$unserialize_params['deslocamento']);
-			$form->col_();
-			$form->_col(6);
-				$tag->imprime($form->bold(CA).': '.$unserialize_params['ca']);
-			$form->col_();
-			$form->_col(6);
-				$tag->imprime($form->bold(TENDENCIA).': '.$unserialize_params['tendencia']);
-			$form->col_();
 		$form->row_();
 	$tag->div;
 	
 	$tag->div('class="col-md-12 body2_monstros"');
+		$form->_row();
+			$form->_col(6);
+				$tag->imprime($form->bold(DESL).': '.$unserialize_params['deslocamento']);
+			$form->col_();
+			$form->_col(6);
+				$tag->imprime($form->bold(TENDENCIA).': '.$unserialize_params['tendencia']);
+			$form->col_();
+			$form->_col(12);
+				$tag->imprime($form->bold(CA).': '.$unserialize_params['ca']);
+			$form->col_();
+		$form->row_();
+	$tag->div;
+	
+	$tag->div('class="col-md-12 body1_monstros"');
 		$form->_row();
 			$form->_col(2);
 				$tag->imprime($form->bold(FOR_2_5));
@@ -98,16 +103,40 @@ function helper_ficha_view_monstro($personagem){
 		$form->row_();
 	$tag->div;
 			
-	$tag->div('class="col-md-12 body1_monstros"');
+	$tag->div('class="col-md-12 body2_monstros"');
 		$form->_row();
 			$form->_col(6);
-				$tag->imprime($form->bold(ATAQUE_AGARRA).': '.$unserialize_params['ataq_agarrar']);
+				$tag->imprime($form->bold(ATAQUE_AGARRA).': '.$unserialize_params['ataque_base_agarrar']);
 			$form->col_();
 			$form->_col(6);
+				$tag->imprime($form->bold(ESPACO_ALCANCE).': '.$unserialize_params['espaco_alcance']);
+			$form->col_();
+			$form->_col(12);
 				$tag->imprime($form->bold(ATAQUE).': '.$unserialize_params['ataque']);
 			$form->col_();
-			$form->_col(6);
+		$form->row_();
+	$tag->div;
+	
+	$tag->div('class="col-md-12 body1_monstros"');
+		$form->_row();
+			$form->_col(12);
 				$tag->imprime($form->bold(ATAQUE_TOTAL).': '.$unserialize_params['ataque_total']);
+			$form->col_();
+			$form->_col(12);
+				$tag->imprime($form->bold(ATAQUES_ESPECIAIS).': '.$unserialize_params['ataque_especial']);
+			$form->col_();
+		$form->row_();
+	$tag->div;
+	
+	$tag->div('class="col-md-12 body2_monstros"');
+		$form->_row();
+			$form->_col(12);
+				$tag->imprime($form->bold(QUALIDADES_ESPECIAIS).': '.$unserialize_params['qualidades_especiais']);
+			$form->col_();
+			$form->_col(12);
+				$tag->imprime($form->bold(TESTES_RESISTENCIA).'	   <b>'.FORTITUDE.'</b>:  '.$unserialize_params['fort']
+																.' <b>' .VONTADE.'</b>:  '.$unserialize_params['vont']
+																.' <b>' .REFLEXO.'</b>:  '.$unserialize_params['refl']);
 			$form->col_();
 			$form->_col(6);
 				$tag->imprime($form->bold(ESPACO_ALCANCE).': '.$unserialize_params['espaco_alcance']);
@@ -115,32 +144,15 @@ function helper_ficha_view_monstro($personagem){
 		$form->row_();
 	$tag->div;
 	
-	$tag->div('class="col-md-12 body2_monstros"');
-		$form->_row();
-			$form->_col(6);
-				$tag->imprime($form->bold(ATAQUES_ESPECIAIS).': '.$unserialize_params['ataques_especiais']);
-			$form->col_();
-			$form->_col(6);
-				$tag->imprime($form->bold(QUALIDADES_ESPECIAIS).': '.$unserialize_params['qualidades_especiais']);
-			$form->col_();
-			$form->_col(6);
-				$tag->imprime($form->bold(TESTES_RESISTENCIA).': '.$unserialize_params['testes_resistencia']);
-			$form->col_();
-			$form->_col(6);
-				$tag->imprime($form->bold(HABILIDADES_BASICAS).': '.$unserialize_params['espaco_alcance']);
-			$form->col_();
-		$form->row_();
-	$tag->div;
-	
 	$tag->div('class="col-md-12 body1_monstros"');
 		$form->_row();
-			$form->_col(6);
+			$form->_col(12);
 				$tag->imprime($form->bold(AMBIENTE).': '.$unserialize_params['ambiente']);
 			$form->col_();
-			$form->_col(6);
+			$form->_col(12);
 				$tag->imprime($form->bold(ORGANIZACAO).': '.$unserialize_params['organizacao']);
 			$form->col_();
-			$form->_col(6);
+			$form->_col(12);
 				$tag->imprime($form->bold(PROGRESSAO).': '.$unserialize_params['progressao']);
 			$form->col_();
 			$form->_col(12);
