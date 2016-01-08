@@ -1,7 +1,9 @@
 <?php
 	
 require_once 'rotas/rotas-servidor.php';
+require_once 'rotas/rotas-painel.php';
 require_once 'rotas/rotas-url.php';
+require_once 'rotas/rotas-fragmentos.php';
 require_once 'db/db-config.php';
 
 //msgs para usuarios
@@ -43,31 +45,4 @@ $rpg_sistemas = [
 				'3det'=>'3D&T', 
 				'deamon'=>'Deamon'];
 
-require_once 'termos/3det.php';
-require_once 'termos/d20.php';
-require_once 'termos/deamon.php';
-require_once 'termos/d20-ded-4.0.php';
-require_once 'termos/d20-ded-5.0.php';
-require_once 'termos/fate.php';
-require_once 'termos/itens.php';
-require_once 'termos/magias.php';
-require_once 'termos/pericias.php';
-require_once 'db/db-config.php';
-
-$ip = $_SERVER['REMOTE_ADDR'];
-$pais = unserialize(file_get_contents('http://www.geoplugin.net/php.gp?ip='.$ip));
-if(isset($pais['geoplugin_countryName']) && $pais['geoplugin_countryName'] == 'United States'):
-	$carregar_traducao = $pais['geoplugin_countryName'];
-else:
-	$carregar_traducao = 'Brazil';
-endif;
-
-switch('Brazil'):
-	case 'Brazil':
-		require_once 'termos/pt-br.php';
-	break;
-
-	case 'United States':
-		require_once 'termos/en.php';
-	break;
-endswitch;
+require_once 'termos/load-lenguage.php';
