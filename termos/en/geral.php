@@ -18,6 +18,7 @@ define('SAIR', "Logout");
 define('LOGAR', 'Login');
 define('USUARIOS', "Users");
 define('ESTATISTICAS', "Statistics");
+define('SEUS_DADOS', "Your data");
 define('EDITAR_DADOS', "Edit data");
 define('CANCELAR_CONTA', "Cancel account");
 define('PERSONAGEM_MENU', "Character");

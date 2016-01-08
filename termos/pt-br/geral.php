@@ -19,6 +19,7 @@ define('SAIR', "Sair");
 define('LOGAR', 'Logar');
 define('USUARIOS', "Usuários");
 define('ESTATISTICAS', "Estatísticas");
+define('SEUS_DADOS', "Seus dados");
 define('EDITAR_DADOS', "Editar dados");
 define('CANCELAR_CONTA', "Cancelar conta");
 define('PERSONAGEM_MENU', "Personagem");
