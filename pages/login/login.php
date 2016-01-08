@@ -9,6 +9,6 @@ if(isset($_REQUEST['login']) && isset($_REQUEST['senha']) && isset($_REQUEST['en
 		//redireciona o usuario para dentro do sistema	
 		header('location: '.PAINEL_PATH);
 	else:
-		header('location: '.ROOTPATHURL);
+		header('location: '.LOGINPATH.'/?l=f');
 	endif;	
 endif;
