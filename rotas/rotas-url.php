@@ -1,20 +1,14 @@
 <?php
+define('CLASSPATH', "class/");
+define('JSPATH', "js/");
+define('CSSPATH', "css/");
+define('IMGPATH', "img/");
+define('HOMEPATH', "pages/home");
 
 //Definindo constantes para os caminhos base
 define('ROOTPATH',"C:/xampp/htdocs/HelpRpg/"); 			
 define('ROOTPATHURL',"http://127.0.0.1/HelpRpg/");
 
-define('CLASSPATH', "class/");
-define('JSPATH', "js/");
-define('CSSPATH', "css/");
-define('IMGPATH', "img/");
-define('HOMEPATH', "pages/home");		
-
-define('AVENTURASPATH', "pages/painel/aventuras/");
-define('CENARIOSPATH', "pages/painel/cenarios/");
-define('CONTOSPATH', "pages/painel/contos/");
-define('HISTORIASPATH', "pages/painel/historias/");
-define('CRONICASPATH', "pages/painel/cronicas/");
 define('LIBPATH', ROOTPATHURL."lib/");
 define('CKEDITORPATH', ROOTPATHURL."lib/ckeditor/");
 define('ABOUTPATH', ROOTPATHURL."pages/sobre/");

@@ -1,4 +1,11 @@
 <?php
+
+define('AVENTURASPATH', "pages/painel/aventuras/");
+define('CENARIOSPATH', "pages/painel/cenarios/");
+define('CONTOSPATH', "pages/painel/contos/");
+define('HISTORIASPATH', "pages/painel/historias/");
+define('CRONICASPATH', "pages/painel/cronicas/");
+
 define('ARMASPATH', "pages/painel/armas/");
 define('ARMASIMGPATH', "img/armas/");
 
@@ -29,5 +36,4 @@ define('BOSSPATH', "pages/painel/boss/");
 define('BOSSIMGPATH', "img/boss/");
 
 define('HABILIDADESPATH', "pages/painel/habilidades");
-
 //define('HISTORIASPATH', "pages/painel/historias");
