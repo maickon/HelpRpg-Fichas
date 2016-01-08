@@ -261,6 +261,8 @@ class Login{
 		global $tag;
 		$tag->div('class="row"');
 			$tag->div('class="col-sm-4 col-sm-offset-4"');
+				if(isset($_GET['l']) && $_GET['l'] == 'f')
+					new Flashmsg('danger', PERIGO_MSG);
 				$tag->div('class="panel panel-default"');
 					$tag->div('class="panel-heading"');
 						$tag->h3('class="center"');
