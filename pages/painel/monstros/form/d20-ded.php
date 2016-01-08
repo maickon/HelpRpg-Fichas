@@ -8,20 +8,24 @@ $form->input(['name' => 'tipo', 'type' => 'hidden', 'value'=> 'Monstro']);
 $atributos = [
 				['Força','forca',2],['Destreza','destreza',2],['Constituição','constituicao',2],
 				['Inteligência','inteligencia',2],['Sabedoria','sabedoria',2],['Carisma','carisma',2],
-				['Nome','nome',3], ['Tipo','tipo',4], ['Dados de Vida','dv',2], ['Iniciativa','iniciativa',1],
-				['Deslocamento','deslocamento',2], ['Classe Armadura','ca',3], 
-				['Ataque Base/Agarrar','ataque_base_agarrar',3],
-				['Espaço/Alcance','espaco_alcance',3],
-				['Tesouro','tesouro',3],
-				['Ataque Especial','ataque_especial',4],
-				['Ataque','ataque',8], 
+				['Nome','nome',3], ['Tipo','tipo_monstro',3], 
+				['Pv','pv',1],
+				['Dados de Vida','dv',2], ['Iniciativa','iniciativa',1],
+				['Deslocamento','deslocamento',2], 
+				['Nível','lv',1],['Classe','classe',2],
+				['Fortitude','fort',2],['Reflexos','refl',2],['Vontade','vont',2],['Tendência','tendencia',3],
+				['Classe Armadura','ca',6], 
+				['Ataque Base/Agarrar','ataque_base_agarrar',2],
+				['Espaço/Alcance','espaco_alcance',2],
+				['Raça','raca',2],
+				['Tesouro','tesouro',6],
+				['Ataque Especial','ataque_especial',6],
+				['Ataque','ataque',12], 
 				['Ataque Total','ataque_total',12], ['Qualidades Especiais','qualidades_especiais',12], 
-				['Fortitude','fort',3],['Reflexos','refle',3],['Vontade','vontade',3],
-				['Ambiente','ambiente',4],
-				['Organização', 'organizacao',4],
-				['Nível de Desafio','nd',2],
-				['Tendência','tendencia',12],
-				['Progressão','progressao',3]
+				['Ambiente','ambiente',6],
+				['Nível de Desafio','nd',6],
+				['Organização', 'organizacao',10],
+				['Progressão','progressao',2]
 				
 			];
 
@@ -32,7 +36,7 @@ for($i=0; $i<=count($atributos)-1; $i++):
 	$form->col_();
 endfor;
 
-helper_form_input(IMAGEM, ['name' => 'img', 'type' => 'file', 'class'=>'form-control'], 9);
+helper_form_input(IMAGEM, ['name' => 'img', 'type' => 'file', 'class'=>'form-control'], 12);
 
 helper_form_text_area(DESCRICAO, ['name' => 'descricao', 'class'=>'form-control', 'required'=>'true', 'rows'=>'5'], helper_check_value($objeto[0], 'descricao'), 6);
 
