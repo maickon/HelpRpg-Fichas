@@ -5,19 +5,29 @@ $form->input(['name' => 'dono', 'type' => 'hidden', 'value'=> $current_user]);
 $form->input(['name' => 'sistema', 'type' => 'hidden', 'value'=> 'FATE']);
 $form->input(['name' => 'tipo', 'type' => 'hidden', 'value'=> 'Monstro']);
 
-$opcoes_valores_atributos = ['-2','-1','0','1','2','3','4','5','6','7','8'];
 
-helper_form_select_options("Cuidadoso", ['name' => 'cuidadoso', 'class'=>'form-control'], $opcoes_valores_atributos, 2);
+function helper_form_merge_select_fate($array_a_ser_mesclado){
+	$opcoes_valores_atributos = ['-2','-1','0','1','2','3','4','5','6','7','8'];
+	
+	if(isset($array_a_ser_mesclado)):
+		$novo_array = array_merge($array_a_ser_mesclado, $opcoes_valores_atributos);
+		return $novo_array;
+	else:
+		return $opcoes_valores_atributos;
+	endif;
+}
 
-helper_form_select_options("Inteligente", ['name' => 'inteligente','class'=>'form-control'], $opcoes_valores_atributos, 2);
+helper_form_select_options("Cuidadoso", ['name' => 'cuidadoso', 'class'=>'form-control'], helper_form_merge_select_fate([helper_check_value($objeto[0],'cuidadoso')]) , 2);
 
-helper_form_select_options("Chamativo", ['name' => 'chamativo','class'=>'form-control'], $opcoes_valores_atributos, 2);
+helper_form_select_options("Inteligente", ['name' => 'inteligente','class'=>'form-control'], helper_form_merge_select_fate([helper_check_value($objeto[0],'inteligente')]), 2);
 
-helper_form_select_options("Forte", ['name' => 'forte','class'=>'form-control'], $opcoes_valores_atributos, 2);
+helper_form_select_options("Chamativo", ['name' => 'chamativo','class'=>'form-control'], helper_form_merge_select_fate([helper_check_value($objeto[0],'chamativo')]), 2);
 
-helper_form_select_options("Rápido", ['name' => 'rapido','class'=>'form-control'], $opcoes_valores_atributos, 2);
+helper_form_select_options("Forte", ['name' => 'forte','class'=>'form-control'], helper_form_merge_select_fate([helper_check_value($objeto[0],'forte')]), 2);
 
-helper_form_select_options("Sorrateiro", ['name' => 'sorrateiro','class'=>'form-control'], $opcoes_valores_atributos, 2);
+helper_form_select_options("Rápido", ['name' => 'rapido','class'=>'form-control'], helper_form_merge_select_fate([helper_check_value($objeto[0],'rapido')]), 2);
+
+helper_form_select_options("Sorrateiro", ['name' => 'sorrateiro','class'=>'form-control'], helper_form_merge_select_fate([helper_check_value($objeto[0],'sorrateiro')]), 2);
 
 
 $atributos = [
@@ -26,7 +36,10 @@ $atributos = [
 				['Outros Aspectos','outros_aspectos',12],
 				['Consequências','consequencias',12],
 				['Nome','nome',3],
-				['Refresh','refresh',2]
+				['Classe','classe',3],
+				['Raça','raca',3],
+				['Refresh','refresh',2],
+				['Level','lv',1]
 			];
 
 for($i=0; $i<=count($atributos)-1; $i++):
@@ -36,13 +49,13 @@ for($i=0; $i<=count($atributos)-1; $i++):
 	$form->col_();
 endfor;
 
-helper_form_input("Imagem", ['name' => 'img', 'type' => 'file', 'class'=>'form-control'], 2);
+helper_form_input("Imagem", ['name' => 'img', 'type' => 'file', 'class'=>'form-control'], 7);
 
 helper_form_text("Stress", 2);
-helper_form_input('', ['name' => 'stress', 'type' => 'checkbox', 'class'=>'form-control'], 1);
-helper_form_input('', ['name' => 'stress', 'type' => 'checkbox', 'class'=>'form-control'], 1);
-helper_form_input('', ['name' => 'stress', 'type' => 'checkbox', 'class'=>'form-control'], 1);
 
+helper_check_checkbox_edit('stress1', $objeto[0]);
+helper_check_checkbox_edit('stress2', $objeto[0]);
+helper_check_checkbox_edit('stress3', $objeto[0]);
 
 helper_form_text_area("Descrição", ['name' => 'descricao', 'class'=>'form-control', 'rows'=>'5'], helper_check_value($objeto[0], 'descricao'), 6);
 
