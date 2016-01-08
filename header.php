@@ -88,11 +88,11 @@ $tag->html('lang="pt-br"');
 		
 		require_once 'pages/painel/helper.php';
 		if(helper_check_admin() != 0):
-			$options_menu_root_label = array(VOCE, USUARIOS, ESTATISTICAS, EDITAR_DADOS, CANCELAR_CONTA);
-			$options_menu_root_links = array("#", USERSLISTPATH, USERPATH, USEREDITPATH, USERDELETEPATH);
+			$options_menu_root_label = array(VOCE, USUARIOS, ESTATISTICAS, SEUS_DADOS, EDITAR_DADOS, CANCELAR_CONTA);
+			$options_menu_root_links = array("#", USERSLISTPATH, USERPATH, USEREVIEWPATH, USEREDITPATH, USERDELETEPATH);
 		else:
-			$options_menu_root_label = array(VOCE, ESTATISTICAS, EDITAR_DADOS, CANCELAR_CONTA);
-			$options_menu_root_links = array("#", USERPATH, USEREDITPATH, USERDELETEPATH);
+			$options_menu_root_label = array(VOCE, ESTATISTICAS, SEUS_DADOS, EDITAR_DADOS, CANCELAR_CONTA);
+			$options_menu_root_links = array("#", USERPATH, USEREVIEWPATH, USEREDITPATH, USERDELETEPATH);
 		endif;
 		
 		
