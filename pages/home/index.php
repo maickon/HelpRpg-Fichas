@@ -57,47 +57,38 @@ $form->_row();
 		$qtd_total_itens = ($qtd_armaduras+$qtd_armas+$qtd_artefatos);
 		
 		$img_title = [
-						['jogadores.jpg','Usuários Cadastrados', $qtd_user],
-						['monstros.jpg','Monstros cadastrados', $qtd_monstros],
-						['boss.jpg','Chefes de fase', 0],
-						['armas.jpg','Itens Cadastrados', $qtd_total_itens]
+						['jogadores.jpg',USUARIOS_CADASTRADOS, $qtd_user],
+						['monstros.jpg',MONSTROS_CADASTRADOS, $qtd_monstros],
+						['boss.jpg',CHEFES_DE_FASE, 0],
+						['armas.jpg',ITENS_CADASTRADOS, $qtd_total_itens]
 					];
 		
 		//Lista fictiia de categorias
 		$categorias = [
-						['Fichas de Personagem', $qtd_jogador, ROOTPATHURL.PERSONAGEMPATH.'view.php?id='.$number_jogador[0]['id']],
-						['Fichas de Npc', $qtd_npc, ROOTPATHURL.PERSONAGEMPATH.'view.php?id=1'],
-						['Fichas de Monstros', $qtd_monstros, ROOTPATHURL.MONSTROPATH.'view.php?id='.$number_monstros[0]['id']],
-						[ARMAS, $qtd_armas, ROOTPATHURL.ARMASPATH.'view.php?id='.$number_armas[0]['id']],
-						[ARMADURAS, $qtd_armaduras, ROOTPATHURL.ARMADURASPATH.'view.php?id='.$number_armaduras[0]['id']],
-						[ARTEFATOS, $qtd_artefatos, ROOTPATHURL.ARTEFATOSPATH.'view.php?id='.$number_artefatos[0]['id']],
-						[TALENTOS, $qtd_talentos, ROOTPATHURL.TALENTOSPATH.'view.php?id='.$number_talentos[0]['id']],
-						[MAGIAS, $qtd_magias, ROOTPATHURL.MAGIASPATH.'view.php?id='.$number_magias[0]['id']],
-						[PERICIAS, $qtd_pericias, ROOTPATHURL.PERICIASPATH.'view.php?id='.$number_pericias[0]['id']],
-						['Ficha Aleatória', "100+", ROOTPATHURL.NPCGENERATEPATH],
-						['Monstro Aleatório', "100+", ROOTPATHURL.MONSTERGENERATEPATH],
-						[AVENTURAS, $qtd_aventuras, ROOTPATHURL.AVENTURASPATH.'view.php?id='.$number_aventuras[0]['id']],
-						[HISTORIAS, $qtd_historias, ROOTPATHURL.HISTORIASPATH.'view.php?id='.$number_historias[0]['id']],
-						[CONTOS, $qtd_contos, ROOTPATHURL.CONTOSPATH.'view.php?id='.$number_contos[0]['id']],
-						[CRONICAS, $qtd_cronicas, ROOTPATHURL.CRONICASPATH.'view.php?id='.$number_cronicas[0]['id']],
-						[CENARIOS, $qtd_cenarios, ROOTPATHURL.CENARIOSPATH.'view.php?id='.$number_cenarios[0]['id']]
+						[FICHA_DE_PERSONAGEM, $qtd_jogador, ROOTPATHURL.PERSONAGEMPATH.VIEW_BY_ID.helper_check_id(ID,$number_jogador)],
+						[FICHA_DE_NPC, $qtd_npc, ROOTPATHURL.PERSONAGEMPATH.VIEW_BY_ID.'1'],
+						[FICHA_DE_MONSTRO, $qtd_monstros, ROOTPATHURL.MONSTROPATH.VIEW_BY_ID.helper_check_id(ID,$number_monstros)],
+						[ARMAS, $qtd_armas, ROOTPATHURL.ARMASPATH.VIEW_BY_ID.helper_check_id(ID,$number_armas)],
+						[ARMADURAS, $qtd_armaduras, ROOTPATHURL.ARMADURASPATH.VIEW_BY_ID.helper_check_id(ID,$number_armaduras)],
+						[ARTEFATOS, $qtd_artefatos, ROOTPATHURL.ARTEFATOSPATH.VIEW_BY_ID.helper_check_id(ID,$number_artefatos)],
+						[TALENTOS, $qtd_talentos, ROOTPATHURL.TALENTOSPATH.VIEW_BY_ID.helper_check_id(ID,$number_talentos)],
+						[MAGIAS, $qtd_magias, ROOTPATHURL.MAGIASPATH.VIEW_BY_ID.helper_check_id(ID,$number_magias)],
+						[PERICIAS, $qtd_pericias, ROOTPATHURL.PERICIASPATH.VIEW_BY_ID.helper_check_id(ID,$number_pericias)],
+						[FICHA_ALEATORIA, CONTADOR_MAIS_CEM, ROOTPATHURL.NPCGENERATEPATH],
+						[MONSTRO_ALEATORIO, CONTADOR_MAIS_CEM, ROOTPATHURL.MONSTERGENERATEPATH],
+						[AVENTURAS, $qtd_aventuras, ROOTPATHURL.AVENTURASPATH.VIEW_BY_ID.helper_check_id(ID,$number_aventuras)],
+						[HISTORIAS, $qtd_historias, ROOTPATHURL.HISTORIASPATH.VIEW_BY_ID.helper_check_id(ID,$number_historias)],
+						[CONTOS, $qtd_contos, ROOTPATHURL.CONTOSPATH.VIEW_BY_ID.helper_check_id(ID,$number_contos)],
+						[CRONICAS, $qtd_cronicas, ROOTPATHURL.CRONICASPATH.VIEW_BY_ID.helper_check_id(ID,$number_cronicas)],
+						[CENARIOS, $qtd_cenarios, ROOTPATHURL.CENARIOSPATH.VIEW_BY_ID.helper_check_id(ID,$number_cenarios)]
 					];
-		$tag->imprime('
-			<div class="banner-center">
-				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-				<!-- anuncio_3 -->
-				<ins class="adsbygoogle"
-				     style="display:inline-block;width:728px;height:90px"
-				     data-ad-client="ca-pub-3010334569259161"
-				     data-ad-slot="2027312537"></ins>
-				<script>
-				(adsbygoogle = window.adsbygoogle || []).push({});
-				</script>
-			</div>
-			');
+		
+		$form->_col(12);
+			helper_adsense_03();
+		$form->col_();
 			
 		$form->_container();
-			$form->h2("O que você procura está aqui no <b>Help Rpg</b>", ['class'=>'titulo-index']);
+			$form->h2(MSG_BEM_VINDO_INDEX."<b> Help Rpg </b>", ['class'=>'titulo-index']);
 			foreach($categorias as $key => $cat):
 				$form->_col(3);
 					$tag->a('href="'.$cat[2].'" class="btn btn-primary btn-index"');
@@ -111,19 +102,7 @@ $form->_row();
 		$form->container_();
 			
 		$form->_col(12);
-			$tag->imprime('
-					<div class="banner-center">
-						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-						<!-- anuncio_1 -->
-						<ins class="adsbygoogle"
-						     style="display:inline-block;width:728px;height:90px"
-						     data-ad-client="ca-pub-3010334569259161"
-						     data-ad-slot="8073846133"></ins>
-						<script>
-						(adsbygoogle = window.adsbygoogle || []).push({});
-						</script>
-					</div>
-					');
+			helper_adsense_01();
 		$form->col_();
 		
 				
@@ -144,37 +123,17 @@ $form->_row();
 		
 		
 		$tag->div('class="center"');
-			$tag->imprime("<b>
-				Contribua com o Help Rpg, faça uma doação para motivar a evolução deste site a assim termos um ambiente cada vez
-				melhor para nossas campanhas de RPG. Contamos com você.</b>");
-		
-			$tag->imprime('
-					<!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
-					<form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post">
-					<!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
-					<input type="hidden" name="currency" value="BRL" />
-					<input type="hidden" name="receiverEmail" value="helprpg.br@gmail.com" />
-					<input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/doacoes/184x42-doar-cinza-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
-					</form>
-					<!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
-					');
+			$tag->b();
+				$tag->imprime(MSG_TEXT_INDEX_01);
+			$tag->b;
+			helper_pague_seguro_form();
 		$tag->div;
 		
-	$form->container_();
-	
-	$tag->imprime('
-				<div class="banner-center">
-					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-					<!-- anuncio_2 -->
-					<ins class="adsbygoogle"
-					     style="display:inline-block;width:728px;height:90px"
-					     data-ad-client="ca-pub-3010334569259161"
-					     data-ad-slot="9550579333"></ins>
-					<script>
-					(adsbygoogle = window.adsbygoogle || []).push({});
-					</script>
-				</div>
-				');
-	$form->row_();
+		$form->_col(12);
+			helper_adsense_02();
+		$form->col_();
+		
+	$form->container_();	
+$form->row_();
 
 $form->hr();
