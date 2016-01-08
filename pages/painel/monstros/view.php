@@ -5,16 +5,17 @@ require_once '../helper.php';
 $super = false;
 global $tag, $form, $parametros;
 
+$objeto = new Personagens(ROOTPATH.MONSTROIMGPATH);
+$monstros = $objeto->select($objeto->getTable(),null,[ ['id','=', $_GET['id']] ]);
+
+if(empty($monstros[0]['id']))
+	header('Location: '.ROOTPATHURL.MONSTROPATH);
+
 $tag->body('role="document"');
 
 new Components('menu', $parametros);
 $tag->br();
 $tag->br();
-	
-	$objeto = new Personagens(ROOTPATH.MONSTROIMGPATH);
-	$monstros = $objeto->select($objeto->getTable(),null,[ ['id','=', $_GET['id']] ]);
-	if(empty($monstros[0]['id']))
-		header('Location: '.ROOTPATHURL.MONSTROPATH);
 	
 	helper_adsense();
 	
