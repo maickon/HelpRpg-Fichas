@@ -71,8 +71,32 @@ function helper_componentes_buttons_view($modulo, $id, $off = false){
 function helper_check_params($chave, $array){
 	if(isset($array[$chave])):
 		return $array[$chave];
+	elseif(empty($array[$chave]) || $array[$chave] == ''):
+		return '-';
 	else:
 		return '-';
+	endif;
+}
+
+function helper_check_checkbox_edit($chave, $array){
+	global $form;
+	if(isset($array[$chave])):
+		if($array[$chave] == 'on'):
+			helper_form_input('', ['name' => $chave, 'checked'=> $array[$chave], 'type' => 'checkbox', 'class'=>'form-control'], 1);
+		endif;
+	else:
+		helper_form_input('', ['name' => $chave, 'type' => 'checkbox', 'class'=>'form-control'], 1);
+	endif;
+}
+
+function helper_check_checkbox($chave, $array){
+	global $form;
+	if(isset($array[$chave])):
+		if($array[$chave] == 'on'):
+			$form->input(['name' => $chave, 'disabled' => 'true' , 'checked'=> $array[$chave], 'type' => 'checkbox', 'class'=>'form-control']);
+		endif;
+	else:
+		$form->input(['name' => $chave, 'disabled' => 'true' , '-'=> '', 'type' => 'checkbox', 'class'=>'form-control']);
 	endif;
 }
 
@@ -765,6 +789,71 @@ function helper_prev_next($object, $id, $modulo, $tipo = null){
 	$form->col_();
 }
 
+function helper_adsense_01(){
+	global $tag;
+	$tag->imprime('
+		<div class="banner-center">
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- anuncio_1 -->
+			<ins class="adsbygoogle"
+			     style="display:inline-block;width:728px;height:90px"
+			     data-ad-client="ca-pub-3010334569259161"
+			     data-ad-slot="8073846133"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>
+	');
+}
+
+function helper_adsense_02(){
+	global $tag;
+	$tag->imprime('
+		<div class="banner-center">
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- anuncio_2 -->
+			<ins class="adsbygoogle"
+			     style="display:inline-block;width:728px;height:90px"
+			     data-ad-client="ca-pub-3010334569259161"
+			     data-ad-slot="9550579333"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>
+	');
+}
+
+function helper_adsense_03(){
+	global $tag;
+	$tag->imprime('
+		<div class="banner-center">
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- anuncio_3 -->
+			<ins class="adsbygoogle"
+			     style="display:inline-block;width:728px;height:90px"
+			     data-ad-client="ca-pub-3010334569259161"
+			     data-ad-slot="2027312537"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>
+	');
+}
+
+function helper_pague_seguro_form(){
+	global $tag;
+	$tag->imprime('
+		<!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+		<form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post">
+		<!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+		<input type="hidden" name="currency" value="BRL" />
+		<input type="hidden" name="receiverEmail" value="helprpg.br@gmail.com" />
+		<input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/doacoes/184x42-doar-cinza-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+		</form>
+		<!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
+	');
+}
+
 function helper_adsense(){
 	global $tag, $s;
 	$tag->div('class="adsense"');
@@ -894,6 +983,9 @@ function helper_atitudes_deamon_rpg($habilidades){
 }
 
 function helper_escala_fate_rpg($escala){
+	if($escala == '-')
+		$escala = '0';
+	
 	$atitudes = ['-2'=>'Terrível', '-1'=>'Pobre', '0'=>'Medíocre', '1'=>'Médio', '2'=>'Razoável', '3'=>'Bom', '4'=>'Grande', '5'=>'Soberbo', '6'=>'Fantástico', '7'=>'Épico', '8'=>'Lendário'];
 	return $atitudes[$escala];
 }
@@ -1046,4 +1138,3 @@ require 'personagens/views/d20-ded.php';
 require 'personagens/views/daemon.php';
 require 'personagens/views/savage_worlds.php';
 require 'personagens/views/fate.php';
-require 'monstros/views/d20-ded.php';
