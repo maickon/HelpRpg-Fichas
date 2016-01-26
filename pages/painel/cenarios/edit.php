@@ -44,8 +44,10 @@ $tag->br();
 				$tag->imprime(BACK);
 			$tag->a;
 		$form->col_();
-		$tag->br();
-		$tag->hr();
+		$form->_col(12);
+			$tag->hr();
+		$form->col_();
+	
 	$form->container_();
 	
 	$form->_row();

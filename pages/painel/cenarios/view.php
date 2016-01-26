@@ -44,9 +44,12 @@ $tag->br();
 			//se o usuario logado for dono de alguma arma criada ele tera acesso total ao recurso
 			helper_componentes_buttons_view('cenarios', $cenarios[0]['id']);
 		endif;
-		
-		$tag->br();
-		$tag->hr();
+	
+		$form->_container();
+			$form->_col(12);
+				$tag->hr();
+			$form->col_();
+		$form->container_();
 		
 		helper_modal_alert_confirm();
 		

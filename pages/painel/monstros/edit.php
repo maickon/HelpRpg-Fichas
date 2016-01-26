@@ -57,9 +57,12 @@ $tag->br();
 			$tag->a;
 		$form->col_();
 		$tag->br();
-		$tag->hr();
 	$form->container_();
-
+	
+	$form->_col(12);
+		$tag->hr();
+	$form->col_();
+	
 	$form->_row();
 		$form->_container();
 			$form->_form(['method'=>'post', 'name'=>'new-user', 'enctype'=>'multipart/form-data', 'class'=>'form-group', 'data-toggle'=>'validator']);

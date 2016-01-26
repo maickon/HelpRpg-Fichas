@@ -43,8 +43,11 @@ $tag->br();
 			helper_componentes_buttons_view('armaduras', $armadura[0]['id']);
 		endif;
 		
-		$tag->br();
-		$tag->hr();
+		$form->_container();
+			$form->_col(12);
+				$tag->hr();
+			$form->col_();
+		$form->container_();
 		
 		helper_modal_alert_confirm();
 		

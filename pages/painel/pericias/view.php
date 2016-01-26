@@ -44,8 +44,9 @@ $tag->br();
 			helper_componentes_buttons_view('pericias', $pericias[0]['id']);
 		endif;
 		
-		$tag->br();
-		$tag->hr();
+		$form->_col(12);
+			$tag->hr();
+		$form->col_();
 		
 		helper_modal_alert_confirm();
 		

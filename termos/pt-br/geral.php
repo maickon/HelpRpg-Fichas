@@ -36,6 +36,7 @@ define('MONSTRO_ALEATORIO', "Monstro Aleatório");
 define('UTILITARIOS','Utilitários');
 define('ROLAR_DADOS','Rolar Dados');
 define('GERADOR_DE_MUNDOS','Gerador de Mundos');
+define('GERADOR_DE_NOMES','Gerador de Nomes');
 define('GERADOR_DE_MASMORRAS','Gerador de Masmorras');
 define('GERADOR_DE_NPCS','Gerador de Npcs');
 define('GERADOR_DE_MONSTROS','Gerador de Monstros');

@@ -47,8 +47,9 @@ $tag->br();
 				$tag->imprime(NOVO);
 			$tag->a;
 		$form->col_();
-		$tag->br();
-		$tag->hr();
+		$form->_col(12);
+			$tag->hr();
+		$form->col_();
 			
 		$form->_table(['id'=>'example', 'class'=>'display', 'cellspacing'=>'0', 'width'=>'100%']);
 			$tag->thead();

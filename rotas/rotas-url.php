@@ -19,6 +19,7 @@ define('MONSTERGENERATEPATH',ROOTPATHURL.'old/index.php?p=monstros');
 define('ROLLDICE',ROOTPATHURL.'roll-dice');
 define('DUNGEONPATH',ROOTPATHURL.'pages/masmorras/');
 define('MAPWORDPATH',ROOTPATHURL.'pages/mapa_mundi_fantasia/');
+define('NAMEGENERATION',ROOTPATHURL.'pages/nomes/');
 define('DOWNLOADPATHMASMORRAS',ROOTPATHURL."pages/downloads/masmorras/");
 define('DOWNLOADPATHMAPASMUNDI',ROOTPATHURL."pages/downloads/mapas-mundi/");
 define('DOWNLOADPATHFICHAS',ROOTPATHURL."pages/downloads/fichas/");

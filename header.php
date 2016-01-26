@@ -31,10 +31,46 @@ $tag->html('lang="pt-br"');
 		$tag->meta('http-equiv="X-UA-Compatible" content="IE=edge"');
 		$tag->meta('name="viewport" content="width=device-width, initial-scale=1"');
 		//<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		$tag->meta('name="description" content="Help rpg - O maior repositório de fichas de RPG do Brasil."');
+		
+		$tag->meta('name="keywords" content="Fichas de RPG, RPG games, RPG online, nomes de fantasia, gerador de nomes, nome de fantasia, nomes para jogos, nomes para games, nomes para videojogos, nomes para videogames, ideias para nomes, criar nomes, escolher um nome, fantasia, rpg, role playing game, criador de nomes, sugestões de nomes, nomes de elfos, nomes de anões, nomes de hobbits, nomes de halflings, nomes de orcs, nomes malignos, nomes evil, nomes orientais, nomes humanos, apelidos de fantasia, nomes de ficção científica, nomes de sf, nomes aleatórios, nomes de fantasia aleatórios, gerar nomes, nomes por raças, nomes portugueses, nomes lovecraftianos, nomes de lovecraft"');
+		$tag->meta('name="description" content="Help rpg - Faça cadastro de Fichas de RPG, itens, armas, talentos, gere mapas de masmorra, nome de cidades, personagens, reinos e muito mais."');
 		$tag->meta('name="author" content="Maickon Rangel"');
 		$tag->imprime('<link rel="shortcut icon" href="'.ROOTPATHURL.IMGPATH.'logo-icon.png" />');
 		$tag->link('rel="icon" href="'.IMGPATH.'adm.png"');
+		
+		$tag->link("rel='profile' href='http://gmpg.org/xfn/11'"); $tag->link;
+		$tag->link("rel='pingback' href='https://helprpg.wordpress.com/xmlrpc.php'"); $tag->link;
+		$tag->meta("name='google-site-verification' content='QC0R1WtOIkuix34BpV0VWRXvfqXOSgZVre6Ajs0yoB8'");
+		$tag->meta("name='msvalidate.01' content='DE5E830BAA8981F56CAF7391CB18C43C'");
+		$tag->meta("name='p:domain_verify' content='ed57b2f23f1c8c7a32615f041c018452'");
+		$tag->meta("name='yandex-verification' content='498ec61ff48496ea'");
+		$tag->link("rel='alternate' type='application/rss+xml' title='Feed de Help Rpg &raquo;' href='https://helprpg.wordpress.com/feed/'"); $tag->link;
+		$tag->link("rel='alternate' type='application/rss+xml' title='Help Rpg &raquo;  Feed de comentários' href='https://helprpg.wordpress.com/comments/feed/'"); $tag->link;
+		
+		$tag->link("rel='EditURI' type='application/rsd+xml' href='https://helprpg.wordpress.com/xmlrpc.php?rsd'"); $tag->link;
+		$tag->link("rel='wlwmanifest' type='application/wlwmanifest+xml' href='https://s1.wp.com/wp-includes/wlwmanifest.xml'"); $tag->link;
+		$tag->meta("name='generator' content='WordPress.com'");
+		$tag->link("rel='shortlink' href='http://wp.me/62ZRn'"); $tag->link;
+		
+		$tag->meta("property='og:type' content='website'");
+		$tag->meta("property='og:title' content='Help Rpg Fichas'");
+		$tag->meta("property='og:description' content='Help rpg - Faça cadastro de Fichas de RPG, itens, armas, talentos, gere mapas de masmorra, nome de cidades, personagens, reinos e muito mais.'");
+		$tag->meta("property='og:url' content='http://helprpg.com.br'");
+		$tag->meta("property='og:site_name' content='Help Rpg Fichas'");
+		$tag->meta("property='og:image' content='https://secure.gravatar.com/blavatar/3664425b4887a751939b4c495523c4e1?s=200&amp;ts=1453210604'");
+		$tag->meta("property='og:image:width' content='200'");
+		$tag->meta("property='og:image:height' content='200'");
+		$tag->meta("property='og:locale' content='pt_BR'");
+		$tag->meta("name='twitter:site' content='@wordpressdotcom'");
+		$tag->meta("property='fb:app_id' content='249643311490'");
+		
+		$tag->link("rel='shortcut icon' type='image/x-icon' href='https://secure.gravatar.com/blavatar/869cefc15a77fde2f7e09c6fb0b089f3?s=16' sizes='16x16'"); $tag->link;
+		$tag->link("rel='icon' type='image/x-icon' href='https://secure.gravatar.com/blavatar/869cefc15a77fde2f7e09c6fb0b089f3?s=16' sizes='16x16'"); $tag->link;
+		$tag->link("rel='apple-touch-icon-precomposed' href='https://secure.gravatar.com/blavatar/3664425b4887a751939b4c495523c4e1?s=114'"); $tag->link;
+		$tag->link("rel='openid.server' href='https://helprpg.wordpress.com/?openidserver=1'"); $tag->link;
+		$tag->link("rel='openid.delegate' href='https://helprpg.wordpress.com/'"); $tag->link;
+		$tag->link("rel='search' type='application/opensearchdescription+xml' href='https://helprpg.wordpress.com/osd.xml' title='Help Rpg Fichas'"); $tag->link;
+		$tag->link("rel='search' type='application/opensearchdescription+xml' href='https://s1.wp.com/opensearch.xml' title='helprpg.com.br'"); $tag->link;
 		
 		//Titulo do site
 		$tag->title();
@@ -97,18 +133,18 @@ $tag->html('lang="pt-br"');
 		
 		
 		$parametros['nomes'] = array(
-									array(PERSONAGEM_MENU, CRIAR_PERSONAGEM, CRIAR_MONSTRO, CRIAR_BOSS),
+									array(PERSONAGEM_MENU, CRIAR_PERSONAGEM, CRIAR_MONSTRO, /*CRIAR_BOSS*/),
 									array(CAMPANHAS, AVENTURAS,HISTORIAS, CENARIOS, CONTOS, CRONICAS),
 							   		array(CADASTRAR, ARMAS, ARMADURAS, ARTEFATOS, TALENTOS, MAGIAS_MENU, PERICIAS),
-									array(UTILITARIOS, ROLAR_DADOS, GERADOR_DE_MUNDOS, GERADOR_DE_MASMORRAS, GERADOR_DE_NPCS, GERADOR_DE_MONSTROS),
+									array(UTILITARIOS, ROLAR_DADOS, GERADOR_DE_NOMES, GERADOR_DE_MUNDOS, GERADOR_DE_MASMORRAS, GERADOR_DE_NPCS, GERADOR_DE_MONSTROS),
 									$options_menu_root_label
 									);
 		
 		$parametros['links']  = array(
-									array("#", ROOTPATHURL.PERSONAGEMPATH, ROOTPATHURL.MONSTROPATH, ROOTPATHURL.BOSSPATH),
+									array("#", ROOTPATHURL.PERSONAGEMPATH, ROOTPATHURL.MONSTROPATH, /*ROOTPATHURL.BOSSPATH*/),
 									array("#", ROOTPATHURL.AVENTURASPATH, ROOTPATHURL.HISTORIASPATH, ROOTPATHURL.CENARIOSPATH, ROOTPATHURL.CONTOSPATH, ROOTPATHURL.CRONICASPATH),
 									array("#", ROOTPATHURL.ARMASPATH, ROOTPATHURL.ARMADURASPATH, ROOTPATHURL.ARTEFATOSPATH, ROOTPATHURL.TALENTOSPATH, ROOTPATHURL.MAGIASPATH,ROOTPATHURL.PERICIASPATH),
-									array("#", ROLLDICE, MAPWORDPATH, DUNGEONPATH, NPCGENERATEPATH, MONSTERGENERATEPATH),
+									array("#", ROLLDICE, NAMEGENERATION, MAPWORDPATH, DUNGEONPATH, NPCGENERATEPATH, MONSTERGENERATEPATH),
 									$options_menu_root_links
 									);
 		
@@ -125,8 +161,8 @@ $tag->html('lang="pt-br"');
 		
 		// array('Idioma', utf8_encode('Português - BR'), 'English - En')
 		//array('#','?v=pt-br', '?v=en')
-		$utilitarios_label 		= array(UTILITARIOS, ROLAR_DADOS, GERADOR_DE_MUNDOS, GERADOR_DE_MASMORRAS, GERADOR_DE_NPCS, GERADOR_DE_MONSTROS);
-		$utilitarios_link 		= array("#", ROLLDICE, MAPWORDPATH, DUNGEONPATH, NPCGENERATEPATH, MONSTERGENERATEPATH);
+		$utilitarios_label 		= array(UTILITARIOS, ROLAR_DADOS, GERADOR_DE_NOMES, GERADOR_DE_MUNDOS, GERADOR_DE_MASMORRAS, GERADOR_DE_NPCS, GERADOR_DE_MONSTROS);
+		$utilitarios_link 		= array("#", ROLLDICE, NAMEGENERATION, MAPWORDPATH, DUNGEONPATH, NPCGENERATEPATH, MONSTERGENERATEPATH);
 		
 		$campanhas_label 		= array(CAMPANHAS, AVENTURAS, HISTORIAS, CENARIOS, CONTOS, CRONICAS);
 		$campanhas_link 		= array("#", ROOTPATHURL.AVENTURASPATH, ROOTPATHURL.HISTORIASPATH, ROOTPATHURL.CENARIOSPATH, ROOTPATHURL.CONTOSPATH, ROOTPATHURL.CRONICASPATH);

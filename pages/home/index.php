@@ -66,7 +66,7 @@ $form->_row();
 		//Lista fictiia de categorias
 		$categorias = [
 						[FICHA_DE_PERSONAGEM, $qtd_jogador, ROOTPATHURL.PERSONAGEMPATH.VIEW_BY_ID.helper_check_id(ID,$number_jogador)],
-						[FICHA_DE_NPC, $qtd_npc, ROOTPATHURL.PERSONAGEMPATH.VIEW_BY_ID.'1'],
+						//[FICHA_DE_NPC, $qtd_npc, ROOTPATHURL.PERSONAGEMPATH.VIEW_BY_ID.'1'],
 						[FICHA_DE_MONSTRO, $qtd_monstros, ROOTPATHURL.MONSTROPATH.VIEW_BY_ID.helper_check_id(ID,$number_monstros)],
 						[ARMAS, $qtd_armas, ROOTPATHURL.ARMASPATH.VIEW_BY_ID.helper_check_id(ID,$number_armas)],
 						[ARMADURAS, $qtd_armaduras, ROOTPATHURL.ARMADURASPATH.VIEW_BY_ID.helper_check_id(ID,$number_armaduras)],
@@ -80,7 +80,10 @@ $form->_row();
 						[HISTORIAS, $qtd_historias, ROOTPATHURL.HISTORIASPATH.VIEW_BY_ID.helper_check_id(ID,$number_historias)],
 						[CONTOS, $qtd_contos, ROOTPATHURL.CONTOSPATH.VIEW_BY_ID.helper_check_id(ID,$number_contos)],
 						[CRONICAS, $qtd_cronicas, ROOTPATHURL.CRONICASPATH.VIEW_BY_ID.helper_check_id(ID,$number_cronicas)],
-						[CENARIOS, $qtd_cenarios, ROOTPATHURL.CENARIOSPATH.VIEW_BY_ID.helper_check_id(ID,$number_cenarios)]
+						[CENARIOS, $qtd_cenarios, ROOTPATHURL.CENARIOSPATH.VIEW_BY_ID.helper_check_id(ID,$number_cenarios)],
+						[ROLAR_DADOS, 1, ROLLDICE],
+						[GERADOR_DE_MUNDOS, CONTADOR_MAIS_CEM, MAPWORDPATH],
+						[GERADOR_DE_MASMORRAS, CONTADOR_MAIS_CEM, DUNGEONPATH]
 					];
 		
 		$form->_col(12);

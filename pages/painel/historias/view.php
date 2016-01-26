@@ -26,7 +26,7 @@ $tag->br();
 		$form->col_();
 		
 		//botoes de anterior e proximo
-		helper_prev_next($objeto, $_GET['id'], 'cenarios');
+		helper_prev_next($objeto, $_GET['id'], 'historias');
 		
 		//verificando permiçoes
 		foreach($permit as $p):
@@ -45,8 +45,9 @@ $tag->br();
 			helper_componentes_buttons_view('historias', $historias[0]['id']);
 		endif;
 		
-		$tag->br();
-		$tag->hr();
+		$form->_col(12);
+			$tag->hr();
+		$form->col_();
 		
 		helper_modal_alert_confirm();
 		

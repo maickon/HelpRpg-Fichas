@@ -1,10 +1,11 @@
 <?php
 $ip = $_SERVER['REMOTE_ADDR'];
-$pais = unserialize(file_get_contents('http://www.geoplugin.net/php.gp?ip='.$ip));
+//$pais = unserialize(file_get_contents('http://www.geoplugin.net/php.gp?ip='.$ip));
+$pais = 'Brazil';
 if(isset($pais['geoplugin_countryName']) && $pais['geoplugin_countryName'] == 'United States'):
-$carregar_traducao = $pais['geoplugin_countryName'];
+	$carregar_traducao = $pais['geoplugin_countryName'];
 else:
-$carregar_traducao = 'Brazil';
+	$carregar_traducao = 'Brazil';
 endif;
 
 switch('Brazil'):

@@ -55,7 +55,12 @@ $tag->br();
 			$tag->a;
 		$form->col_();
 		$tag->br();
-		$tag->hr();
+	$form->container_();
+	
+	$form->_container();
+		$form->_col(12);
+			$tag->hr();
+		$form->col_();
 	$form->container_();
 	
 	$form->_row();
