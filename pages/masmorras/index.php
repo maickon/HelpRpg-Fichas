@@ -114,6 +114,7 @@ $tag->script;
 
 	$tag->div('class="row banner-center"');
 					helper_adsense_03();
+	$tag->div;
 
 	require '../../footer.php';
 

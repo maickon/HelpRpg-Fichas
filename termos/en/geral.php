@@ -36,6 +36,7 @@ define('UTILITARIOS','Utilities');
 define('ROLAR_DADOS','Roll Dice');
 define('GERADOR_DE_MUNDOS','New world');
 define('GERADOR_DE_NOMES','Name Generator');
+define('GERADOR_DE_CARACTERISTICAS','Features of the Generator');
 define('GERADOR_DE_MASMORRAS','Dungeon Generator');
 define('GERADOR_DE_NPCS','Npc Generator');
 define('GERADOR_DE_MONSTROS','Monster Generator');

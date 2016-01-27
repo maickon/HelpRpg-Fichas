@@ -44,12 +44,13 @@ var nomes = {
 		'Cidades': 'cidades'
 };
 
-var e = document.getElementById("tipo");
-var itemSelecionado = e.options[e.selectedIndex].text;
 
 function load_name(){
+	var e = document.getElementById("tipo");
+	var itemSelecionado = e.options[e.selectedIndex].text;
 	var campos = ['campo1','campo2','campo3','campo4','campo5','campo6','campo7','campo8'];
 	var nome = nomes[itemSelecionado];
+	console.log(itemSelecionado);
 	for(var i=0; i<=8; i++){
 		sorteio_palavras(name_set[nome], campos[i]);
 	}

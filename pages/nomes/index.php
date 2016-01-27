@@ -7,7 +7,7 @@ $tag->link('href="'.CSSPATH.'index.css" rel="stylesheet"');
 $tag->script('src="'.JSPATH.'sorteio_uma_palavra.js"'); $tag->script;
 
 $tipos = [
-	'Dracônico', 'Demônio', 'Anjos', 'Gótico', 'Generalizado', 'Mulheres', 'Homens', 'Homem Rato', 'Elfos', 
+	'Dracônico', 'Demônho', 'Anjos', 'Gótico', 'Generalizado', 'Mulheres', 'Homens', 'Homem Rato', 'Elfos', 
 	'Anões', 'Halflings', 'Hobbits', 'Bárbaros', 'Orc', 'Asiático', 'Arábico', 'Reinos','Cidades'];
 $tag->br();
 $form->_container();

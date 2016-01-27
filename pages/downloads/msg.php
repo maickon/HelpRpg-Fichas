@@ -9,19 +9,7 @@ $form->_container();
 $form->h1("Help Rpg Fichas - Downloads");
 $form->hr();
 
-$tag->imprime('
-			<div class="banner-center">
-				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-				<!-- anuncio_3 -->
-				<ins class="adsbygoogle"
-				     style="display:inline-block;width:728px;height:90px"
-				     data-ad-client="ca-pub-3010334569259161"
-				     data-ad-slot="2027312537"></ins>
-				<script>
-				(adsbygoogle = window.adsbygoogle || []).push({});
-				</script>
-			</div>
-			');
+helper_adsense_03();
 
 $form->p(
 		'
@@ -45,24 +33,13 @@ $form->p(
 				<br>
 				<a href="'.YOUTUBE.'" target="blank">Nosso Canal no YouTube </a>
 				<br>
-				<a href="'.HELPRPGBLOG.'" target="blank">Nosso Blog </a>
+				<a href="'.WORDPRESS_BLOG.'" target="blank">Nosso Blog </a>
 				</p>
 				'
 );
 
-$tag->imprime('
-				<div class="banner-center">
-					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-					<!-- anuncio_2 -->
-					<ins class="adsbygoogle"
-					     style="display:inline-block;width:728px;height:90px"
-					     data-ad-client="ca-pub-3010334569259161"
-					     data-ad-slot="9550579333"></ins>
-					<script>
-					(adsbygoogle = window.adsbygoogle || []).push({});
-					</script>
-				</div>
-				');
+helper_adsense_02();
+
 $form->hr();
 $form->container_();
 $form->row_();
