@@ -21,6 +21,7 @@ $form->_row();
 		$contos 	= new Contos();
 		$cronicas 	= new Cronicas();
 		$cenarios 	= new Cenarios();
+		$bestiario 	= new Bestiario();
 		
 		$number_user 		= $user->select('usuarios');
 		$number_armaduras 	= $armadura->select('armaduras');
@@ -37,6 +38,7 @@ $form->_row();
 		$number_contos 		= $contos->select('contos');
 		$number_cronicas 	= $cronicas->select('cronicas');
 		$number_cenarios 	= $cenarios->select('cenarios');
+		$number_bestiario	= $bestiario->select('bestiario');
 		
 		$qtd_user 		= count($number_user);
 		$qtd_armaduras 	= count($number_armaduras);
@@ -53,13 +55,14 @@ $form->_row();
 		$qtd_contos 	= count($number_contos);
 		$qtd_cronicas 	= count($number_cronicas);
 		$qtd_cenarios 	= count($number_cenarios);
+		$qtd_bestiario 	= count($number_bestiario);
 		
 		$qtd_total_itens = ($qtd_armaduras+$qtd_armas+$qtd_artefatos);
 		
 		$img_title = [
 						['jogadores.jpg',USUARIOS_CADASTRADOS, $qtd_user],
 						['monstros.jpg',MONSTROS_CADASTRADOS, $qtd_monstros],
-						['boss.jpg',CHEFES_DE_FASE, 0],
+						['bestiario.jpg',BESTIARIO_CADASTRADOS, $qtd_bestiario],
 						['armas.jpg',ITENS_CADASTRADOS, $qtd_total_itens]
 					];
 		
@@ -83,7 +86,10 @@ $form->_row();
 						[CENARIOS, $qtd_cenarios, ROOTPATHURL.CENARIOSPATH.VIEW_BY_ID.helper_check_id(ID,$number_cenarios)],
 						[ROLAR_DADOS, 1, ROLLDICE],
 						[GERADOR_DE_MUNDOS, CONTADOR_MAIS_CEM, MAPWORDPATH],
-						[GERADOR_DE_MASMORRAS, CONTADOR_MAIS_CEM, DUNGEONPATH]
+						[GERADOR_DE_FICHAS_BASE, CONTADOR_MAIS_CEM, FICHASBASEGENERATION],
+						[GERADOR_DE_CARACTERISTICAS, CONTADOR_MAIS_CEM, CARACTERISTICASGENERATION],
+						[GERADOR_DE_NOMES, CONTADOR_MAIS_CEM, NAMEGENERATION],
+						[BESTIARIO, $qtd_bestiario, ROOTPATHURL.BESTIARIOPATH.VIEW_BY_ID.helper_check_id(ID,$number_bestiario)]
 					];
 		
 		$form->_col(12);
