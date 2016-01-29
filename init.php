@@ -77,7 +77,7 @@ function __autoload($class_name){
 	$class_dir = [
 	"arquivo/","db/","rotas/","sessao/","view/","usuario/","armas/","upload/", 
 	"armaduras/", "db_persistence/", "talentos/", "magias/", "pericias/", "personagens/",
-	"artefatos/","aventuras/", "contos/","cenarios/","historias/","cronicas/"];
+	"artefatos/","aventuras/", "contos/","cenarios/","historias/","cronicas/", "bestiario/"];
 	$out = 0;
 	foreach($class_dir as $file_name):
 		//verifica se existe o arquivo
