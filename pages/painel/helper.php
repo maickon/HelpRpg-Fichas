@@ -17,7 +17,8 @@ $modulos_path = [
 'cenarios'		=> CENARIOSPATH,
 'contos'		=> CONTOSPATH,
 'historias'		=> HISTORIASPATH,
-'cronicas'		=> CRONICASPATH
+'cronicas'		=> CRONICASPATH,
+'bestiario'		=> BESTIARIOPATH
 ];
 
 function helper_componentes_buttons($modulo, $id, $off = false){
@@ -796,6 +797,9 @@ function helper_prev_next($object, $id, $modulo, $tipo = null){
 		
 		$id_next = array_key_exists($current_position+1, $ids) ? $ids[$current_position+1] : $current_position;
 		if($id_next == $ids[count($ids)-1]) $id_next = $ids[0];
+		if($id_next == 0):
+			$id_next += 1;
+		endif;
 		$tag->a('href="'.ROOTPATHURL.$modulos_path[$modulo].'view.php?id='.$id_next.'" class="btn btn-primary"');
 			$tag->imprime('Próximo >>>');
 		$tag->a;
