@@ -38,11 +38,13 @@ define('GERADOR_DE_MUNDOS','New world');
 define('GERADOR_DE_NOMES','Name Generator');
 define('GERADOR_DE_CARACTERISTICAS','Features of the Generator');
 define('GERADOR_DE_MASMORRAS','Dungeon Generator');
+define('GERADOR_DE_FICHAS_BASE','Based chips generator');
 define('GERADOR_DE_NPCS','Npc Generator');
 define('GERADOR_DE_MONSTROS','Monster Generator');
 define('DOWNLOADS','Downloads');
 define('CAMPANHAS','Campaigns');
 
+define('BESTIARIO', "Bestiary");
 define('CADASTRAR', "Register");
 define('AVENTURAS', "Adventures");
 define('CENARIOS', "Scenario");
@@ -81,6 +83,7 @@ define("CRIADOR_MENU", "Create by");
 define("NIVEL_INDICADO_AVENTURA", "Level indicated for adventure");
 define('MESTRE_DA_AVENTURA', "Adventure Master");
 define('TIPO_DE_AVENTURA', "Kind of adventure");
+define('CLASSIFICACAO', "Classification");
 define('SISTEMA_DE_RPG', "RPG system");
 define('HISTORIA_DA_AVENTURA', "Adventure story");
 define('CRIADO_NO_DIA', "Created on");
@@ -99,6 +102,7 @@ define('DESCRICAO_BREVE', "brief description");
 
 define('USUARIOS_CADASTRADOS', "Registered Users");
 define('MONSTROS_CADASTRADOS', "Registered monsters");
+define('BESTIARIO_CADASTRADOS', "Registered bestiary");
 define('CHEFES_DE_FASE', "Phase Heads");
 define('ITENS_CADASTRADOS', "Registrants items");
 

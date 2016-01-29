@@ -39,12 +39,14 @@ define('GERADOR_DE_MUNDOS','Gerador de Mundos');
 define('GERADOR_DE_NOMES','Gerador de Nomes');
 define('GERADOR_DE_CARACTERISTICAS','Gerador de Características');
 define('GERADOR_DE_MASMORRAS','Gerador de Masmorras');
+define('GERADOR_DE_FICHAS_BASE','Gerador de ficha base');
 define('GERADOR_DE_NPCS','Gerador de Npcs');
 define('GERADOR_DE_MONSTROS','Gerador de Monstros');
 define('DOWNLOADS','Downloads');
 define('DOWNLOAD','Baixar');
 define('CAMPANHAS','Campanhas');
 
+define('BESTIARIO', "Bestiário");
 define('CADASTRAR', "Cadastrar");
 define('AVENTURAS', "Aventuras");
 define('CENARIOS', "Cenários");
@@ -90,6 +92,7 @@ define("CRIADOR_MENU", "Criado por");
 define("NIVEL_INDICADO_AVENTURA", "Nível indicado para a aventura");
 define('MESTRE_DA_AVENTURA', "Mestre da aventura");
 define('TIPO_DE_AVENTURA', "Tipo de aventura");
+define('CLASSIFICACAO', "classificação");
 //define('SISTEMA_DE_RPG', "Sistema de RPG");
 define('HISTORIA_DA_AVENTURA', "História da aventura");
 define('CRIADO_NO_DIA', "Criado no dia");
@@ -102,6 +105,7 @@ define('DESCRICAO_BREVE', "Descrição breve");
 
 define('USUARIOS_CADASTRADOS', "Usuários Cadastrados");
 define('MONSTROS_CADASTRADOS', "Monstros cadastrados");
+define('BESTIARIO_CADASTRADOS', "Bestiário cadastrados");
 define('CHEFES_DE_FASE', "Chefes de fase");
 define('ITENS_CADASTRADOS', "Itens Cadastrados");
 
