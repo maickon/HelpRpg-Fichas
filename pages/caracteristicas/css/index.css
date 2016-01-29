@@ -6,4 +6,11 @@
     outline: 0;
 	font-size: 24px;
 	font-weight: bold;
+	height: 40px;
+	border: 1px solid #000;
+	margin: 4px;
+	background-color: #EEE9E9;
+	color: #000000;
+    size: 18px;
+    text-align: center;
 } 
