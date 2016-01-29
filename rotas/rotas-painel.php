@@ -5,6 +5,7 @@ define('CENARIOSPATH', "pages/painel/cenarios/");
 define('CONTOSPATH', "pages/painel/contos/");
 define('HISTORIASPATH', "pages/painel/historias/");
 define('CRONICASPATH', "pages/painel/cronicas/");
+define('BESTIARIOPATH', "pages/painel/bestiario/");
 
 define('ARMASPATH', "pages/painel/armas/");
 define('ARMASIMGPATH', "img/armas/");

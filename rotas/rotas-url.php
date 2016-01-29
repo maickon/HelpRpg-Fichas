@@ -20,6 +20,7 @@ define('ROLLDICE',ROOTPATHURL.'roll-dice');
 define('DUNGEONPATH',ROOTPATHURL.'pages/masmorras/');
 define('MAPWORDPATH',ROOTPATHURL.'pages/mapa_mundi_fantasia/');
 define('NAMEGENERATION',ROOTPATHURL.'pages/nomes/');
+define('FICHASBASEGENERATION',ROOTPATHURL.'pages/ficha-base/');
 define('CARACTERISTICASGENERATION',ROOTPATHURL.'pages/caracteristicas/');
 define('DOWNLOADPATHMASMORRAS',ROOTPATHURL."pages/downloads/masmorras/");
 define('DOWNLOADPATHMAPASMUNDI',ROOTPATHURL."pages/downloads/mapas-mundi/");
