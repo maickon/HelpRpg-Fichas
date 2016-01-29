@@ -1,0 +1,22 @@
+@CHARSET "ISO-8859-1";
+
+#campo1, #campo2, #campo3, #campo4, #hab1, #hab2, #hab3, #hab4, #hab5, #hab6, #campo_classe, #campo_raca{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+	font-size: 24px;
+	font-weight: bold;
+	height: 40px;
+	border: 1px solid #000;
+	margin: 4px;
+	background-color: #EEE9E9;
+	color: #000000;
+    size: 18px;
+}
+
+#hab1, #hab2, #hab3, #hab4, #hab5, #hab6, #campo_classe, #campo_raca{
+    color: #000000;
+    size: 18px;
+    text-align: center;
+    background-color: #EEE9E9;
+}
