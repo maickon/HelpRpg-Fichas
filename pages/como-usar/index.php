@@ -7,19 +7,7 @@ $tag = new Tags();
 
 $form->_row();
 	$form->_container();
-		$tag->imprime('
-				<div class="banner-center">
-					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-					<!-- anuncio_1 -->
-					<ins class="adsbygoogle"
-					     style="display:inline-block;width:728px;height:90px"
-					     data-ad-client="ca-pub-3010334569259161"
-					     data-ad-slot="8073846133"></ins>
-					<script>
-					(adsbygoogle = window.adsbygoogle || []).push({});
-					</script>
-				</div>
-				');
+		helper_ads_cursos();
 		$form->h2("Como usar o site <b>Help Rpg Fichas</b>", ['class'=>'titulo-index']);
 		$tag->p();
 			$tag->imprime("
@@ -51,19 +39,7 @@ $form->_row();
 				usuário desejou disponibilizar seu perfil para troca de informações com outros jogadores. ");
 		$tag->p;
 		
-		$tag->imprime('
-					<div class="banner-center">
-						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-						<!-- anuncio_3 -->
-						<ins class="adsbygoogle"
-						     style="display:inline-block;width:728px;height:90px"
-						     data-ad-client="ca-pub-3010334569259161"
-						     data-ad-slot="2027312537"></ins>
-						<script>
-						(adsbygoogle = window.adsbygoogle || []).push({});
-						</script>
-					</div>
-					');
+		helper_adsense_03();
 		
 		$form->h2("Algumas perguntas frequentes.", ['class'=>'titulo-index']);
 		$tag->p();
@@ -129,19 +105,7 @@ $form->_row();
 				<!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
 				');
 		
-		$tag->imprime('
-				<div class="banner-center">
-					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-					<!-- anuncio_2 -->
-					<ins class="adsbygoogle"
-					     style="display:inline-block;width:728px;height:90px"
-					     data-ad-client="ca-pub-3010334569259161"
-					     data-ad-slot="9550579333"></ins>
-					<script>
-					(adsbygoogle = window.adsbygoogle || []).push({});
-					</script>
-				</div>
-				');
+		helper_adsense_02();
 $form->row_();
 
 require_once '../../footer.php';
