@@ -806,6 +806,15 @@ function helper_prev_next($object, $id, $modulo, $tipo = null){
 	$form->col_();
 }
 
+function helper_ads_cursos(){
+	global $tag;
+	$tag->div('class="banner-center"');
+		$tag->a('href="" id="link" target="blank"');
+			$tag->img('id="id"');
+		$tag->a;
+	$tag->div;
+}
+
 function helper_adsense_01(){
 	global $tag;
 	$tag->imprime('
