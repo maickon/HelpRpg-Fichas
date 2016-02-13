@@ -14,7 +14,7 @@
 	
 	require_once 'header.php';
 	
-	$tag->body('role="document"');
+	$tag->body('role="document" onLoad="slide1()"');
 		
 		global $parametros;
 		new Components('menu', $parametros);
