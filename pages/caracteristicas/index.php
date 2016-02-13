@@ -10,7 +10,7 @@ $tag->br();
 $form->_container();
 	$form->_row();
 		$form->_col(12);
-			helper_adsense_01();	
+			helper_ads_cursos();	
 		$form->col_();
 		
 		$form->_col(12);
