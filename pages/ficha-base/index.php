@@ -15,27 +15,27 @@ $form->_container();
 		$form->col_();
 		
 		$form->_col(12);
-			$form->h3("Gerador de personagens base!");
+			$form->h1("Gerador de personagens base!");
 			$tag->p();
 				$tag->imprime('
-				Este gerador será útil para vocẽ que é mestre descrever por base um personagem 
+				Este gerador será útil para você que é mestre e deseja descrever por base um personagem 
 				Npc que você venha colocar em sua aventura.
 				');
 				$tag->br();
 				$tag->br();
 				$tag->imprime('
-				Para personagens jogadores, o rolador de habilidades chave podem ajudar pois eles 
-				simulam a rolagem de 4d6 descartando a rolagem mais baixo conforme a regra. Além disso
+				Para personagens jogadores o gerador de habilidades chave pode ajudar pois ele 
+				simula a rolagem de 4d6 descartando a rolagem mais baixa conforme a regra. Além disso
 				valores abaixo de 8 não são aceitos. Dessa forma acredito que a rolagem gerada fica de
 				forma bem bacana e equilibrada.
 				');
 				$tag->br();
 				$tag->br();
 				$tag->imprime('
-				Se você desejar poderá escolher uma classe e uma raça. As características sorteadoas 
-				não são possíveis de serem escolhidas. Estas palavras chave devem ajuda-lo a definir 
-				um perfil para o seu personagem. Através delas você deve imaginar um escopo base de
-				uma história com as caracteristicas do personagem.
+				Se você desejar poderá escolher uma classe e uma raça. Estas palavras chave devem ajuda-lo a definir 
+				um perfil para o seu personagem, através delas você deve imaginar um escopo base de
+				uma história com as caracteristicas geradas. Talvez em alguns sorteios pode vir de cair palavras opostas
+				como honesto e corruptível, mentiroso e verdadeiro e etc... Nestes casos descarte uma delas ou sortei novamente.
 				');
 			$tag->p;
 		$form->col_();
