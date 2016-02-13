@@ -37,6 +37,7 @@ define('UTILITARIOS','Utilitários');
 define('ROLAR_DADOS','Rolar Dados');
 define('GERADOR_DE_MUNDOS','Gerador de Mundos');
 define('GERADOR_DE_NOMES','Gerador de Nomes');
+define('GERADOR_DE_AVENTURAS','Gerador de Aventuras');
 define('GERADOR_DE_CARACTERISTICAS','Gerador de Características');
 define('GERADOR_DE_MASMORRAS','Gerador de Masmorras');
 define('GERADOR_DE_FICHAS_BASE','Gerador de ficha base');
