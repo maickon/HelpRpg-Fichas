@@ -21,7 +21,7 @@ $form->_container();
 			$tag->p();
 				$tag->imprime('
 				Com esta ferramenta você pode gerar nomes de forma aleatória. Caso esteja num dia sem criatividade em sua aventura de RPG,
-				utilize esta ferramenta e dê nome ao seus NPCs através das opções abaixo. Além disso temos como útimas opções temos nome de reinos e cidades.');
+				utilize esta ferramenta e dê nome ao seus NPCs através das opções abaixo. Além disso temos nas duas útimas opções geradores de nomes de reinos e cidades.');
 			$tag->p;
 		$form->col_();
 

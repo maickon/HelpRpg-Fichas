@@ -89,11 +89,12 @@ $form->_row();
 						[GERADOR_DE_FICHAS_BASE, CONTADOR_MAIS_CEM, FICHASBASEGENERATION],
 						[GERADOR_DE_CARACTERISTICAS, CONTADOR_MAIS_CEM, CARACTERISTICASGENERATION],
 						[GERADOR_DE_NOMES, CONTADOR_MAIS_CEM, NAMEGENERATION],
-						[BESTIARIO, $qtd_bestiario, ROOTPATHURL.BESTIARIOPATH.VIEW_BY_ID.helper_check_id(ID,$number_bestiario)]
+						[BESTIARIO, $qtd_bestiario, ROOTPATHURL.BESTIARIOPATH.VIEW_BY_ID.helper_check_id(ID,$number_bestiario)],
+						[GERADOR_DE_AVENTURAS, CONTADOR_MAIS_CEM, ADVENTUREGENERATION]
 					];
 		
 		$form->_col(12);
-			helper_adsense_03();
+			helper_ads_cursos();
 		$form->col_();
 			
 		$form->_container();
