@@ -1,0 +1,42 @@
+.search_lg{
+	height: 10px;
+}
+
+.twitter-typeahead{
+	width: 100%;
+}
+
+.search-title{
+	width: 100px;
+	color: #8470FF;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.search_box{
+	margin-top: 50px;
+	margin-top: 150px;
+	margin-bottom:100px;
+	width: 100%;
+}
+
+.search-button{
+	width: 200px;	
+}
+
+.rodape-search-page{
+	width: 100%;
+	height: auto;
+	margin-top: 100px;
+	padding-bottom: 4px;
+	border-bottom: 1px solid #D3D3D3;
+}
+
+a.footer-search-fonte:link{
+	color: #696969;
+	text-decoration: none;
+}
+
+a.footer-search-fonte:hover{
+	color: #000000;
+}
