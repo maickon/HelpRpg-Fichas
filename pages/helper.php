@@ -78,7 +78,7 @@ function helper_footer_bar_page_search($links, $menus){
 		
 			for($m=0; $m<count($menus); $m++):
 				$tag->span('class="menu-item"');
-					$tag->a('href="index.php'.$links[$m].'" class="footer-search-fonte"');
+					$tag->a('href="'.$links[$m].'" class="footer-search-fonte"');
 						$tag->imprime($menus[$m]);
 					$tag->a;
 				$tag->span;
