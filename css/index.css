@@ -18,10 +18,41 @@
 	background-image: url("../img/chars.png");
 }
 
+.search_box{
+	margin-top: 50px;
+	margin-top: 150px;
+	margin-bottom:100px;
+	width: 100%;
+}
+
+.search-button{
+	width: 200px;	
+}
+
+.rodape-search-page{
+	width: 100%;
+	height: auto;
+	margin-top: 100px;
+	padding-bottom: 4px;
+	border-bottom: 1px solid #D3D3D3;
+}
+
+a.footer-search-fonte:link, a.footer-search-fonte:visited{
+	color: #696969;
+	text-decoration: none;
+}
+
+a.footer-search-fonte:hover{
+	color: #000000;
+}
+
 .footer{
+	float: left;
+	margin-top: 30px;
 	text-align: center;
 	width: 100%;
 	color: #FFFFFF;
+	background-color: #000;
 }
 
 .menu-item{
@@ -36,14 +67,6 @@
 .logo{
 	margin: 0 auto;
 	width: 300px;
-}
-
-.margin-btn{
-	margin: 4px;
-}
-
-.margin-btn:hover{
-	border: 1px solid #000;
 }
 
 .center{
@@ -353,4 +376,11 @@
 .adsense{
 	width: 80%;
 	margin: 0 auto;
+}
+
+.search-title{
+	width: 100px;
+	color: #8470FF;
+	font-size: 16px;
+	font-weight: bold;
 }
