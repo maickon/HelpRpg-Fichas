@@ -9,6 +9,7 @@ define('HOMEPATH', "pages/home");
 define('ROOTPATH',"C:/xampp/htdocs/HelpRpg/"); 			
 define('ROOTPATHURL',"http://127.0.0.1/HelpRpg/");
 
+define('TESTEPATH',ROOTPATHURL.'pages/testes/');
 define('LIBPATH', ROOTPATHURL."lib/");
 define('CKEDITORPATH', ROOTPATHURL."lib/ckeditor/");
 define('ABOUTPATH', ROOTPATHURL."pages/sobre/");
