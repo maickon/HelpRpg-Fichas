@@ -53,6 +53,6 @@ define('USERPASSPATH',ROOTPATHURL."pages/usuario/pass.php");
 define('LOGIN_PATH', ROOTPATHURL.'pages/login/');
 define('LOGIN_VALIDATION_PATH', ROOTPATHURL.'pages/login/login.php');
 define('LOGOFF_PATH', 'pages/login/logoff.php');
-define('HOME_PATH', 'pages/home/');
+define('HOME_PATH', ROOTPATHURL.'pages/home/');
 define('PAINEL_PATH', ROOTPATHURL.'pages/painel/');
 define('BASE_PATH', 'http://127.0.0.1/HelpRpg-Fichas/'); //http://helprpg.com.br
