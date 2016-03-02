@@ -62,16 +62,7 @@ $tag->html('lang="pt-br"');
 			$busca = '';
 		endif;
 
-		$personagem = new Personagens('');
-		$personagens = $personagem->select('personagens', null, [
-													['nome', 'like', "%{$busca}%" ],
-													['dono', 'like', "%{$busca}%" ],
-													['sistema', 'like', "%{$busca}%" ],
-													['tipo', 'like', "%{$busca}%" ],
-													['lv', 'like', "%{$busca}%" ],
-													['raca', 'like', "%{$busca}%" ],
-													['classe', 'like', "%{$busca}%" ]
-												], "OR", "LIMIT 1,4");
+		require_once 'filter.php';
 
 	
 		$form->_col(12);
@@ -89,7 +80,8 @@ $tag->html('lang="pt-br"');
 			
 			$tag->span('id="classe_personagem"');
 						
-				if(isset($personagens) && is_array($personagens)):
+				require_once 'results/results.php';
+				if(isset($filter_result) && is_array($filter_result)):
 					$tag->table('id="search_resulted" class="table table-striped table-bordered" cellspacing="0" width="100%"');
 						$tag->thead();
 							$tag->tr();
@@ -100,38 +92,16 @@ $tag->html('lang="pt-br"');
 						$tag->thead;
 						$tag->tbody();
 							$image = '';
-						 	for($i=0; $i<count($personagens); $i++):
-							 	if($personagens[$i]['tipo'] == 'Personagem jogador'):
-									$path = PERSONAGEMPATH;
-							 		$image = PERSONAGEMPATH.$personagens[$i]['img'];
-								elseif($personagens[$i]['tipo'] == 'Monstro'):
-									$path = MONSTROPATH;
-									$image = MONSTROPATH.$personagens[$i]['img'];
-								else:
-									$path = 'undefined';
-									$image = $personagens[$i]['img'];
-								endif;
-								$tag->tr();
-									$tag->td();
-										$tag->span('class="search-title"');
-											$tag->a('href="'.ROOTPATHURL.$path.'view.php?id='.$personagens[$i]['id'].'" target="blank"');
-												$tag->imprime($personagens[$i]['nome']);
-											$tag->a;
-										$tag->span;
-										$tag->br();
-										$tag->imprime("{$personagens[$i]['tipo']} - Nível {$personagens[$i]['lv']}, Sitema {$personagens[$i]['sistema']}");
-										$tag->br();
-										$tag->imprime("{$personagens[$i]['raca']} ({$personagens[$i]['classe']}) - Criado por {$personagens[$i]['dono']}");
-										$tag->br();
-										$tag->small();
-											$tag->a('href="'.ROOTPATHURL.$path.'view.php?id='.$personagens[$i]['id'].'" target="blank" class="show-picture"');
-												$tag->imprime('Ver mais...');
-											$tag->a;
-										$tag->small;
-										$tag->br();
-										$tag->br();
-									$tag->td;
-								$tag->tr;
+						 	for($i=0; $i<count($filter_result); $i++):
+						 		for($j=0; $j<count($filter_result[$i]); $j++):
+						 			switch($filter_result[$i][$j]['table']):
+						 				case 'personagens': personagem($filter_result[$i][$j]);
+						 				break;
+
+						 				case 'armaduras': armadura($filter_result[$i][$j]);
+						 				break;
+						 			endswitch;
+						 		endfor;
 							endfor;
 						$tag->tbody;
 					$tag->table;
