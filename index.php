@@ -12,14 +12,17 @@
 	 *
 	 */
 	
-	require_once 'header.php';
+	// require_once 'header.php';
 	
-	$tag->body('role="document" onLoad="slide1()"');
+	// $tag->body('role="document" onLoad="slide1()"');
 		
-		global $parametros;
-		new Components('menu', $parametros);
-		$tag->div('class="container"');
-			require_once 'pages/home/index.php';
-		$tag->div;
+	// 	global $parametros;
+	// 	new Components('menu', $parametros);
+	// 	$tag->div('class="container"');
+	// 		require_once 'pages/home/index.php';
+	// 	$tag->div;
 		
-	require_once 'footer.php';
+	// require_once 'footer.php';
+	require_once 'config.php';
+
+	header("Location:".SEARCHPATH);
