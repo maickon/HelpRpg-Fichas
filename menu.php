@@ -234,7 +234,7 @@
 										COMO_USAR);
 		//Links
 		$parametros['links']  = array(
-										BASE_PATH, 
+										HOME_PATH, 
 										USERNEWPATH, 
 										ABOUTPATH, 
 										$utilitarios_link, 
