@@ -92,17 +92,41 @@ $tag->html('lang="pt-br"');
 						$tag->thead;
 						$tag->tbody();
 							$image = '';
-						 	for($i=0; $i<count($filter_result); $i++):
-						 		for($j=0; $j<count($filter_result[$i]); $j++):
-						 			switch($filter_result[$i][$j]['table']):
-						 				case 'personagens': personagem($filter_result[$i][$j]);
+							if(isset($filter_result[0]['table'])):
+								for($i=0; $i<count($filter_result); $i++):
+						 			switch($filter_result[$i]['table']):
+						 				case 'personagens': personagem($filter_result[$i]);
 						 				break;
 
-						 				case 'armaduras': armadura($filter_result[$i][$j]);
+						 				case 'armaduras': armadura($filter_result[$i]);
+						 				break;
+
+						 				case 'armas': arma($filter_result[$i]);
+						 				break;
+
+						 				case 'artefatos':  artefato($filter_result[$i]);
 						 				break;
 						 			endswitch;
-						 		endfor;
-							endfor;
+								endfor;
+							else:
+							 	for($i=0; $i<count($filter_result); $i++):
+							 		for($j=0; $j<count($filter_result[$i]); $j++):
+							 			switch($filter_result[$i][$j]['table']):
+							 				case 'personagens': personagem($filter_result[$i][$j]);
+							 				break;
+
+							 				case 'armaduras': armadura($filter_result[$i][$j]);
+							 				break;
+
+							 				case 'armas': arma($filter_result[$i][$j]);
+						 					break;
+
+						 					case 'artefatos':  artefato($filter_result[$i][$j]);
+						 				break;
+							 			endswitch;
+							 		endfor;
+								endfor;
+							endif;
 						$tag->tbody;
 					$tag->table;
 				else:
