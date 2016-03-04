@@ -8,6 +8,7 @@ define('HOMEPATH', "pages/home");
 //Definindo constantes para os caminhos base
 define('ROOTPATH',"C:/xampp/htdocs/HelpRpg/"); 			
 define('ROOTPATHURL',"http://127.0.0.1/HelpRpg/");
+define('BASE_PATH', 'http://127.0.0.1/HelpRpg-Fichas/'); //http://helprpg.com.br
 
 define('SEARCHPATH',ROOTPATHURL.'pages/search/');
 define('LIBPATH', ROOTPATHURL."lib/");
@@ -55,4 +56,3 @@ define('LOGIN_VALIDATION_PATH', ROOTPATHURL.'pages/login/login.php');
 define('LOGOFF_PATH', 'pages/login/logoff.php');
 define('HOME_PATH', ROOTPATHURL.'pages/home/');
 define('PAINEL_PATH', ROOTPATHURL.'pages/painel/');
-define('BASE_PATH', 'http://127.0.0.1/HelpRpg-Fichas/'); //http://helprpg.com.br
