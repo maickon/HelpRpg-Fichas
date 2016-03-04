@@ -64,10 +64,7 @@ function query_artefatos($busca){
 											], "OR");
 	for($i=0; $i<count($artefatos); $i++):
 		$artefatos[$i]['table'] = 'artefatos';
-	endfor;
-	echo '<pre>';
-	print_r($artefatos);
-	exit();	
+	endfor;	
 	return $artefatos;
 }
 
@@ -149,13 +146,15 @@ function query_historias($busca){
 }
 
 function query_contos($busca){
-	$conto 	= new Contos();
+	$conto 	= new Contos('');
 	$contos = $conto->select('contos', null, [
 												['titulo', 'like', "%{$busca}%" ],
 												['dono', 'like', "%{$busca}%" ],
 												['autor', 'like', "%{$busca}%" ],
 												['descricao_breve', 'like', "%{$busca}%" ]
 											], "OR");
+
+	
 	for($i=0; $i<count($contos); $i++):
 		$contos[$i]['table'] = 'contos';
 	endfor;
@@ -198,7 +197,7 @@ function query_bestiarios($busca){
 												['classificacao', 'like', "%{$busca}%" ]
 											], "OR");
 	for($i=0; $i<count($bestiarios); $i++):
-		$bestiarios[$i]['table'] = 'bestiario';
+		$bestiarios[$i]['table'] = 'bestiarios';
 	endfor;	
 	return $bestiarios;
 }
@@ -245,4 +244,47 @@ function query_filter($filter, $search_fiter){
 		$result = query_bestiarios($search_fiter);
 	}
 	return $result;
+}
+
+function switch_filter($filter, $filter_result){
+	switch($filter):
+		case 'personagens': personagem($filter_result);
+		break;
+
+		case 'armaduras': armadura($filter_result);
+		break;
+
+		case 'armas': arma($filter_result);
+		break;
+
+		case 'artefatos':  artefato($filter_result);
+		break;
+
+		case 'talentos':  talento($filter_result);
+		break;
+
+		case 'magias':  magia($filter_result);
+		break;
+
+		case 'pericias':  pericia($filter_result);
+		break;
+
+		case 'aventuras':  aventura($filter_result);
+		break;
+
+		case 'historias':  historia($filter_result);
+		break;
+
+		case 'contos':  conto($filter_result);
+		break;
+
+		case 'cronicas':  cronica($filter_result);
+		break;
+
+		case 'cenarios':  cenario($filter_result);
+		break;
+
+		case 'bestiarios':  bestiario($filter_result);
+		break;
+	endswitch;
 }

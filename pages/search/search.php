@@ -66,7 +66,7 @@ $tag->html('lang="pt-br"');
 
 	
 		$form->_col(12);
-
+				helper_adsense_02();
 				$form->_row();
 					$form->_col(12);
 						$tag->form('action="search.php" method="post"');
@@ -94,36 +94,12 @@ $tag->html('lang="pt-br"');
 							$image = '';
 							if(isset($filter_result[0]['table'])):
 								for($i=0; $i<count($filter_result); $i++):
-						 			switch($filter_result[$i]['table']):
-						 				case 'personagens': personagem($filter_result[$i]);
-						 				break;
-
-						 				case 'armaduras': armadura($filter_result[$i]);
-						 				break;
-
-						 				case 'armas': arma($filter_result[$i]);
-						 				break;
-
-						 				case 'artefatos':  artefato($filter_result[$i]);
-						 				break;
-						 			endswitch;
+									switch_filter($filter_result[$i]['table'], $filter_result[$i]);
 								endfor;
 							else:
 							 	for($i=0; $i<count($filter_result); $i++):
 							 		for($j=0; $j<count($filter_result[$i]); $j++):
-							 			switch($filter_result[$i][$j]['table']):
-							 				case 'personagens': personagem($filter_result[$i][$j]);
-							 				break;
-
-							 				case 'armaduras': armadura($filter_result[$i][$j]);
-							 				break;
-
-							 				case 'armas': arma($filter_result[$i][$j]);
-						 					break;
-
-						 					case 'artefatos':  artefato($filter_result[$i][$j]);
-						 				break;
-							 			endswitch;
+							 			switch_filter($filter_result[$i][$j]['table'], $filter_result[$i][$j]);
 							 		endfor;
 								endfor;
 							endif;

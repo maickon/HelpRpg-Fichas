@@ -27,7 +27,15 @@ if(array_key_exists(1, $filter)):
 				$lower_filter = 'bestiario';
 			endif;
 		endif;
-		$filter_result = query_filter(helper_remove_acento($lower_filter),$filter[1]);
+		$search_term = '';
+		for($i=1; $i<count($filter); $i++):
+			if($i == count($filter)-1):
+				$search_term .= "{$filter[$i]}";
+			else:
+				$search_term .= "{$filter[$i]} ";
+			endif;
+		endfor;
+		$filter_result = query_filter(helper_remove_acento($lower_filter), $search_term);
 	else:	
 		$filter = $filter[1];
 		$personagens = query_personagens($filter);

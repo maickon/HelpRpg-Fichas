@@ -184,11 +184,10 @@ function pericia($filter_result){
 				$tag->a;
 			$tag->span;
 			$tag->br();
-			$tag->imprime("Nível {$filter_result['lv']}, Sitema {$filter_result['sistema']}");
+			$tag->imprime("<b>Categoria</b> {$filter_result['categoria']} - <b>Habilidade chave</b> {$filter_result['habilidade_chave']} - ");
+			$tag->imprime("<b>Sitema</b> {$filter_result['sistema']} - <b>Classe favorecida</b> {$filter_result['classe_favorecida']}");
 			$tag->br();
-			$tag->imprime("Criado por {$filter_result['dono']}");
-			$tag->br();
-			$tag->imprime("<i>{$filter_result['descricao']}</i>");
+			$tag->imprime("<b>Cadastrado por</b> {$filter_result['dono']}");
 			$tag->br();
 			$tag->small();
 				$tag->a('href="'.ROOTPATHURL.$path.'view.php?id='.$filter_result['id'].'" target="blank" class="show-picture"');
@@ -203,20 +202,18 @@ function pericia($filter_result){
 
 function aventura($filter_result){
 	global $tag;
-	$path = AVENTURAPATH;
+	$path = AVENTURASPATH;
 	$tag->tr();
 		$tag->td();
 			$tag->span('class="search-title"');
 				$tag->a('href="'.ROOTPATHURL.$path.'view.php?id='.$filter_result['id'].'" target="blank"');
-					$tag->imprime($filter_result['nome']);
+					$tag->imprime($filter_result['titulo']);
 				$tag->a;
 			$tag->span;
 			$tag->br();
-			$tag->imprime("Nível {$filter_result['lv']}, Sitema {$filter_result['sistema']}");
+			$tag->imprime("Indicada para o nível {$filter_result['level_indicado']}, Sitema {$filter_result['sistema']}");
 			$tag->br();
-			$tag->imprime("Criado por {$filter_result['dono']}");
-			$tag->br();
-			$tag->imprime("<i>{$filter_result['descricao']}</i>");
+			$tag->imprime("Cadastrado por {$filter_result['dono']} Mestre {$filter_result['mestre']}");
 			$tag->br();
 			$tag->small();
 				$tag->a('href="'.ROOTPATHURL.$path.'view.php?id='.$filter_result['id'].'" target="blank" class="show-picture"');
@@ -231,20 +228,20 @@ function aventura($filter_result){
 
 function historia($filter_result){
 	global $tag;
-	$path = ARTEFATOSPATH;
+	$path = HISTORIASPATH;
 	$tag->tr();
 		$tag->td();
 			$tag->span('class="search-title"');
 				$tag->a('href="'.ROOTPATHURL.$path.'view.php?id='.$filter_result['id'].'" target="blank"');
-					$tag->imprime($filter_result['nome']);
+					$tag->imprime($filter_result['titulo']);
 				$tag->a;
 			$tag->span;
 			$tag->br();
-			$tag->imprime("Nível {$filter_result['lv']}, Sitema {$filter_result['sistema']}");
+			$tag->imprime("Autor {$filter_result['autor']}");
 			$tag->br();
-			$tag->imprime("Criado por {$filter_result['dono']}");
+			$tag->imprime("Cadastrado por {$filter_result['dono']}");
 			$tag->br();
-			$tag->imprime("<i>{$filter_result['descricao']}</i>");
+			$tag->imprime("<i>{$filter_result['descricao_breve']}</i>");
 			$tag->br();
 			$tag->small();
 				$tag->a('href="'.ROOTPATHURL.$path.'view.php?id='.$filter_result['id'].'" target="blank" class="show-picture"');
@@ -259,20 +256,20 @@ function historia($filter_result){
 
 function conto($filter_result){
 	global $tag;
-	$path = ARTEFATOSPATH;
+	$path = CONTOSPATH;
 	$tag->tr();
 		$tag->td();
 			$tag->span('class="search-title"');
 				$tag->a('href="'.ROOTPATHURL.$path.'view.php?id='.$filter_result['id'].'" target="blank"');
-					$tag->imprime($filter_result['nome']);
+					$tag->imprime($filter_result['titulo']);
 				$tag->a;
 			$tag->span;
 			$tag->br();
-			$tag->imprime("Nível {$filter_result['lv']}, Sitema {$filter_result['sistema']}");
+			$tag->imprime("Autor {$filter_result['autor']}");
 			$tag->br();
-			$tag->imprime("Criado por {$filter_result['dono']}");
+			$tag->imprime("Cadastrado por {$filter_result['dono']}");
 			$tag->br();
-			$tag->imprime("<i>{$filter_result['descricao']}</i>");
+			$tag->imprime("<i>{$filter_result['descricao_breve']}</i>");
 			$tag->br();
 			$tag->small();
 				$tag->a('href="'.ROOTPATHURL.$path.'view.php?id='.$filter_result['id'].'" target="blank" class="show-picture"');
@@ -287,20 +284,20 @@ function conto($filter_result){
 
 function cronica($filter_result){
 	global $tag;
-	$path = ARTEFATOSPATH;
+	$path = CRONICASPATH;
 	$tag->tr();
 		$tag->td();
 			$tag->span('class="search-title"');
 				$tag->a('href="'.ROOTPATHURL.$path.'view.php?id='.$filter_result['id'].'" target="blank"');
-					$tag->imprime($filter_result['nome']);
+					$tag->imprime($filter_result['titulo']);
 				$tag->a;
 			$tag->span;
 			$tag->br();
-			$tag->imprime("Nível {$filter_result['lv']}, Sitema {$filter_result['sistema']}");
+			$tag->imprime("Autor {$filter_result['autor']}");
 			$tag->br();
-			$tag->imprime("Criado por {$filter_result['dono']}");
+			$tag->imprime("Cadastrado por {$filter_result['dono']}");
 			$tag->br();
-			$tag->imprime("<i>{$filter_result['descricao']}</i>");
+			$tag->imprime("<i>{$filter_result['descricao_breve']}</i>");
 			$tag->br();
 			$tag->small();
 				$tag->a('href="'.ROOTPATHURL.$path.'view.php?id='.$filter_result['id'].'" target="blank" class="show-picture"');
@@ -315,20 +312,20 @@ function cronica($filter_result){
 
 function cenario($filter_result){
 	global $tag;
-	$path = ARTEFATOSPATH;
+	$path = CENARIOSPATH;
 	$tag->tr();
 		$tag->td();
 			$tag->span('class="search-title"');
 				$tag->a('href="'.ROOTPATHURL.$path.'view.php?id='.$filter_result['id'].'" target="blank"');
-					$tag->imprime($filter_result['nome']);
+					$tag->imprime($filter_result['titulo']);
 				$tag->a;
 			$tag->span;
 			$tag->br();
-			$tag->imprime("Nível {$filter_result['lv']}, Sitema {$filter_result['sistema']}");
+			$tag->imprime("Autor {$filter_result['autor']}");
 			$tag->br();
-			$tag->imprime("Criado por {$filter_result['dono']}");
+			$tag->imprime("Cadastrado por {$filter_result['dono']}");
 			$tag->br();
-			$tag->imprime("<i>{$filter_result['descricao']}</i>");
+			$tag->imprime("<i>{$filter_result['descricao_breve']}</i>");
 			$tag->br();
 			$tag->small();
 				$tag->a('href="'.ROOTPATHURL.$path.'view.php?id='.$filter_result['id'].'" target="blank" class="show-picture"');
@@ -343,7 +340,7 @@ function cenario($filter_result){
 
 function bestiario($filter_result){
 	global $tag;
-	$path = ARTEFATOSPATH;
+	$path = BESTIARIOPATH;
 	$tag->tr();
 		$tag->td();
 			$tag->span('class="search-title"');
@@ -352,11 +349,7 @@ function bestiario($filter_result){
 				$tag->a;
 			$tag->span;
 			$tag->br();
-			$tag->imprime("Nível {$filter_result['lv']}, Sitema {$filter_result['sistema']}");
-			$tag->br();
-			$tag->imprime("Criado por {$filter_result['dono']}");
-			$tag->br();
-			$tag->imprime("<i>{$filter_result['descricao']}</i>");
+			$tag->imprime("Criado por {$filter_result['dono']} - Classificação {$filter_result['classificacao']}");
 			$tag->br();
 			$tag->small();
 				$tag->a('href="'.ROOTPATHURL.$path.'view.php?id='.$filter_result['id'].'" target="blank" class="show-picture"');
