@@ -1,8 +1,7 @@
 <?php
 require_once '../../../header.php';
 require_once '../helper.php';
-global $tag, $form, $s, $parametros;
-$s->restricted_access();
+global $tag, $form, $parametros;
 
 $super = false;
 

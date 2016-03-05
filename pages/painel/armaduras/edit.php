@@ -2,9 +2,7 @@
 require_once '../../../header.php';
 require_once '../helper.php';
 
-global $tag, $form, $s, $parametros;
-
-$s->restricted_access();
+global $tag, $form, $parametros;
 
 $objeto = new Armaduras(ROOTPATH.ARMADURASIMGPATH);
 $armadura = $objeto->select($objeto->getTable(), null, [['id','=', $_GET['id'] ? $_GET['id'] : ' ']]);

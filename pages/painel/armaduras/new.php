@@ -3,7 +3,6 @@ require_once '../../../header.php';
 require_once '../helper.php';
 
 global $tag, $form, $s, $parametros;
-$s->restricted_access();
 
 $tag->script('src="js/index.js"');
 $tag->script;
