@@ -23,6 +23,9 @@
  */
 
 require_once 'init.php';
+//proibe a exibicao de paginas restritas
+restricted_access_config("http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']);
+
 global $permit;
 $tag->html('lang="pt-br"');
 	$tag->head();
