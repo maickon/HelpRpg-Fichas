@@ -36,12 +36,12 @@ function helper_componentes_buttons($modulo, $id, $off = false){
 
 function helper_componentes_buttons_view($modulo, $id, $off = false){
 	global $form, $tag, $modulos_path;
-	$form->_col(1);
-		$tag->a('href="'.ROOTPATHURL.$modulos_path[$modulo].'new.php" class="btn btn-primary"');
-			$tag->imprime(NOVO);
-		$tag->a;
-	$form->col_();
 	if(!$off):
+		$form->_col(1);
+			$tag->a('href="'.ROOTPATHURL.$modulos_path[$modulo].'new.php" class="btn btn-primary"');
+				$tag->imprime(NOVO);
+			$tag->a;
+		$form->col_();
 		$form->_col(1);
 			$tag->a('href="'.ROOTPATHURL.$modulos_path[$modulo].'edit.php?id='.$_GET['id'].'" class="btn btn-warning"');
 				$tag->imprime(EDITAR);
@@ -67,6 +67,19 @@ function helper_componentes_buttons_view($modulo, $id, $off = false){
 			$tag->imprime(BACK);
 		$tag->a;
 	$form->col_();
+}
+
+function helper_buttons_bar($super_user, $modulo_nome, $objeto){
+	global $s;
+	if($super_user):
+		helper_componentes_buttons_view($modulo_nome, $objeto);
+	elseif($s->get_session('nome') != $objeto):
+		//em cada linha onde o usuario atual for diferente do dono da arma, vai neutralizar as opçoes de editar e excluir 
+		helper_componentes_buttons_view($modulo_nome, $objeto, $off = true);
+	elseif($s->get_session('nome') == $objeto):
+		//se o usuario logado for dono de alguma arma criada ele tera acesso total ao recurso
+		helper_componentes_buttons_view($modulo_nome, $objeto);
+	endif;
 }
 
 function helper_check_params($chave, $array){
@@ -796,7 +809,8 @@ function helper_prev_next($object, $id, $modulo, $tipo = null){
 		$tag->a;
 		
 		$id_next = array_key_exists($current_position+1, $ids) ? $ids[$current_position+1] : $current_position;
-		if($id_next == $ids[count($ids)-1]) $id_next = $ids[0];
+		
+		if($id_next == count($ids)-1) $id_next = $ids[0];
 		if($id_next == 0):
 			$id_next += 1;
 		endif;

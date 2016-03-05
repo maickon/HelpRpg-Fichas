@@ -34,15 +34,7 @@ $tag->br();
 			endif;
 		endforeach;
 		
-		if($super):
-			helper_componentes_buttons_view('magias', $magias[0]['id']);
-		elseif($s->get_session('nome') != $magias[0]['dono']):
-			//em cada linha onde o usuario atual for diferente do dono da arma, vai neutralizar as opçoes de editar e excluir 
-			helper_componentes_buttons_view('magias', $magias[0]['id'], $off = true);
-		elseif($s->get_session('nome') == $magias[0]['dono']):
-			//se o usuario logado for dono de alguma arma criada ele tera acesso total ao recurso
-			helper_componentes_buttons_view('magias', $magias[0]['id']);
-		endif;
+		helper_buttons_bar($super, 'magias', $magias[0]['id']);
 		
 		$form->_col(12);
 			$tag->hr();
