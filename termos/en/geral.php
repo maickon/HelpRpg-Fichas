@@ -110,3 +110,5 @@ define('ITENS_CADASTRADOS', "Registrants items");
 define('MSG_BEM_VINDO_INDEX', "What you seek is here at");
 define('MSG_TEXT_INDEX_01', "Contribute to Help RPG , make a donation to motivate the development of this site as well have a environment each time
 best for our RPG campaigns . We count on you .");
+define('REGISTRO_NAO_ENCONTRADO_MSG', 'This record does not exist in our database. Make a account <a href="'.USERNEWPATH.'">here </a>
+and create new records in our database.');

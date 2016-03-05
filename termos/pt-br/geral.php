@@ -113,3 +113,5 @@ define('ITENS_CADASTRADOS', "Itens Cadastrados");
 define('MSG_BEM_VINDO_INDEX', "O que você procura está aqui no");
 define('MSG_TEXT_INDEX_01', "Contribua com o Help Rpg, faça uma doação para motivar a evolução deste site a assim termos um ambiente cada vez 
 melhor para nossas campanhas de RPG. Contamos com você.");
+
+define('REGISTRO_NAO_ENCONTRADO_MSG', 'Este registro não existe em nossa base de dados. Faça uma conta <a href="'.USERNEWPATH.'">aqui </a>e crie novos registros em nossa base de dados.');
