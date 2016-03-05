@@ -60,6 +60,65 @@ function lib(){
 	endforeach;		
 }
 
+/*
+ * restricted_access_config
+ * faz checagem da URL autal na pagina e verifica se
+ * determinada solicitacao de acesso a pagina
+ * esta disponivel para acesso ou nao
+ * esta funcao aceita uma URL valida como parametro
+ */
+function restricted_access_config($url){
+	global $s;
+	//divide a string da URL para cada /
+	$explode_url = explode("/", $url);
+	$fragmento_url = $explode_url[count($explode_url)-2];
+	//array com a lista de todos os modulo e suas permicoes
+	$pages = [
+				'usuario' 		=> ['edit','delete','view'],
+				'personagens' 	=> ['edit','delete','new'],
+				'monstros' 		=> ['edit','delete','new'],
+				'armas' 		=> ['edit','delete','new'],
+				'armaduras' 	=> ['edit','delete','new'],
+				'artefatos' 	=> ['edit','delete','new'],
+				'talentos' 		=> ['edit','delete','new'],
+				'magias' 		=> ['edit','delete','new'],
+				'pericias' 		=> ['edit','delete','new'],
+				'aventuras' 	=> ['edit','delete','new'],
+				'historias' 	=> ['edit','delete','new'],
+				'contos' 		=> ['edit','delete','new'],
+				'cronicas' 		=> ['edit','delete','new'],
+				'cenarios' 		=> ['edit','delete','new'],
+				'bestiario' 	=> ['edit','delete','new'],
+				'cronicas' 		=> ['edit','delete','new'],
+			];
+
+		//pega a ultima parte da URL dividida por /
+		$fragmentoL1 = $explode_url[count($explode_url)-1];
+		//pega a penultima parte da URL dividida por /
+		$fragmentoL2 = $explode_url[count($explode_url)-2];
+		global $s;
+
+		//persorre o array page e identifica quais permissoes do modulo estao disponiveis
+		$load_restricted_access = 0;
+		foreach($pages as $key => $value):
+			if($fragmentoL2 == $key):
+				if(strpos($fragmentoL1,'.')):
+					$fragmento = explode('.', $fragmentoL1);
+					for($i=0; $i<count($pages[$key]); $i++):
+						if($fragmento[0] == $pages[$key][$i])
+							$load_restricted_access = 1;
+					endfor;
+				elseif($fragmentoL2 == $key):
+					$load_restricted_access = 1;
+				endif;
+			endif;
+		endforeach;
+		
+		//caso o acesso seja restrito sera chamada um funcao para validar o acesso a pagina
+		if($load_restricted_access)
+			$s->restricted_access();		
+}
+
 lib();
 config();
 
