@@ -3,7 +3,6 @@ require_once '../../../header.php';
 require_once '../helper.php';
 
 global $tag, $form, $s, $parametros, $rpg_sistemas_labels;
-$s->restricted_access();
 
 $tag->body('role="document"');
 

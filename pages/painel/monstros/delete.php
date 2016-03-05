@@ -2,10 +2,6 @@
 require_once '../../../header.php';
 require_once '../helper.php';
 
-global $s;
-
-$s->restricted_access();
-
 $show_monstro = new Personagens(ROOTPATH.MONSTROIMGPATH);
 $objeto = $show_monstro->select($show_monstro->getTable(), null, [['id','=', $_GET['id'] ? $_GET['id'] : ' ']]);
 

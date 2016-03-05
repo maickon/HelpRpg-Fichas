@@ -4,8 +4,6 @@ require_once '../helper.php';
 
 global $tag, $form, $s, $parametros;
 
-$s->restricted_access();
-
 $show_magia = new Magias(ROOTPATH.MAGIASIMGPATH);
 $objeto = $show_magia->select($show_magia->getTable(), null, [['id','=', $_GET['id'] ? $_GET['id'] : ' ']]);
 

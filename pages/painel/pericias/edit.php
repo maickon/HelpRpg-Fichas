@@ -4,8 +4,6 @@ require_once '../helper.php';
 
 global $tag, $form, $s, $parametros;
 
-$s->restricted_access();
-
 $show_pericia = new Pericias(ROOTPATH.PERICIASIMGPATH);
 $objeto = $show_pericia->select($show_pericia->getTable(), null, [['id','=', $_GET['id'] ? $_GET['id'] : ' ']]);
 

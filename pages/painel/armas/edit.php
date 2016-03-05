@@ -2,9 +2,7 @@
 require_once '../../../header.php';
 require_once '../helper.php';
 
-global $tag, $form, $s, $parametros;
-
-$s->restricted_access();
+global $tag, $form, $parametros;
 
 $show_arma = new Armas(ROOTPATH.ARMASIMGPATH);
 $objeto = $show_arma->select($show_arma->getTable(), null, [['id','=', $_GET['id'] ? $_GET['id'] : ' ']]);

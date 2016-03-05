@@ -2,10 +2,6 @@
 require_once '../../../header.php';
 require_once '../helper.php';
 
-global $s;
-
-$s->restricted_access();
-
 $delete_aventura = new Aventuras();
 $objeto = $delete_aventura->select($delete_aventura->getTable(), null, [['id','=', $_GET['id'] ? $_GET['id'] : ' ']]);
 

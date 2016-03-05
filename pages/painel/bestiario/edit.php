@@ -4,8 +4,6 @@ require_once '../helper.php';
 
 global $tag, $form, $s, $parametros;
 
-$s->restricted_access();
-
 $show_bestiario = new Bestiario();
 $objeto = $show_bestiario->select($show_bestiario->getTable(), null, [['id','=', $_GET['id'] ? $_GET['id'] : ' ']]);
 

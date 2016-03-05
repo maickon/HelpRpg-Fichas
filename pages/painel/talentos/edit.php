@@ -4,8 +4,6 @@ require_once '../helper.php';
 
 global $tag, $form, $s, $parametros;
 
-$s->restricted_access();
-
 $show_talento = new Talentos(ROOTPATH.TALENTOSIMGPATH);
 $objeto = $show_talento->select($show_talento->getTable(), null, [['id','=', $_GET['id'] ? $_GET['id'] : ' ']]);
 

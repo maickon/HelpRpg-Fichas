@@ -4,8 +4,6 @@ require_once '../helper.php';
 
 global $tag, $form, $s, $parametros;
 
-$s->restricted_access();
-
 $show_cenario = new Cenarios();
 $objeto = $show_cenario->select($show_cenario->getTable(), null, [['id','=', $_GET['id'] ? $_GET['id'] : ' ']]);
 

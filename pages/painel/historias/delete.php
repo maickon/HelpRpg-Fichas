@@ -2,10 +2,6 @@
 require_once '../../../header.php';
 require_once '../helper.php';
 
-global $s;
-
-$s->restricted_access();
-
 $delete_historia = new Historias();
 $objeto = $delete_historia->select($delete_historia->getTable(), null, [['id','=', $_GET['id'] ? $_GET['id'] : ' ']]);
 

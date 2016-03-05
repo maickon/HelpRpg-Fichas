@@ -4,8 +4,6 @@ require_once '../helper.php';
 
 global $tag, $form, $s, $parametros;
 
-$s->restricted_access();
-
 $show_contos = new Contos();
 $objeto = $show_contos->select($show_contos->getTable(), null, [['id','=', $_GET['id'] ? $_GET['id'] : ' ']]);
 

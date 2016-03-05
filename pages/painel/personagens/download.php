@@ -7,8 +7,6 @@ global $tag, $form, $s, $parametros;
 
 $pdf = new FPDF();
 
-$s->restricted_access();
-
 $show_personagem = new Personagens(ROOTPATH.PERSONAGEMIMGPATH);
 $objeto = $show_personagem->select($show_personagem->getTable(), null, [['id','=', $_GET['id'] ? $_GET['id'] : ' ']]);
 $unserialize_personagem = unserialize($objeto[0]['dados']);

@@ -4,8 +4,6 @@ require_once '../helper.php';
 
 global $tag, $form, $s, $parametros, $unserialize_monstro;
 
-$s->restricted_access();
-
 $show_monstro = new Personagens(ROOTPATH.MONSTROIMGPATH);
 $objeto = $show_monstro->select($show_monstro->getTable(), null, [['id','=', $_GET['id'] ? $_GET['id'] : ' ']]);
 $unserialize_monstro = unserialize($objeto[0]['dados']);

@@ -2,10 +2,6 @@
 require_once '../../../header.php';
 require_once '../helper.php';
 
-global $s;
-
-$s->restricted_access();
-
 $show_talento = new Talentos(ROOTPATH.TALENTOSIMGPATH);
 $talento = $show_talento->select($show_talento->getTable(), null, [['id','=', $_GET['id'] ? $_GET['id'] : ' ']]);
 

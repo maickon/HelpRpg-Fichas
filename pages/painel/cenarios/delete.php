@@ -2,10 +2,6 @@
 require_once '../../../header.php';
 require_once '../helper.php';
 
-global $s;
-
-$s->restricted_access();
-
 $delete_cenario = new Cenarios();
 $objeto = $delete_cenario->select($delete_cenario->getTable(), null, [['id','=', $_GET['id'] ? $_GET['id'] : ' ']]);
 

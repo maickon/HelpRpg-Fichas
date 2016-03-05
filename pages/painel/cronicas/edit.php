@@ -4,7 +4,6 @@ require_once '../helper.php';
 
 global $tag, $form, $s, $parametros;
 
-$s->restricted_access();
 
 $show_cronicas = new Cronicas();
 $objeto = $show_cronicas->select($show_cronicas->getTable(), null, [['id','=', $_GET['id'] ? $_GET['id'] : ' ']]);

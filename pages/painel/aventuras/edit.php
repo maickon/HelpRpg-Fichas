@@ -2,9 +2,7 @@
 require_once '../../../header.php';
 require_once '../helper.php';
 
-global $tag, $form, $s, $parametros;
-
-$s->restricted_access();
+global $tag, $form, $parametros;
 
 $show_aventura = new Aventuras();
 $objeto = $show_aventura->select($show_aventura->getTable(), null, [['id','=', $_GET['id'] ? $_GET['id'] : ' ']]);
