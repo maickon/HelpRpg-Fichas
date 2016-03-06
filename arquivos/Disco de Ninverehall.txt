@@ -1,7 +1,0 @@
-dono: Maickon
-nome: Disco de Ninverehall
-lv: 20
-preco: Sem custo
-raridade: Lendário
-sistema: Dungeons and Dragons
-descricao: Este disco tem o poder de destruir o mundo.

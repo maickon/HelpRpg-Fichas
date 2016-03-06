@@ -1,8 +1,0 @@
-id: 2
-dono: Global
-nome: Ataque atordoante
-lv: 1
-classe: Monge
-sistema: Dungeons and Dragons
-pre_requisito: classe monge
-descricao: Atordoa um inimigo acertado em combate.

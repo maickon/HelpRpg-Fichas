@@ -1,7 +1,0 @@
-dono: Maickon
-nome: Espada da coroa do sol
-lv: 21
-preco: 20.000 PO
-raridade: Raro
-sistema: Dungeons and Dragons
-descricao: Espada do fogo magica +5

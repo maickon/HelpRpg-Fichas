@@ -1,7 +1,0 @@
-dono: Maickon
-nome: Pendulo da noite - Cordão
-lv: 8
-preco: 5.000 PO
-raridade: Mágico
-sistema: Dungeons and Dragons
-descricao: Este incrível cordão lhe deixa invisivel durante a noite.

@@ -1,8 +1,0 @@
-id: 1
-editado_por: Editado por Maickon administrador em 20/11/2015 20:33:29
-nome: Luvas draconicas
-lv: 13
-preco: 130.000 PO
-raridade: Mágico
-sistema: Dungeons and Dragons
-descricao: Este poderosa anel aumenta o seu carisma em +8

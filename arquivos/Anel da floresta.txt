@@ -1,9 +1,0 @@
-id: 3
-editado_por: Editado por Maickon administrador em 20/11/2015 22:09:30
-nome: Anel da floresta
-lv: 3
-preco: 20.000 PO
-raridade: Mágico
-sistema: Dungeons and Dragons
-descricao: Anel poderoso que lhe permite falar com os animais.
-old_file: 1448045816.jpg
