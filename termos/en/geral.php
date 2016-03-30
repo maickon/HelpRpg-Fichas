@@ -101,6 +101,10 @@ define('AUTOR', "Author");
 define('DONO', "Owner");
 define('DESCRICAO_BREVE', "brief description");
 
+//File upload of shets
+define('URL_ARQUIVO', 'File URL');
+define('UPLOAD_FILE', 'Record file upload');
+
 define('USUARIOS_CADASTRADOS', "Registered Users");
 define('MONSTROS_CADASTRADOS', "Registered monsters");
 define('BESTIARIO_CADASTRADOS', "Registered bestiary");

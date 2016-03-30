@@ -103,6 +103,9 @@ define('AVENTURA_INDICADA_NIVEL', "Aventura indicada para o nível");
 define('AUTOR', "Autor");
 define('DONO', "Dono");
 define('DESCRICAO_BREVE', "Descrição breve");
+//pagina upload de fichas
+define('URL_ARQUIVO', 'URL do arquivo');
+define('UPLOAD_FILE', 'Upload de arquivo de ficha');
 
 define('USUARIOS_CADASTRADOS', "Usuários Cadastrados");
 define('MONSTROS_CADASTRADOS', "Monstros cadastrados");
