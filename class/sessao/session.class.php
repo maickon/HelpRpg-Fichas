@@ -2,7 +2,7 @@
 class Session{
 	//O construtor ja cria uma sessao por padrao
 	function __construct(){
-		session_start();
+		@session_start();
 	}
 
 	//inicializa os parametros na sessao ativa para identifica la 
@@ -46,7 +46,7 @@ class Session{
 	//se for falso, redireciona para a pagina raiz
 	function restricted_access($url = ROOTPATHURL){
 		if(!$this->authenticate('login')):
-			header('location:'.$url);
+			@header('location:'.$url);
 		endif;
 	}
 
