@@ -16,11 +16,13 @@ if(isset($_REQUEST['action'])):
 	$form->row_();
 endif;
 
+$tag->script('src="js/index.js"'); $tag->script;
+
 $form->_row();
 	$form->_container();
 		helper_adsense_01();
 				
-		$form->_form(['method'=>'post', 'name'=>'new-user', 'class'=>'form-group', 'data-toggle'=>'validator']);
+		$form->_form(['method'=>'post', 'id'=>'form', 'name'=>'new-user', 'class'=>'form-group', 'data-toggle'=>'validator']);
 		
 			helper_form_input("Nome", ['name' => 'nome', 'type' => 'text', 'class'=>'form-control', 'required'=>'true']);
 			
