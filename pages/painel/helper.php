@@ -18,7 +18,8 @@ $modulos_path = [
 'contos'		=> CONTOSPATH,
 'historias'		=> HISTORIASPATH,
 'cronicas'		=> CRONICASPATH,
-'bestiario'		=> BESTIARIOPATH
+'bestiario'		=> BESTIARIOPATH,
+'ficha'			=> FICHASUPLOADPATH
 ];
 
 function helper_componentes_buttons($modulo, $id, $off = false){
@@ -204,6 +205,11 @@ function helper_check_update($object){
 	if($s->get_session('nome') != $object[0]['dono']):
 		return 1;
 	endif;	
+}
+
+function help_header($path){
+	global $tag;
+	$tag->imprime("<meta HTTP-EQUIV='Refresh' CONTENT='0; URL=".$path."'>");
 }
 
 function helper_adm_label($object){
@@ -1171,6 +1177,38 @@ function helper_form_button_update_and_back($path, $size = 4){
 	$form->col_();
 }
 
+function helper_disqus_comment(){
+	global $tag, $form;
+	
+	$tag->div('id="disqus_thread"');
+	$tag->div;	
+		$tag->script();
+			/**
+			* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+			* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+			*/
+			/**/
+			$tag->imprime('
+				var disqus_config = function () {
+				this.page.url = "'.BASE_DISQUS_PATH.$_SERVER['REQUEST_URI'].'"; // Replace PAGE_URL with your page\'s canonical URL variable
+				this.page.identifier = "'.$_SERVER['REQUEST_URI'].'#disqus_thread"; // Replace PAGE_IDENTIFIER with your page\'s unique identifier variable
+				};
+				
+				
+				(function() { // DON\'T EDIT BELOW THIS LINE
+				var d = document, s = d.createElement(\'script\');
+
+				s.src = \'//helprpgbr.disqus.com/embed.js\';
+
+				s.setAttribute(\'data-timestamp\', +new Date());
+				(d.head || d.body).appendChild(s);
+				})();'
+			);
+		$tag->script;
+		$tag->noscript();
+			$tag->imprime('Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>');
+		$tag->noscript;
+}
 require 'personagens/views/3det.php';
 require 'personagens/views/d20-ded-4.0.php';
 require 'personagens/views/d20-ded-5.0.php';
