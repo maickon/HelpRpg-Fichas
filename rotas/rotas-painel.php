@@ -27,6 +27,9 @@ define('MAGIASIMGPATH', "img/magias/");
 define('PERICIASPATH', "pages/painel/pericias/");
 define('PERICIASIMGPATH', "img/pericias/");
 
+define('FICHASUPLOADPATH', "pages/painel/upload-fichas/");
+define('FICHASUPLOADFILEPATH', "file/upload-fichas/");
+
 define('PERSONAGEMPATH', "pages/painel/personagens/");
 define('PERSONAGEMIMGPATH', "img/personagens/");
 
