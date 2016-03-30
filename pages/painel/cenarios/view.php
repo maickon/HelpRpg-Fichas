@@ -14,8 +14,6 @@ $tag->br();
 	$objeto = new Cenarios();
 	$cenarios = $objeto->select($objeto->getTable(),null,[ ['id','=', $_GET['id']] ]);
 	
-	helper_adsense();
-	
 	if(!isset($cenarios[0]['id'])):
 		$form->_container();
 			$form->_col(12);
@@ -63,6 +61,14 @@ $tag->br();
 					$tag->br();
 					$tag->imprime($cenarios[0]['descricao_cenario']);
 				$form->col_();	
+
+				$form->_col(12);
+					helper_adsense();	
+				$form->col_();
+
+				$form->_col(12);
+					helper_disqus_comment();	
+				$form->col_();
 			$form->container_();
 		$form->div_();
 	endif;

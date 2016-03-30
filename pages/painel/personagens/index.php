@@ -10,6 +10,7 @@ $tag->body('role="document"');
 new Components('menu', $parametros);
 $tag->br();
 $tag->br();
+	
 	$form->_row();
 		$form->_container();
 			if(isset($_GET['status']) && $_GET['status'] == 'deleted'):

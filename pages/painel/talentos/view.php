@@ -14,8 +14,6 @@ $tag->br();
 	$talento = new Talentos(ROOTPATH.TALENTOSIMGPATH);
 	$talentos = $talento->select($talento->getTable(),null,[ ['id','=', $_GET['id']] ]);
 	
-	helper_adsense();
-	
 	if(!isset($talentos[0]['id'])):
 		$form->_container();
 			$form->_col(12);
@@ -51,7 +49,15 @@ $tag->br();
 				$form->_col(12);
 					helper_show_talentos($talentos);
 					$tag->br();
-				$form->col_();	
+				$form->col_();
+				
+				$form->_col(12);
+					helper_adsense();	
+				$form->col_();
+				
+				$form->_col(12);
+					helper_disqus_comment();	
+				$form->col_();
 			$form->container_();
 		$form->div_();
 	endif;

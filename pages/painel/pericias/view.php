@@ -14,8 +14,6 @@ $tag->br();
 	$objeto = new Pericias(ROOTPATH.PERICIASIMGPATH);
 	$pericias = $objeto->select($objeto->getTable(),null,[ ['id','=', $_GET['id']] ]);
 	
-	helper_adsense();
-	
 	if(!isset($pericias[0]['id'])):
 		$form->_container();
 			$form->_col(12);
@@ -50,6 +48,14 @@ $tag->br();
 			$form->_container();
 				$form->_col(12);
 					helper_show_pericias($pericias);
+				$form->col_();
+
+				$form->_col(12);
+					helper_adsense();	
+				$form->col_();
+				
+				$form->_col(12);
+					helper_disqus_comment();	
 				$form->col_();	
 			$form->container_();
 		$form->div_();

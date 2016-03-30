@@ -15,7 +15,6 @@ $tag->br();
 	$objeto = new Personagens(ROOTPATH.MONSTROIMGPATH);
 	$monstros = $objeto->select($objeto->getTable(),null,[ ['id','=', $_GET['id']] ]);
 	
-	helper_adsense();
 	if(!isset($monstros[0]['id'])):
 		$form->_container();
 			$form->_col(12);
@@ -60,6 +59,14 @@ $tag->br();
 							$tag->img('src="'.ROOTPATHURL.IMGPATH.'noimage.png" class="img-responsive img-thumbnail size-img"');
 						endif;
 					$tag->div;
+				$form->col_();
+
+				$form->_col(12);
+					helper_adsense();	
+				$form->col_();
+
+				$form->_col(12);
+					helper_disqus_comment();	
 				$form->col_();
 					
 			$form->container_();

@@ -16,8 +16,6 @@ $tag->br();
 	if(empty($magias[0]['id']))
 		header('Location: '.ROOTPATHURL.MAGIASPATH);
 	
-	helper_adsense();
-	
 	$form->_container();
 		$form->_col(2);
 			$tag->span('class="span_title"');
@@ -57,7 +55,15 @@ $tag->br();
 					endif;
 				$tag->div;
 			$form->col_();
-				
+			
+			$form->_col(12);
+				helper_adsense();	
+			$form->col_();
+			
+			$form->_col(12);
+				helper_disqus_comment();	
+			$form->col_();
+
 		$form->container_();
 	$form->div_();
 	

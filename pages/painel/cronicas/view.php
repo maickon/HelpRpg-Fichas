@@ -14,8 +14,6 @@ $tag->br();
 	$objeto = new Cronicas();
 	$cronica = $objeto->select($objeto->getTable(),null,[ ['id','=', $_GET['id']] ]);
 	
-	helper_adsense();
-	
 	if(!isset($cronica[0]['id'])):
 		$form->_container();
 			$form->_col(12);
@@ -60,6 +58,15 @@ $tag->br();
 					$tag->br();
 					$tag->br();
 					$tag->imprime($cronica[0]['descricao_cronica']);
+				$form->col_();
+
+				$form->_col(12);
+					helper_adsense();
+					helper_disqus_comment();	
+				$form->col_();
+					
+				$form->_col(12);
+					helper_disqus_comment();	
 				$form->col_();	
 			$form->container_();
 		$form->div_();

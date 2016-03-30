@@ -14,8 +14,6 @@ $tag->br();
 	$objeto = new Bestiario();
 	$bestiario = $objeto->select($objeto->getTable(),null,[ ['id','=', $_GET['id']] ]);
 	
-	helper_adsense();
-	
 	if(!isset($bestiario[0]['id'])):
 		$form->_container();
 			$form->_col(12);
@@ -59,6 +57,14 @@ $tag->br();
 					$tag->br();
 					$tag->br();
 					$tag->imprime($bestiario[0]['descricao']);
+				$form->col_();
+
+				$form->_col(12);	
+					helper_adsense();
+				$form->col_();
+
+				$form->_col(12);
+					helper_disqus_comment();	
 				$form->col_();	
 			$form->container_();
 		$form->div_();

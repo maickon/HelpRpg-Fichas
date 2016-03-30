@@ -14,8 +14,6 @@ $tag->br();
 	$objeto = new Armas(ROOTPATH.ARMASIMGPATH);
 	$arma = $objeto->select($objeto->getTable(),null,[ ['id','=', $_GET['id']] ]);
 	
-	helper_adsense();
-	
 	if(!isset($arma[0]['id'])):
 		$form->_container();
 			$form->_col(12);
@@ -63,7 +61,14 @@ $tag->br();
 						endif;
 					$tag->div;
 				$form->col_();
-					
+				
+				$form->_col(12);
+					helper_adsense();	
+				$form->col_();
+
+				$form->_col(12);
+					helper_disqus_comment();	
+				$form->col_();
 			$form->container_();
 		$form->div_();
 	endif;

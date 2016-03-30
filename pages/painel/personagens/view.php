@@ -14,7 +14,6 @@ $tag->br();
 	$objeto = new Personagens(ROOTPATH.PERSONAGEMIMGPATH);
 	$personagens = $objeto->select($objeto->getTable(),null,[ ['id','=', $_GET['id']] ]);
 	
-	helper_adsense();
 
 	if(!isset($personagens[0]['id'])):
 		$form->_container();
@@ -61,7 +60,14 @@ $tag->br();
 						endif;
 					$tag->div;
 				$form->col_();
-					
+				
+				$form->_col(12);
+					helper_adsense();
+				$form->col_();
+				
+				$form->_col(12);
+					helper_disqus_comment();	
+				$form->col_();
 			$form->container_();
 		$form->div_();
 	endif;

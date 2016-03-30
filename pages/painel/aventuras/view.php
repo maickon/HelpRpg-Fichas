@@ -14,8 +14,6 @@ $tag->br();
 	$objeto = new Aventuras();
 	$aventura = $objeto->select($objeto->getTable(),null,[ ['id','=', $_GET['id']] ]);
 	
-	helper_adsense();
-	
 	if(!isset($aventura[0]['id'])):
 		$form->_container();
 			$form->_col(12);
@@ -64,6 +62,14 @@ $tag->br();
 					$tag->br();
 					$tag->br();
 					$tag->imprime($aventura[0]['aventura']);
+				$form->col_();
+
+				$form->_col(12);
+					helper_adsense();	
+				$form->col_();	
+
+				$form->_col(12);
+					helper_disqus_comment();
 				$form->col_();	
 			$form->container_();
 		$form->div_();
