@@ -29,7 +29,7 @@ restricted_access_config("http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_U
 global $permit;
 $tag->html('lang="pt-br"');
 	$tag->head();
-	
+		
 		$tag->meta('http-equiv="Content-Type" content="text/html;charset=utf-8"');
 		$tag->meta('http-equiv="X-UA-Compatible" content="IE=edge"');
 		$tag->meta('name="viewport" content="width=device-width, initial-scale=1"');
@@ -91,11 +91,17 @@ $tag->html('lang="pt-br"');
 		
 		//<!-- selec core CSS -->
 		$tag->link('href="'.ROOTPATHURL.CSSPATH.'bootstrap-select.css" rel="stylesheet"');
-		
+			
+		$tag->script('id="dsq-count-scr" src="//helprpgbr.disqus.com/count.js" async');
+		$tag->script;
+
 		$tag->script('src="'.ROOTPATHURL.JSPATH.'jquery.min.js"');
 		$tag->script;
 		
 		$tag->script('src="'.ROOTPATHURL.JSPATH.'datatables.min.js"');
+		$tag->script;
+
+		$tag->script('src="'.ROOTPATHURL.JSPATH.'jquery.validate.js"'); 
 		$tag->script;
 		
 		$tag->script('src="'.ROOTPATHURL.JSPATH.'bootstrap-select.js"');
