@@ -27,7 +27,7 @@ abstract class Db_persistence extends Db{
 		$fields = [];
 		$values = [];
 		foreach($params as $key => $attr):
-			if(!empty($attr) and ($attr != 'Cadastrar') and ($key != 'file_name')):
+			if(!empty($attr) and ($attr != 'Cadastrar') and ($key != 'file_name') and ($key != 'acceptcookiefreecounterstat') and ($key != 'PHPSESSID') and ($key != 'counter_nv') and ($key != '__utma') and ($key != '__utmz')):
 				if(!is_array($attr)):
 					$this->$key = $attr;
 					$fields[] = $key;
@@ -44,7 +44,7 @@ abstract class Db_persistence extends Db{
 			$values[] = $upload->getNome();
 		endif;
 			
-		if($this->check_duplicate($values) != ' '):
+		if($this->check_duplicate_name($values) != ' '):
 			new Flashmsg('warning', $this->warning_msg);	
 		elseif($this->insert($this->table, $fields, $values)):
 			new Flashmsg('success', $this->success_msg);
@@ -57,7 +57,7 @@ abstract class Db_persistence extends Db{
 		$fields = [];
 		$values = [];
 		foreach($params as $key => $attr):
-			if(!empty($attr) and ($attr != 'Atualizar') and ($key != 'old_file')):
+			if(!empty($attr) and ($attr != 'Atualizar') and ($key != 'old_file') and ($key != 'acceptcookiefreecounterstat') and ($key != 'PHPSESSID') and ($key != 'counter_nv') and ($key != '__utma') and ($key != '__utmz')):
 				if(!is_array($attr)):
 					$this->$key = $attr;
 					$fields[] = $key;
@@ -81,7 +81,7 @@ abstract class Db_persistence extends Db{
 			endif;
 		endif;
 		
-		if($this->check_duplicate($values) != ' '):
+		if($this->check_duplicate_name($values) != ' '):
 			new Flashmsg('warning', $this->warning_msg);	
 		elseif($this->update($this->table, $fields, $values, 'id', $params['id'])):
 			//$this->save_file($params);
@@ -103,7 +103,7 @@ abstract class Db_persistence extends Db{
 		return $msg;;
 	}
 	
-	function check_duplicate($values){
+	function check_duplicate_name($values){
 		$alert = ' ';
 		$s = $this->select($this->table, ['nome']);
 		for($i=0; $i<count($s); $i++):
