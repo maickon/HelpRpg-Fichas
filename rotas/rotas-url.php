@@ -9,6 +9,7 @@ define('HOMEPATH', "pages/home");
 define('ROOTPATH',"C:/xampp/htdocs/HelpRpg/"); 			
 define('ROOTPATHURL',"http://127.0.0.1/HelpRpg/");
 define('BASE_PATH', 'http://127.0.0.1/HelpRpg-Fichas/'); //http://helprpg.com.br
+define('BASE_DISQUS_PATH', 'http://helprpg.com.br');
 
 define('SEARCHPATH',ROOTPATHURL.'pages/search/');
 define('LIBPATH', ROOTPATHURL."lib/");
