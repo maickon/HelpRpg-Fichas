@@ -161,6 +161,10 @@ a.footer-search-fonte:hover{
 	color: white;
 }
 
+.embed-responsive {
+   max-height:450px;
+}
+
 .header_ded_4-0{
 	background-color: #CC6600;
 	color: white;
