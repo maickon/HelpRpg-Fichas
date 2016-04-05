@@ -13,6 +13,7 @@ define('VER', "Visualizar");
 define("BACK", "Voltar");
 define('SUCESSO_MSG', "Registro deletado com sucesso.");
 define('PERIGO_MSG', "Um erro ocoreu, contate o administrador.");
+define('LINK', 'Link');
 
 define('VOCE', "Você");
 define('SAIR', "Sair");
@@ -25,6 +26,8 @@ define('CANCELAR_CONTA', "Cancelar conta");
 define('PERSONAGEM_MENU', "Personagem");
 define('CRIAR_PERSONAGEM', "Criar um personagem");
 define('CRIAR_MONSTRO', "Criar um monstro");
+define('CRIAR_PERSONAGEM_LINK', "Criar um personagem rápido");
+define('CRIAR_MONSTRO_LINK', "Criar um monstro rápido");
 define('CRIAR_BOSS', "Criar um BOSS");
 define('SISTEMA_DE_JOGO', "Sistema de jogo");
 define('FICHA_DE_PERSONAGEM', "Fichas de Personagem");
@@ -104,8 +107,9 @@ define('AUTOR', "Autor");
 define('DONO', "Dono");
 define('DESCRICAO_BREVE', "Descrição breve");
 //pagina upload de fichas
-define('URL_ARQUIVO', 'URL do arquivo');
+define('URL_ARQUIVO', 'URL do arquivo (Pode ficar em branco caso prefira preencher a ficha no campo descrição)');
 define('UPLOAD_FILE', 'Upload de arquivo de ficha');
+define('TIPO_FICHA','Tipo de Ficha');
 
 define('USUARIOS_CADASTRADOS', "Usuários Cadastrados");
 define('MONSTROS_CADASTRADOS', "Monstros cadastrados");

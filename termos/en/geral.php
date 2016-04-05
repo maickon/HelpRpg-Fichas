@@ -12,6 +12,7 @@ define('DOWNLOAD','Download');
 define("BACK", "Back");
 define('SUCESSO_MSG', "Successfully deleted record.");
 define('PERIGO_MSG', "An error occurred, contact your administrator.");
+define('LINK', 'Link');
 
 define('VOCE', "You");
 define('SAIR', "Logout");
@@ -24,6 +25,8 @@ define('CANCELAR_CONTA', "Cancel account");
 define('PERSONAGEM_MENU', "Character");
 define('CRIAR_PERSONAGEM', "New Character");
 define('CRIAR_MONSTRO', "New Monster");
+define('CRIAR_PERSONAGEM_LINK', "New Character fast");
+define('CRIAR_MONSTRO_LINK', "New Monster fast");
 define('CRIAR_BOSS', "New BOSS");
 define('SISTEMA_DE_JOGO', "Game system");
 define('FICHA_DE_PERSONAGEM', "Character Sheets");
@@ -102,8 +105,9 @@ define('DONO', "Owner");
 define('DESCRICAO_BREVE', "brief description");
 
 //File upload of shets
-define('URL_ARQUIVO', 'File URL');
+define('URL_ARQUIVO', 'File URL (Can be blank if you prefer to fill in the form in the description field)');
 define('UPLOAD_FILE', 'Record file upload');
+define('TIPO_FICHA','Sheet Type');
 
 define('USUARIOS_CADASTRADOS', "Registered Users");
 define('MONSTROS_CADASTRADOS', "Registered monsters");
