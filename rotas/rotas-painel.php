@@ -30,9 +30,11 @@ define('PERICIASIMGPATH', "img/pericias/");
 define('FICHASUPLOADPATH', "pages/painel/upload-fichas/");
 define('FICHASUPLOADFILEPATH', "file/upload-fichas/");
 
+define('PERSONAGEMPATHLINK', "pages/painel/upload-fichas/");
 define('PERSONAGEMPATH', "pages/painel/personagens/");
 define('PERSONAGEMIMGPATH', "img/personagens/");
 
+define('MONSTROPATHLINK', "pages/painel/upload-fichas/");
 define('MONSTROPATH', "pages/painel/monstros/");
 define('MONSTROIMGPATH', "img/monstros/");
 
