@@ -11,8 +11,8 @@ if(!$pass):
 else:
 	$delete = $show_personagem->delete_data($objeto);
 	if($delete == 1):
-		header("Location: ".ROOTPATHURL.PERSONAGEMPATH.'?status=deleted');
+		help_header(ROOTPATHURL.PERSONAGEMPATH.'?status=deleted');
 	else:
-		header("Location: ".ROOTPATHURL.PERSONAGEMPATH.'?status=error');
+		help_header(ROOTPATHURL.PERSONAGEMPATH.'?status=error');
 	endif;
 endif;

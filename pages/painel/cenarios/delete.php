@@ -11,8 +11,8 @@ if(!$pass):
 else:
 	$delete = $delete_cenario->delete_data($objeto);
 	if($delete == 1):
-		header("Location: ".ROOTPATHURL.CENARIOSPATH.'?status=deleted');
+		help_header(ROOTPATHURL.CENARIOSPATH.'?status=deleted');
 	else:
-		header("Location: ".ROOTPATHURL.CENARIOSPATH.'?status=error');
+		help_header(ROOTPATHURL.CENARIOSPATH.'?status=error');
 	endif;
 endif;

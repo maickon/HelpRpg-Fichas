@@ -12,8 +12,8 @@ if(!$pass):
 else:
 	$delete = $show_personagem->delete_data($objeto);
 	if($delete == 1):
-		header("Location: ".ROOTPATHURL.PERICIASPATH.'?status=deleted');
+		help_header(ROOTPATHURL.PERICIASPATH.'?status=deleted');
 	else:
-		header("Location: ".ROOTPATHURL.PERICIASPATH.'?status=error');
+		help_header(ROOTPATHURL.PERICIASPATH.'?status=error');
 	endif;
 endif;

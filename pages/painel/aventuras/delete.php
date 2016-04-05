@@ -11,8 +11,8 @@ if(!$pass):
 else:
 	$delete = $delete_aventura->delete_data($objeto);
 	if($delete == 1):
-		header("Location: ".ROOTPATHURL.AVENTURASPATH.'?status=deleted');
+		help_header(ROOTPATHURL.AVENTURASPATH.'?status=deleted');
 	else:
-		header("Location: ".ROOTPATHURL.AVENTURASPATH.'?status=error');
+		help_header(ROOTPATHURL.AVENTURASPATH.'?status=error');
 	endif;
 endif;

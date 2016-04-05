@@ -11,8 +11,8 @@ if(!$pass):
 else:
 	$delete = $delete_historia->delete_data($objeto);
 	if($delete == 1):
-		header("Location: ".ROOTPATHURL.HISTORIASPATH.'?status=deleted');
+		help_header(ROOTPATHURL.HISTORIASPATH.'?status=deleted');
 	else:
-		header("Location: ".ROOTPATHURL.HISTORIASPATH.'?status=error');
+		help_header(ROOTPATHURL.HISTORIASPATH.'?status=error');
 	endif;
 endif;

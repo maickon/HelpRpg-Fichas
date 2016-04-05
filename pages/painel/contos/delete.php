@@ -11,8 +11,8 @@ if(!$pass):
 else:
 	$delete = $delete_contos->delete_data($objeto);
 	if($delete == 1):
-		header("Location: ".ROOTPATHURL.CONTOSPATH.'?status=deleted');
+		help_header(ROOTPATHURL.CONTOSPATH.'?status=deleted');
 	else:
-		header("Location: ".ROOTPATHURL.CONTOSPATH.'?status=error');
+		help_header(ROOTPATHURL.CONTOSPATH.'?status=error');
 	endif;
 endif;

@@ -11,8 +11,8 @@ if(!$pass):
 else:
 	$delete = $delete_bestiario->delete_data($objeto);
 	if($delete == 1):
-		header("Location: ".ROOTPATHURL.BESTIARIOPATH.'?status=deleted');
+		help_header(ROOTPATHURL.BESTIARIOPATH.'?status=deleted');
 	else:
-		header("Location: ".ROOTPATHURL.BESTIARIOPATH.'?status=error');
+		help_header(ROOTPATHURL.BESTIARIOPATH.'?status=error');
 	endif;
 endif;

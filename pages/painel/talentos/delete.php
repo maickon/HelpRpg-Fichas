@@ -11,8 +11,8 @@ if(!$pass):
 else:
 	$delete = $show_talento->delete_data($talento);
 	if($delete == 1):
-		header("Location: ".ROOTPATHURL.TALENTOSPATH.'?status=deleted');
+		help_header(ROOTPATHURL.TALENTOSPATH.'?status=deleted');
 	else:
-		header("Location: ".ROOTPATHURL.TALENTOSPATH.'?status=error');
+		help_header(ROOTPATHURL.TALENTOSPATH.'?status=error');
 	endif;
 endif;

@@ -11,8 +11,8 @@ if(!$pass):
 else:
 	$delete = $show_monstro->delete_data($objeto);
 	if($delete == 1):
-		header("Location: ".ROOTPATHURL.MONSTROPATH.'?status=deleted');
+		help_header(ROOTPATHURL.MONSTROPATH.'?status=deleted');
 	else:
-		header("Location: ".ROOTPATHURL.MONSTROPATH.'?status=error');
+		help_header(ROOTPATHURL.MONSTROPATH.'?status=error');
 	endif;
 endif;

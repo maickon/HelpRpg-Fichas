@@ -15,8 +15,8 @@ if(!$pass):
 else:
 	$delete = $show_armadura->delete_data($armadura);
 	if($delete == 1):
-		header("Location: ".ROOTPATHURL.ARMADURASPATH.'?status=deleted');
+		help_header(ROOTPATHURL.ARMADURASPATH.'?status=deleted');
 	else:
-		header("Location: ".ROOTPATHURL.ARMADURASPATH.'?status=error');
+		help_header(ROOTPATHURL.ARMADURASPATH.'?status=error');
 	endif;
 endif;

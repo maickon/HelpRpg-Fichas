@@ -11,8 +11,8 @@ if(!$pass):
 else:
 	$delete = $delete_cronica->delete_data($objeto);
 	if($delete == 1):
-		header("Location: ".ROOTPATHURL.CRONICASPATH.'?status=deleted');
+		help_header(ROOTPATHURL.CRONICASPATH.'?status=deleted');
 	else:
-		header("Location: ".ROOTPATHURL.CRONICASPATH.'?status=error');
+		help_header(ROOTPATHURL.CRONICASPATH.'?status=error');
 	endif;
 endif;

@@ -15,8 +15,8 @@ if(!$pass):
 else:
 	$delete = $delete_artefato->delete_data($objeto);
 	if($delete == 1):
-		header("Location: ".ROOTPATHURL.ARTEFATOSPATH.'?status=deleted');
+		help_header(ROOTPATHURL.ARTEFATOSPATH.'?status=deleted');
 	else:
-		header("Location: ".ROOTPATHURL.ARTEFATOSPATH.'?status=error');
+		help_header(ROOTPATHURL.ARTEFATOSPATH.'?status=error');
 	endif;
 endif;

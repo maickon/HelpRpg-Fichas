@@ -11,8 +11,8 @@ if(!$pass):
 else:
 	$delete = $show_arma->delete_data($objeto);
 	if($delete == 1):
-		header("Location: ".ROOTPATHURL.ARMASPATH.'?status=deleted');
+		help_header(ROOTPATHURL.ARMASPATH.'?status=deleted');
 	else:
-		header("Location: ".ROOTPATHURL.ARMASPATH.'?status=error');
+		help_header(ROOTPATHURL.ARMASPATH.'?status=error');
 	endif;
 endif;

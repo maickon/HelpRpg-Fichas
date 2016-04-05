@@ -11,8 +11,8 @@ if(!$pass):
 else:
 	$delete = $show_personagem->delete_data($objeto);
 	if($delete == 1):
-		header("Location: ".ROOTPATHURL.MAGIASPATH.'?status=deleted');
+		help_header(ROOTPATHURL.MAGIASPATH.'?status=deleted');
 	else:
-		header("Location: ".ROOTPATHURL.MAGIASPATH.'?status=error');
+		help_header(ROOTPATHURL.MAGIASPATH.'?status=error');
 	endif;
 endif;
