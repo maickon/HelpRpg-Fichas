@@ -14,10 +14,18 @@ define('U4007', 'Dados deletado com sucesso!');
 define('U4008', 'Alteração feita com sucesso!');
 
 //lista de superusuarios do sistema
-global $permit, $rpg_sistemas, $rpg_sistemas_arquivo_nome, $rpg_sistemas_labels;
+global $permit, $rpg_sistemas, $rpg_sistemas_arquivo_nome, $rpg_sistemas_labels, $tipo_ficha;
 
 //variaveis globas no sitema
 $permit  = ['root','Maickon'];
+
+$tipo_ficha = [
+				'personagem_jogador'=>'Personagem jogador',
+				'monstro'=>'Monstro',
+				'npc'=>'NPC',
+				'boss'=>'Chefe de Campanha (BOSS)'
+			  ];
+
 $rpg_sistemas_arquivo_nome = [
 							'Dungeons and Dragons 3.5'=>'d20-ded.php',
 							'Dungeons and Dragons 4.0'=>'d20-ded-4.0.php',
