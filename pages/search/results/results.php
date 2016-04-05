@@ -8,6 +8,9 @@ function personagem($filter_result){
 	elseif($filter_result['tipo'] == 'Monstro'):
 		$path = MONSTROPATH;
 		$image = MONSTROPATH.$filter_result['img'];
+	elseif(($filter_result['tipo_ficha'] == 'NPC') || ($filter_result['tipo_ficha'] == 'Chefe de Campanha (BOSS)') || ($filter_result['tipo_ficha'] == 'Monstro')):
+		$path = FICHASUPLOADPATH;
+		$image = FICHASUPLOADPATH.$filter_result['img'];
 	else:
 		$path = 'undefined';
 		$image = $filter_result['img'];

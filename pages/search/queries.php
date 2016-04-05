@@ -3,6 +3,8 @@
 
 function query_personagens($busca){
 	$personagem = new Personagens('');
+	$personagem_link = new UploadFichas();
+
 	$personagens = $personagem->select('personagens', null, [
 												['nome', 'like', "%{$busca}%" ],
 												['dono', 'like', "%{$busca}%" ],
@@ -12,7 +14,20 @@ function query_personagens($busca){
 												['raca', 'like', "%{$busca}%" ],
 												['classe', 'like', "%{$busca}%" ]
 											], "OR");
-	for($i=0; $i<count($personagens); $i++):
+
+	$personagem_links = $personagem_link->select('uploadfichas', null, [
+												['nome', 'like', "%{$busca}%" ],
+												['dono', 'like', "%{$busca}%" ],
+												['sistema', 'like', "%{$busca}%" ],
+												['tipo_ficha', 'like', "%{$busca}%" ],
+												['nivel', 'like', "%{$busca}%" ],
+												['raca', 'like', "%{$busca}%" ],
+												['classe', 'like', "%{$busca}%" ]
+											], "OR");
+
+	$todos_personagens = array_merge($personagens, $personagem_links);
+	
+	for($i=0; $i<count($todos_personagens); $i++):
 		$personagens[$i]['table'] = 'personagens';
 	endfor;
 	return $personagens;
