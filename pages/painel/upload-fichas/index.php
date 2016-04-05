@@ -58,6 +58,7 @@ $tag->br();
 					$form->th(RACA);
 					$form->th(CLASSE);
 					$form->th(SISTEMA);
+					$form->th(TIPO_FICHA);
 					$form->th(CRIADO_EM);
 					$form->th(' ');
 					$form->th(' ');
@@ -74,6 +75,7 @@ $tag->br();
 						$form->td($a['raca']);
 						$form->td($a['classe']);
 						$form->td($a['sistema']);
+						$form->td($a['tipo_ficha']);
 						$form->td(date('d/m/Y', strtotime($a['data_cadastro'])).' às '.date(' H:i:s', strtotime($a['data_cadastro'])));
 						
 						//verificando permiçoes

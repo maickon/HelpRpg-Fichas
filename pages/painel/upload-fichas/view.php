@@ -52,17 +52,22 @@ $tag->br();
 				$form->_col(12);
 					$form->h1($ficha[0]['nome']);
 					$tag->b();
-					$tag->imprime(CRIADO_NO_DIA);
-					echo date('d/m/Y', strtotime($ficha[0]['data_cadastro'])).' às '.date(' H:i:s', strtotime($ficha[0]['data_cadastro']));
-					$tag->imprime(CADASTRADO_POR." {$ficha[0]['dono']} | ".SISTEMA	.": {$ficha[0]['sistema']}");
+						$tag->imprime(CRIADO_NO_DIA);
+						$tag->imprime(date('d/m/Y', strtotime($ficha[0]['data_cadastro']))).' às '.date(' H:i:s', strtotime($ficha[0]['data_cadastro']));
+						$tag->imprime(CADASTRADO_POR." {$ficha[0]['dono']} | ".SISTEMA	.": {$ficha[0]['sistema']}");
+						$tag->br();
+						$tag->imprime(TIPO_FICHA.": {$ficha[0]['tipo_ficha']} | ");
+						$tag->imprime(RACA.": {$ficha[0]['raca']} | ".CLASSE. ": {$ficha[0]['classe']}");
+						$tag->br();
+						if(empty($ficha[0]['url_arquivo_externo']) || ($ficha[0]['url_arquivo_externo'] == '-')):
+						else:
+							$tag->imprime(LINK. " {$ficha[0]['url_arquivo_externo']}");
+						endif;
 					$tag->b;
 					$tag->br();
 					$tag->br();
+
 					$tag->imprime($ficha[0]['descricao']);
-					$tag->div('class="embed-responsive embed-responsive-16by9"');
-						$tag->iframe(' class="embed-responsive-item" src="'.$ficha[0]['url_arquivo_externo'].'" width="100%"');
-						$tag->iframe;
-					$tag->div;
 				$form->col_();
 
 				$form->_col(12);

@@ -66,7 +66,7 @@ $tag->br();
 			
 				helper_form_select_options(SISTEMA, ['class'=>'form-control selectpicker', 'name'=>'sistema', 'data-live-search'=>'true'], $edit_list_sistemas, 3);
 				
-				helper_form_input(URL_ARQUIVO, ['name' => 'url_arquivo_externo', 'type' => 'text', 'class'=>'form-control', 'required'=>'true', 'value'=> $objeto[0]['url_arquivo_externo']], 12);
+				helper_form_input(URL_ARQUIVO, ['name' => 'url_arquivo_externo', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['url_arquivo_externo']], 12);
 
 				//helper_form_input(UPLOAD_FILE, ['name' => '	url_arquivo', 'type' => 'file', 'class'=>'form-control'], 6);
 
