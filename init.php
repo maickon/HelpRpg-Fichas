@@ -90,6 +90,7 @@ function restricted_access_config($url){
 				'cenarios' 		=> ['edit','delete','new'],
 				'bestiario' 	=> ['edit','delete','new'],
 				'cronicas' 		=> ['edit','delete','new'],
+				'upload-fichas'	=> ['edit','delete','new']
 			];
 
 		//pega a ultima parte da URL dividida por /
