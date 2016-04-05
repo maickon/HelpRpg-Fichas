@@ -53,8 +53,10 @@
 									//Menu - Personagem e seus submenus
 									array(
 											PERSONAGEM_MENU, 
-											CRIAR_PERSONAGEM, 
-											CRIAR_MONSTRO, 
+											CRIAR_PERSONAGEM,
+											CRIAR_PERSONAGEM_LINK, 
+											CRIAR_MONSTRO,
+											CRIAR_MONSTRO_LINK, 
 											BESTIARIO),
 
 									//Menu - Campanhas e seus submenus
@@ -102,7 +104,9 @@
 									array(
 											"#", 
 											ROOTPATHURL.PERSONAGEMPATH, 
-											ROOTPATHURL.MONSTROPATH, 
+											ROOTPATHURL.PERSONAGEMPATHLINK, 
+											ROOTPATHURL.MONSTROPATH,
+											ROOTPATHURL.MONSTROPATHLINK, 
 											ROOTPATHURL.BESTIARIOPATH),
 
 									//Links - label Campanhas e seus submenus 
