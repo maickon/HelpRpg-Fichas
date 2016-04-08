@@ -45,13 +45,13 @@ $tag->br();
 
 				helper_form_input(CLASSE, ['name' => 'classe', 'type' => 'text', 'class'=>'form-control', 'required'=>'true'], 2);
 
-				helper_form_input(NIVEL, ['name' => 'nivel', 'type' => 'text', 'class'=>'form-control', 'required'=>'true'], 1);
+				helper_form_input(NIVEL, ['name' => 'lv', 'type' => 'text', 'class'=>'form-control', 'required'=>'true'], 1);
 			
 				helper_form_select_options(SISTEMA, ['class'=>'form-control selectpicker', 'name'=>'sistema', 'data-live-search'=>'true'], $rpg_sistemas, 3);
 				
 				helper_form_input(URL_ARQUIVO, ['name' => 'url_arquivo_externo', 'type' => 'text', 'class'=>'form-control'], 9);
 
-				helper_form_select_options(TIPO_FICHA, ['class'=>'form-control selectpicker', 'name'=>'tipo_ficha', 'data-live-search'=>'true'], $tipo_ficha, 3);
+				helper_form_select_options(TIPO_FICHA, ['class'=>'form-control selectpicker', 'name'=>'tipo', 'data-live-search'=>'true'], $tipo_ficha, 3);
 				//helper_form_input(UPLOAD_FILE, ['name' => '	url_arquivo', 'type' => 'file', 'class'=>'form-control'], 6);
 
 				helper_form_text_area(DESCRICAO, ['name' => 'descricao', 'class'=>'form-control', 'rows'=>'5']);	

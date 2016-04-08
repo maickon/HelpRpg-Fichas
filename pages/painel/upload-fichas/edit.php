@@ -55,6 +55,7 @@ $tag->br();
 				$form->input(['name' => 'dono', 'type' => 'hidden', 'value'=> $current_user]);
 			
 				$edit_list_sistemas = array_merge([$objeto[0]['sistema']], $rpg_sistemas);
+				$tipo_fichas = array_merge([$objeto[0]['tipo']], $tipo_ficha);
 
 				helper_form_input(NOME, ['name' => 'nome', 'type' => 'text', 'class'=>'form-control', 'required'=>'true', 'value'=> $objeto[0]['nome']], 3);
 
@@ -62,11 +63,13 @@ $tag->br();
 
 				helper_form_input(CLASSE, ['name' => 'classe', 'type' => 'text', 'class'=>'form-control', 'required'=>'true', 'value'=> $objeto[0]['classe']], 2);
 
-				helper_form_input(NIVEL, ['name' => 'nivel', 'type' => 'text', 'class'=>'form-control', 'required'=>'true', 'value'=> $objeto[0]['nivel']], 1);
+				helper_form_input(NIVEL, ['name' => 'lv', 'type' => 'text', 'class'=>'form-control', 'required'=>'true', 'value'=> $objeto[0]['lv']], 1);
 			
 				helper_form_select_options(SISTEMA, ['class'=>'form-control selectpicker', 'name'=>'sistema', 'data-live-search'=>'true'], $edit_list_sistemas, 3);
 				
-				helper_form_input(URL_ARQUIVO, ['name' => 'url_arquivo_externo', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['url_arquivo_externo']], 12);
+				helper_form_input(URL_ARQUIVO, ['name' => 'url_arquivo_externo', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['url_arquivo_externo']], 9);
+
+				helper_form_select_options(TIPO_FICHA, ['class'=>'form-control selectpicker', 'name'=>'tipo', 'data-live-search'=>'true'], $tipo_ficha, 3);
 
 				//helper_form_input(UPLOAD_FILE, ['name' => '	url_arquivo', 'type' => 'file', 'class'=>'form-control'], 6);
 
