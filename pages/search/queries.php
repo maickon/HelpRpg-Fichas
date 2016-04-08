@@ -3,7 +3,6 @@
 
 function query_personagens($busca){
 	$personagem = new Personagens('');
-	$personagem_link = new UploadFichas();
 
 	$personagens = $personagem->select('personagens', null, [
 												['nome', 'like', "%{$busca}%" ],
@@ -14,23 +13,29 @@ function query_personagens($busca){
 												['raca', 'like', "%{$busca}%" ],
 												['classe', 'like', "%{$busca}%" ]
 											], "OR");
+	
+	for($i=0; $i<count($personagens); $i++):
+		$personagens[$i]['table'] = 'personagens';
+	endfor;
+	return $personagens;
+}
 
+function query_fichas($busca){
+	$personagem_link = new UploadFichas();
 	$personagem_links = $personagem_link->select('uploadfichas', null, [
 												['nome', 'like', "%{$busca}%" ],
 												['dono', 'like', "%{$busca}%" ],
 												['sistema', 'like', "%{$busca}%" ],
-												['tipo_ficha', 'like', "%{$busca}%" ],
-												['nivel', 'like', "%{$busca}%" ],
+												['tipo', 'like', "%{$busca}%" ],
+												['lv', 'like', "%{$busca}%" ],
 												['raca', 'like', "%{$busca}%" ],
 												['classe', 'like', "%{$busca}%" ]
 											], "OR");
 
-	$todos_personagens = array_merge($personagens, $personagem_links);
-	
-	for($i=0; $i<count($todos_personagens); $i++):
-		$personagens[$i]['table'] = 'personagens';
+	for($i=0; $i<count($personagem_links); $i++):
+		$personagem_links[$i]['table'] = 'fichas';
 	endfor;
-	return $personagens;
+	return $personagem_links;
 }
 
 function query_armaduras($busca){
@@ -222,6 +227,9 @@ function query_filter($filter, $search_fiter){
 	if($filter == 'personagem' || $filter == 'personagens'){
 		$result = query_personagens($search_fiter);
 
+	}elseif($filter == 'ficha' || $filter == 'fichas'){
+		$result = query_fichas($search_fiter);
+
 	}elseif($filter == 'armadura' || $filter == 'armaduras'){
 		$result = query_armaduras($search_fiter);
 
@@ -264,6 +272,9 @@ function query_filter($filter, $search_fiter){
 function switch_filter($filter, $filter_result){
 	switch($filter):
 		case 'personagens': personagem($filter_result);
+		break;
+
+		case 'fichas': ficha($filter_result);
 		break;
 
 		case 'armaduras': armadura($filter_result);

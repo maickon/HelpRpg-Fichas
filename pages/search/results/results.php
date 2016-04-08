@@ -8,13 +8,46 @@ function personagem($filter_result){
 	elseif($filter_result['tipo'] == 'Monstro'):
 		$path = MONSTROPATH;
 		$image = MONSTROPATH.$filter_result['img'];
-	elseif(($filter_result['tipo_ficha'] == 'NPC') || ($filter_result['tipo_ficha'] == 'Chefe de Campanha (BOSS)') || ($filter_result['tipo_ficha'] == 'Monstro')):
-		$path = FICHASUPLOADPATH;
-		$image = FICHASUPLOADPATH.$filter_result['img'];
 	else:
 		$path = 'undefined';
 		$image = $filter_result['img'];
 	endif;
+	$tag->tr();
+		$tag->td();
+			$tag->span('class="search-title"');
+				$tag->a('href="'.ROOTPATHURL.$path.'view.php?id='.$filter_result['id'].'" target="blank"');
+					$tag->imprime($filter_result['nome']);
+				$tag->a;
+			$tag->span;
+			$tag->br();
+			$tag->imprime("{$filter_result['tipo']} - Nível {$filter_result['lv']}, Sitema {$filter_result['sistema']}");
+			$tag->br();
+			$tag->imprime("{$filter_result['raca']} ({$filter_result['classe']}) - Criado por {$filter_result['dono']}");
+			$tag->br();
+			$tag->small();
+				$tag->a('href="'.ROOTPATHURL.$path.'view.php?id='.$filter_result['id'].'" target="blank" class="show-picture"');
+					$tag->imprime('Ver mais...');
+				$tag->a;
+			$tag->small;
+			$tag->br();
+			$tag->br();
+		$tag->td;
+	$tag->tr;
+}
+
+function ficha($filter_result){
+	global $tag;
+	if( ($filter_result['tipo'] == 'Personagem do Mestre (NPC)') || 
+			($filter_result['tipo'] == 'Chefe de Campanha (BOSS)') ||
+			($filter_result['tipo'] == 'Personagem de Jogador') ||
+			($filter_result['tipo'] == 'Monstro de Campanha')
+			):
+		$path = FICHASUPLOADPATH;
+	else:
+		$path = 'undefined';
+		$image = $filter_result['img'];
+	endif;
+
 	$tag->tr();
 		$tag->td();
 			$tag->span('class="search-title"');

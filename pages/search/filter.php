@@ -15,7 +15,7 @@ $nomes_permitidos = array(
 	'pericia','pericias','aventuras','aventura','historias','histórias',
 	'historia','história','contos','conto','cronicas','cronica','crônica',
 	'crônicas','cenario','cenarios','bestiario','bestiário',
-	'bestiarios','bestiários');
+	'bestiarios','bestiários','fichas','ficha');
 
 if(array_key_exists(1, $filter)):
 	$lower_filter = strtolower($filter[0]);
@@ -39,6 +39,8 @@ if(array_key_exists(1, $filter)):
 	else:	
 		$filter = $filter[1];
 		$personagens = query_personagens($filter);
+		//----------------------------------------------------------------------------------------
+		$fichas = query_fichas($filter);
 		//----------------------------------------------------------------------------------------
 		$armaduras = query_armaduras($filter);
 		//----------------------------------------------------------------------------------------
@@ -67,6 +69,7 @@ if(array_key_exists(1, $filter)):
 		//lista de todos os arrays de forma reordenada  atraves da funcao array_values()
 		$union_result = array(
 							$personagens, 
+							$fichas,
 							$armaduras, 
 							$armas, 
 							$artefatos,
@@ -85,6 +88,8 @@ if(array_key_exists(1, $filter)):
 else:
 	$filter = $filter[0];
 	$personagens = query_personagens($filter);
+	//----------------------------------------------------------------------------------------
+	$fichas = query_fichas($filter);
 	//----------------------------------------------------------------------------------------
 	$armaduras = query_armaduras($filter);
 	//----------------------------------------------------------------------------------------
@@ -112,7 +117,8 @@ else:
 
 	//lista de todos os arrays de forma reordenada  atraves da funcao array_values()
 	$union_result = array(
-						$personagens, 
+						$personagens,
+						$fichas, 
 						$armaduras, 
 						$armas, 
 						$artefatos,
