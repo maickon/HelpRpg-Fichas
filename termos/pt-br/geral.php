@@ -110,10 +110,13 @@ define('DESCRICAO_BREVE', "Descrição breve");
 define('URL_ARQUIVO', 'URL do arquivo (Pode ficar em branco caso prefira preencher a ficha no campo descrição)');
 define('UPLOAD_FILE', 'Upload de arquivo de ficha');
 define('TIPO_FICHA','Tipo de Ficha');
+define('FONTE','Fonte');
 
+define('FICHAS_CADASTRADAS', "Fichas Cadastradas");
 define('USUARIOS_CADASTRADOS', "Usuários Cadastrados");
-define('MONSTROS_CADASTRADOS', "Monstros cadastrados");
-define('BESTIARIO_CADASTRADOS', "Bestiário cadastrados");
+define('MONSTROS_CADASTRADOS', "Monstros Cadastrados");
+define('BESTIARIO_CADASTRADOS', "Bestiário Cadastrados");
+define('CRIATURAS_CADASTRADAS', "Criaturas Cadastradas");
 define('CHEFES_DE_FASE', "Chefes de fase");
 define('ITENS_CADASTRADOS', "Itens Cadastrados");
 
@@ -122,3 +125,7 @@ define('MSG_TEXT_INDEX_01', "Contribua com o Help Rpg, faça uma doação para m
 melhor para nossas campanhas de RPG. Contamos com você.");
 
 define('REGISTRO_NAO_ENCONTRADO_MSG', 'Este registro não existe em nossa base de dados. Faça uma conta <a href="'.USERNEWPATH.'">aqui </a>e crie novos registros em nossa base de dados.');
+
+define('LINGUAGEM', 'Idiomas');
+define('PT_BR', 'Portugês-BR');
+define('EN', 'Inglês');
