@@ -108,10 +108,13 @@ define('DESCRICAO_BREVE', "brief description");
 define('URL_ARQUIVO', 'File URL (Can be blank if you prefer to fill in the form in the description field)');
 define('UPLOAD_FILE', 'Record file upload');
 define('TIPO_FICHA','Sheet Type');
+define('FONTE','Source');
 
 define('USUARIOS_CADASTRADOS', "Registered Users");
-define('MONSTROS_CADASTRADOS', "Registered monsters");
-define('BESTIARIO_CADASTRADOS', "Registered bestiary");
+define('FICHAS_CADASTRADAS', "Registered Sheets");
+define('MONSTROS_CADASTRADOS', "Registered Monsters");
+define('BESTIARIO_CADASTRADOS', "Registered Bestiary");
+define('CRIATURAS_CADASTRADAS', "Registered Creatures");
 define('CHEFES_DE_FASE', "Phase Heads");
 define('ITENS_CADASTRADOS', "Registrants items");
 
@@ -120,3 +123,7 @@ define('MSG_TEXT_INDEX_01', "Contribute to Help RPG , make a donation to motivat
 best for our RPG campaigns . We count on you .");
 define('REGISTRO_NAO_ENCONTRADO_MSG', 'This record does not exist in our database. Make a account <a href="'.USERNEWPATH.'">here </a>
 and create new records in our database.');
+
+define('LINGUAGEM', 'Language');
+define('PT_BR', 'Portuguese-BR');
+define('EN', 'English');

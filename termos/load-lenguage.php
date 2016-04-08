@@ -1,15 +1,19 @@
 <?php
-$ip = $_SERVER['REMOTE_ADDR'];
-//$pais = unserialize(file_get_contents('http://www.geoplugin.net/php.gp?ip='.$ip));
-$pais = 'Brazil';
-if(isset($pais['geoplugin_countryName']) && $pais['geoplugin_countryName'] == 'United States'):
-	$carregar_traducao = $pais['geoplugin_countryName'];
-else:
-	$carregar_traducao = 'Brazil';
+require_once ROOTPATH.'/init.php';
+
+$s = new Session();
+if(isset($_GET['l'])):
+	if(isset($_SESSION['linguagem'])):
+		$s->set_session('linguagem', $_GET['l']);
+	else:
+		$s->set_session('linguagem', $_GET['l']);
+	endif;
+elseif(!isset($_SESSION['linguagem'])):
+	$s->set_session('linguagem', 'pt-br');
 endif;
 
-switch('Brazil'):
-	case 'Brazil':
+switch($s->get_session('linguagem')):
+	case 'pt-br':
 			require_once 'pt-br/geral.php';
 			require_once 'pt-br/3det.php';
 			require_once 'pt-br/d20.php';
@@ -23,7 +27,7 @@ switch('Brazil'):
 			require_once 'pt-br/login.php';
 		break;
 	
-	case 'United States':
+	case 'en':
 			require_once 'en/geral.php';
 			require_once 'en/3det.php';
 			require_once 'en/d20.php';
