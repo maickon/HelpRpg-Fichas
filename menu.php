@@ -235,6 +235,7 @@
 										$utilitarios_label, 
 										$downloads_label, 
 										$midias_sociais_label, 
+										array(LINGUAGEM,PT_BR,EN),
 										COMO_USAR);
 		//Links
 		$parametros['links']  = array(
@@ -243,7 +244,8 @@
 										ABOUTPATH, 
 										$utilitarios_link, 
 										$downloads_link, 
-										$midias_sociais_link, 
+										$midias_sociais_link,
+										array("#",PTBR_PATH,EN_PATH), 
 										HOWTOUSE);
 		//informa que e o programador do site e o copyright, este termos so sao usado quando estes arrays de label e links
 		//sao usados no rodape do site
