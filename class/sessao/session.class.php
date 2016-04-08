@@ -46,7 +46,8 @@ class Session{
 	//se for falso, redireciona para a pagina raiz
 	function restricted_access($url = ROOTPATHURL){
 		if(!$this->authenticate('login')):
-			@header('location:'.$url);
+			$tag->imprime("<meta HTTP-EQUIV='Refresh' CONTENT='0; URL=".$url."'>");
+			//@header('location:'.$url);
 		endif;
 	}
 
