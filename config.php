@@ -20,10 +20,10 @@ global $permit, $rpg_sistemas, $rpg_sistemas_arquivo_nome, $rpg_sistemas_labels,
 $permit  = ['root','Maickon'];
 
 $tipo_ficha = [
-				'personagem_jogador'=>'Personagem jogador',
-				'monstro'=>'Monstro',
-				'npc'=>'NPC',
-				'boss'=>'Chefe de Campanha (BOSS)'
+				'personagem_jogador'=>'Personagem de Jogador',
+				'monstro_npc'=>'Monstro de Campanha',
+				'personagem_npc'=>'Personagem do Mestre (NPC)',
+				'personagem_boss'=>'Chefe de Campanha (BOSS)'
 			  ];
 
 $rpg_sistemas_arquivo_nome = [
