@@ -21,6 +21,7 @@ $form = new Form();
 					$arma 		= new Armas('');
 					$artefato 	= new Artefatos('');
 					$personagem = new Personagens('');
+					$fichas 	= new UploadFichas();
 					$talento 	= new Talentos('');
 					$magia 		= new Magias('');
 					$pericia 	= new Pericias('');
@@ -40,6 +41,7 @@ $form = new Form();
 					$number_monstros	= $personagem->select('personagens', null, [["tipo","=","Monstro"]]);
 					$number_jogador		= $personagem->select('personagens', null, [["tipo","=","Personagem jogador"]]);
 					$number_npc			= $personagem->select('personagens', null, [["tipo","=","Personagem npc"]]);
+					$number_fichas 		= $fichas->select('uploadfichas');
 					$number_artefatos 	= $artefato->select('artefatos');
 					$number_aventuras 	= $aventuras->select('aventuras');
 					$number_historias 	= $historias->select('historias');
@@ -57,6 +59,7 @@ $form = new Form();
 					$qtd_pericias 	= count($number_pericias);
 					$qtd_jogador 	= count($number_jogador);
 					$qtd_monstros 	= count($number_monstros);
+					$qtd_fichas 	= count($number_fichas);
 					$qtd_npc 		= count($number_npc);
 					$qtd_aventuras 	= count($number_aventuras);
 					$qtd_historias 	= count($number_historias);
@@ -66,12 +69,13 @@ $form = new Form();
 					$qtd_bestiario 	= count($number_bestiario);
 					
 					$qtd_total_itens = ($qtd_armaduras+$qtd_armas+$qtd_artefatos);
-					
+					$qtd_total_fichas = ($qtd_jogador+$qtd_monstros+$qtd_fichas+$qtd_npc);
+
 					$img_title = [
-									['jogadores.jpg',USUARIOS_CADASTRADOS, $qtd_user],
-									['monstros.jpg',MONSTROS_CADASTRADOS, $qtd_monstros],
-									['bestiario.jpg',BESTIARIO_CADASTRADOS, $qtd_bestiario],
-									['armas.jpg',ITENS_CADASTRADOS, $qtd_total_itens]
+									['usuario.jpg',USUARIOS_CADASTRADOS, $qtd_user],
+									['fichas.jpg',FICHAS_CADASTRADAS, $qtd_total_fichas],
+									['bestiario.jpg',CRIATURAS_CADASTRADAS, $qtd_bestiario],
+									['itens.jpg',ITENS_CADASTRADOS, $qtd_total_itens]
 								];
 					
 					//Lista fictiia de categorias
