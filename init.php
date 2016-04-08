@@ -89,8 +89,8 @@ function restricted_access_config($url){
 				'cronicas' 		=> ['edit','delete','new'],
 				'cenarios' 		=> ['edit','delete','new'],
 				'bestiario' 	=> ['edit','delete','new'],
+				'upload-fichas'	=> ['edit','delete','new'],
 				'cronicas' 		=> ['edit','delete','new'],
-				'upload-fichas'	=> ['edit','delete','new']
 			];
 
 		//pega a ultima parte da URL dividida por /
@@ -109,8 +109,8 @@ function restricted_access_config($url){
 						if($fragmento[0] == $pages[$key][$i])
 							$load_restricted_access = 1;
 					endfor;
-				elseif($fragmentoL2 == $key):
-					$load_restricted_access = 1;
+				elseif($fragmentoL2 == $key && !strpos($fragmentoL1,'.')):
+					$load_restricted_access = 0;
 				endif;
 			endif;
 		endforeach;
