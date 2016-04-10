@@ -38,7 +38,10 @@ class Usuarios extends db{
 		if($this->check_duplicate_user($values) != ' '):
 			new Flashmsg('warning', 'Email ou login duplicado.');	
 		elseif($this->insert($this->table, $fields, $values)):
-			new Flashmsg('success', 'cadastro realizado com sucesso.');
+			global $s, $tag;
+			if($s->login($params['email'], $params['senha'])):
+				$tag->imprime("<meta HTTP-EQUIV='Refresh' CONTENT='0; URL=".PAINEL_PATH."'>");
+			endif;
 		else:
 			new Flashmsg('danger', 'Um erro ocoreu, contate o administrador.');
 		endif;
