@@ -280,7 +280,11 @@ class Form{
 	}
 	
 	function area($parameters, $content=""){
-		$input = '<textarea class="ckeditor" ';
+		if(array_key_exists('ckeditor', $parameters)):
+			$input = '<textarea';
+		else:
+			$input = '<textarea class="ckeditor" ';
+		endif;
 		foreach($parameters as $key => $p):
 			$input .= " {$key}=\"{$p}\" ";
 		endforeach;
