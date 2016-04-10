@@ -74,91 +74,91 @@ $form = new Form();
 					$img_title = [
 									['usuario.jpg',USUARIOS_CADASTRADOS, $qtd_user],
 									['fichas.jpg',FICHAS_CADASTRADAS, $qtd_total_fichas],
-									['bestiario.jpg',CRIATURAS_CADASTRADAS, $qtd_bestiario],
+									['bestiario.jpg',MONSTROS_CADASTRADOS, $qtd_bestiario],
 									['itens.jpg',ITENS_CADASTRADOS, $qtd_total_itens]
 								];
 					
 					//Lista fictiia de categorias
 					$categorias = [
-									[FICHA_DE_PERSONAGEM, $qtd_jogador, ROOTPATHURL.PERSONAGEMPATH.VIEW_BY_ID.helper_check_id(ID,$number_jogador)],
+									[FICHA_DE_PERSONAGEM, $qtd_jogador, ROOTPATHURL.PERSONAGEMPATH],
 									//[FICHA_DE_NPC, $qtd_npc, ROOTPATHURL.PERSONAGEMPATH.VIEW_BY_ID.'1'],
-									[FICHA_DE_MONSTRO, $qtd_monstros, ROOTPATHURL.MONSTROPATH.VIEW_BY_ID.helper_check_id(ID,$number_monstros)],
-									[ARMAS, $qtd_armas, ROOTPATHURL.ARMASPATH.VIEW_BY_ID.helper_check_id(ID,$number_armas)],
-									[ARMADURAS, $qtd_armaduras, ROOTPATHURL.ARMADURASPATH.VIEW_BY_ID.helper_check_id(ID,$number_armaduras)],
-									[ARTEFATOS, $qtd_artefatos, ROOTPATHURL.ARTEFATOSPATH.VIEW_BY_ID.helper_check_id(ID,$number_artefatos)],
-									[TALENTOS, $qtd_talentos, ROOTPATHURL.TALENTOSPATH.VIEW_BY_ID.helper_check_id(ID,$number_talentos)],
-									[MAGIAS, $qtd_magias, ROOTPATHURL.MAGIASPATH.VIEW_BY_ID.helper_check_id(ID,$number_magias)],
-									[PERICIAS, $qtd_pericias, ROOTPATHURL.PERICIASPATH.VIEW_BY_ID.helper_check_id(ID,$number_pericias)],
+									[FICHA_DE_MONSTRO, $qtd_monstros, ROOTPATHURL.MONSTROPATH],
+									[ARMAS, $qtd_armas, ROOTPATHURL.ARMASPATH],
+									[ARMADURAS, $qtd_armaduras, ROOTPATHURL.ARMADURASPATH],
+									[ARTEFATOS, $qtd_artefatos, ROOTPATHURL.ARTEFATOSPATH],
+									[TALENTOS, $qtd_talentos, ROOTPATHURL.TALENTOSPATH],
+									[MAGIAS, $qtd_magias, ROOTPATHURL.MAGIASPATH],
+									[PERICIAS, $qtd_pericias, ROOTPATHURL.PERICIASPATH],
 									[FICHA_ALEATORIA, CONTADOR_MAIS_CEM, ROOTPATHURL.NPCGENERATEPATH],
 									[MONSTRO_ALEATORIO, CONTADOR_MAIS_CEM, ROOTPATHURL.MONSTERGENERATEPATH],
-									[AVENTURAS, $qtd_aventuras, ROOTPATHURL.AVENTURASPATH.VIEW_BY_ID.helper_check_id(ID,$number_aventuras)],
-									[HISTORIAS, $qtd_historias, ROOTPATHURL.HISTORIASPATH.VIEW_BY_ID.helper_check_id(ID,$number_historias)],
-									[CONTOS, $qtd_contos, ROOTPATHURL.CONTOSPATH.VIEW_BY_ID.helper_check_id(ID,$number_contos)],
-									[CRONICAS, $qtd_cronicas, ROOTPATHURL.CRONICASPATH.VIEW_BY_ID.helper_check_id(ID,$number_cronicas)],
-									[CENARIOS, $qtd_cenarios, ROOTPATHURL.CENARIOSPATH.VIEW_BY_ID.helper_check_id(ID,$number_cenarios)],
+									[AVENTURAS, $qtd_aventuras, ROOTPATHURL.AVENTURASPATH],
+									[HISTORIAS, $qtd_historias, ROOTPATHURL.HISTORIASPATH],
+									[CONTOS, $qtd_contos, ROOTPATHURL.CONTOSPATH],
+									[CRONICAS, $qtd_cronicas, ROOTPATHURL.CRONICASPATH],
+									[CENARIOS, $qtd_cenarios, ROOTPATHURL.CENARIOSPATH],
 									[ROLAR_DADOS, 1, ROLLDICE],
 									[GERADOR_DE_MUNDOS, CONTADOR_MAIS_CEM, MAPWORDPATH],
 									[GERADOR_DE_FICHAS_BASE, CONTADOR_MAIS_CEM, FICHASBASEGENERATION],
 									[GERADOR_DE_CARACTERISTICAS, CONTADOR_MAIS_CEM, CARACTERISTICASGENERATION],
 									[GERADOR_DE_NOMES, CONTADOR_MAIS_CEM, NAMEGENERATION],
 									[BESTIARIO, $qtd_bestiario, ROOTPATHURL.BESTIARIOPATH.VIEW_BY_ID.helper_check_id(ID,$number_bestiario)],
-									[GERADOR_DE_AVENTURAS, CONTADOR_MAIS_CEM, ADVENTUREGENERATION]
+									[GERADOR_DE_AVENTURAS, CONTADOR_MAIS_CEM, ADVENTUREGENERATION],
+									[FICHAS_ARQUIVOS_P, $qtd_fichas, ROOTPATHURL.PERSONAGEMPATHLINK],
+									[FICHAS_ARQUIVOS_P, $qtd_fichas, ROOTPATHURL.PERSONAGEMPATHLINK]
 								];
 					
-					$form->_col(12);
-						helper_ads_cursos();
-					$form->col_();
+					$tag->br();
 						
 					$form->_container();
 						$form->h2(MSG_BEM_VINDO_INDEX."<b> Help Rpg </b>", ['class'=>'titulo-index']);
-						foreach($categorias as $key => $cat):
-							$form->_col(3);
-								$tag->a('href="'.$cat[2].'" class="btn btn-primary btn-index"');
-									$tag->imprime($cat[0]);
-									$tag->span('class="badge"');
-										$tag->imprime("<i>{$cat[1]}</i>");
-									$tag->span;
-								$tag->a;
-							$form->col_();
-						endforeach;
-					$form->container_();
-						
-					$form->_col(12);
-						helper_adsense_01();
-					$form->col_();
-					
+						$form->_col(9);
+							foreach($categorias as $key => $cat):
+								$form->_col(3);
+									$tag->a('href="'.$cat[2].'" class="btn btn-primary btn-index"');
+										$tag->span('class="text_badge"');
+											$tag->imprime($cat[0]);
+										$tag->span;
+										$tag->span('class="badge"');
+											$tag->imprime("<i>{$cat[1]}</i>");
+										$tag->span;
+									$tag->a;
+								$form->col_();
+							endforeach;
 							
-					for($i=0; $i<count($img_title); $i++):
-						$form->_col(3);
-							$tag->div('class="panel panel-default panel-index"');
-								$tag->img('src="'.ROOTPATHURL.IMGPATH.$img_title[$i][0].'" alt="dados" class="img-circle img-responsive"');		
-								$tag->h3();
-									$tag->imprime("<i>{$img_title[$i][2]}</i>");
-									$tag->br();
-									$tag->small();
-										$tag->imprime($img_title[$i][1]);
-									$tag->small;
-								$tag->h3;
+							//figuras com indice dos dados
+							for($i=0; $i<count($img_title); $i++):
+								$form->_col(3);
+									$tag->div('class="panel panel-default panel-index"');
+										$tag->img('src="'.ROOTPATHURL.IMGPATH.$img_title[$i][0].'" alt="dados" class="img-circle img-responsive"');		
+										$tag->h3();
+											$tag->imprime("<i>{$img_title[$i][2]}</i>");
+											$tag->br();
+											$tag->small();
+												$tag->imprime($img_title[$i][1]);
+											$tag->small;
+										$tag->h3;
+									$tag->div;
+								$form->col_();
+							endfor;
+							
+							//msg de doacao
+							$tag->div('class="center"');
+								$tag->b();
+									$tag->imprime(MSG_TEXT_INDEX_01);
+								$tag->b;
+								helper_pague_seguro_form();
 							$tag->div;
+
 						$form->col_();
-					endfor;
 					
-					
-					$tag->div('class="center"');
-						$tag->b();
-							$tag->imprime(MSG_TEXT_INDEX_01);
-						$tag->b;
-						helper_pague_seguro_form();
-					$tag->div;
-					
-					$form->_col(12);
-						helper_adsense_02();
-					$form->col_();
-					
+						$form->_col(3);
+							helper_adsense_responsivo_01();
+						$form->col_();
+
+					$form->container_();
+				
 				$form->container_();	
 			$form->row_();
-
-			$form->hr();
 		$tag->div;
 		
 	require_once '../../footer.php';
