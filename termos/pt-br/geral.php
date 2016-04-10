@@ -30,21 +30,21 @@ define('CRIAR_PERSONAGEM_LINK', "Criar um personagem rápido");
 define('CRIAR_MONSTRO_LINK', "Criar um monstro rápido");
 define('CRIAR_BOSS', "Criar um BOSS");
 define('SISTEMA_DE_JOGO', "Sistema de jogo");
-define('FICHA_DE_PERSONAGEM', "Fichas de Personagem");
+define('FICHA_DE_PERSONAGEM', "Personagens");
 define('FICHA_DE_NPC', "Fichas de Npc");
-define('FICHA_DE_MONSTRO', "Fichas de Monstros");
+define('FICHA_DE_MONSTRO', "Monstros");
 define('FICHA_ALEATORIA', "Ficha Aleatória");
 define('MONSTRO_ALEATORIO', "Monstro Aleatório");
 
 define('UTILITARIOS','Utilitários');
 define('ROLAR_DADOS','Rolar Dados');
-define('GERADOR_DE_MUNDOS','Gerador de Mundos');
-define('GERADOR_DE_NOMES','Gerador de Nomes');
-define('GERADOR_DE_AVENTURAS','Gerador de Aventuras');
-define('GERADOR_DE_CARACTERISTICAS','Gerador de Características');
-define('GERADOR_DE_MASMORRAS','Gerador de Masmorras');
-define('GERADOR_DE_FICHAS_BASE','Gerador de ficha base');
-define('GERADOR_DE_NPCS','Gerador de Npcs');
+define('GERADOR_DE_MUNDOS','Mundos');
+define('GERADOR_DE_NOMES','Nomes');
+define('GERADOR_DE_AVENTURAS','Aventuras');
+define('GERADOR_DE_CARACTERISTICAS','Características');
+define('GERADOR_DE_MASMORRAS','Masmorras');
+define('GERADOR_DE_FICHAS_BASE','Fichas base');
+define('GERADOR_DE_NPCS','Npcs');
 define('GERADOR_DE_MONSTROS','Gerador de Monstros');
 define('DOWNLOADS','Downloads');
 define('DOWNLOAD','Baixar');
@@ -61,6 +61,14 @@ define('CRONICAS_DESCRICAO', "Crônica completa");
 define('CONTO', "Conto");
 define('HISTORIAS_PAGINA', "Histórias");
 define('EDITADO_POR', "Editado por");
+
+//pagina cadastro
+define('NICK', 'Nick');
+define('EMAIL', 'Email');
+define('SENHA', 'Senha');
+define('CONFIRMA', 'Confirmar Senha');
+define('ATUALIZAR', 'Atualizar');
+define('CADASTRO_USER_MSG', 'Seja um Helper!');
 
 //midias sociais
 define('MEDIAS_SOCIAIS', "Mídias Sociais");
@@ -83,6 +91,11 @@ define('MAGIAS_MENU', "Magias");
 define('HOME','Home');
 define('CADASTRO','Cadastro');
 define('SOBRE','Sobre');
+define('SOBRE_HELP', 'Sobre o Help Rpg');
+define('QUEM_SOU', 'Quem Sou');
+define('VERSAO_ESTRANGEIRA', 'Versões estrangeira'); 
+define('DOACAO','Doação');
+define('PARCERIA','Parceria'); 
 define('COMO_USAR','Como Usar');
 
 //termos pagina aventuras
@@ -109,16 +122,18 @@ define('DESCRICAO_BREVE', "Descrição breve");
 //pagina upload de fichas
 define('URL_ARQUIVO', 'URL do arquivo (Pode ficar em branco caso prefira preencher a ficha no campo descrição)');
 define('UPLOAD_FILE', 'Upload de arquivo de ficha');
+define('FICHAS_ARQUIVOS_P', 'Mais Fichas - Arquivos');
+define('FICHAS_ARQUIVOS_M', 'Mais Fichas - Monstros');
 define('TIPO_FICHA','Tipo de Ficha');
 define('FONTE','Fonte');
 
-define('FICHAS_CADASTRADAS', "Fichas Cadastradas");
-define('USUARIOS_CADASTRADOS', "Usuários Cadastrados");
-define('MONSTROS_CADASTRADOS', "Monstros Cadastrados");
-define('BESTIARIO_CADASTRADOS', "Bestiário Cadastrados");
-define('CRIATURAS_CADASTRADAS', "Criaturas Cadastradas");
+define('FICHAS_CADASTRADAS', "Fichas");
+define('USUARIOS_CADASTRADOS', "Usuários");
+define('MONSTROS_CADASTRADOS', "Monstros");
+define('BESTIARIO_CADASTRADOS', "Bestiário");
+define('CRIATURAS_CADASTRADAS', "Criaturas");
 define('CHEFES_DE_FASE', "Chefes de fase");
-define('ITENS_CADASTRADOS', "Itens Cadastrados");
+define('ITENS_CADASTRADOS', "Itens");
 
 define('MSG_BEM_VINDO_INDEX', "O que você procura está aqui no");
 define('MSG_TEXT_INDEX_01', "Contribua com o Help Rpg, faça uma doação para motivar a evolução deste site a assim termos um ambiente cada vez 

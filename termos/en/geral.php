@@ -40,9 +40,9 @@ define('ROLAR_DADOS','Roll Dice');
 define('GERADOR_DE_MUNDOS','New world');
 define('GERADOR_DE_NOMES','Name Generator');
 define('GERADOR_DE_AVENTURAS','Adventure Generator');
-define('GERADOR_DE_CARACTERISTICAS','Features of the Generator');
+define('GERADOR_DE_CARACTERISTICAS','Features');
 define('GERADOR_DE_MASMORRAS','Dungeon Generator');
-define('GERADOR_DE_FICHAS_BASE','Based chips generator');
+define('GERADOR_DE_FICHAS_BASE','Based chips');
 define('GERADOR_DE_NPCS','Npc Generator');
 define('GERADOR_DE_MONSTROS','Monster Generator');
 define('DOWNLOADS','Downloads');
@@ -58,6 +58,14 @@ define('CRONICAS', "Chronic");
 define('CRONICAS_DESCRICAO', "Full chronic");
 define('HISTORIAS_PAGINA', "Stories");
 define('EDITADO_POR', "Edited by");
+
+//page register
+define('NICK', 'Nick');
+define('EMAIL', 'Email');
+define('SENHA', 'Password');
+define('CONFIRMA', 'Confirm Password');
+define('ATUALIZAR', 'Update');
+define('CADASTRO_USER_MSG', 'Be a Helper!');
 
 //social medias
 define('MEDIAS_SOCIAIS', "Social media");
@@ -97,6 +105,11 @@ define('CADASTRADO_POR', "Joined by");
 define('HOME','Home');
 define('CADASTRO','Register');
 define('SOBRE','About');
+define('SOBRE_HELP', 'About the Help Rpg');
+define('QUEM_SOU', 'Who am I');
+define('VERSAO_ESTRANGEIRA', 'Foreign Version');
+define('DOACAO','Donation');
+define('PARCERIA','Partnership'); 
 define('COMO_USAR','How To Use');
 
 //terms to page tales
@@ -107,16 +120,18 @@ define('DESCRICAO_BREVE', "brief description");
 //File upload of shets
 define('URL_ARQUIVO', 'File URL (Can be blank if you prefer to fill in the form in the description field)');
 define('UPLOAD_FILE', 'Record file upload');
+define('FICHAS_ARQUIVOS_P', 'More Chips - files');
+define('FICHAS_ARQUIVOS_M', 'More Chips - Monsters');
 define('TIPO_FICHA','Sheet Type');
 define('FONTE','Source');
 
-define('USUARIOS_CADASTRADOS', "Registered Users");
-define('FICHAS_CADASTRADAS', "Registered Sheets");
-define('MONSTROS_CADASTRADOS', "Registered Monsters");
-define('BESTIARIO_CADASTRADOS', "Registered Bestiary");
-define('CRIATURAS_CADASTRADAS', "Registered Creatures");
+define('USUARIOS_CADASTRADOS', "Users");
+define('FICHAS_CADASTRADAS', "Sheets");
+define('MONSTROS_CADASTRADOS', "Monsters");
+define('BESTIARIO_CADASTRADOS', "Bestiary");
+define('CRIATURAS_CADASTRADAS', "Creatures");
 define('CHEFES_DE_FASE', "Phase Heads");
-define('ITENS_CADASTRADOS', "Registrants items");
+define('ITENS_CADASTRADOS', "items");
 
 define('MSG_BEM_VINDO_INDEX', "What you seek is here at");
 define('MSG_TEXT_INDEX_01', "Contribute to Help RPG , make a donation to motivate the development of this site as well have a environment each time
