@@ -838,7 +838,7 @@ function helper_ads_cursos(){
 function helper_adsense_01(){
 	global $tag;
 	$tag->imprime('
-		<div class="banner-center">
+		<div class="col-md-12">
 			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 			<!-- anuncio_1 -->
 			<ins class="adsbygoogle"
@@ -855,7 +855,7 @@ function helper_adsense_01(){
 function helper_adsense_02(){
 	global $tag;
 	$tag->imprime('
-		<div class="banner-center">
+		<div class="col-md-12">
 			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 			<!-- anuncio_2 -->
 			<ins class="adsbygoogle"
@@ -869,10 +869,42 @@ function helper_adsense_02(){
 	');
 }
 
+function helper_adsense_responsivo_01(){
+	global $tag;
+	$tag->imprime('
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- ads_help_responsivo_01 -->
+			<ins class="adsbygoogle"
+			     style="display:block"
+			     data-ad-client="ca-pub-3010334569259161"
+			     data-ad-slot="7650926539"
+			     data-ad-format="auto"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+		');
+}
+
+function helper_adsense_responsivo_02(){
+	global $tag;
+	$tag->imprime('
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- ads_help_responsivo_02 -->
+			<ins class="adsbygoogle"
+			     style="display:block"
+			     data-ad-client="ca-pub-3010334569259161"
+			     data-ad-slot="6034592536"
+			     data-ad-format="auto"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+		');
+}
+
 function helper_adsense_03(){
 	global $tag;
 	$tag->imprime('
-		<div class="banner-center">
+		<div class="col-md-12">
 			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 			<!-- anuncio_3 -->
 			<ins class="adsbygoogle"
@@ -1157,13 +1189,17 @@ function helper_form_text_field_conto($size = 12){
 	$form->col_();
 }
 
-function helper_form_button_submit_and_back($path, $size = 4){
+function helper_form_button_submit_and_back($path, $size = 4, $validation = false){
 	global $tag, $form;
 	$form->_col($size);
 		$form->br();
 		$form->link_button(BACK, $path);
 		echo "  ";
-		$form->input_submit(['class'=>'btn btn-default', 'type'=>'submit', 'name'=>'action', 'value'=>'Cadastrar']);
+		if($validation):
+			$form->input_submit(['onclick'=> $validation,'class'=>'btn btn-default', 'type'=>'submit', 'name'=>'action', 'value'=> CADASTRAR ]);
+		else:
+			$form->input_submit(['class'=>'btn btn-default', 'type'=>'submit', 'name'=>'action', 'value'=> CADASTRAR]);
+		endif;
 	$form->col_();
 }
 
@@ -1173,7 +1209,7 @@ function helper_form_button_update_and_back($path, $size = 4){
 		$form->br();
 		$form->link_button(BACK, $path);
 		echo "  ";
-		$form->input_submit(['class'=>'btn btn-default', 'type'=>'submit', 'name'=>'action', 'value'=>'Atualizar']);
+		$form->input_submit(['class'=>'btn btn-default', 'type'=>'submit', 'name'=>'action', 'value'=> ATUALIZAR]);
 	$form->col_();
 }
 
