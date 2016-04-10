@@ -31,7 +31,7 @@ class Flashmsg{
 	}
 	
 	function alert($msg){
-		$this->form->_div(['class'=>$this->css_class, 'role'=>'alert']);
+		$this->form->_div(['class'=>$this->css_class.' col-md-12', 'role'=>'alert']);
 			echo $msg;
 		$this->form->div_();
 	}
