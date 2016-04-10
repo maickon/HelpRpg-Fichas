@@ -231,22 +231,35 @@
 		$parametros['nomes'] = array(
 										HOME, 
 										CADASTRO, 
-										SOBRE, 
+										array(	SOBRE, 
+												SOBRE_HELP, 
+												COMO_USAR, 
+												VERSAO_ESTRANGEIRA,
+												DOACAO,
+												PARCERIA, 
+												QUEM_SOU),
 										$utilitarios_label, 
 										$downloads_label, 
 										$midias_sociais_label, 
-										array(LINGUAGEM,PT_BR,EN),
-										COMO_USAR);
+										array(LINGUAGEM,PT_BR,EN)
+									);
 		//Links
 		$parametros['links']  = array(
 										HOME_PATH, 
 										USERNEWPATH, 
-										ABOUTPATH, 
+										array(	"#",	
+												ABOUTPATH, 
+												COMO_USAR_PATH, 
+												VERSAO_ESTRANGEIRA_PATH, 
+												DOACAO_PATH, 
+												PARCERIA_PATH, 
+												QUEM_SOU_PATH
+											),
 										$utilitarios_link, 
 										$downloads_link, 
 										$midias_sociais_link,
-										array("#",PTBR_PATH,EN_PATH), 
-										HOWTOUSE);
+										array("#",PTBR_PATH,EN_PATH)
+									);
 		//informa que e o programador do site e o copyright, este termos so sao usado quando estes arrays de label e links
 		//sao usados no rodape do site
 		$parametros['programer']  = PROGRAMER;
