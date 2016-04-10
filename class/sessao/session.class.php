@@ -33,18 +33,19 @@ class Session{
 
 	//percorre a sessao atual a fim de identificar se determinao nome consta na sessao atual
 	function authenticate($name){
+		$valid = false;
 		foreach($_SESSION as $key):
-			if($key == $_SESSION[$name]):
-				return true;
-			else:
-				return false;
-			endif;
+			if($key == $_SESSION[$name])
+				$valid = true;
 		endforeach;
+
+		return $valid;
 	}
 
 	//vei verificar se o nome passado por parametro consta na sessao atual 
 	//se for falso, redireciona para a pagina raiz
 	function restricted_access($url = ROOTPATHURL){
+		global $tag;
 		if(!$this->authenticate('login')):
 			$tag->imprime("<meta HTTP-EQUIV='Refresh' CONTENT='0; URL=".$url."'>");
 			//@header('location:'.$url);
