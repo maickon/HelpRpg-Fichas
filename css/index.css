@@ -364,6 +364,22 @@ a.footer-search-fonte:hover{
 	max-width: 100% !important;
 }
 
+#id{
+	width: 100%;
+}
+.GoogleActiveViewClass{
+	width: 100% !important;
+}
+
+.text_min{
+	font-size: 10px;	
+}
+
+.text_badge{
+	font-weight: bolder;
+	font-size: 12px;
+}
+
 #map{
 	max-width: 100%;
 	padding: 5px;
