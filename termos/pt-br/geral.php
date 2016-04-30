@@ -2,7 +2,7 @@
 
 //Nome/Titulo do site/projeto
 define('PROJECTTITLE', "Help RPG Fichas");
-define('PROGRAMER', 'Desenvolvido por <a href="http://www.mrcurriculo.orgfree.com/" target="blank">Maickon Rangel</a> todos os direitos reservados');
+define('PROGRAMER', 'Desenvolvido por <a href="https://www.facebook.com/maickonr" target="blank">Maickon Rangel</a> todos os direitos reservados');
 define('COPY', "&copy 2013-".date('Y'));
 
 //Labels de menu no painel adm e msg de alerta
@@ -25,6 +25,7 @@ define('EDITAR_DADOS', "Editar dados");
 define('CANCELAR_CONTA', "Cancelar conta");
 define('PERSONAGEM_MENU', "Personagem");
 define('CRIAR_PERSONAGEM', "Criar um personagem");
+define('CRIAR_CONTA', "Criar uma conta");
 define('CRIAR_MONSTRO', "Criar um monstro");
 define('CRIAR_PERSONAGEM_LINK', "Criar um personagem rápido");
 define('CRIAR_MONSTRO_LINK', "Criar um monstro rápido");
@@ -144,3 +145,10 @@ define('REGISTRO_NAO_ENCONTRADO_MSG', 'Este registro não existe em nossa base d
 define('LINGUAGEM', 'Idiomas');
 define('PT_BR', 'Portugês-BR');
 define('EN', 'Inglês');
+
+//barra de buscas
+define('PLACEHOLDER_BUSCA_PRINCIPAL', 'Busque: classe, raça, nome, dono da ficha, ficha tipo, sistema de rpg ou Lv');
+define('NOVA_BUSCA_GERAL','Nova busca geral...');
+define('PLACEHOLDER_BUSCA_MSG','Digite sua busca. Ex: Espada Larga');
+define('RESULTADO_BUSCA', 'Resultado...');
+define('PUBLICIDADE','Publicidade');

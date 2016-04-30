@@ -1,6 +1,6 @@
 <?php
 define('PROJECTTITLE', "Help RPG Sheets");
-define('PROGRAMER', 'Development by <a href="http://www.mrcurriculo.orgfree.com/" target="blank">Maickon Rangel</a> All rights reserved.');
+define('PROGRAMER', 'Development by <a href="https://www.facebook.com/maickonr" target="blank">Maickon Rangel</a> All rights reserved.');
 define('COPY', "&copy 2013-2015");
 
 //Menu labels from menage pane and msg alert
@@ -24,6 +24,7 @@ define('EDITAR_DADOS', "Edit data");
 define('CANCELAR_CONTA', "Cancel account");
 define('PERSONAGEM_MENU', "Character");
 define('CRIAR_PERSONAGEM', "New Character");
+define('CRIAR_CONTA', "Create an account");
 define('CRIAR_MONSTRO', "New Monster");
 define('CRIAR_PERSONAGEM_LINK', "New Character fast");
 define('CRIAR_MONSTRO_LINK', "New Monster fast");
@@ -142,3 +143,10 @@ and create new records in our database.');
 define('LINGUAGEM', 'Language');
 define('PT_BR', 'Portuguese-BR');
 define('EN', 'English');
+
+//search bar
+define('PLACEHOLDER_BUSCA_PRINCIPAL', 'Search: class, race, name, owner of record, type plug, rpg system or Lv');
+define('NOVA_BUSCA_GERAL','New general search...');
+define('PLACEHOLDER_BUSCA_MSG','Enter your search. Ex: Broadsword');
+define('RESULTADO_BUSCA', 'Result...');
+define('PUBLICIDADE','Advertising');
