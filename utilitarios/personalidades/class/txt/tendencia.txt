@@ -1,0 +1,10 @@
+Leal e Bom
+Leal e Mal
+Leal e Neutro
+Bom
+Mal
+Leal
+Neutro
+Caótico e Bom
+Caótiico e Mal
+Caótico e Neutro

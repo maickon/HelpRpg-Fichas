@@ -1,0 +1,33 @@
+Afiada: a margem de ameaça da arma duplica. Por exemplo, uma espada longa (margem de ameaça 19-20) afiada tem margem de ameaça 17-20.
+Anárquica: uma arma anárquica é imbuída com o poder do caos. Ela atravessa redução de dano correspondente, e inflige +2d6 de dano contra criaturas Leais. Uma criatura Leal que empunha uma arma anárquica sofre um nível negativo.
+Anti-criatura: contra um tipo de criatura específica, o bônus da arma aumenta em +2 (por exemplo, uma arma +1 se torna uma arma +3) e ela causa 2d6 pontos de dano adicional. Os tipos são: Animal, Construto, Espírito, Humanoide, Monstro e Morto-Vivo.
+Armazenar Magia: um conjurador pode guardar uma magia de até 3º nível na arma. Sempre que a arma atinge uma criatura, seu usuário pode escolher lançar a magia guardada contra a criatura, como uma ação livre. Uma vez que a magia seja lançada, um conjurador pode guardar outra magia na arma.
+Arremesso: a arma pode ser arremessada, com distância de 3m.
+Axiomática: uma arma axiomática é imbuída com o poder da ordem. Ela atravessa redução de dano correspondente, e inflige +2d6 de dano contra criaturas Caóticas. Uma criatura Caótica que empunhe uma arma axiomática sofre um nível negativo.
+Caçadora: a arma se desvia em direção ao seu alvo, anulando quaisquer chances de erro (como de camuflagem, por exemplo). Apenas armas de ataques à distância podem ter este poder.
+Congelante: a arma causa +1d6 de dano de frio. Quando usada, recobre-se com uma fina camada de gelo e névoa, mas não fere seu portador.
+Dançarina: como uma ação padrão, o usuário de uma arma dançarina pode soltá-la no ar. A arma então flutua, ataca os inimigos de seu dono (com os mesmos bônus que teria se empunhada pelo dono) por quatro rodadas, e então cai no chão.
+Defensora: no começo de cada rodada, o usuário de uma arma defensora pode dividir seu bônus entre suas jogadas de ataque e dano, e sua classe de armadura. Por exemplo, uma arma +5 pode fornecer +3 nos ataques e dano, e +2 na classe de armadura.
+Dissonante: quando esta arma atinge uma criatura, cria um lampejo de energia que causa +2d6 de dano à criatura atingida, e 1d6 de dano ao usuário.
+Distância: a arma tem sua distância duplicada. Apenas armas de ataque à distância podem ter este poder.
+Dolorosa: cada ataque bem-sucedido com uma arma dolorosa causa dano igual ao modificador de Força do usuário em todas as criaturas a até 3m (incluindo o próprio usuário). O alvo do ataque recede este dano em adição ao dano normal da arma. Apenas armas de ataque corpo-a-corpo podem receber este encantamento.
+Drenante: a cada ataque bem-sucedido com a arma causa 1 ponto de dano adicional, e o usuário da arma recupera 1PV ou 1 PM (à sua escolha).
+Elétrica: a arma causa +1d6 de dano de eletricidade. Quando usada, emite faíscas elétricas, mas sem ferir seu portador.
+Energia brilhante: a arma tem sua parte perigosa (a lâmina de uma espada, a ponta de uma lança...) transformada em luz. Armas de energia brilhante ignoram bônus na CA fornecidos por armaduras e emanam luz como uma tocha.
+Explosão congelante: como uma arma congelante. Além disso, com um acerto crítico confirmado, causa +1d10 de dano de frio quando o multiplicador da arma é x2; +2d10 quando é x3, e +3d10 quando x4 ou mais.
+Explosão elétrica: como uma arma elétrica. Além disso, com um acerto crítico confirmado, causa +1d10 de dano de eletricidade quando o multiplicador da arma é x2; +2d10 quando é x3, e +3d10 quando x4 ou mais.
+Explosão flamejante: como uma arma flamejante. Além disso, com um acerto crítico confirmado, causa +1d10 de dano de fogo quando o multiplicador da arma é x2; +2d10 quando é x3, e +3d10 quando x4 ou mais.
+Flamejante: a arma acusa +1d6 de dano de fogo. Emana chamas quando usada, mas sem ferir seu portador. As chamas também não são suficientes para iluminar o caminho.
+Impaciente: uma arma impaciente pode ser sacada como uma ação livre. Caso o usuário possua o talento Saque Rápido, a arma concede um bônus de +4 em Iniciativa. Se a arma for sacada e usada para atacar na mesma rodade, concede +2 de bônus em ataque. Caso o usuário seja desarmado, a arma "pula" de volta para sua mão na rodada seguinte, a menos que seja segura ou presa de alguma forma.
+Misericórdia: a arma causa +1d6 de dano, mas todo o dano causado é não-letal. O usuário da arma pode desativar e ativar esse poder com uma ação livre.
+Primitiva: apenas porretes, adagas, lanças e machadinhas feitas de material rústico (pedra, osso, madeira...) podem ser primitivas. Uma arma primitiva causa +4 de dano, e concede um bônus de +10 para quebrar armas e objetos refinados (feitos de metal, obra-prima, etc.) com a manobra separar.
+Profana: uma arma profana é imbuída com o poder do mal. Ela atravessa a redução de dano correspondente, e inflige +2d6 de dano contra criaturas Bondosas. Uma criatura Bondosa que empunha uma arma profana sofre um nível negativo.
+Retorno: a arma volta voando à criatura que a arremessou, no início de seu próximo turno. Pegar a arma é uma ação livre e não requer nenhum teste. Apenas armas de arremesso podem ter este poder.
+Rompimento: um morto-vivo atingido pela arma deve ser bem-sucedido em um teste de Vontade (CD 10 + metade do nível do usuário) ou é automaticamente destruído.
+Sagrada: uma arma sagrada é imbuída com o poder do bem. Ela atravessa a redução de dano correspondente, e inflige +2d6 de dano contra criaturas Malignas. Uma criatura Maligna que empunhe uma arma sagrada sofre um nível negativo.
+Sangramento: cada acerto da arma causa, além do dano normal, 1 ponto de dano de Constituição. Esse dano não é multiplicado em caso de acerto crítico. Criaturas imunes a acertos críticos também são imunes ao dano de Constituição.
+Toque espectral: esta arma atinge criaturas incorpóreas normalmente, sem 50% de chance de falha. Criaturas incorpóreas podem empunhar armas de toque espectral como se fossem corpóreas.
+Trespassar poderoso: o usuário da arma recebe o talento Trespassar, sem precisar atender seus pré-requisitos. Caso já possua, pode usar o talento uma vez adicional por rodada.
+Trovejante: esta arma cria uma explosão sonora quando executa um acerto crítico. Com um acerto crítico confirmado , causa +1d10 de dano sônico quando o multiplicador da arma é x2; +2d10 quando é x3, e +3d10 quando x4 ou mais.
+Velocidade: o usuário da arma recebe os benefícios do talento Ataque Duplo, sem precisar atender seus prérequisitos. Caso já possua, pode realizar dois ataques sem sofrer a penalidade de -5.
+Vorpal: caso o usuário role um 20 natural na jogada de ataque, a arma decepa a cabeça do oponente. Algumas criaturas, como certos construtos, mortos-vivos ou monstros com várias cabeças, não morrem ao perder a cabeça. A maior parte das criaturas, no entanto, morrerá instantaneamente.

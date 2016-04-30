@@ -1,0 +1,37 @@
+body {
+    font-family: Arial;
+}
+
+pre.code {
+    padding: 5px;
+    background-color: #eee;
+    border: 2px dashed gray;
+    margin-top: 0;
+    margin-bottom: 40px;
+    overflow-x: auto;
+}
+
+pre.code span {
+    color: green;
+}
+
+pre.code span span {
+    color: red;
+}
+
+.span{
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+}
+.center{
+    text-align: center;
+}
+.cvs{
+	width: 100%;
+	height: auto;
+}
+
+#map{
+    width: 100%;
+}

@@ -1,0 +1,7 @@
+Clima mais seco, o que aumenta o consumo de água.
+Sem precipitação nenhuma, com o céu límpido.
+Pouca precipitação, como névoa e orvalho.
+Precipitação leve, como garoa, chuvisco e alguns flocos de neve.
+Precipitação moderada, com chuva leve por algumas horas e neve.
+Precipitação forte, com chuva por um dia inteiro, neve constante, granizo.
+Tempestade, chuva forte causando alagamentos e nevasca.

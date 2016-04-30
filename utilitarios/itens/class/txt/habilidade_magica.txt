@@ -1,0 +1,56 @@
+Flamejante +3
+Congelante +3
+Aximomático(a) +1
+Da ordem +2
+Ordeiro(a) +1
+Do caos +2
+Profano(a) +2
+Explosão Flamejante +2
+Explosão Congelante +2
+Do gelo +1
+Do frio +1
+Elétrica(o) +1
+Vorpal +5
+Afiada(o)  +1 bonus
+Anti-criatura +1 bonus
+Armazenar magia +1 bonus
+Arremesso +1 bonus
+Congelante  +1 bonus
+Defensor(a)  +1 bonus
+Dissonante  +1 bonus
+Elétrica(o)  +1 bonus
+Flamejante  +1 bonus
+Misericórdia  +1 bonus
+Toque espectral +1 bonus
+Trespassar poderoso +1 bonus
+Trovejante  +1 bonus
+Anárquica(o) +2 bonus
+Axiomática(o)  +2 bonus
+Explosão congelante +2 bonus
+Explosão elétrica +2 bonus
+Explosão flamejante +2 bonus
+Profana(o) +2 bonus
+Rompimento  +2 bonus
+Sagrada(o) +2 bonus
+Sangramento +2 bonus
+Dançarina(o) +3 bonus
+Energia Brilhante +4 bonus
+Velocidade  +4 bonus
+Anti-criatura +1 bonus
+Caçadora(or)  +1 bonus
+Congelante  +1 bonus
+Distância +1 bonus
+Elétrica(o)  +1 bonus
+Flamejante  +1 bonus
+Misericórdia  +1 bonus
+Retorno +1 bonus
+Trovejante  +1 bonus
+Anárquica(o) +2 bonus
+Axiomática(o)  +2 bonus
+Explosão congelante +2 bonus
+Explosão elétrica +2 bonus
+Explosão flamejante +2 bonus
+Profana(o) +2 bonus
+Sagrada(o) +2 bonus
+Energia brilhante +4 bonus
+Velocidade  +4 bonus

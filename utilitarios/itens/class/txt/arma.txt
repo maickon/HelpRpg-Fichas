@@ -1,0 +1,72 @@
+Espada
+Espada Longa
+Espada Gladiadora
+Espada Delgado
+Espada Longa Delgado
+Espada Curta
+Espada Bastarda
+Espada Larga
+Espada de Ferro
+Espada de Aço
+Espada da Luz
+Espada de Prata
+Lâmina de Aço
+Mataferóz Resistênen
+Escurystar
+Eletrostar
+Matsukaze (Ninja)
+Kagari-bi (Ninja)
+Fafnir (Ninja)
+Yomogi-u (Ninja)
+Sabre
+Falcione
+Cimitarra
+Cimitarra Menor
+Excalibur
+Machado
+Machadinha
+Machado Gladiador
+Machado Amaldiçoado
+Machado Desafiador
+Machado Assassino
+Machado Grande
+Machado de Batalha
+Machado de Aço
+Machado de Mão
+Machado de Ferro
+Machado de Prata
+Machado de Guerra
+Armads
+Halberd
+Alabarda
+Lança
+Lança Longa
+Lança Composta
+Lança Dupla
+Lança Delgado
+Lança Bala (Longa distancia e Rapida)
+Lança Pequena
+Lança Curta
+Lança Montada
+Lança de Ferro
+Lança de Prata
+Lança de Aço
+Azagaia
+Javelin
+Tridente
+Ranseur
+Arco
+Arco Composto
+Arco Longo
+Arco Matador
+Tiro Rapido
+Besta
+Besta Composta
+Besta Leve
+Besta Pesada
+Besta de Mão
+Bravotano
+Martelo de Combate
+Martelo de Guerra
+Martelo de Batalha
+Punho de Ferro (Luva)

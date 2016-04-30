@@ -1,0 +1,366 @@
+Altar
+Ara
+Alpha 
+Arae
+Austral
+Andrômeda
+Alpheratz
+Aquário
+Sadal Melik
+Alpha 
+Apodis
+Águia
+Altair
+Libra
+Zubenelgenubi
+Cetus
+Baleia
+Menkar
+Bootes
+Boieiro
+Boo
+Arcturus
+Caelum
+Buril (do Escultor)
+Cae
+Alpha Caeli
+Austral
+Pyxis
+Bússola
+Pyx
+Alpha Pyxids
+Austral
+Coma Berenices
+Cabeleira de Berenice
+Com
+Diadema
+Equatorial
+Chamaeleon
+Camaleão
+Cha
+Alpha Chamaeleontis
+Circumpolar Sul
+Capricornus
+Capricórnio
+Cap
+Algedi (Al Giedi)
+Cancer
+Caranguejo
+Acubens
+Carina
+Carena
+Canopus
+Austral
+Aries
+Carneiro
+Hamal
+Cassiopéia
+Schedar
+Boreal
+Equuleus
+Cavalo Menor
+Kitalpha
+Canis Venatici
+Cães de Caça
+Canis Maior
+Cão Maior
+Canis Minor
+Cão Menor
+Procyo
+Cepheus
+Cefeu
+Alderamin
+Circumpolar Norte
+Centaurus
+Toliman
+Austral
+Cygnus
+Cisne
+Cyg
+Deneb
+Boreal
+Auriga
+Cocheiro
+Boreal
+Circinus
+Compasso
+Alpha Circi
+Corona Australis
+Coroa Austral
+Alpha Coronae Austra
+Austral
+Corona Borealis
+Coroa Boreal
+Alphecca
+Gemma
+Boreal
+Corvus
+Corvo
+Crv
+Alchiba
+Equatorial
+Crux
+Cruzeiro do Sul
+Cru
+Acru
+Austral
+Delphinus
+Delfim
+Del
+Sualocin
+Equatorial
+Dorado
+Dourado
+Alpha Doradus
+Austral
+Draco
+Dragão
+Thuban
+Circumpolar Norte
+Eridanus
+Eridano
+Acherna
+Scorpius
+Escorpião
+Antares
+Scutum
+Escudo
+Alpha Scuti
+Equatorial
+Sculptor
+Escultor
+Scl
+Alpha Sculptori
+Norma
+Esquadro
+Nor
+Normae
+Austral
+Phoenix
+Fênix
+Phe
+Ankaa
+Austral
+Sagitta
+Flecha
+Sge
+Alpha Sagittae
+Equatorial
+Fornax
+Forno
+Alpha Forna98
+Austral
+Gemini
+Gêmeos
+Gem
+Castor
+Camelopardus
+Girafa
+Cam
+Alpha Camelopardus
+Circumpolar Norte
+Grus
+Grou
+Gru
+Al NairAustral
+Hercules
+Hércules
+Rasalgethi
+Boreal
+Hydra
+Hidra
+Hya
+Alpha
+Equatorial
+Hydrus
+Hidra Macho
+Hyi
+Alpha Hydri
+Circumpolar Sul
+Indus
+Índio
+Ind
+Alpha Indi
+Austral
+Lacerta
+Lagarto
+Lac
+Alpha Lacertae
+Boreal
+Leo
+Leão
+Leo
+Regulus
+Leo Minor
+Leão Menor
+LmiLmi
+Boreal
+Lepus
+Lebre
+Lep
+Arneb
+Equatorial
+Lynx
+Lince
+Lyn
+Alpha Lyncis
+Boreal
+Lyra
+Lira
+Lyr
+Vega
+Boreal
+Lupus
+Lobo
+Lup
+Alpha 
+Austral
+Antlia
+Máquina Pneumática
+Ant
+Alpha Antiliae
+Austral
+Mensa
+Mesa
+Men
+Alpha Mensa
+Circumpolar Sul
+Microscopium
+Microscópio
+Mic
+Alpha Microscopii
+Austral
+Musca
+Mosca
+Mus
+Alpha Musc8
+Austral
+Octans
+Oitante
+Oct
+Octantis
+Circumpolar Sul
+Orion
+Órion
+Ori
+Betelgeuse
+Equatorial
+Pavo
+Pavão
+Pav
+Peac78
+Austral
+Piscis Austrinus
+Peixe Austral
+PsA3
+Fomalhaut
+Austral
+Volans
+Peixe Voador
+Vol7
+Alpha Volantis
+Austral
+Pisces
+Peixes
+Psc45
+Alrescha
+Perseus
+Perseu
+Per
+Mirfa
+Boreal
+Pegasus
+Pégaso
+Peg99
+Markab
+Equatorial
+Pictor
+Alpha Pictoris
+Austral
+Columba
+Phaet
+Austral
+Puppis
+Popa 
+Austral
+Vulpecula
+Raposa
+Alpha Vulpeculae
+Horologium
+Relógio
+Alpha Horologii
+Austral
+Reticulum
+Retículo
+Alpha Reticuli
+Austral
+Sagittarius
+Sagitário
+Sgr-33
+Rukbat
+Ophiuchus
+Serpentário
+Oph-12
+Ras Alhague
+Equatorial
+Serpens
+Serpente
+Ser-88
+Sextans
+Sextante
+Sex
+Alpha Sextan
+Equatorial
+Crater
+Taça
+Crt-0
+Alkes
+Equatorial
+Telescopium
+Telescópio
+Tel9
+Alpha Telescopii
+Austral
+Taurus
+Touro
+Tau10
+Aldebaran
+Triangulum
+Triângulo
+Tri-987
+Rasalmothallah
+Boreal
+Triangulum Australe
+Triângulo Austral
+TrA-55
+Atria
+Austral
+Tucana
+Tucano
+Tuc
+Alpha Tucanae
+Austral
+Monoceros
+Unicórnio
+Mon-12
+Alpha Monocerotis
+Equatorial
+Ursa Maior
+Ursa Maior
+Dubhe
+Boreal
+Ursa Minor
+Ursa Menor
+Umi-5
+Polaris
+Circumpolar Norte
+Vela
+Vela-92
+Vel100
+Suhail al Muhlif
+Ponto-00
+Austral
+Virgo
+Virgem
+Vir-77
+Spica

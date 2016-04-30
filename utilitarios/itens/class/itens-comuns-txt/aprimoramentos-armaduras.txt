@@ -1,0 +1,11 @@
+Obra-Prima: Esse apriomoramento fornece um bônus de +1 nas jogadas de ataque com armas ou reduz em 1 a penalidade de armadura (por exemplo, uma cota de malha obra-prima tem penalidade de armadura –2).
+Banhado a Ouro: Um item banhado a ouro fornece +2 em testes de diplomacia. Contudo o mestre pode mudar esse bônus para uma penalidade de -2 caso o personagem esteja interagindo com pessoas que desprezam tal ostentação. Também atrai a cobiça de ladrões.
+Cravejada de Joias: A opulência que emana de um iem desse tipo favorece engodos. Concede +2 em testes de enganação. E também atrai a cobiça de ladrões.
+Delicada: Aprimoramento que usa materiais leves e placas de espessura mínima. Aumenta o bônus máximo de destreza em +2. 
+Espinhos na Armadura: O usuário dessa armadura, se envolvido na manobra agarrar (agarrando ou agarrado), causa uma quantidade de dano de perfuração igual ao seu modificador de força. O dano é causado quando a manobra é feita e no inicio de cada turno do personagem, enquanto for mantida.
+Espinhos no Escudo: Espinhos no escudo aumentam o dano do escudo em uma categoria (um escudo pesado passa a causar 1d8 de dano).
+Polida: Uma armadura ou escudo polidos tende a ofuscar inimigos. Em ambientes iluminados, fornece +2 na classe de armadura, mas apenas na primeira rodade de combate - após isso, o oponente se acostuma ao reflexo.
+Macabra: A aparencia assustadora fornece +2 nos testes de intimidar, mas penaliza em -2 todos os testes de diplomacia.
+Reforçada: Placas adicionais ou de maior espessura fornecem +1 a CA da concedida pela armadura, entretanto também aumentam a penalidade da armadura em +2 (uma armadura de batalha concederia CA+9 e teria panalidade de -7). Pode ser combinada com o Aprimoramento Sob Medida para amenizar as penalidades.
+Selada: A armadura foi forjada para proteger cada pedaço do corpo do usuário, concedendo um bônus de +1 nos testes de resistência. Só pode ser aplicado sobre armaduras pesadas. 
+Sob Medida: Perfeitamente ajustada ao usuário, esta armadura (ou escudo) reduz em -2 a penalidade de armadura para um usuário especifico. (para outros, comporta-se como um item comum).

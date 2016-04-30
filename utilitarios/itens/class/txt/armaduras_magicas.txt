@@ -1,0 +1,26 @@
+Armadura
+Armadura Gladiadora
+Armadura Acolchoada (Couro)
+Armadura de Prata
+Armadura de Bronze
+Armadura de Ferro
+Armadura de Aço
+Armadura de Mithril
+Armadura de Batalha
+Armadura de Combate
+Armadura de Guerra
+Peitoral de Aço
+Peitoral de Ferro
+Peitoral de Aço Reforçado
+Peitoral de aço Completo
+Cota de Malha
+Cota de Talas
+Loriga Segmentada
+Corselete de Couro
+Gibão de Couro (Não envolve a perna)
+Brunea
+Manto
+Manto Aprendiz
+Veste Shamãn
+Manto da Sabedoria
+Veste dos Magos

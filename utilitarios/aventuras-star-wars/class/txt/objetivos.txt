@@ -1,0 +1,39 @@
+Atacar uma pessoa importante
+Atacar uma organização
+Atacar uma local
+Destruir um objeto
+Atacar uma criatura
+Atacar uma comunidade
+Localizar uma pessoa importante
+Localizar uma nova rota
+Encontrar um local
+Recuperar um objeto roubado
+Encontrar um objeto raro
+Encontrar uma criatura
+Roubar uma obra de arte
+Roubar um artefato antigo
+Roubar armamento
+Assaltar um comboio
+Roubar uma pessoa rica
+Roubar informações sigilosas
+Roubar um carregamento
+Roubar uma nave
+Proteger um indivíduo
+Proteger um local
+Transportar um carregamento
+Carregar informações sigilosas
+Proteger uma organização
+Explorar um planeta
+Explorar uma ruína antiga
+Descobrir a verdade sobre um boato
+Explorar uma cidade
+Sobreviver a um planeta hostil
+Escapar de uma prisão
+Fugir de Caçadores de Recompensas
+Fugir do Império que os caça
+Sobreviver a um desastre natural
+Levar passageiros a lugar hostil
+Vender mercadoria proibida
+Dar o golpe em alguém
+Resgatar pessoas
+Despistar organização criminosa

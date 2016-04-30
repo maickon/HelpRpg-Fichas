@@ -1,0 +1,9 @@
+Obra-Prima: Esse apriomoramento fornece um bônus de +1 nas jogadas de ataque com armas ou reduz em 1 a penalidade de armadura (por exemplo, uma cota de malha obra-prima tem penalidade de armadura –2).
+Banhado a Ouro: Um item banhado a ouro fornece +2 em testes de diplomacia. Contudo o mestre pode mudar esse bônus para uma penalidade de -2 caso o personagem esteja interagindo com pessoas que desprezam tal ostentação. Também atrai a cobiça de ladrões.
+Brutal: Composta de rebarbas, espinhos ou mesmo lâminas adicionais, uma arma com esse aprimoramente concede um bônus de +1 nas rolagens de dano.
+Cravejada de Joias: A opulência que emana de um iem desse tipo favorece engodos. Concede +2 em testes de enganação. E também atrai a cobiça de ladrões. 
+Equilibrada: Arma construida de forma a facilitar movimentos complexos. Fornece +2 de bônus em testes de manobras (separar, desarmar, etc).
+Magistral: Esse apriomoramento fornece um bônus de +2 nas jogadas de ataque.
+Precisa: A margem de ameça da arma aumenta em 1 ponto. Uma arma não pode ser precisa e maciça.
+Macabra: A aparencia assustadora fornece +2 nos testes de intimidar, mas penaliza em -2 todos os testes de diplomacia.
+Maciça: O multiplicador de crítico da arma aumenta em 1 ponto (uma foice passa a ter crítico 20/x5). Uma arma não pode ser Maciça e Precisa.

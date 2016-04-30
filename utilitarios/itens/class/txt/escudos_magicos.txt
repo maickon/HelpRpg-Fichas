@@ -1,0 +1,9 @@
+Escudo
+Escudo Gladiador
+Escudo Longo
+Escudo Longo Reforçado
+Escudo de Madeira
+Escudo de Ferro
+Escudo de Aço
+Escudo de Prata
+Escudo de Batalha

@@ -1,0 +1,58 @@
+.dice-text{
+	text-align: center;
+	font-weight: bolder;
+	height: 40px;
+	font-size: 26px;
+}
+
+.dice{
+	cursor:pointer;
+	text-align: center;	
+}
+
+.input-dice{
+	text-align: center;
+	width: 25%;
+    border-radius: 10px;
+}
+
+.small{
+	float: right;
+	width: 30%;
+	height: 30px;
+}
+
+.span-dice{
+	font-size: 10px;
+	font-weight: bolder;
+}
+
+.rolagem{
+	text-align: center;
+	font-size: 12px;
+	font-weight: bolder;
+}
+
+.result-rol-fail{
+	color: red;
+	font-size: 16px;
+}
+
+.result-rol-critical{
+	color: green;
+	font-size: 16px;
+}
+
+.result-rol-normal{
+	color: black;
+	font-size: 16px;
+}
+
+.total{
+	text-align: center;
+	font-weight: bold;
+	background-color: silver;
+	margin-top: 10px;
+	cursor: pointer;
+	border-radius: 10px;
+}

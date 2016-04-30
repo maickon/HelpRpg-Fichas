@@ -1,0 +1,27 @@
+Gordo/Gorda|Gordinho/Gordinha|Muito gordo/Muito Gorda
+Muito magro/Muito magra|Magro/Magra|Magro raquítico/Magra raquítica
+Muito feio/Muito feia|Feio/Feia|Bonito/Bonita|Muito bonito/Muito bonita|Excepcionalmente Bonito/Excepcionalmente linda|Fica sem camisa/Usa decotes bem vulgares|Dentes quebrados|Dentes Podres|Mau cheiroso/Mau cheirosa
+Sujo/Suja|Limpo/Limpa
+Caollho/Caolha|Cegos do olho esquerdo|Cego do olho direito
+Careca|Cabelos longos|Cabelo curto|Cabelos curto loiro/cabelos longos loiro|cabelos curto Vermelho/Cabelos longos ruivos|Cabelos ruim/Cabelos longos cacheados
+Muito sensual|Pouco sensual|Tem um olhar sensual
+Usa pouca roupa|Usa roupas nobres|Usa roupas simples|Usa roupas estravagantes
+Pele morena|Pele escura|Pele branca
+Unhas grandes|Unhas feitas
+Anda descalços|Anda de sapatos|Anda de botas
+Olhos grandes|Olhos pequenos|Olhos asiáticos
+Tem deformações no corpo|Tem deformação em uma das mãos|Tem feridas no corpo
+Pele lisa e bonita|Pele enrugada
+Olhos castanhos|olhos verdes|Olhos azuis|Olhos claros
+Usa um tapa olho
+Tem cicatriz na cara|Tem cicatriz no braço|Tem cicatriz no peito
+É manco/É manca
+É barrigudo/É barriguda|É musculoso/É musculosa
+Sem dentes da frente
+Tem braço esquerdo amputado|Tem braço esquerdo quebrado
+Tem braço direito amputado|Tem braço esquerdo quebrado
+Tem muito pêlo no corpo|Tem pêlo nos braços
+Tem barba/Tem pequenos fios no queixo que se asemelha a uma barba
+Nariz grande|Nariz pequeno|Nariz grande com uma verruga|Nariz pequeno com uma verruga
+Tem uma verruga perto do olho esquerdo|Tem uma verruga perto do olho direito|tem uma verruga no quexo
+Mal hálito! quando ele fala sai um odor tão ruim que da vontade de vomitar/Mal hálito! quando ela fala Sai um odor tão ruim que da vontade de vomitar e manda-la para o inferno gritando SAI DRAGÃO!

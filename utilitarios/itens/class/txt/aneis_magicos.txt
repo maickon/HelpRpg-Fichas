@@ -1,0 +1,32 @@
+Anel da terra - Aumenta a sua defesa.
+Anel Fortificante - Aumenta a sua força fisica.
+Anel Assassino - Aumenta sua perícia em furtividade e anula o som de seus passos.
+Anel Guerreiro - Aumenta a sua capacidade de ataque em combate.
+Anel da Inteligência - Aumenta 3 perícias relacionada a inteligência.
+Anel da Vida - Você ganha +20 pontos de vida enquanto estiver usando este anel.
+Anel Intelectual - Com este anel você consegue entender sobre qualquer assunto com pouca informação conhecida. 
+Anel Ybraikho - Aumenta a sua sabedoria.
+Anel Scumbrunllah - Ninguém consegue mentir para você enquanto estiver com este anel. 
+Anel Espiritual - Uma vez por dia você pode fazer uma sessão de 20min e conseguir falar com espiritos.
+Anel Morto - Se você morrer com este anel, você volta a vida como um morto-vivo. Caso o perca, perderá a vida.
+Anel Precioso - Este anel lhe concede o dom de pegar mentiras. Você recebe um bônus para testes de mentir.
+Anel da Juventude - Enquanto estiver usando este anel, você não envelhecerá.
+Anel do Bem - Causa proteção contra criaturas de tendencia maligna.
+Anel dos Deuses - Enquanto usar este anel, você não terá fome, necessidade de dormir e nem de respirar.
+Anel dos justos - Com este anel você recebe o dom de identifica se uma pessoa é leal ou não.
+Anel flamejante - Este anel lhe da a habilidade de você lançar chamas a partir de sua mão. Alcante até 9m e dano de 1d6.
+Anel congelante - Com este anel você consegue baixar a temperatura de um ambiente em até -50°. Cobre uma área circular de até 18m onde você é o centro.
+Anel da vergonha - Quem utilizar este anel terá grandes problemas de relacionamento, pois por motivos inesplicaveis, qualquer pessoa terá imensa vergonha de andar ou até falar com você.
+Anel da pena - Com este anel as pessoas ao seu redor terão pena de você. Isso significa que qualquer pessoa que lhe faça mal, ela sempre se limitará na maldade feita por pena de você.
+Anel pegador - Este anel é muito procurado por pessoa tímidas. Com ele o seu carisma é aumentado e você adquire perícia para se relacionar com o sexo oposto. Em resumo, você conquista quem você quiser na grande maioria das vezes.
+Anel do peixe - Você pode respirar debaixo d'agua.
+Anel do peixe maior - Você pode respirar debaixo d'agua e consegue se comunicar com qualquer tipo de peixe.
+Anel da floresta - Este anel sempre te orienta como se fosse um instinto. Você sempre sabe onde oncontrar comida, abrigo e nunca se perde dentro de uma floresta. Isso vale para até florestas desconhecidas.
+Anel da ferrugem - Tudo de metal que você tocar, caso deseje, começará a dar ferrugem.
+Anel da invisibilidade - Com um comando de voz você e tudo que carrega fica invisível. Mas qualquer ato de violência que você fizer, seja por maldade ou não (de brincadeira). Vai torna-lo visivel novamente.
+Anel do azar - Com este anel toda falha crítica que você tiver gera uma nova falha crítica automática na rodada seguinte.
+Anel do beberrão - Com este anel você não fica embriagado.
+Anel da violência - Este anel aumenta sua força, dano e ataque. Mas diminui a sua defesa num valor equivalente a soma dos bônus concedido.
+Anel de raio - Com este anel você consegue lançar raios a até 9m causando 1d8 de dano.
+Anel de raio maior - Com este anel você consegue lançar raios a até 18m causando 1d12 de dano. 
+Anel do morto-vivo - Você consegue evocar mortos-vivos com 15 PV, ataque, dano e defesa de um personagem de Lv 1. O máximo de mortos-vivos evocados por dia não pode passar do seu nível atual.   

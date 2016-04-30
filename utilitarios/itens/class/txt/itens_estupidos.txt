@@ -1,0 +1,150 @@
+Anel de Proteção. Um anel que aumenta a Classe de Armadura do usuário em 50 (transformando o usuário em uma estátua de metal).
+Mochila do Enjoo. Uma mochila que fica com náusea e aleatoriamente vomita itens guardados nela.
+Amuleto de Narração. Um amuleto que narra em voz alta tudo que o usuário faz.
+Anel do Desajeitado. Um anel que força sua mão a agarrar qualquer coisa que você derrube.
+Anel do Voo. O anel voa, não você. Tente não deslocar o dedo.
+Bracelete da Masculinidade. Um bracelete que dá ao usuário completo controle sobre sua barba.
+Flecha do Retorno. Uma flecha que retorna ao dono (na mesma velocidade em que foi atirada).
+Copo do Existencialismo. Um copo que está sempre meio cheio (ou meio vazio).
+Espada Comestível. Uma shortsword em todos os aspectos, porém ela é deliciosa. -1 de dano por mordida, se recupera de 2 mordidas por dia.
+Moedas Pacifistas. Moedas que se recusam a pagar por qualquer compra de uma arma.
+Dado Mentiroso da Mentira. Faz o usuário falhar em todos os testes de blefe, porém o usuário acha que teve sucesso.
+Banana da Frustração. Quando você tira a casca, tem outra casca por baixo. Sempre.
+Espada do Embotamento. Uma espada que, quanto mais você afia, mais ela perde o fio.
+Anel da Megainvisibilidade. O usuário fica invisível para todos, mas tudo fica invisível para o usuário.
+Pedra da Álgebra. Uma pequena pedra que resolve qualquer cálculo ao ser colocada no chão atraindo pedras próximas para mostrar o resultado. Uso sem cautela pode criar montanhas ou destruir o planeta.
+Sapatos do Desconforto. Dão ao usuário bônus de velocidade, porém são sempre 2 números muito pequenos.
+Colar do Cinismo. Tudo que o usuário fala soa como sarcasmo para quem ouve.
+Calças do Desamasso. Calças que nunca ficam amassadas.
+Capa da Invisibilidade. Quando colocada, capa fica invisível. Não o usuário, só a capa.
+Óculos de Identificanão. Um par de óculos que identifica todos os seres no campo de visão do usuário como “Anão” ou “Não Anão”.
+Anel do Controle Menor. Um anel que permite o usuário controlar uma formiga de tamanho normal.
+Varinha de Criar Varinha. Uma varinha que cria uma varinha. Um uso apenas.
+Anel da Desarqueria. +2 para atacar com um arco, mas há 25% de chance do usuário errar a mão que ele deve soltar ao tentar atirar a flecha.
+Adaga da Refeição. Após atirada, retorna ao usuário se atingir comida (com a comida).
+Anel de Presente de Despedida. Um anel que cura todas as criaturas ao redor do usuário caso o usuário morra.
+Anel da Desinvisibilidade. Um anel que faz o usuário acreditar que está invisível, apesar de qualquer evidência do contrário.
+Sapatos de Caminhar na Água e na Lava. O sapato esquerdo caminha na lava, o direito caminha na água. Nenhum funciona sem o outro.
+Orbe de Detecção de Luz. Um orbe que emite um fraco brilho quando exposto à luz.
+Espada do Conhecimento. Uma espada que, ao invés de atacar criaturas, recita fatos interessantes sobre elas.
+Pergaminho da Tulpamancia. Um pergaminho que não invoca nada, mas que dá ao usuário uma forte sensação de que alguma coisa foi invocada.
+Varinha da Drenagem. Um canudo, mas que suga líquidos sozinho. Líquido sai da outra ponta. Capaz de sugar 1 litro por minuto.
+Faca da Briga de Bar. Quando enfiada em madeira, faca usa ventriloquismo para insultar bêbados próximos.
+Moeda da Dúvida. Uma moeda que tem 60% de chance de responder uma pergunta de “Sim” ou “Não” corretamente. Um uso por dia. Moeda não responde a mesma pergunta exceto se condições mudarem.
+Mochila de Recebimento Aleatório. Quando usuário tenta tirar um item dela, ele recebe um item aleatório, porém nunca o que ele quer.
+Corda de Desamarro. 25 metros de corda irrompível. Caso amarrada, se desamarra sozinha depois de 1d6 turnos.
+Carteira do Desaparecimento. Uma carteira aparentemente normal. Desaparece sempre que você precisa dela e retorna quando você não precisa.
+Copo da Transformação. Um copo metálico que transforma qualquer bebida alcoólica colocada nele em água fresca, e qualquer outro líquido em água suja.
+Pergaminho de Agqpowj. Um pergaminho que torna o usuário incapaz de pronunciar qualquer coisa escrita nele.
+Bigode do Carisma. Um bigode falso que dá ao usuário +5 em Carisma, porém o usuário soa como um bêbado sempre que tenta falar.
+Pedra de Peso. Uma pequena pedra que pesa 1 kg quando em contato com pele, e 1 tonelada caso não haja contato.
+Anel da Presunção. Um anel que causa um forte senso de superioridade no usuário.
+Garrafa de Ar. Uma garrafa de vidro vazia, mas que quando aberta solta ar com a força de um secador de cabelo.
+Chapéu da Indecisão. Um chapéu que faz o usuário querer tirá-lo quando coloca, mas querer colocá-lo quando tira.
+Adaga da Cura. Uma adaga que causa 1d4 de dano e 1d6 de cura.
+Esponja de Carga. Uma esponja capaz de segurar 100 litros de qualquer líquido. Todo o líquido anterior deve ser espremido antes de poder ser usada novamente.
+Capa de Se Achar o Foda. Uma capa que balança ao vento, mesmo se não houver vento.
+Livro Mágico de Datilografia. Um livro de magias que contém todas as magias do usuário. Permite o mestre mudar uma única letra do efeito da magia que o usuário tentar usar. O novo efeito então ocorre.
+Chave da Esperança. Uma chave que entra em qualquer fechadura, mas não consegue abrir nenhuma.
+Pirulito do Terrível Destino. Um pirulito que tem o gosto que você irá sentir quando morrer.
+Pergaminho da Visão. Cura a cegueira de qualquer um que ler o pergaminho.
+Garfo de Gosto Maior: Qualquer coisa comida com este garfo tem gosto de galinha.
+Objeto de Alguma Coisa: Um objeto que libera uma forte aura mágica, porém é impossível determinar sua utilidade. Feito de um material peculiar, não exatamente metal mas também não exatamente madeira. Tem o formato de um cubo esférico.
+Pedra da Terceira Pessoa: Uma pedra que faz quem estiver a segurando apenas capaz de falar em terceira pessoa.
+Chapéu da Visão Interna: Um chapéu que faz quem estiver o usando ser apenas capaz de ver a beleza interna das pessoas.
+Arco da Tensão: Um arco que odeia tensão, e se dobra ao meio sempre que qualquer força for aplicada na corda.
+Copo do Descontrole Vocal: Um copo que torna quem beber dele incapaz de controlar o volume da própria voz.
+Elmo do Niilismo: Um elmo que da +1 à CA do usuário, mas o insulta quando ele é atingido, e constantemente reclama da vida como um elmo.
+Anel do Pulo: Um anel que permite o usuário pular o dobro da distância, porém ele não pode ser removido e o usuário é incapaz de caminhar ou correr, apenas pular.
+Chapéu da Revelação: Um chapéu que revela ao usuário grandes verdades do Universo. Role um d100. Se o resultado for abaixo de 100, o usuário morre, seu cérebro incapaz de conter a verdade.
+Cobertor da Paternidade: Um pequeno cobertor azul. Quem o usar tem 20% de chance de obter o desejo de virar pai.
+Anel de Jimmy: Um anel vermelho de metal que possui uma personalidade própria chamada Jimmy, e é capaz de falar e controlar a mão em que o anel for colocado. Irá brigar caso outra mão tente tirar o anel.
+Tinta de Camuflagem: Uma tinta que dá +10 em furtividade, porém o usuário precisa estar completamente nú e totalmente coberto com a tinta.
+Amuleto do Atraso: Qualquer som causado diretamente por uma ação do usuário deste amuleto é atrasado em 1d4 turnos.
+Anel da Emoção Oposta: Um anel que faz o rosto do usuário expressar a emoção oposta à que ele está sentindo. Se ele está triste, ele irá sorrir, etc…
+Chapéu da Rima: Quando o usuário lançar uma magia usando o Chapéu da Rima, o mestre escolhe uma palavra aleatória. O usuário então deve imediatamente criar uma rima com essa palavra. Se conseguir, um efeito secundário benéfico acontece (mais dano, acerto automático, etc…), porém se o usuário demorar ou enrolar a rima, a magia original não tem efeito e um efeito ruim acontece.
+Uva do Morango: Uma uva com o formato, textura, cor e gosto de um morango.
+Pergaminho de Apagar: Um pergaminho que apaga tudo que for escrito nele em 1d4 turnos.
+Amuleto da Sorte: O amuleto é muito sortudo, o usuário não.
+Livro da Confusão: Um livro cujas letras parecem estar sempre de cabeça para baixo, não importa quantas vezes o usuário vire o livro.
+Cajado da Imobilidade: Um cajado indestrutível que, quando ativado, permanece completamente parado, porém relativo ao Universo. A Terra irá se mover abaixo do cajado, e tudo que estiver em seu caminho é completamente destruído.
+Pedra da Utilização: Quando ativada, a pedra é utilizada. Um uso apenas.
+Anel da Quantificação: O usuário permanece invisível enquanto não for observado.
+Chapéu da Modificação: Um chapéu que aleatoriamente altera uma característica física do usuário a cada 1d4 turnos contados a partir do momento da última alteração.
+Manto da Entrada Triunfal: Ao entrar em uma sala com o manto, uma revoada de pombos voa de trás do usuário e um coro celestial é ouvido por todos na sala. Efeito é ativado sempre que o usuário entrar em uma sala, qualquer sala.
+Anel Mágico de Detecção de Magia: Um anel mágico que brilha quando existe qualquer objeto mágico em um raio de 10 metros do anel mágico.
+Luvas de Dominância: Quando usadas, invertem a mão dominante do usuário.
+Botas de Andar Para Trás: Botas que fazem parecer que o usuário está andando para trás quando anda para frente.
+Anel de Teletransporte: Um anel que teletransporta o usuário, porém apenas na horizontal, não na vertical.
+Pergaminho do Esquecimento: Pergaminho que faz o usuário esquecer do que estiver escrito no pergaminho.
+Copo do Resfriamento: Qualquer líquido colocado neste copo irá ser resfriado até uma temperatura apenas baixa o bastante para fazer seus dentes doerem quando beber.
+Pedra de Peso Variável: Uma pequena pedra de 50 gramas cujo peso dobra a cada metro afastado do chão.
+Estátua da Reversão: Uma pequena estátua que, quando tocada, volta o tempo para o momento logo antes do usuário tocar nela.
+Mochila de Carga Menor: Uma mochila que carrega apenas metade do que uma mochila normal carrega, apesar de ter o mesmo espaço interno.
+Espada do Oportunismo: Uma espada que cria pequenas pernas metálicas e foge quando ninguém está olhando.
+Marreta de Arremesso: Quando empunhada por um anão, esta marreta arremessa o anão 10 metros em uma direção aleatória.
+Bola de Cristal do Patrocinador: Quando usada, o usuário deve fazer um teste de resistência de Sabedoria, CD 20. Caso tenha sucesso, item funciona como uma bola de cristal normal, caso contrário, ela mostra a imagem de um vendedor que tentará lhe vender produtos domésticos. É sempre o mesmo vendedor.
+Anel da Denominação: Um anel capaz de converter moedas de ouro para a quantia equivalente de moedas de prata e vice-versa, menos 12,5%.
+Machado de Bino: Sempre que o portador deste machado detecta uma armadilha, o machado aponta para a armadilha e berra “É UMA CILADA!”
+Amuleto da Irritação: Um amuleto que faz o usuário ouvir a própria voz com 0.25 segundos de atraso.
+Anel do Peão: O usuário deste anel se torna incapaz de se mover em qualquer direção exceto em linha reta para frente.
+Mochila da Guarda: Uma mochila que, quando aberta, fala para o usuário em uma língua que ele possa entender que ela tem uma informação importante para ele, e pede para ele aguardar enquanto ela procura a informação em sua memória. A mochila nunca mais fala.
+Anel de Controle: Um anel que toma controle de uma parte aleatória no corpo do usuário. Se estiver em um combate, usuário tem -1 em todas as roladas devido à distração.
+Amuleto da Telecomunicação: Um amuleto que é capaz de transmitir seus pensamentos para outras criaturas. Todos os pensamentos do usuário são transmitidos para todas as criaturas em um raio de 30 metros, caso ele queira ou não.
+Anel de Desejos: Um belo anel de prata com três rubis. Quando colocado, o anel irá vocalmente fazer três desejos. Após o terceiro desejo ser feito, os desejos são realizados e o dedo do usuário onde o anel está se desintegra.
+Colar do Camaleão: Um colar que triplica o comprimento da língua do usuário. Qualquer ação envolvendo a língua do usuário ganha +5 de bônus.
+Anel do Leilão Grátis: Um anel que faz o usuário automaticamente ganhar um leilão próximo. Um uso por dia.
+Faca da Existência Seletiva: Uma faca que só é capaz de tocar em alguém que está pensando nela. Passa direto através de objetos inanimados ou vítimas de ataques furtivos.
+Luvas de Caminhar na Água: Um par de luvas que tornam o usuário capaz de andar na água (com as mãos).
+Amuleto da Lembrança: Um amuleto que, ao ser tocado, faz o usuário se lembrar de um pequeno pedaço de informação que ele havia esquecido. Funciona apenas se o usuário não estiver tentando se lembrar da informação.
+Pedra do Arrependimento: Uma pequena pedra que é ativada quando um inimigo próximo morre. A pedra fala em voz alta um fato sobre a vida do inimigo que morreu.
+Óculos de Inversão. Um óculos que faz o usuário ver apenas o que está atrás dele.
+Pena de Poesia. Uma pena capaz de escrever lindos poemas, porém os elogios viram insultos para quem lê.
+Relógio de Dessincronia. Um relógio que, apesar de estar completamente quebrado, está sempre errado, não importa que hora do dia for.
+Chapéu da Frustração. Não importa como colocar ou ajustar este chapéu, assim que o usuário estiver satisfeito com a posição do chapéu, ele irá levemente virar para um lado aleatório.
+Chafariz das Ilusões. Um chafariz que fará qualquer pessoa que tocar na sua água ficar completamente convencida que o chafariz é uma ilusão. Ele é completamente real.
+Travesseiro dos Sonhos. Um travesseiro que faz o usuário ter a forte impressão de que ele ainda está sonhando. Efeito dura até o usuário dormir novamente.
+Dados da Justiça. Um conjunto de dados que faz com que as pessoas que estiverem jogando com ele sempre empatem.
+Luvas de Servir. Um par de luvas de seda que servem em qualquer criatura. Porém as luvas sempre terão um dedo a mais.
+Copo do Inverso. Um copo incapaz de derramar líquidos Se um usuário tentar, o copo irá mudar de forma em suas mãos para que o líquido não caia.
+Cinto da Armadura. Um cinto que cria uma ilusão de um conjunto de armadura pesada no usuário. A CA do usuário não aumenta, porém ele se sente tão confiante quanto se estivesse usando uma armadura real.
+Placa de Defeito. Uma pequena placa amarela de 30cm por 15cm com “EQUIPAMENTO COM DEFEITO” escrito em letras pretas. Quando colocado em qualquer objeto, este irá parecer estar quebrado para todos que o verem. Todos também irão acreditar que o objeto realmente está com defeito, até mesmo quem colocou a placa.
+Bracelete da Felinocidade. Um bracelete que faz o usuário se sentir feliz e otimista, porém ele apenas consegue falar usando trocadilhos relacionados com gatos.
+Frasco da Sede. Um frasco que faz o usuário sentir mais sede após beber dele.
+Anel de Precioso. Um anel de prata que faz todos que o verem quererem roubá-lo. O usuário do anel se sente compelido a usá-lo e exibi-lo para todos.
+Anel do Conhecimento Esquecido. Sempre que alguém fizer uma pergunta que o usuário saiba a resposta, ele esquece a resposta, porém ela está sempre na ponta da língua.
+Colar de Acasalamento. Um colar que faz o usuário ter o desejo incontrolável de se acasalar com um Orc.
+Botas do Solteiro. Um par de botas de couro que faz o usuário querer, mais que qualquer outra coisa, dançar, porém ele fica tímido demais para dançar sozinho ou para convidar alguém para dançar com ele.
+Anel Amaldiçoado do Feiticeiro. Um anel de ouro com um rubi rachado ao meio. Todas as criaturas em um raio de 50 metros do usuário devem fazer um teste de Força de Vontade, dificuldade 5. Caso falharem, eles irão ficar convencidos que o usuário está tentando enfeitiçá-los.
+Lanterna da Desvisão. Quando acesa, faz o usuário ser apenas capaz dever o que é iluminado pela lanterna.
+Anel do Encorajamento. Um anel que sussurra palavras de encorajamento no ouvido do usuário. Apenas ele pode ouvir as palavras.
+Feijão da Agricultura. Um feijão que, quando plantado, uma planta aleatória cresce.
+Chapéu do Ambientalista. Um chapéu que faz o usuário querer desesperadamente salvar uma espécie em extinção, porém apenas as mais perigosas.
+Cobertor de Vovó. Um pequeno cobertor azul que faz o usuário ter uma imensa sensação de nostalgia enquanto o estiver segurando.
+Capa de Cor. Uma capa de seda que ninguém consegue concordar se é roxo escuro ou azul escuro.
+Anel da Mão de Bigby. Um anel de ferro que possui 3 cargas. O anel recupera 1d3 cargas por dia. O usuário do anel pode usar uma carga para conjurar uma mão que mostra o dedo do meio para uma criatura a até 20 metros, OU para todas as criaturas em um cone de 10 metros.
+Colar da Ambiguidade. Um colar que faz apenas a cabeça do usuário se transformar no sexo oposto.
+Pedra de Detectar Declives. Uma pequena pedra redonda que, ao ser colocada no chão, rola para longe do usuário, berrando o atual ângulo do declive. A pedra rola o mais longe que puder, sempre em uma velocidade um pouco mais alta que a da pessoa que a perseguir.
+Luvas de Reversão. Ao tentar abrir uma maçaneta, girar uma chave, ou realizar qualquer outra ação que requer um certo movimento de um mecanismo, os movimentos necessários são invertidos.
+Wok de Wong. Um wok aparentemente normal que pertencia a alguém chamado Wong. Ao comer algo preparado neste wok, pessoas começam a confundir o usuário com o Wong. Eventualmente, todos irão chamar o usuário de Wong, e ficarão convencidos que ele é o Wong.
+Bandana da Proibição. Uma bandana com um espaço onde é possível colocar um pedaço de papel. A bandana torna todas as pessoas em um raio de 30 metros da bandana incapaz de falar a palavra escrita no papel.
+Anel das Maravilhas. Um anel que faz o usuário se maravilhar com até as coisas mais comuns.
+Bastão do Medo. O bastão mais terrível que já existiu. Tão terrível que o usuário mal consegue olhar para ele, e apenas pensar nele dentro de sua mochilha é capaz de fazer suas cuecas tremerem de medo. Se o usuário conseguir superar o medo, ele poderá ser capaz de encontrar alguma utilidade para o bastão.
+Elmo da Premonição. Um elmo que, quando colocado, fará o usuário saber a direção aproximada do perigo mais imediato à sua vida.
+Bracelete da Paranoia. Um bracelete que, quando colocado, fará o usuário saber quanto tempo falta até o perigo mais imediato à sua vida o atingir.
+Bainha da Prontidão. Uma bainha que, ao usuário ser surpreendido por um inimigo, imediatamente se teleporta para a mão do usuário. Qualquer arma dentro da bainha permanece onde estava. Qualquer objeto na mão do usuário será substituído pela bainha.
+Espada da Petulância. Uma espada que, se for bem cuidada pelo seu dono, afiada todos os dias, tratada com óleo regularmente, colocada em um lugar especial proeminente em sua casa e presenteada com novas bainhas extremamente caras, irá receber +2 durante combate. Caso contrário, se a espada sentir que o seu dono não está atendendo às suas expectativas, ela irá se ofender e se recusar a sair da bainha. A espada só poderá voltar a ser usada se o usuário se desculpar profundamente e prometer melhorar no futuro.
+Armadura de Anti-ferrugem. Uma armadura que é imune aos monstros de ferrugem, porém esta vulnerabilidade é passada ao usuário.
+Música do Contágio. Uma curta música que segue o usuário onde ele for. A música é um breve melodia cativante, porém cansativa e repetitiva. O usuário é incapaz de tirá-la da cabeça. O usuário pode se livrar dos efeitos da Música do Contágio passando-a para alguém, realizando a música de qualquer forma possível. Esta pessoa agora recebe o efeito da Música do Contágio.
+Pergaminho de Péssimas Ideias. Um pergaminho contendo todas as ideias rejeitadas de um mago. O usuário acredita serem excelentes ideias, e mal pode esperar para colocá-las em prática.
+Flechas de Escape. Flechas que, ao serem atiradas por um arco, irão voar para o céu berrando “ESTOU LIVRE! ESTOU LIVRE!”. Caso atirada dentro de um local fechado, a flecha irá procurar qualquer saída possível. Se não for possível escapar, a flecha irá disparar na direção do usuário emitindo um berro de raiva.
+Monóculo da Identificação. Um monóculo capaz de identificar qualquer objeto não-mágico. Irá ofender o usuário por sua falta de inteligência em um sotaque britânico.
+Mochila de Volume Insuficiente. Uma mochila onde nada parece ser capaz de caber direito. sendo necessário forçar os itens para dentro, não importa quão pequenos sejam.
+Anel de Localização. Um anel capaz de revelar inimigos escondidos atrás de portas secretas. O usuário deve realizar a primeira parte da famosa batida “Shave and a Haircut“, e qualquer inimigo escondido que ouvir se sentirá compelido à terminar a batida.
+Botas de Resistência à Bananas. Um par de botas que, quando calçadas, dão ao usuário Vantagem em testes de resistência de Destreza ao escorregar em uma casca de banana.
+Colar do Espirro. Um colar que, a cada 1d6 turnos, faz o usuário olhar na direção do Sol até espirrar.
+Talismã da Neutralidade. Um talismã que aparenta não fazer nada, mas está sempre silenciosamente julgando o usuário por ser um extremista. O usuário sente uma leve sensação de desconforto sempre que tomar uma decisão não-neutra.
+Adaga da Apropriação. Uma adaga que faz todas as pessoas que olharem para ela acharem que você foi o maldito que afanou a adaga deles.
+Lança da Comédia. Uma lança capaz de falar que ocasionalmente cria a deixa perfeita para uma piada. Se o usuário identificar e realizar a piada, a lança ganha +1. Os aumentos se acumulam, porém se o usuário fizer uma piada ruim a lança volta à +0.
+Botas de Caminhada de Horror. Um par de botas que, quando calçadas, fazem o usuário parecer estar calmamente caminhando ao perseguir alguém, apesar do usuário se mover à sua velocidade de corrida.
+Pena da Raiva. Uma pena que apenas irá escrever quando o usuário riscar em algum canto para verificar se ela está funcionando.

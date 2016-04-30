@@ -1,0 +1,12 @@
+.title{
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.hide-title, .hide-body{
+	display: none;
+}
+
+.hide-title{
+	margin-bottom: 20px;
+}

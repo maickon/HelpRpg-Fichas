@@ -1,0 +1,10 @@
+Prato ; Dano: 1 , Alcance: 15m (se jogado, FOR 10) , Tipo: concussão, Crítico: x 2
+Garrafa; Dano: 1d4 , Alcance: 15m (se jogado, FOR 10) , Tipo: concussão, Crítico: x 2
+Cadeira; Dano: 1d6 , Alcance: 8m (se jogado, FOR 10) , Tipo: concussão, Crítico: x 2
+Garfo; Dano: 1d4 , Alcance: 10m (se jogado, FOR 10) , Tipo: concussão, Crítico: x2
+Barril Vazio; Dano: 1d6 , Alcance: 6m (se jogado , FOR 10) , Tipo: concussão, Crítico: x 2
+Cadeira; Dano: 1d6+3 , Alcance: 4m (se jogado, FOR 10) , Tipo: concussão, Crítico: x 2
+Cadeira; Dano: 1d4+1 , Alcance: 6m (se jogado, FOR 10) , Tipo: concussão, Crítico: x 2
+Caneca de Cerveja; Dano: 1d4 , Alcance: 10m (se jogado, FOR 10) , Tipo: concussão, Crítico: x 2
+Pernil ou carne bem dura; Dano: 1d4+2 , Alcance: 6m (se jogado, FOR 10) , Tipo: concussão, Crítico: x 2
+Lâmpada de Óleo acesa; Dano: 1d4 , Alcance: 6m (se jogado, FOR 10) , Tipo: concussão, Crítico: O Alvo fica em chamas.

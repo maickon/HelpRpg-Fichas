@@ -1,0 +1,19 @@
+Armadura Acolchoada: composta por várias camadas de tecido sobrepostas. É a armadura mais leve, mas também é a que oferece menos proteção.
+Armadura Completa: a mais forte e pesada, formada por placas de metal forjadas e encaixadas de modo a cobrir o corpo inteiro. Inclui manoplas e grevas (luvas e botas metálicas, respectivamente), um elmo com viseira e um colete acolchoado para ser usado sob as placas. Correias e fivelas distribuem o peso da armadura pelo corpo inteiro. Esta armadura precisa ser feita sob medida para cada usuário; um ferreiro cobra 500 PO para adaptar uma armadura completa a um novo usuário.
+Armadura de Gladiador: formada por uma couraça de bronze, um par de caneleiras de couro, uma manga de couro (apenas um dos braços é protegido) e um grande elmo com viseira, esta armadura foi criada para fornecer proteção sem tirar a mobilidade do usuário. Para efeitos de habilidades e redução de deslocamento, a armadura de gladiador é considerada uma armadura leve.
+Brunea: colete de couro coberto com plaquetas de metal sobrepostas, como escamas de um peixe.
+Camisa de Cota de Malha: versão mais leve da cota de malha, cobrindo apenas o torso.
+Corselete de Couro: o peitoral desta armadura é feito de couro curtido em óleo fervente, para ficar mais rígido, enquanto as demais partes são feitas de couro flexível.
+Cota de Malha: longa veste de anéis metálicos interligados, formando uma malha flexível e resistente, que vai até os joelhos.
+Cota de Talas: armadura composta de talas de metal cuidadosamente costuradas sobre um corselete de couro. É a armadura tradicional do samurai, embora exista em versões nativas de todos os reinos.
+Couraça: peitoral de aço que protege o peito e as costas. Popular entre nobres e oficiais.
+Couraça de Bronze: o bronze não é tão resistente quanto o aço, mas é mais maleável, e pode ser esculpido com desenhos complexos.Isso faz com que seja popular entre nobres e oficiais. A couraça de bronze fornece um bônus de +2 nos testes de Diplomacia
+Couro Batido: versão mais pesada do corselete de couro, reforçada com rebites de metal.
+Escudo Leve: esse escudo de madeira é amarrado no antebraço, deixando a mão livre. O usuário pode carregar um objeto na mão do escudo, mas não manusear uma arma.
+Escudo Pesado: esse escudo de aço é preso ao antebraço e também deve ser empunhado com firmeza, impedindo o usuário de usar aquela mão.
+Escudo Corpo: muito alto e largo, este escudo é capaz de cobrir quase todo o corpo do usuário. Um escudo de corpo não pode ser usado montado. Para usa esse escudo, você precisara do talento Usar Escudo de Corpo.
+Gibão de Peles: usada principalmente por bárbaros e selvagens, esta armadura é formada por várias camadas de peles e couro de animais.
+Loriga Segmentada: composta de tiras horizontais de metal, esta armadura é pesada e resistente. Peça muito
+utilizada por legionários minotauros.
+Meia-Armadura: combinação de cota de malha e placas de metal posicionadas sobre as áreas vitais.
+O-Yoroi: usada pelos samurais, esta armadura é formada por pequenas placas metálicas unidas por nós de couro colorido. Inclui o kabuto, um elmo com uma máscara metálica.

@@ -1,0 +1,28 @@
+.img_tile:hover{
+  border-width: 1px;
+  border-style: dashed;
+  border-color: #000;
+}
+
+.img_tile_char:hover{
+  border-width: 1px;
+  border-style: dashed;
+  border-color: #f00;
+}
+
+.img_tile, .img_tile_char {
+  height: 25px;
+  width: 25px;
+  float: left;
+  border-style: dashed;
+  border-color: #000;
+  cursor: move;
+}
+
+.row_tile{
+  border: 1px dashed silver;
+}
+
+.column_tile{
+  border: 1px dashed silver;
+}

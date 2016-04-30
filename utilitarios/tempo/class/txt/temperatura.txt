@@ -1,0 +1,7 @@
+Congelante (menos que - 5°C)
+Muito Frio (-5°C a 5°C)
+Frio (5°C a 15°C)
+Mediana (15°C a 25°C)
+Quente (25°C a 35°C)
+Muito Quente (35°C a 45°C)
+Fervendo (mais que 45°C)
