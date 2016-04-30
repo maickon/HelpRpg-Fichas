@@ -36,7 +36,7 @@ function helper_componentes_buttons($modulo, $id, $off = false){
 }
 
 function helper_componentes_buttons_view($modulo, $id, $off = false){
-	global $form, $tag, $modulos_path;
+	global $form, $tag, $modulos_path, $s;
 	if(!$off):
 		$form->_col(1);
 			$tag->a('href="'.ROOTPATHURL.$modulos_path[$modulo].'new.php" class="btn btn-primary"');
@@ -57,11 +57,11 @@ function helper_componentes_buttons_view($modulo, $id, $off = false){
 		$form->col_();
 	endif;
 	
-	$form->_col(1);
-		$tag->a('href="'.ROOTPATHURL.$modulos_path[$modulo].'download.php?id='.$_GET['id'].'" class="btn btn-success"');
-			$tag->imprime(DOWNLOAD);
-		$tag->a;
-	$form->col_();
+	// $form->_col(1);
+	// 	$tag->a('href="'.ROOTPATHURL.$modulos_path[$modulo].'download.php?id='.$_GET['id'].'" class="btn btn-success"');
+	// 		$tag->imprime(DOWNLOAD);
+	// 	$tag->a;
+	// $form->col_();
 	
 	$form->_col(1);
 		$tag->a('href="'.ROOTPATHURL.$modulos_path[$modulo].'" class="btn btn-info"');
@@ -81,6 +81,50 @@ function helper_buttons_bar($super_user, $modulo_nome, $objeto){
 		//se o usuario logado for dono de alguma arma criada ele tera acesso total ao recurso
 		helper_componentes_buttons_view($modulo_nome, $objeto);
 	endif;
+}
+
+function helper_prev_next($object, $id, $modulo, $tipo = null){
+	global $tag, $form, $modulos_path;
+	$ids = [];
+	if($tipo != null):
+		$get_ids = $object->select($object->getTable(),null,[ ['tipo','=', $tipo] ]);
+	else:
+		$get_ids = $object->select($object->getTable());
+	endif;
+	$current_position = 0;
+	
+	foreach($get_ids as $key => $value):
+		if($value['id'] == $id) $current_position = $key;
+		$ids[] = $value['id'];
+	endforeach;
+	
+	$tag->br();
+	
+	$form->_col(3);
+		$id_prev = array_key_exists($current_position-1, $ids) ? $ids[$current_position-1] : $current_position;
+		if($id_prev == 0) $id_prev = $ids[count($ids)-1];	
+		$tag->a('href="'.ROOTPATHURL.$modulos_path[$modulo].'view.php?id='.$id_prev.'" class="btn btn-primary"');
+			$tag->imprime('<<< Anterior');
+		$tag->a;
+		
+		$id_next = array_key_exists($current_position+1, $ids) ? $ids[$current_position+1] : $current_position;
+		
+		if($id_next == count($ids)-1) $id_next = $ids[0];
+		if($id_next == 0):
+			$id_next += 1;
+		endif;
+		$tag->a('href="'.ROOTPATHURL.$modulos_path[$modulo].'view.php?id='.$id_next.'" class="btn btn-primary"');
+			$tag->imprime('Próximo >>>');
+		$tag->a;
+	$form->col_();
+}
+
+function helper_new_or_register_button($path, $label_button){
+	global $tag;
+
+	$tag->a('href="'.$path.'" class="btn btn-primary float-right"');
+		$tag->imprime($label_button);
+	$tag->a;
 }
 
 function helper_check_params($chave, $array){
@@ -788,42 +832,6 @@ function helper_show_body_attr_personagens($attr){
 			!empty($value)?$tag->imprime("{$key} {$value}"):'';
 		endif;
 	endforeach;
-}
-
-function helper_prev_next($object, $id, $modulo, $tipo = null){
-	global $tag, $form, $modulos_path;
-	$ids = [];
-	if($tipo != null):
-		$get_ids = $object->select($object->getTable(),null,[ ['tipo','=', $tipo] ]);
-	else:
-		$get_ids = $object->select($object->getTable());
-	endif;
-	$current_position = 0;
-	
-	foreach($get_ids as $key => $value):
-		if($value['id'] == $id) $current_position = $key;
-		$ids[] = $value['id'];
-	endforeach;
-	
-	$tag->br();
-	
-	$form->_col(5);
-		$id_prev = array_key_exists($current_position-1, $ids) ? $ids[$current_position-1] : $current_position;
-		if($id_prev == 0) $id_prev = $ids[count($ids)-1];	
-		$tag->a('href="'.ROOTPATHURL.$modulos_path[$modulo].'view.php?id='.$id_prev.'" class="btn btn-primary"');
-			$tag->imprime('<<< Anterior');
-		$tag->a;
-		
-		$id_next = array_key_exists($current_position+1, $ids) ? $ids[$current_position+1] : $current_position;
-		
-		if($id_next == count($ids)-1) $id_next = $ids[0];
-		if($id_next == 0):
-			$id_next += 1;
-		endif;
-		$tag->a('href="'.ROOTPATHURL.$modulos_path[$modulo].'view.php?id='.$id_next.'" class="btn btn-primary"');
-			$tag->imprime('Próximo >>>');
-		$tag->a;
-	$form->col_();
 }
 
 function helper_ads_cursos(){

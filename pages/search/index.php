@@ -52,7 +52,7 @@ $tag->body();
 						$tag->img('src="'.ROOTPATHURL.IMGPATH.'logo.png" class="logo"');
 					$tag->div;
 					$tag->div('class="ui-widget"');
-						$form->input(['type'=>'text', 'name'=>'search', 'id'=>'search' ,'class'=>'form-control input-lg', 'aria-describedby'=>'basic-addon1','placeholder'=>'Busque: classe, raça, nome, dono da ficha, ficha tipo, sistema de rpg ou Lv']);	
+						$form->input(['type'=>'text', 'name'=>'search', 'id'=>'search' ,'class'=>'form-control input-lg', 'aria-describedby'=>'basic-addon1','placeholder'=> PLACEHOLDER_BUSCA_PRINCIPAL]);	
 					$tag->div;
 				$form->col_();	
 			$form->row_();

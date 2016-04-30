@@ -52,17 +52,24 @@ $tag->br();
 				$form->col_();
 				
 				$form->_col(6);
-					$tag->div('class="center"');
-						if($img != null):
-							$tag->img('src="'.ROOTPATHURL.MONSTROIMGPATH.$img.'" class="img-responsive img-thumbnail size-img"');
-						else:
-							$tag->img('src="'.ROOTPATHURL.IMGPATH.'noimage.png" class="img-responsive img-thumbnail size-img"');
-						endif;
-					$tag->div;
-				$form->col_();
+					$form->_col(12);
+						$tag->div('class="center"');
+							if($img != null):
+								$tag->img('src="'.ROOTPATHURL.MONSTROIMGPATH.$img.'" class="img-responsive img-thumbnail size-img"');
+							else:
+								$tag->img('src="'.ROOTPATHURL.IMGPATH.'noimage.png" class="img-responsive img-thumbnail size-img"');
+							endif;
+						$tag->div;
+					$form->col_();
 
-				$form->_col(12);
-					helper_adsense();	
+					$form->_col(12);
+						$tag->br();
+						$tag->br();
+					$form->col_();
+					
+					$form->_col(12);
+						helper_adsense_responsivo_01();
+					$form->col_();
 				$form->col_();
 
 				$form->_col(12);

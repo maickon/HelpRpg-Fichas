@@ -117,7 +117,3 @@ $tag->script;
 	$tag->div;
 
 	require '../../footer.php';
-
- 
-    
-	

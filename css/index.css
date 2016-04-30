@@ -7,6 +7,10 @@
 	border: 1px medium #AAAFFF;	
 }
 
+.float-right{
+	float: right;	
+}
+
 #img{
 	margin: 0 auto;
 	opacity: none;

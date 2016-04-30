@@ -47,7 +47,7 @@ $tag->br();
 			helper_modal_alert_confirm();
 			
 			$form->_container();
-				$form->_col(12);
+				$form->_col(9);
 					$form->h1($cronica[0]['titulo']);
 					$tag->b();
 					$tag->imprime(CRIADO_NO_DIA);
@@ -60,9 +60,9 @@ $tag->br();
 					$tag->imprime($cronica[0]['descricao_cronica']);
 				$form->col_();
 
-				$form->_col(12);
-					helper_adsense();
-					helper_disqus_comment();	
+				$form->_col(3);
+					$form->h1(PUBLICIDADE);
+					helper_adsense_responsivo_01();	
 				$form->col_();
 					
 				$form->_col(12);

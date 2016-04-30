@@ -46,15 +46,15 @@ $tag->br();
 			helper_modal_alert_confirm();
 			
 			$form->_container();
-				$form->_col(12);
-					helper_show_pericias($pericias);
+				$form->_col(3);
+					helper_adsense_responsivo_01();
 				$form->col_();
 
-				$form->_col(12);
-					helper_adsense();	
+				$form->_col(9);
+					helper_show_pericias($pericias);
 				$form->col_();
 				
-				$form->_col(12);
+				$form->_col(9);
 					helper_disqus_comment();	
 				$form->col_();	
 			$form->container_();

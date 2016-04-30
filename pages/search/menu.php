@@ -1,3 +1,19 @@
 <?php
-$nomes = array('Home','Cadastro','Sobre','Rola dados','Gerador de NPCs','Gerador de Monstros','Como Usar');
-$links = array(HOME_PATH, USERNEWPATH, ABOUTPATH, ROLLDICE, NPCGENERATEPATH, MONSTERGENERATEPATH, HOWTOUSE);
+$nomes = array(
+				HOME,
+				LOGAR,
+				CADASTRO,
+				SOBRE,
+				COMO_USAR,
+				DOACAO,
+				PARCERIA,
+				QUEM_SOU);
+$links = array(	
+				HOME_PATH,
+				LOGINPATH,
+	 			USERNEWPATH,
+				ABOUTPATH,
+			 	COMO_USAR_PATH,
+			 	DOACAO_PATH,
+			 	PARCERIA_PATH,
+			 	QUEM_SOU_PATH);

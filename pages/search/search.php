@@ -66,49 +66,57 @@ $tag->html('lang="pt-br"');
 
 	
 		$form->_col(12);
-				helper_adsense_02();
-				$form->_row();
-					$form->_col(12);
-						$tag->form('action="search.php" method="post"');
-							$form->h2("Nova busca geral...");
-							$tag->div('class="ui-widget"');
-								$form->input(['type'=>'text', 'name'=>'search', 'id'=>'search_result' ,'class'=>'form-control input-lg', 'aria-describedby'=>'basic-addon1','placeholder'=>'Digite sua busca. Ex: Espada Larga']);
-							$tag->div;
-						$tag->form;
-					$form->col_();
-				$form->row_();
+			$form->_row();
+				$form->_col(9);
+					$tag->form('action="search.php" method="post"');
+						$form->h2(NOVA_BUSCA_GERAL);
+						$tag->div('class="ui-widget"');
+							$form->input(['type'=>'text', 'name'=>'search', 'id'=>'search_result' ,'class'=>'form-control input-lg', 'aria-describedby'=>'basic-addon1','placeholder'=> PLACEHOLDER_BUSCA_MSG]);
+						$tag->div;
+					$tag->form;
 			
-			$tag->span('id="classe_personagem"');
-						
-				require_once 'results/results.php';
-				if(isset($filter_result) && is_array($filter_result)):
-					$tag->table('id="search_resulted" class="table table-striped table-bordered" cellspacing="0" width="100%"');
-						$tag->thead();
-							$tag->tr();
-								$tag->th();
-									echo 'Resultado...';
-								$tag->th;
-							$tag->tr;
-						$tag->thead;
-						$tag->tbody();
-							$image = '';
-							if(isset($filter_result[0]['table'])):
-								for($i=0; $i<count($filter_result); $i++):
-									switch_filter($filter_result[$i]['table'], $filter_result[$i]);
-								endfor;
-							else:
-							 	for($i=0; $i<count($filter_result); $i++):
-							 		for($j=0; $j<count($filter_result[$i]); $j++):
-							 			switch_filter($filter_result[$i][$j]['table'], $filter_result[$i][$j]);
-							 		endfor;
-								endfor;
-							endif;
-						$tag->tbody;
-					$tag->table;
-				else:
-					echo "404";
-				endif;
-			$tag->span;
+					$tag->span('id="classe_personagem"');
+								
+						require_once 'results/results.php';
+						if(isset($filter_result) && is_array($filter_result)):
+							$tag->table('id="search_resulted" class="table table-striped table-bordered" cellspacing="0" width="100%"');
+								$tag->thead();
+									$tag->tr();
+										$tag->th();
+											$tag->imprime(RESULTADO_BUSCA);
+										$tag->th;
+									$tag->tr;
+								$tag->thead;
+								$tag->tbody();
+									$image = '';
+									if(isset($filter_result[0]['table'])):
+										for($i=0; $i<count($filter_result); $i++):
+											switch_filter($filter_result[$i]['table'], $filter_result[$i]);
+										endfor;
+									else:
+									 	for($i=0; $i<count($filter_result); $i++):
+									 		for($j=0; $j<count($filter_result[$i]); $j++):
+									 			switch_filter($filter_result[$i][$j]['table'], $filter_result[$i][$j]);
+									 		endfor;
+										endfor;
+									endif;
+								$tag->tbody;
+							$tag->table;
+						else:
+							echo "404";
+						endif;
+					$tag->span;
+				$form->col_();
+				
+				$form->_col(3);
+					$form->h1(PUBLICIDADE);
+					helper_adsense_responsivo_02();
+					$tag->br();
+					helper_adsense_responsivo_01();
+					$tag->br();
+					helper_adsense_responsivo_02();
+				$form->col_();
+			$form->row_();
 		$form->col_();
 
 		//<!-- jquery CSS -->

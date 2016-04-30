@@ -57,19 +57,26 @@ $tag->br();
 				$form->col_();
 				
 				$form->_col(6);
-					$tag->div('class="center"');
-						if($img != null):
-							$tag->img('src="'.ROOTPATHURL.ARMADURASIMGPATH.$img.'" class="img-responsive img-thumbnail size-img"');
-						else:
-							$tag->img('src="'.ROOTPATHURL.IMGPATH.'noimage.png" class="img-responsive img-thumbnail size-img"');
-						endif;
-					$tag->div;
+					$form->_col(12);
+						$tag->div('class="center"');
+							if($img != null):
+								$tag->img('src="'.ROOTPATHURL.ARMADURASIMGPATH.$img.'" class="img-responsive img-thumbnail size-img"');
+							else:
+								$tag->img('src="'.ROOTPATHURL.IMGPATH.'noimage.png" class="img-responsive img-thumbnail size-img"');
+							endif;
+						$tag->div;
+					$form->col_();
+
+					$form->_col(12);
+						$tag->br();
+						$tag->br();
+					$form->col_();
+					
+					$form->_col(12);
+						helper_adsense_responsivo_02();
+					$form->col_();
 				$form->col_();
 				
-				$form->_col(12);
-					helper_adsense();	
-				$form->col_();
-
 				$form->_col(12);
 					helper_disqus_comment();	
 				$form->col_();

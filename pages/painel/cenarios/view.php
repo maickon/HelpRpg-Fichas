@@ -49,7 +49,7 @@ $tag->br();
 			helper_modal_alert_confirm();
 			
 			$form->_container();
-				$form->_col(12);
+				$form->_col(9);
 					$form->h1($cenarios[0]['titulo']);
 					$tag->b();
 					$tag->imprime(CRIADO_NO_DIA);
@@ -62,8 +62,9 @@ $tag->br();
 					$tag->imprime($cenarios[0]['descricao_cenario']);
 				$form->col_();	
 
-				$form->_col(12);
-					helper_adsense();	
+				$form->_col(3);
+					$form->h1(PUBLICIDADE);
+					helper_adsense_responsivo_02();	
 				$form->col_();
 
 				$form->_col(12);

@@ -22,6 +22,7 @@ $tag->br();
 		$form->container_();
 	else:
 		$form->_container();
+		
 			$form->_col(2);
 				$tag->p('class="span_title"');
 					$tag->imprime(AVENTURAS);
@@ -47,9 +48,11 @@ $tag->br();
 			$form->container_();
 			
 			helper_modal_alert_confirm();
-			
+		$form->div_();
+
+		$form->_container();
 			$form->_container();
-				$form->_col(12);
+				$form->_col(9);
 					$form->h1($aventura[0]['titulo']);
 					$tag->b();
 					$tag->imprime(AVENTURA_INDICADA_NIVEL." {$aventura[0]['level_indicado']}, mestre {$aventura[0]['mestre']}");
@@ -64,8 +67,10 @@ $tag->br();
 					$tag->imprime($aventura[0]['aventura']);
 				$form->col_();
 
-				$form->_col(12);
-					helper_adsense();	
+				$form->_col(3);
+					$form->h1(PUBLICIDADE);
+					helper_adsense_responsivo_02();
+					$tag->br();
 				$form->col_();	
 
 				$form->_col(12);

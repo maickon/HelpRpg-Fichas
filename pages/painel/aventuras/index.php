@@ -36,15 +36,17 @@ $tag->br();
 			');
 	
 	$form->_container();
-		$form->_col(11);
+		$form->_col(10);
 			$tag->span('class="span_title"');
 				$tag->imprime(AVENTURAS);
 			$tag->span;
 		$form->col_();
-		$form->_col(1);
-			$tag->a('href="'.ROOTPATHURL.AVENTURASPATH.'new.php" class="btn btn-primary"');
-				$tag->imprime(NOVO);
-			$tag->a;
+		$form->_col(2);
+			if($s->get_session('nome')):
+				helper_new_or_register_button(ROOTPATHURL.AVENTURASPATH.'new.php', NOVO);
+			else:
+				helper_new_or_register_button(USERPATH.'new.php', CRIAR_CONTA);
+			endif;
 		$form->col_();
 		$form->_col(12);
 			$tag->hr();
