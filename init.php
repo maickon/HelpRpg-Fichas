@@ -15,6 +15,8 @@ function config(){
 	
 	if(file_exists('config.php')):
 		require_once 'config.php';
+	elseif(file_exists('../config.php')):
+		require_once '../config.php';
 	elseif(file_exists('../../config.php')):
 		require_once '../../config.php';
 	else:
@@ -52,6 +54,8 @@ function lib(){
 	foreach($libs as $key => $file_name):
 		if(file_exists('lib/'.$file_name.$lib_name[$key].'.php')):
 			require_once 'lib/'.$file_name.$lib_name[$key].'.php';
+		elseif(file_exists('../lib/'.$file_name.$lib_name[$key].'.php')):
+			require_once '../lib/'.$file_name.$lib_name[$key].'.php';
 		elseif(file_exists('../../lib/'.$file_name.$lib_name[$key].'.php')):
 			require_once '../../lib/'.$file_name.$lib_name[$key].'.php';
 		else:

@@ -37,8 +37,14 @@ define('FICHA_ALEATORIA', "Random character");
 define('MONSTRO_ALEATORIO', "Random monsters");
 
 define('UTILITARIOS','Utilities');
+define('UTILITARIOS_INDEX','Main page');
 define('ROLAR_DADOS','Roll Dice');
-define('GERADOR_DE_MUNDOS','New world');
+define('GERADOR_DE_MARCADOR','Bookmarks');
+define('GERADOR_DE_CIDADES','Cities');
+define('GERADOR_DE_PERSONALIDADES','Personalities');
+define('GERADOR_DE_ENCONTROS','Random encounters');
+define('GERADOR_DE_TAVERNAS','Taverns');
+define('GERADOR_DE_MUNDOS','World map');
 define('GERADOR_DE_NOMES','Name Generator');
 define('GERADOR_DE_AVENTURAS','Adventure Generator');
 define('GERADOR_DE_CARACTERISTICAS','Features');

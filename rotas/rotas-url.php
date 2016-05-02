@@ -11,6 +11,7 @@ define('ROOTPATHURL',"http://127.0.0.1/HelpRpg/");
 define('BASE_PATH', 'http://127.0.0.1/HelpRpg-Fichas/'); //http://helprpg.com.br
 define('BASE_DISQUS_PATH', 'http://helprpg.com.br');
 
+define('UTILITARIOSPATH',ROOTPATHURL.'utilitarios/');
 define('SEARCHPATH',ROOTPATHURL.'pages/search/');
 define('LIBPATH', ROOTPATHURL."lib/");
 define('CKEDITORPATH', ROOTPATHURL."lib/ckeditor/");
@@ -21,15 +22,24 @@ define('QUEM_SOU_PATH', ROOTPATHURL.'pages/quem-sou/');
 define('DOACAO_PATH', ROOTPATHURL.'pages/doacao/');
 define('PARCERIA_PATH', ROOTPATHURL.'pages/parcerias/');
 define('DOWNLOADPATH','arquivos/');
-define('NPCGENERATEPATH',ROOTPATHURL.'old/index.php?p=fichas');
-define('MONSTERGENERATEPATH',ROOTPATHURL.'old/index.php?p=monstros');
-define('ROLLDICE',ROOTPATHURL.'roll-dice');
-define('DUNGEONPATH',ROOTPATHURL.'pages/masmorras/');
-define('MAPWORDPATH',ROOTPATHURL.'pages/mapa_mundi_fantasia/');
-define('NAMEGENERATION',ROOTPATHURL.'pages/nomes/');
-define('ADVENTUREGENERATION',ROOTPATHURL.'pages/gerador-aventuras/');
-define('FICHASBASEGENERATION',ROOTPATHURL.'pages/ficha-base/');
+define('NPCGENERATEPATH',ROOTPATHURL.'http://helprpg.orgfree.com/index.php?p=fichas');
+define('MONSTERGENERATEPATH',ROOTPATHURL.'http://helprpg.orgfree.com/index.php?p=monstros');
+
+//utilitarios
+define('ROLLDICE',UTILITARIOSPATH.'dados');
+define('DUNGEONPATH',UTILITARIOSPATH.'masmorras');
+define('MAPWORDPATH',UTILITARIOSPATH.'mapa-mundi');
+define('NAMEGENERATION',UTILITARIOSPATH.'nomes');
+define('ADVENTUREGENERATION',UTILITARIOSPATH.'aventuras-medieval');
+define('PERSONALIDADES_PATH',UTILITARIOSPATH.'personalidades');
+define('CIDADES_PATH',UTILITARIOSPATH.'cidades');
+define('MARCADORES_PATH',UTILITARIOSPATH.'marcador');
+define('ITENS_PATH',UTILITARIOSPATH.'itens');
+define('ENCONTROS_PATH',UTILITARIOSPATH.'encontros-aleatorio');
+define('TAVERNA_PATH',UTILITARIOSPATH.'taverna');
+define('FICHASBASEGENERATION',UTILITARIOSPATH.'fichas');
 define('CARACTERISTICASGENERATION',ROOTPATHURL.'pages/caracteristicas/');
+
 define('DOWNLOADPATHMASMORRAS',ROOTPATHURL."pages/downloads/masmorras/");
 define('DOWNLOADPATHMAPASMUNDI',ROOTPATHURL."pages/downloads/mapas-mundi/");
 define('DOWNLOADPATHFICHAS',ROOTPATHURL."pages/downloads/fichas/");

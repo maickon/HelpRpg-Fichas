@@ -106,9 +106,6 @@ $tag->html('lang="pt-br"');
 		
 		$tag->script('src="'.ROOTPATHURL.JSPATH.'bootstrap-select.js"');
 		$tag->script;
-		
-		$tag->script('src="'.ROOTPATHURL.JSPATH.'banner.js"');
-		$tag->script;
 
 		$tag->script('src="'.CKEDITORPATH.'ckeditor.js"');
 		$tag->script;

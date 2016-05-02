@@ -116,7 +116,7 @@ class MenuBar{
 									$this->tag->a;	
 									$this->tag->ul('class="dropdown-menu"');
 										for($d=1; $d<count($this->menus[$m]); $d++):
-											$this->tag->li();																	
+											$this->tag->li('id="menu_'.$m.'"');																	
 												$this->tag->a('href="'.$this->links[$m][$d].'"');
 													$this->tag->imprime($this->menus[$m][$d]);
 												$this->tag->a;																				
@@ -212,7 +212,7 @@ class FooterBar{
 				$this->tag->br();
 				for($m=0; $m<count($this->menus); $m++):
 					$this->tag->imprime(' - ');
-					$this->tag->a('href="index.php'.$this->links[$m].'" class="footer-fonte"');
+					$this->tag->a('href="'.$this->links[$m].'" class="footer-fonte"');
 						$this->tag->imprime($this->menus[$m]);
 					$this->tag->a;
 		

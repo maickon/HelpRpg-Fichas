@@ -81,13 +81,18 @@
 							   		//Menu - Utilitarios e seus submenus
 									array(
 											UTILITARIOS, 
+											UTILITARIOS_INDEX,
 											ROLAR_DADOS, 
 											GERADOR_DE_NOMES, 
-											GERADOR_DE_AVENTURAS, 
 											GERADOR_DE_FICHAS_BASE, 
-											GERADOR_DE_CARACTERISTICAS, 
+											GERADOR_DE_AVENTURAS, 
+											GERADOR_DE_TAVERNAS,
+											GERADOR_DE_ENCONTROS,
 											GERADOR_DE_MUNDOS, 
-											GERADOR_DE_MASMORRAS, 
+											GERADOR_DE_MASMORRAS,
+											GERADOR_DE_PERSONALIDADES, 
+											GERADOR_DE_CIDADES, 
+											GERADOR_DE_MARCADOR, 
 											GERADOR_DE_NPCS, 
 											GERADOR_DE_MONSTROS),
 
@@ -131,13 +136,18 @@
 									//Links - label Utilitarios e seus submenus 
 									array(
 											"#", 
+											UTILITARIOSPATH,
 											ROLLDICE, 
 											NAMEGENERATION, 
-											ADVENTUREGENERATION, 
 											FICHASBASEGENERATION, 
-											CARACTERISTICASGENERATION, 
+											ADVENTUREGENERATION, 
+											TAVERNA_PATH, 
+											ENCONTROS_PATH, 
 											MAPWORDPATH, 
-											DUNGEONPATH, 
+											DUNGEONPATH,
+											PERSONALIDADES_PATH, 
+											CIDADES_PATH, 
+											MARCADORES_PATH, 
 											NPCGENERATEPATH, 
 											MONSTERGENERATEPATH),
 
@@ -166,26 +176,36 @@
 		//Menu utilitario e seus labels de submenus 
 		$utilitarios_label 		= array(
 										UTILITARIOS, 
+										UTILITARIOS_INDEX,
 										ROLAR_DADOS, 
 										GERADOR_DE_NOMES, 
-										GERADOR_DE_AVENTURAS, 
 										GERADOR_DE_FICHAS_BASE, 
-										GERADOR_DE_CARACTERISTICAS, 
+										GERADOR_DE_AVENTURAS, 
+										GERADOR_DE_TAVERNAS,
+										GERADOR_DE_ENCONTROS,
 										GERADOR_DE_MUNDOS, 
-										GERADOR_DE_MASMORRAS, 
+										GERADOR_DE_MASMORRAS,
+										GERADOR_DE_PERSONALIDADES, 
+										GERADOR_DE_CIDADES, 
+										GERADOR_DE_MARCADOR, 
 										GERADOR_DE_NPCS, 
 										GERADOR_DE_MONSTROS);
 	
 		//Links para cada item de submenu de utilitarios
 		$utilitarios_link 		= array(
 										"#", 
+										UTILITARIOSPATH,
 										ROLLDICE, 
 										NAMEGENERATION, 
-										ADVENTUREGENERATION, 
 										FICHASBASEGENERATION, 
-										CARACTERISTICASGENERATION, 
+										ADVENTUREGENERATION, 
+										TAVERNA_PATH, 
+										ENCONTROS_PATH, 
 										MAPWORDPATH, 
-										DUNGEONPATH, 
+										DUNGEONPATH,
+										PERSONALIDADES_PATH, 
+										CIDADES_PATH, 
+										MARCADORES_PATH, 
 										NPCGENERATEPATH, 
 										MONSTERGENERATEPATH);
 		

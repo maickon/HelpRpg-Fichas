@@ -6,13 +6,6 @@ require_once 'rotas/rotas-url.php';
 require_once 'rotas/rotas-fragmentos.php';
 require_once 'db/db-config.php';
 
-//msgs para usuarios
-define('U4004', 'Usuário não encontrado!');
-define('U4005', 'Cadastro realizado com sucesso!');
-define('U4006', 'Email ou login já está em uso.');
-define('U4007', 'Dados deletado com sucesso!');
-define('U4008', 'Alteração feita com sucesso!');
-
 //lista de superusuarios do sistema
 global $permit, $rpg_sistemas, $rpg_sistemas_arquivo_nome, $rpg_sistemas_labels, $tipo_ficha;
 

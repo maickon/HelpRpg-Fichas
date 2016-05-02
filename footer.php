@@ -16,8 +16,8 @@
 	 * Mais abaixo � fechado a tag body e html.	
 	 */
 
-	$parametros_footer['nomes'] = array('Home','Cadastro','Sobre');
-	$parametros_footer['links']  = array(ROOTPATHURL, USERNEWPATH, ABOUTPATH);
+	$parametros_footer['nomes'] = array(HOME,CADASTRO,SOBRE,UTILITARIOS);
+	$parametros_footer['links']  = array(ROOTPATHURL, USERNEWPATH, ABOUTPATH, UTILITARIOSPATH);
 	$parametros_footer['programer']  = PROGRAMER;
 	$parametros_footer['copy']  = COPY;
 	global $tag;
@@ -33,8 +33,6 @@
 		
 	$tag->script('src="'.ROOTPATHURL.JSPATH.'validator.js"');
 	$tag->script;
-		
-	$tag->script('src="'.ROOTPATHURL.JSPATH.'bibliotecaAjax.js"');
-	$tag->script;
+
 	$tag->body;
 $tag->html;

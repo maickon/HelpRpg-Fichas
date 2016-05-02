@@ -38,8 +38,14 @@ define('FICHA_ALEATORIA', "Ficha Aleatória");
 define('MONSTRO_ALEATORIO', "Monstro Aleatório");
 
 define('UTILITARIOS','Utilitários');
+define('UTILITARIOS_INDEX','Página principal');
 define('ROLAR_DADOS','Rolar Dados');
-define('GERADOR_DE_MUNDOS','Mundos');
+define('GERADOR_DE_MARCADOR','Marcadores');
+define('GERADOR_DE_CIDADES','Cidades');
+define('GERADOR_DE_PERSONALIDADES','Personalidades');
+define('GERADOR_DE_ENCONTROS','Encontros aleatório');
+define('GERADOR_DE_TAVERNAS','Tavernas');
+define('GERADOR_DE_MUNDOS','Maps mundi');
 define('GERADOR_DE_NOMES','Nomes');
 define('GERADOR_DE_AVENTURAS','Aventuras');
 define('GERADOR_DE_CARACTERISTICAS','Características');

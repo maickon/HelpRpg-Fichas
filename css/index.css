@@ -1,6 +1,7 @@
 #logo{
-	width: 230px;
-	float: left;
+	width: 250px;
+	height: auto;
+	margin: 0 auto;	
 }
 
 #linha{
@@ -17,9 +18,11 @@
 }
 
 .jumbotron{
-	margin-top: 25px;
+	margin-top: 55px;
 	margin-bottom: 0px;
-	background-image: url("../img/chars.png");
+	height: 180px;
+	background-image: url("../img/help_rpg_logo.png");
+	border-bottom: 1px solid #000;
 }
 
 .search_box{

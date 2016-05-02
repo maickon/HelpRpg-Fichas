@@ -1,6 +1,7 @@
 <?php
 $nomes = array(
 				HOME,
+				UTILITARIOS,
 				LOGAR,
 				CADASTRO,
 				SOBRE,
@@ -10,6 +11,7 @@ $nomes = array(
 				QUEM_SOU);
 $links = array(	
 				HOME_PATH,
+				UTILITARIOSPATH,
 				LOGINPATH,
 	 			USERNEWPATH,
 				ABOUTPATH,
