@@ -7,13 +7,21 @@ class Aventuras{
 	public $titulos;
 
 	function __construct(){
-		$this->base_path = 'C:/xampp/htdocs/utilitarios/aventuras-medieval/class/';
+		$this->define_base_path();
 		$this->objetivo();
 		$this->local();
 		$this->antagonista();
 		$this->coadjuvante();
 		$this->complicacao();
 		$this->recompensa();
+	}
+
+	function define_base_path(){
+		if(file_exists("{$_SERVER['DOCUMENT_ROOT']}/HelpRpg/utilitarios/aventuras-medieval/class/")):
+			$this->base_path = "{$_SERVER['DOCUMENT_ROOT']}/HelpRpg/utilitarios/aventuras-medieval/class/";
+		else:
+			$this->base_path = "{$_SERVER['DOCUMENT_ROOT']}/utilitarios/aventuras-medieval/class/";
+		endif;		 
 	}
 
 	function objetivo(){

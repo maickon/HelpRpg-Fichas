@@ -25,7 +25,7 @@ class Taverna{
 	public $tempo_profissao;
 
 	function __construct(){
-		$this->base_path = 'C:/xampp/htdocs/utilitarios/taverna/class/';
+		$this->define_base_path();
 		$this->sexo = array_rand([0,1]);
 		$this->taverna_nome();
 		$this->taverna_raca_taverneiro();
@@ -40,6 +40,15 @@ class Taverna{
 		$this->taverna_verduras(3);
 		$this->taverna_bebidas(3);
 		$this->taverna_objetos_de_briga();
+	}
+
+	function define_base_path(){
+		if(file_exists("{$_SERVER['DOCUMENT_ROOT']}/HelpRpg/utilitarios/taverna/class/")):
+			$this->base_path = "{$_SERVER['DOCUMENT_ROOT']}/HelpRpg/utilitarios/taverna/class/";
+		else:
+			$this->base_path = "{$_SERVER['DOCUMENT_ROOT']}/utilitarios/taverna/class/";
+		endif;
+			 
 	}
 
 	function taverna_nome_taverneiro(){

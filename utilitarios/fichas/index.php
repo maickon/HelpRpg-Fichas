@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <?php
-require_once 'tags/tags.php';
-require_once 'tags/rpg-names.php';
-$tag = new Tag();
+require_once "{$_SERVER['DOCUMENT_ROOT']}/HelpRpg/class/view/tags.class.php";
+require_once "{$_SERVER['DOCUMENT_ROOT']}/HelpRpg/rotas/rotas-url.php";
+
+$tag = new Tags();
 $descricao = [
               'Nome'                    =>'nome',            
               'Nível'                   =>'nivel',           

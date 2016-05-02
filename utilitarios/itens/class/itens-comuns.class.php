@@ -20,7 +20,15 @@ class ItensComuns{
   public $titulo;
 
   function __construct(){
-          $this->base_path = "C:/xampp/htdocs/utilitarios/itens/class/itens-comuns-txt/";
+          $this->define_base_path();
+  }
+
+  function define_base_path(){
+    if(file_exists("{$_SERVER['DOCUMENT_ROOT']}/HelpRpg/utilitarios/itens/class/itens-comuns-txt/")):
+      $this->base_path = "{$_SERVER['DOCUMENT_ROOT']}/HelpRpg/utilitarios/itens/class/itens-comuns-txt/";
+    else:
+      $this->base_path = "{$_SERVER['DOCUMENT_ROOT']}/utilitarios/itens/class/itens-comuns-txt/";
+    endif;       
   }
 
   function gerar_item($path, $title, $attr){

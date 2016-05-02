@@ -1,6 +1,6 @@
 
 var speed = 50;
-var time = 1000;
+var time = 2200;
 
 function download_para_pdf(){
   var doc = new jsPDF();

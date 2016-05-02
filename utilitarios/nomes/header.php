@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <?php
-require_once '../class/tags/tags.php';
-$tag = new Tag();
+require_once "{$_SERVER['DOCUMENT_ROOT']}/HelpRpg/class/view/tags.class.php";
+require_once "{$_SERVER['DOCUMENT_ROOT']}/HelpRpg/rotas/rotas-url.php";
+$tag = new Tags();
 
 $tag->html();
     $tag->head();
-        $tag->link(['href'=>'//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css', 'rel'=>'stylesheet']);
+        $tag->link(['href'=>ROOTPATHURL.CSSPATH.'bootstrap.min.css', 'rel'=>'stylesheet']);
         $tag->link(['href'=>'../css/fonts.css', 'rel'=>'stylesheet']);
         $tag->link(['href'=>'css/index.css', 'rel'=>'stylesheet']);
-        $tag->link(['rel'=>'stylesheet', 'href'=>'//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css', ]);
+        $tag->link(['rel'=>'stylesheet', 'href'=>ROOTPATHURL.CSSPATH.'bootstrap-select.css', ]);
     $tag->head;
 
     $tag->div(['class'=>'container']);
@@ -42,6 +43,10 @@ $tag->html();
                     $tag->printer('Outros');
                 $tag->a;
                 $tag->printer('|');
+                $tag->printer('Criado por Maickon Rangel - ');
+                 $tag->a(['href'=>ROOTPATHURL]);
+                    $tag->printer('helprpg.com.br');
+                $tag->a;
             $tag->div;
             $tag->hr();
         $tag->div;

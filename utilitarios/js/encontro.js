@@ -11,7 +11,6 @@ function rand_encontro_aleatorio(encontro){
         url: '../gerador/encontro.php',
         success: function(result){
           var json = (eval("(" + result + ")"));
-          console.log(json);
           var attr = [
                     'local',
                     'titulo'         

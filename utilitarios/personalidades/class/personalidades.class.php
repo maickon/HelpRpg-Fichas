@@ -22,7 +22,15 @@ class Personalidades{
 	public $base_path;
 
 	function __construct(){
-		$this->base_path = 'C:/xampp/htdocs/utilitarios/personalidades/class/';
+		$this->define_base_path();
+	}
+
+	function define_base_path(){
+		if(file_exists("{$_SERVER['DOCUMENT_ROOT']}/HelpRpg/utilitarios/personalidades/class/")):
+			$this->base_path = "{$_SERVER['DOCUMENT_ROOT']}/HelpRpg/utilitarios/personalidades/class/";
+		else:
+			$this->base_path = "{$_SERVER['DOCUMENT_ROOT']}/utilitarios/personalidades/class/";
+		endif;			 
 	}
 
 	function gerar_aspecto($arquivo, $titulos, $qtd = 1){

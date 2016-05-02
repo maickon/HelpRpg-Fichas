@@ -20,7 +20,7 @@ class Itens{
   public $titulo;
 
   function __construct(){
-          $this->base_path = "C:/xampp/htdocs/utilitarios/itens/class/txt/";
+          $this->define_base_path();
   }
 
   function gerar_item($path, $title, $attr){
@@ -29,6 +29,14 @@ class Itens{
           $file_lines = explode("\n", $file);
           $escolhido = $file_lines[rand(0, count($file_lines)-1)];
           $this->$attr = $escolhido;
+  }
+
+  function define_base_path(){
+    if(file_exists("{$_SERVER['DOCUMENT_ROOT']}/HelpRpg/utilitarios/itens/class/txt/")):
+      $this->base_path = "{$_SERVER['DOCUMENT_ROOT']}/HelpRpg/utilitarios/itens/class/txt/";
+    else:
+      $this->base_path = "{$_SERVER['DOCUMENT_ROOT']}/utilitarios/itens/class/txt/";
+    endif;       
   }
 
   function show_item_test($data){

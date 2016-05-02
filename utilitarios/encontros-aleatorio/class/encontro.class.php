@@ -18,7 +18,15 @@ class Encontros{
         public $titulo;
 
         function __construct(){
-                $this->base_path = "C:/xampp/htdocs/utilitarios/encontros-aleatorio/class/txt/";
+                $this->define_base_path();
+        }
+
+        function define_base_path(){
+                if(file_exists("{$_SERVER['DOCUMENT_ROOT']}/HelpRpg/utilitarios/encontros-aleatorio/class/txt/")):
+                        $this->base_path = "{$_SERVER['DOCUMENT_ROOT']}/HelpRpg/utilitarios/encontros-aleatorio/class/txt/";
+                else:
+                        $this->base_path = "{$_SERVER['DOCUMENT_ROOT']}/utilitarios/encontros-aleatorio/class/txt/";
+                endif;                   
         }
 
         function gerar_encontro($path, $title, $attr){

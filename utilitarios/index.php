@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <?php
-require_once 'class/tags/tags.php';
-$tag = new Tag();
+require_once "{$_SERVER['DOCUMENT_ROOT']}/HelpRpg/class/view/tags.class.php";
+require_once "{$_SERVER['DOCUMENT_ROOT']}/HelpRpg/rotas/rotas-url.php";
+
+$tag = new Tags();
 
 $tag->html();
     $tag->head();
-        $tag->link(['href'=>'//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css', 'rel'=>'stylesheet']);
+        $tag->link(['href'=>ROOTPATHURL.CSSPATH.'bootstrap.min.css', 'rel'=>'stylesheet']);
         $tag->link(['href'=>'css/index.css', 'rel'=>'stylesheet']);
-        $tag->link(['rel'=>'stylesheet', 'href'=>'//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css', ]);
+        $tag->link(['rel'=>'stylesheet', 'href'=>ROOTPATHURL.CSSPATH.'bootstrap-select.css', ]);
     $tag->head;
 
     $tag->div(['class'=>'container']);
         $tag->div(['class'=>'row']);
-            $tag->h2();
-                $tag->printer('Central de aplicativos para RPG');
-            $tag->h2;
-            $tag->p();
-                $tag->printer('Criado por Maickon Rangel - ');
-                $tag->a(['href'=>'#']);
-                    $tag->printer('helprpg.com.br');
-                $tag->a;
-            $tag->p;
-            $tag->hr();
+            $tag->div(['class'=>'col-md-12']);
+              $tag->h2();
+                  $tag->printer('Central de utilitários para RPG - By Help RPG');
+              $tag->h2;
+              $tag->p();
+                  $tag->printer('Criado por Maickon Rangel - ');
+                  $tag->a(['href'=>ROOTPATHURL]);
+                      $tag->printer('helprpg.com.br');
+                  $tag->a;
+              $tag->p;
+            $tag->div;
         $tag->div;
+        $tag->hr();
 
         $options = [['Rolar Dados','d20.jpg','dados/'], 
                     ['Nomes','nomes.jpg','nomes/'], 
@@ -41,8 +45,9 @@ $tag->html();
           $tag->div(['class'=>'col-md-12', 'id'=>'content']);
               $tag->div('class="row"');
                 for($i=0; $i<count($options); $i++):
+                  $css_class = substr_replace($options[$i][2], '', -1);
                   $tag->div('class="col-md-2"');
-                    $tag->div('class="thumbnail"');
+                    $tag->div('class="thumbnail '.$css_class.'"');
                       $tag->img('src="img/'.$options[$i][1].'" alt="..."');
                       $tag->div('class="caption"');
                         
