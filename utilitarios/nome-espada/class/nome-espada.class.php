@@ -15,7 +15,15 @@ class NomeEspada{
   public $titulo;
 
   function __construct(){
-          $this->base_parh = "/var/www/html/encontros-aleatorio/";
+          $this->define_base_path();
+  }
+
+  function define_base_path(){
+    if(file_exists("{$_SERVER['DOCUMENT_ROOT']}/HelpRpg/utilitarios/nome-espada/class/")):
+      $this->base_path = "{$_SERVER['DOCUMENT_ROOT']}/HelpRpg/utilitarios/nome-espada/class/";
+    else:
+      $this->base_path = "{$_SERVER['DOCUMENT_ROOT']}/utilitarios/nome-espada/class/";
+    endif;       
   }
 
   function gerar_nome($path, $title, $attr){

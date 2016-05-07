@@ -15,7 +15,15 @@ class Sorte{
   public $titulo;
 
   function __construct(){
-          $this->base_parh = "/var/www/html/encontros-aleatorio/";
+          $this->define_base_path();
+  }
+
+  function define_base_path(){
+    if(file_exists("{$_SERVER['DOCUMENT_ROOT']}/HelpRpg/utilitarios/nomes/class/nomes/")):
+      $this->base_path = "{$_SERVER['DOCUMENT_ROOT']}/HelpRpg/utilitarios/nomes/class/nomes/";
+    else:
+      $this->base_path = "{$_SERVER['DOCUMENT_ROOT']}/utilitarios/nomes/class/nomes/";
+    endif;       
   }
 
   function gerar_sorte($path, $title, $attr){

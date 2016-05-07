@@ -57,7 +57,7 @@ define('BIBLIOTECA_ELFICA_URL','http://www.bibliotecaelfica.com/');
 define('LOGINPATH', ROOTPATHURL."pages/login");
 
 //URL - Usuarios
-define('USERPATH',ROOTPATHURL."pages/usuario/");
+define('USERPATH',"pages/usuario/");
 define('USERSLISTPATH',ROOTPATHURL."pages/usuario/users.php");
 define('USERNEWPATH',ROOTPATHURL."pages/usuario/new.php");
 define('USEREDITPATH',ROOTPATHURL."pages/usuario/edit.php");

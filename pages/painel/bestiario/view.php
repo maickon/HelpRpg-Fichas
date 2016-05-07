@@ -52,7 +52,8 @@ $tag->br();
 					$tag->b();
 					$tag->imprime(CRIADO_NO_DIA);
 					echo date('d/m/Y', strtotime($bestiario[0]['criado_em'])).' às '.date(' H:i:s', strtotime($bestiario[0]['criado_em']));
-					$tag->imprime(CADASTRADO_POR." {$bestiario[0]['dono']} | ".CLASSIFICACAO.": {$bestiario[0]['classificacao']}");
+					$tag->imprime(CADASTRADO_POR." {$bestiario[0]['dono']} | ".CLASSIFICACAO.": {$bestiario[0]['classificacao']} | ".
+						PALAVRACHAVE." {$bestiario[0]['palavras_chave']} ");
 					$tag->b;
 					$tag->br();
 					$tag->br();

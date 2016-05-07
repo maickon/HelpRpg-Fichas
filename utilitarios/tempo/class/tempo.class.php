@@ -16,7 +16,15 @@ class Tempo{
   public $titulo;
 
   function __construct(){
-          $this->base_parh = "/var/www/html/encontros-aleatorio/";
+          $this->define_base_path();
+  }
+
+  function define_base_path(){
+    if(file_exists("{$_SERVER['DOCUMENT_ROOT']}/HelpRpg/utilitarios/tempo/class/")):
+      $this->base_path = "{$_SERVER['DOCUMENT_ROOT']}/HelpRpg/utilitarios/tempo/class/";
+    else:
+      $this->base_path = "{$_SERVER['DOCUMENT_ROOT']}/utilitarios/tempo/class/";
+    endif;       
   }
 
   function gerar_tempo($path, $title, $attr){

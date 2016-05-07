@@ -27,14 +27,6 @@ else:
 			if(isset($_REQUEST['action'])):
 				$form->_col(12);
 					$create_artefato = new Artefatos(ROOTPATH.ARTEFATOSIMGPATH);
-					if(empty($_FILES['img']['name'])):
-						$_REQUEST['img'] = '';
-						$_REQUEST['old_file'] = $old_file;
-					else:
-						$_REQUEST['img'] = $_FILES['img'];
-						$_REQUEST['old_file'] = $old_file;
-					endif;
-				
 					$create_artefato->update_data($_REQUEST);
 				$form->col_();
 			endif;
@@ -68,22 +60,32 @@ else:
 				$form->_form(['method'=>'post', 'name'=>'new-user', 'enctype'=>'multipart/form-data', 'class'=>'form-group', 'data-toggle'=>'validator']);
 				
 					$form->input(['name' => 'dono', 'type' => 'hidden', 'value'=> $objeto[0]['dono']]);
-					
+					$classificacao = [
+					'value'	=> $objeto[0]['classificacao'],
+					'mediocre'	=>'medíocre',
+					'fraco'		=>'Fraco', 
+					'medio'		=>'Médio', 
+					'forte'		=>'Forte', 
+					'incrivel' 	=>'Incrível',
+					'descomunal'=>'Descomunal',
+					'eíco'		=>'Épico', 
+					'divino'	=>'Divino',
+					'cosmico' 	=>'cósmico'];
+
 					helper_adm_label($objeto);
 					
-					helper_form_input("Imagem", ['name' => 'img', 'type' => 'file', 'class'=>'form-control']);
 					
-					helper_form_input("Nome", ['name' => 'nome', 'type' => 'text', 'class'=>'form-control', 'required'=>'true', 'value'=> $objeto[0]['nome']]);
+					helper_form_input(NOME, ['name' => 'nome', 'type' => 'text', 'class'=>'form-control', 'required'=>'true', 'value'=> $objeto[0]['nome']], 4);
 					
-					helper_form_input("Level indicado", ['name' => 'lv', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['lv']]);
+					helper_form_input(NIVEL_INDICADO_AVENTURA, ['name' => 'lv', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['lv']], 4);
 					
-					helper_form_input("Preço/Custo", ['name' => 'preco', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['preco']]);
+					helper_form_input(PRECO, ['name' => 'preco', 'type' => 'text', 'class'=>'form-control', 'value'=> $objeto[0]['preco']], 4);
 					
-					helper_form_select_options("Raridade", ['class'=>'form-control', 'name'=>'raridade'], ['value'=> $objeto[0]['raridade'] ,'comum'=>'Comum', 'magico'=>'Mágico', 'raro'=>'Raro', 'lendario'=>'Lendário', 'unico' => 'Único']);
+					helper_form_select_options(CLASSSIFICACAO, ['class'=>'form-control', 'name'=>'classificacao'], $classificacao, 4);
 					
-					helper_form_select_options("Sistema de RPG", ['class'=>'form-control', 'name'=>'sistema'], ['value'=> $objeto[0]['sistema'],'ded'=>'Dungeons and Dragons', '3det'=>'3D&T', 'deamon'=>'Deamon']);
-					
-					helper_form_text_area("Descrição", ['name' => 'descricao', 'class'=>'form-control', 'rows'=>'5'], strip_tags($objeto[0]['descricao']));
+					helper_form_select_options_sistema($objeto[0]['sistema'], 4);
+
+					helper_form_text_area(DESCRICAO, ['name' => 'descricao', 'class'=>'form-control', 'rows'=>'5'], strip_tags($objeto[0]['descricao']));
 					
 					helper_form_button_update_and_back(ROOTPATHURL.ARTEFATOSPATH);
 				

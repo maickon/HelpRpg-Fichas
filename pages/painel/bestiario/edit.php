@@ -52,11 +52,26 @@ else:
 				$form->_form(['method'=>'post', 'name'=>'new-user', 'enctype'=>'multipart/form-data', 'class'=>'form-group', 'data-toggle'=>'validator']);
 				
 					$current_user = $s->get_session('nome');
+					$classificacao = [
+					'value'		=> $objeto[0]['classificacao'],
+					'mediocre'	=>'medíocre',
+					'fraco'		=>'Fraco', 
+					'medio'		=>'Médio', 
+					'forte'		=>'Forte', 
+					'incrivel' 	=>'Incrível',
+					'descomunal'=>'Descomunal',
+					'eíco'		=>'Épico', 
+					'divino'	=>'Divino',
+					'cosmico' 	=>'cósmico'];
+
+
 					$form->input(['name' => 'dono', 'type' => 'hidden', 'value'=> $current_user]);
 				
-					helper_form_input(NOME, ['name' => 'nome', 'type' => 'text', 'class'=>'form-control', 'required'=>'true', 'value'=> $objeto[0]['nome']], 8);
-				
-					helper_form_select_options(CLASSIFICACAO, ['class'=>'form-control', 'name'=>'classificacao'], ['value'=> $objeto[0]['classificacao'], 'fraco'=>'Fraco', 'medio'=>'Médio', 'forte'=>'Forte', 'epico'=>'Épico']);
+					helper_form_input(NOME, ['name' => 'nome', 'type' => 'text', 'class'=>'form-control', 'required'=>'true', 'value'=> $objeto[0]['nome']], 3);
+					
+					helper_form_input(PALAVRACHAVE, ['name' => 'palavras_chave', 'type' => 'text', 'class'=>'form-control', 'required'=>'true', 'value'=> $objeto[0]['palavra_chave']], 6);
+
+					helper_form_select_options(CLASSIFICACAO, ['class'=>'form-control', 'name'=>'classificacao'], $classificacao, 3);
 					
 					helper_form_text_area(CONTO, ['name' => 'descricao', 'class'=>'form-control', 'rows'=>'5'], ($objeto[0]['descricao']));
 				

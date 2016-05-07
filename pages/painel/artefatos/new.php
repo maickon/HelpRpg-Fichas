@@ -17,7 +17,6 @@ else:
 			if(isset($_REQUEST['action'])):
 				$form->_col(12);
 					$create_artefato = new Artefatos(ROOTPATH.ARTEFATOSIMGPATH);
-					$_REQUEST['img'] =  $_FILES['img'];
 					$create_artefato->create($_REQUEST);
 				$form->col_();
 			endif;
@@ -42,17 +41,26 @@ else:
 				$form->_form(['method'=>'post', 'name'=>'new-user', 'enctype'=>'multipart/form-data', 'class'=>'form-group', 'data-toggle'=>'validator']);
 				
 					$current_user = $s->get_session('nome');
+					$classificacao = [
+					'mediocre'	=>'medíocre',
+					'fraco'		=>'Fraco', 
+					'medio'		=>'Médio', 
+					'forte'		=>'Forte', 
+					'incrivel' 	=>'Incrível',
+					'descomunal'=>'Descomunal',
+					'eíco'		=>'Épico', 
+					'divino'	=>'Divino',
+					'cosmico' 	=>'cósmico'];
+
 					$form->input(['name' => 'dono', 'type' => 'hidden', 'value'=> $current_user]);
 
-					helper_form_input("Imagem", ['name' => 'img', 'type' => 'file', 'class'=>'form-control']);
-		
-					helper_form_input("Nome", ['name' => 'nome', 'type' => 'text', 'class'=>'form-control', 'required'=>'true']);
+					helper_form_input(NOME, ['name' => 'nome', 'type' => 'text', 'class'=>'form-control', 'required'=>'true']);
 					
-					helper_form_input("Level indicado", ['name' => 'lv', 'type' => 'text', 'class'=>'form-control']);
+					helper_form_input(NIVEL_INDICADO_AVENTURA, ['name' => 'lv', 'type' => 'text', 'class'=>'form-control']);
 					
-					helper_form_input("Preço/Custo", ['name' => 'preco', 'type' => 'text', 'class'=>'form-control']);
+					helper_form_input(PRECO, ['name' => 'preco', 'type' => 'text', 'class'=>'form-control']);
 					
-					helper_form_select_options("Raridade", ['class'=>'form-control', 'name'=>'raridade'], ['comum'=>'Comum', 'magico'=>'Mágico', 'raro'=>'Raro', 'lendario'=>'Lendário', 'unico' => 'Único']);
+					helper_form_select_options(CLASSIFICACAO, ['class'=>'form-control', 'name'=>'raridade'], $classificacao);
 					
 					helper_form_select_options_sistema();
 					

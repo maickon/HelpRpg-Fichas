@@ -39,7 +39,7 @@
 			//lista com fragmentos de URL para os labels listado acima.
 			$options_menu_root_links = array(
 											"#", 
-											USERPATH, 
+											'', 
 											USEREVIEWPATH, 
 											USEREDITPATH, 
 											USERDELETEPATH);

@@ -214,6 +214,7 @@ function query_bestiarios($busca){
 	$bestiarios = $bestiario->select('bestiario', null, [
 												['nome', 'like', "%{$busca}%" ],
 												['dono', 'like', "%{$busca}%" ],
+												['palavras_chave', 'like', "%{$busca}%" ],
 												['classificacao', 'like', "%{$busca}%" ]
 											], "OR");
 	for($i=0; $i<count($bestiarios); $i++):

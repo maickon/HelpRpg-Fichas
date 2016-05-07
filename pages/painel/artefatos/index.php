@@ -55,10 +55,10 @@ $tag->br();
 		$form->_table(['id'=>'example', 'class'=>'display', 'cellspacing'=>'0', 'width'=>'100%']);
 			$tag->thead();
 				$tag->tr();
-					$form->th('Nome');
-					$form->th('Criador');
-					$form->th('Raridade');
-					$form->th('Sistema');
+					$form->th(NOME);
+					$form->th(CRIADOR);
+					$form->th(CLASSIFICACAO);
+					$form->th(SISTEMA);
 					$form->th(' ');
 					$form->th(' ');
 					$form->th(' ');	
@@ -71,7 +71,7 @@ $tag->br();
 					$tag->tr();
 						$form->td($a['nome']);
 						$form->td($a['dono']);
-						$form->td($a['raridade']);
+						$form->td($a['classificacao']);
 						$form->td($a['sistema']);
 						
 						//verificando permiçoes
@@ -83,10 +83,10 @@ $tag->br();
 						
 						if($super):
 							helper_componentes_buttons('artefatos', $a['id']);
-						elseif($s->get_session('artefatos') != $a['dono']):
+						elseif($s->get_session('nome') != $a['dono']):
 							//em cada linha onde o usuario atual for diferente do dono da arma, vai neutralizar as opçoes de editar e excluir 
 							helper_componentes_buttons('artefatos', $a['id'], $off = true);
-						elseif($s->get_session('artefatos') == $a['dono']):
+						elseif($s->get_session('nome') == $a['dono']):
 							//se o usuario logado for dono de alguma arma criada ele tera acesso total ao recurso
 							helper_componentes_buttons('artefatos', $a['id']);
 						endif;

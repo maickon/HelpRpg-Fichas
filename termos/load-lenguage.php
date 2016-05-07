@@ -1,6 +1,5 @@
 <?php
-//require_once ROOTPATH.'/init.php';
-require_once '../home/helpr248/public_html/init.php';
+require_once ROOTPATH.'/init.php';
 
 $s = new Session();
 if(isset($_GET['l'])):

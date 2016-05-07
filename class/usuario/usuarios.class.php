@@ -71,7 +71,7 @@ class Usuarios extends db{
 			new Flashmsg('success', 'Registro editado com sucesso.');
 			sleep(3);
 			$s->destroy_session(['login','nome','id']);
-			header('location:'.ROOTPATHURL);
+			$tag->imprime("<meta HTTP-EQUIV='Refresh' CONTENT='0; URL=".ROOTPATHURL."'>");
 		else:
 			new Flashmsg('danger', 'Um erro ocoreu, contate o administrador.');
 		endif;

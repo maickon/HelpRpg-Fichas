@@ -385,7 +385,7 @@ function bestiario($filter_result){
 				$tag->a;
 			$tag->span;
 			$tag->br();
-			$tag->imprime("Criado por {$filter_result['dono']} - Classificação {$filter_result['classificacao']}");
+			$tag->imprime("Criado por {$filter_result['dono']} - Classificação {$filter_result['classificacao']} - Palavras chave {$filter_result['palavras_chave']}");
 			$tag->br();
 			$tag->small();
 				$tag->a('href="'.ROOTPATHURL.$path.'view.php?id='.$filter_result['id'].'" target="blank" class="show-picture"');

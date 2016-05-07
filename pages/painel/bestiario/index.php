@@ -57,6 +57,7 @@ $tag->br();
 				$tag->tr();
 					$form->th(NOME);
 					$form->th(DONO);
+					$form->th(PALAVRACHAVE);
 					$form->th(CRIADO_EM);
 					$form->th(CLASSIFICACAO);
 					$form->th(' ');
@@ -71,6 +72,7 @@ $tag->br();
 					$tag->tr();
 						$form->td($a['nome']);
 						$form->td($a['dono']);
+						$form->td($a['palavras_chave']);
 						$form->td(date('d/m/Y', strtotime($a['criado_em'])).' às '.date(' H:i:s', strtotime($a['criado_em'])));
 						$form->td($a['classificacao']);
 						

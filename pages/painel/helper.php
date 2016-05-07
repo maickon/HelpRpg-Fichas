@@ -1141,8 +1141,11 @@ function helper_form_select_options_arma_tipo($size = 4){
 	$form->col_();
 }
 
-function helper_form_select_options_sistema($size = 4){
+function helper_form_select_options_sistema($first_dield = null,$size = 4){
 	global $tag, $form, $rpg_sistemas;
+	if($first_dield != null)
+		$rpg_sistemas['value'] = $first_dield;
+	
 	$form->_col($size);
 		$form->label(SISTEMA_DE_JOGO);
 		$form->select(['class'=>'form-control selectpicker', 'id'=>'sistema_de_jogo', 'onchange'=>'select_form(this.value);', "data-live-search" => "true", 'name'=>'sistema'], $rpg_sistemas);

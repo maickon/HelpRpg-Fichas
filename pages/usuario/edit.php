@@ -8,8 +8,13 @@ $form = new Form();
 $tag->br();
 
 $get_user = new Usuarios();
-$nome = $s->get_session('login');
-$user = $get_user->select('usuarios', null, [['email','=', $nome ? $nome : ' ']]);
+if(isset($_GET['id'])):
+	$id = $_GET['id'];
+	$user = $get_user->select('usuarios', null, [['id','=', $id ? $id : ' ']]);
+else:
+	$nome = $s->get_session('login');
+	$user = $get_user->select('usuarios', null, [['email','=', $nome ? $nome : ' ']]);
+endif;
 
 if(isset($_REQUEST['action'])):
 	$update_user = new Usuarios();

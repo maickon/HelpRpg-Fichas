@@ -39,7 +39,10 @@ $tag->html();
                     ['Personalidades','personalidades.jpg','personalidades/'],
                     ['Cidades','cidades.jpg','cidades/'],
                     ['Marcadores','abacus.jpg','marcador/'],
-                    ['Itens','itens.jpg','itens/']
+                    ['Itens','itens.jpg','itens/'],
+                    ['Sorte','sorte.jpg','sorte/'],
+                    ['Tempo','tempo.jpg','tempo/'],
+                    ['Espadas','espadas.jpg','nome-espada/'],
                    ];
         $tag->div(['class'=>'row-fluid']);
           $tag->div(['class'=>'col-md-12', 'id'=>'content']);

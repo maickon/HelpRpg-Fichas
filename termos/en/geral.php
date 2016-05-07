@@ -56,6 +56,7 @@ define('DOWNLOADS','Downloads');
 define('CAMPANHAS','Campaigns');
 
 define('BESTIARIO', "Bestiary");
+define('PALAVRACHAVE', "Key words");
 define('CADASTRAR', "Register");
 define('AVENTURAS', "Adventures");
 define('CENARIOS', "Scenario");

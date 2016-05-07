@@ -49,36 +49,27 @@ $tag->br();
 			helper_modal_alert_confirm();
 			
 			$form->_container();
-				$form->_col(6);
-					$img = $artefatos[0]['img'];
-					helper_sow_artefatos($artefatos[0]);
+				$form->_col(9);
+					$form->h1($artefatos[0]['nome']);
+					$tag->b();
+					$tag->imprime(CRIADO_NO_DIA);
+					echo date('d/m/Y', strtotime($artefatos[0]['criado_em'])).' às '.date(' H:i:s', strtotime($artefatos[0]['criado_em']));
+					$tag->imprime(" | ".CADASTRADO_POR." {$artefatos[0]['dono']} | ".CLASSIFICACAO.": {$artefatos[0]['classificacao']}");
+					$tag->imprime(" | ".SISTEMA.": {$artefatos[0]['sistema']}");
+					$tag->b;
+					$tag->br();
+					$tag->br();
+					$tag->imprime($artefatos[0]['descricao']);
 				$form->col_();
-				
-				$form->_col(6);
-					$form->_col(12);
-						$tag->div('class="center"');
-							if($img != null):
-								$tag->img('src="'.ROOTPATHURL.ARTEFATOSIMGPATH.$img.'" class="img-responsive img-thumbnail size-img"');
-							else:
-								$tag->img('src="'.ROOTPATHURL.IMGPATH.'noimage.png" class="img-responsive img-thumbnail size-img"');
-							endif;
-						$tag->div;
-					$form->col_();
 
-					$form->_col(12);
-						$tag->br();
-						$tag->br();
-					$form->col_();
-					
-					$form->_col(12);
-						helper_adsense_responsivo_02();
-					$form->col_();
+				$form->_col(3);	
+					$form->h1(PUBLICIDADE);
+					helper_adsense_responsivo_02();
 				$form->col_();
-				
+
 				$form->_col(12);
 					helper_disqus_comment();	
-				$form->col_();
-					
+				$form->col_();						
 			$form->container_();
 		$form->div_();
 	endif;	
