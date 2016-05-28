@@ -3,12 +3,14 @@
 require_once "{$_SERVER['DOCUMENT_ROOT']}/HelpRpg/class/view/tags.class.php";
 require_once "{$_SERVER['DOCUMENT_ROOT']}/HelpRpg/class/view/form.class.php";
 require_once "{$_SERVER['DOCUMENT_ROOT']}/HelpRpg/rotas/rotas-url.php";
+
 $tag = new Tags();
 $form = new Form(); 
 
 $tag->html();
     $tag->head();
         $tag->link(['href'=>ROOTPATHURL.CSSPATH.'bootstrap.min.css', 'rel'=>'stylesheet']);
+        $tag->link(['href'=>CSSPATH.'index.css', 'rel'=>'stylesheet']);
         $tag->link(['rel'=>'stylesheet', 'href'=>ROOTPATHURL.CSSPATH.'bootstrap-select.css', ]);
     $tag->head;
 
@@ -16,7 +18,7 @@ $tag->html();
         $tag->div(['class'=>'row']);
             $tag->div(['class'=>'col-md-12']);
                 $tag->h2();
-                    $tag->printer('Gerador de sorte - Help RPG');
+                    $tag->printer('Gerador de personalidade - Help RPG');
                 $tag->h2;
                 $tag->printer('|');
                 $tag->a(['href'=>'../index.php']);
