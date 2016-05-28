@@ -1,0 +1,42 @@
+1/8 Rato(animal)
+1/3 Rato atroz
+1/3 Esqueleto humano (Combatente)
+1/2 Objeto animado miúdo
+1/2 Zumbi humano (Plebeu)
+1 Objeto animado pequeno
+1 Carniçal
+1 Homúnculo
+2 Objeto animado médio
+2 Homem rato (Licantropo)
+2 Enxame de ratos
+3 Allip
+3 Objeto animado Grande 
+3 Doppelganger
+3 Lívido (Carniçal)
+3 Sombra
+3 Inumano
+4 Gárgula
+4 Cria vampírica
+5 Objeto animado enorme
+5 Múmia
+5 Aparição
+7 Objeto animado imenso
+7 Golem de carne
+7 Espectro
+8 Sombra maior
+8 Mohrg	
+8 Guardião protetor
+10 Objeto animado colossal
+10 Golem de barro
+11 Devorador
+11 Aparição tórrida
+11 Golem de pedra
+13 Golem de ferro
+13 Linch, mago humano (11° nível)
+14 Vulto alado (vulto noturno)
+15 Senhor das múmias
+16 Golem de pedra maior
+16 Andarilho noturno (vulto noturno)
+18 Rastejador noturno
+20 Tarrasque
+

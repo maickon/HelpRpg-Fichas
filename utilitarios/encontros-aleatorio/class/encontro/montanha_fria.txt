@@ -1,0 +1,17 @@
+2 Dragão branco (filhote)
+3 Dragão branco (muito jovem)
+3 Esqueleto troll
+4 Dragão branco jovem
+5 Troll
+6 Dragão branco (adolescente)
+7 Dragão branco (jovem adulto)
+9 Gigante do gelo
+10 Dragão branco (adulto)
+11 Caçador troll
+12 Dragão branco (experiente)
+15 Dragão branco (antigo)
+17 Dragão branco (muito antigo)
+17 Gigante do gelo (jarl)
+18 Dragão branco (venerável)
+19 Dragão branco (ancião)
+21 Dragão branco (grande ancião)

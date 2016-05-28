@@ -1,0 +1,18 @@
+1/6 Mula (animal)
+2 Morcego atroz
+2 Enxame de morcegos
+3 Dragão azul (filhote)
+4 Dragão azul (muito jovem)
+6 Dragão azul (jovem)
+6 Lâmia
+7 Draconato
+8 Dragão azul (adolescente)
+8 Lammasu
+11 Dragão azul (jovem adulto)
+14 Dragão azul (adulto)
+16 Dragão azul (experiente)
+18 Dragão azul (antigo)
+19 Dragão azul (muito antigo)
+21 Dragão azul (venerável)
+23 Dragão azul (ancião)
+25 Dragão azul (grande ancião)

@@ -1,0 +1,59 @@
+1/4 Kobold
+1/4 Aranha monstruosa miúda (inseto)
+1/4 Kobold zumbi
+1/2 Texugo (animal)
+1/2 Elfo da floresta
+1/2 Halfling (alto-pequenino)
+1/2 Meio elfo
+1/2 Aranha monstruosa pequena (inseto)
+1 Grig (fada)
+1 Krenshar
+1 Aranha monstruosa média (inseto)
+1 Pseudodragão
+1 Esqueleto lobo
+1 Lobo (animal)
+2 Urso negro (animal)
+2 Javali (animal)
+2 Texugo atroz
+2 Aranha monstruosa grande (inseto)
+2 Sátiro
+2 Esqueleto urso coruja
+3 Vinha assassina
+3 Centauro
+3 Lobo atroz
+3 Dragão verde (filhote)
+3 Dríade
+3 Louva-a-deus gigante (inseto)
+3 Vespa gigante (inseto)
+3 Lobisomem (licantropo)
+3 Coruja gigante
+3 Pégasus
+3 Unicórnio
+4 Aranea
+4 Javali atroz
+4 Dragão verde (muito jovem)
+4 Gafanhoto gigante (inseto)
+4 Homem javali (licantropo)
+4 Urso coruja
+4 Pixie (fada)
+5 Dragão verde (jovem)
+5 Aranha monstruosa enorme (inseto)
+5 Pixie (fada)
+5 devorador de aranhas
+6 Tendrículo
+7 Ninfa
+8 Dragão verde (adolescente)
+8 Aranha monstruosa imensa (inseto)
+8 Ente
+11 Corcel celestial (unicórnio)
+11 Dragão verde (jovem adulto)
+11 Aranha monstruosa colossal (inseto)
+13 Dragão verde (adulto)
+14 Senhor dos lobisomens (licantropo)
+15 Vampiro de elite
+16 Dragão verde (experiente)
+18 Dragão verde (antigo)
+19 Dragão verde (muito antigo)
+21 Dragão verde (venerável)
+22 Dragão verde (ancião)
+24 Dragão verde (grande ancião)

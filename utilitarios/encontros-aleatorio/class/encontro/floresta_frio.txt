@@ -1,0 +1,6 @@
+2 Carcajú (animal)
+4 Urso marrom (animal)
+4 Carcajú atroz
+5 Homem-urso (licantropo)
+5 Lobo das estepes
+7 Urso atroz

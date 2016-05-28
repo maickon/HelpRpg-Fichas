@@ -1,0 +1,9 @@
+1 Selako-Serra
+3 Selako grande
+9 Selako atroz
+1 Tubarão médio (animal)
+2 Tubarão grande (animal)
+4 Tubarão enorme (animal)
+5 Scrag (troll)
+5 Baleia Orca (animal)
+9 Tubarão atroz
