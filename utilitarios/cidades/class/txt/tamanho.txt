@@ -1,0 +1,9 @@
+Lugarejo
+Povoado
+Aldeia
+Vila pequena
+Vila grande
+Cidade pequena
+Cidade grande
+Metrópole
+Metrópole central
