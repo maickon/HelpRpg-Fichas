@@ -23,7 +23,7 @@
 	// 	$tag->div;
 		
 	// require_once 'footer.php';
-	//comentario de teste
+	//comentario de teste 1
 	require_once 'config.php';
 
 	header("Location:".SEARCHPATH);
